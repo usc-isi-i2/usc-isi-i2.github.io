@@ -3,21 +3,21 @@
 
 $open-sans: 'Open Sans', sans-serif;
 $roboto-slab: 'Roboto Slab', serif;
+$font-color: #333;
 
-body {
+html, body {
 	font-family: $open-sans;
-}
-
-h1, h2, h3 {
-	font-family: $roboto-slab;
-	margin-top: 0;
+	height: 100%;
+	font-size: 16px;
+	color: $font-color;
 }
 
 .dig-nav-bar {
 	position: fixed;
+	z-index: 1;
 	width: 100%;
 	padding: 20px 0;
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.8);
 	.dig-nav-brand {
 		float: left;
 		width: 50px;
@@ -26,7 +26,7 @@ h1, h2, h3 {
 		float: right;
 		a {
 			margin: 0 15px;
-			font-size: 1.1em;
+			font-size: 15px;
 			font-weight: 600;
 			color: #aaa;
 			text-decoration: none;
@@ -40,24 +40,39 @@ h1, h2, h3 {
 }
 
 header {
+	height: 100%;
+	min-height: 540px;
 	padding-top: 120px;
 	padding-bottom: 60px;
-	background: #333;
-	color: white;
-	.container {
-		position: relative;
-		.dig-logo {
-			width: 100%;
-			max-width: 400px;
+	background: #131922;
+	text-align: center;
+	.dig-logo {
+		width: 300px;
+	}
+	h1 {
+		font-size: 1.5em;
+		font-weight: 600;
+		color: white;
+	}
+	a.button {
+		display: inline-block;
+		margin: 20px 0;
+		padding: 10px 20px;
+		border: 1px solid white;
+		border-radius: 5px;
+		color: white;
+		text-decoration: none;
+		outline: none;
+		&:hover {
+			text-shadow: 0 0 1px rgba(255,255,255, 0.6);
+			box-shadow: 0 0 5px rgba(255,255,255, 0.6);
 		}
-		.others {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			a {
-				display: block;
-				margin-top: 10px;
-			}
+	}
+	.credit {
+		margin-top: 20px;
+		a {
+			display: block;
+			margin-top: 10px;
 			.isi-logo {
 				width: 250px;
 			}
@@ -68,6 +83,21 @@ header {
 .slides {
 	width: 100%;
 	border: none;
+}
+
+.intro-container {
+	.intro {
+		margin: auto;
+		padding: 60px 2%;
+		max-width: 700px;
+		h2 {
+			margin-top: 0;
+			text-align: center;
+		}
+		p {
+			color: lighten($font-color, 10%);
+		}
+	}
 }
 
 .section {
