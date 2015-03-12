@@ -48,31 +48,17 @@ header {
 	background: #131922;
 	text-align: center;
 	.dig-logo {
-		width: 300px;
+		width: 350px;
+		max-width: 90%;
 	}
 	h1 {
-		font-size: 1.5em;
+		font-size: 1.6em;
 		font-weight: 600;
 		color: white;
 	}
-	a.button {
-		display: inline-block;
-		margin: 20px 0;
-		padding: 10px 20px;
-		border: 1px solid white;
-		border-radius: 5px;
-		color: white;
-		text-decoration: none;
-		outline: none;
-		&:hover {
-			text-shadow: 0 0 1px rgba(255,255,255, 0.6);
-			box-shadow: 0 0 5px rgba(255,255,255, 0.6);
-		}
-	}
 	.credit {
-		margin-top: 20px;
-		a {
-			display: block;
+		margin-top: 40px;
+		div {
 			margin-top: 10px;
 			.isi-logo {
 				width: 250px;
@@ -81,10 +67,33 @@ header {
 	}
 }
 
-.slides {
-	display: block;
+.scroll-btn-container {
+	position: absolute;
+	top: 100%;
 	width: 100%;
-	border: none;
+	margin-top: -100px;
+	.scroll-btn {
+		display: table;
+		margin: auto;
+		width: 50px;
+		height: 50px;
+		border: 2px solid #ccc;
+		border-radius: 50%;
+		color: #ccc;
+		text-decoration: none;
+		outline: none;
+		&::before {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			content: '\f107';
+			font-size: 30px;
+		}
+		&:hover {
+			border-color: white;
+			color: white;
+		}
+	}
 }
 
 section {
@@ -97,19 +106,32 @@ section {
 	}
 }
 
+#quick-start {
+	background: #111;
+	.slides {
+		display: block;
+		margin: auto;
+		width: 600px;
+		height: 481px;
+		border: none;
+	}
+}
+
 #about {
-	background: $bg-dark;
+	// background: $bg-dark;
 	h2 {
-		color: white;
+		// color: white;
 	}
 	.content {
 		margin: auto;
 		max-width: 700px;
-		color: #aaa;
+		// color: #aaa;
+		color: lighten($font-color, 10%);
 	}
 }
 
 #news {
+	margin-top: -60px;
 	h2 {
 		// color: black;
 	}
@@ -123,7 +145,8 @@ section {
 }
 
 #people {
-	background: #ccc;
+	margin-top: -60px;
+	// background: #ccc;
 	h2 {
 		// color: black;
 	}
@@ -173,6 +196,7 @@ section {
 }
 
 #org {
+	margin-top: -60px;
 	text-align: center;
 	img {
 		width: 100px;
@@ -181,17 +205,18 @@ section {
 }
 
 #ack {
-	background: $bg-dark;
+	margin-top: -60px;
+	// background: $bg-dark;
 	text-align: center;
-	color: #aaa;
+	// color: #aaa;
 	h2 {
-		color: white;
+		// color: white;
 	}
 }
 
 footer {
-	background: black;
-	color: #aaa;
+	background: #eee;
+	// color: #aaa;
 	font-size: 0.9em;
 	text-align: center;
 	padding: 20px;

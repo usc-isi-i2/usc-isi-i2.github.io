@@ -7,21 +7,6 @@ $('a').each(function() {
 
 var navBarHeight = $('.dig-nav-bar').outerHeight();
 
-function adjustSlidesHeight() {
-	var width = $('.slides').width();
-	var height = width * 0.8;
-
-	if (height > $(window).height() - navBarHeight) {
-		height = $(window).height() - navBarHeight;
-	}
-
-	$('.slides').css('height', height + 'px');
-}
-
-adjustSlidesHeight();
-
-$(window).on('resize', adjustSlidesHeight);
-
 // smooth scroll
 $('a[href*=#]:not([href=#])').click(function() {
 	if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
