@@ -25,3 +25,10 @@ $('a[href=#]').click(function() {
 	}, 500);
 	return false;
 });
+
+// add title attribute if the title overflows
+$('#people .title').each(function() {
+	if (this.scrollWidth > this.clientWidth) {
+		$(this).attr('title', $(this).text());
+	}
+});
