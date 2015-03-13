@@ -97,16 +97,16 @@ header {
 }
 
 section {
-	padding: 60px 0;
+	padding-top: 60px;
 	h2 {
 		margin-top: 0;
 		margin-bottom: 20px;
 		text-align: center;
-		text-transform: uppercase;
 	}
 }
 
 #quick-start {
+	padding-bottom: 60px;
 	background: #111;
 	.slides {
 		display: block;
@@ -118,23 +118,14 @@ section {
 }
 
 #about {
-	// background: $bg-dark;
-	h2 {
-		// color: white;
-	}
 	.content {
 		margin: auto;
 		max-width: 700px;
-		// color: #aaa;
 		color: lighten($font-color, 10%);
 	}
 }
 
 #news {
-	margin-top: -60px;
-	h2 {
-		// color: black;
-	}
 	iframe {
 		display: block !important;
 		margin: auto !important;
@@ -145,11 +136,6 @@ section {
 }
 
 #people {
-	margin-top: -60px;
-	// background: #ccc;
-	h2 {
-		// color: black;
-	}
 	ul {
 		list-style: none;
 		margin: auto;
@@ -164,7 +150,7 @@ section {
 			&:hover {
 				background: black;
 			}
-			.img-container {
+			a {
 				display: block;
 				height: 160px;
 				background-repeat: no-repeat;
@@ -196,27 +182,23 @@ section {
 }
 
 #org {
-	margin-top: -60px;
 	text-align: center;
+	.img-list {
+		margin: -20px;
+	}
 	img {
-		width: 100px;
-		margin: 0 15px;
+		width: 160px;
+		margin: 20px;
 	}
 }
 
 #ack {
-	margin-top: -60px;
-	// background: $bg-dark;
 	text-align: center;
-	// color: #aaa;
-	h2 {
-		// color: white;
-	}
 }
 
 footer {
+	margin-top: 60px;
 	background: #eee;
-	// color: #aaa;
 	font-size: 0.9em;
 	text-align: center;
 	padding: 20px;
