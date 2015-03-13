@@ -16,7 +16,7 @@ html, body {
 .dig-nav-bar {
 	position: fixed;
 	z-index: 1;
-	width: 100%;
+	// width: 100%;
 	padding: 25px 0;
 	background: rgba(0,0,0,0.8);
 	.dig-nav-brand {
@@ -126,12 +126,16 @@ section {
 }
 
 #news {
-	iframe {
-		display: block !important;
-		margin: auto !important;
-		width: 100% !important;
-		max-width: 700px !important;
-		height: 400px !important;
+	.twitter {
+		height: 400px;
+		text-align: center;
+		iframe {
+			display: block !important;
+			margin: auto !important;
+			width: 100% !important;
+			max-width: 700px !important;
+			height: 100% !important;
+		}
 	}
 }
 
@@ -184,7 +188,7 @@ section {
 #org {
 	text-align: center;
 	.img-list {
-		margin: -20px;
+		margin: -20px 0;
 	}
 	img {
 		width: 160px;
