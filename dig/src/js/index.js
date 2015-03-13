@@ -26,8 +26,8 @@ $('a[href=#]').click(function() {
 	return false;
 });
 
-// add title attribute if the title overflows
-$('#people .title').each(function() {
+// add title attribute if name or title overflows
+$('#people').find('.name, .title').each(function() {
 	if (this.scrollWidth > this.clientWidth) {
 		$(this).attr('title', $(this).text());
 	}
