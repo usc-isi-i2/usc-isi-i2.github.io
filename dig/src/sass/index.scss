@@ -103,21 +103,6 @@ section {
 		margin-bottom: 20px;
 		text-align: center;
 	}
-}
-
-#quick-start {
-	padding-bottom: 60px;
-	background: #111;
-	.slides {
-		display: block;
-		margin: auto;
-		width: 600px;
-		height: 481px;
-		border: none;
-	}
-}
-
-#about {
 	.content {
 		margin: auto;
 		max-width: 700px;
@@ -125,7 +110,26 @@ section {
 	}
 }
 
-#news {
+#quick-start {
+	padding-bottom: 60px;
+	background: #111;
+	.slides {
+		margin: auto;
+		width: 600px;
+		height: 481px;
+		iframe {
+			display: block;
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+	}
+}
+
+#about {
+}
+
+#tweets {
 	.twitter {
 		height: 400px;
 		text-align: center;
@@ -197,7 +201,6 @@ section {
 }
 
 #ack {
-	text-align: center;
 }
 
 footer {
