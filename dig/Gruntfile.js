@@ -44,15 +44,6 @@ module.exports = function(grunt) {
 				expand: true,
 				flatten: true,
 				src: 'src/css/*.css',
-				dest: 'src/css',
-			}
-		},
-
-		cssmin: {
-			multiple: {
-				expand: true,
-				flatten: true,
-				src: 'src/css/*.css',
 				dest: 'css',
 			}
 		},
@@ -86,7 +77,7 @@ module.exports = function(grunt) {
 			},
 			sass: {
 				files: ['src/sass/*.scss'],
-				tasks: ['clean:css', 'sass', 'autoprefixer', 'cssmin']
+				tasks: ['clean:css', 'sass', 'autoprefixer']
 			},
 			js: {
 				files: ['src/js/*.js'],
@@ -101,12 +92,11 @@ grunt.loadNpmTasks('grunt-html');
 grunt.loadNpmTasks('grunt-contrib-htmlmin');
 grunt.loadNpmTasks('grunt-contrib-sass');
 grunt.loadNpmTasks('grunt-autoprefixer');
-grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-watch');
 
 grunt.registerTask('default', ['watch']);
-grunt.registerTask('all', ['clean', 'htmllint', 'htmlmin', 'sass', 'autoprefixer', 'cssmin', 'jshint', 'uglify']);
+grunt.registerTask('all', ['clean', 'htmllint', 'htmlmin', 'sass', 'autoprefixer', 'jshint', 'uglify']);
 
 };
