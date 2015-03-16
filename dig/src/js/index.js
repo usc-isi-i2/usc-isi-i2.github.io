@@ -5,6 +5,9 @@ $('a').each(function() {
    }
 });
 
+// Let header fill the whole window
+// $('header').css('height', $)
+
 var navBarHeight = $('.dig-nav-bar').outerHeight();
 
 // smooth scroll
