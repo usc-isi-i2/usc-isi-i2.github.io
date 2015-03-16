@@ -35,6 +35,7 @@ html, body {
 }
 
 header {
+  position: relative;
   min-height: 540px;
   padding-top: 120px;
   padding-bottom: 60px;
@@ -59,13 +60,12 @@ header .credit div {
 header .credit div .isi-logo {
   width: 250px;
 }
-
-.scroll-btn-container {
+header .scroll-btn-container {
   position: absolute;
   top: 80%;
   width: 100%;
 }
-.scroll-btn-container .scroll-btn {
+header .scroll-btn-container .scroll-btn {
   display: table;
   margin: auto;
   width: 50px;
@@ -76,14 +76,14 @@ header .credit div .isi-logo {
   text-decoration: none;
   outline: none;
 }
-.scroll-btn-container .scroll-btn::before {
+header .scroll-btn-container .scroll-btn::before {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   content: '\f107';
   font-size: 30px;
 }
-.scroll-btn-container .scroll-btn:hover {
+header .scroll-btn-container .scroll-btn:hover {
   border-color: white;
   color: white;
 }

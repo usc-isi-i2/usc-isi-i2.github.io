@@ -40,6 +40,7 @@ html, body {
 }
 
 header {
+	position: relative;
 	min-height: 540px;
 	padding-top: 120px;
 	padding-bottom: 60px;
@@ -63,35 +64,35 @@ header {
 			}
 		}
 	}
-}
-
-.scroll-btn-container {
-	position: absolute;
-	top: 80%;
-	width: 100%;
-	.scroll-btn {
-		display: table;
-		margin: auto;
-		width: 50px;
-		height: 50px;
-		border: 2px solid #ccc;
-		border-radius: 50%;
-		color: #ccc;
-		text-decoration: none;
-		outline: none;
-		&::before {
-			display: table-cell;
-			vertical-align: middle;
-			text-align: center;
-			content: '\f107';
-			font-size: 30px;
-		}
-		&:hover {
-			border-color: white;
-			color: white;
+	.scroll-btn-container {
+		position: absolute;
+		top: 80%;
+		width: 100%;
+		.scroll-btn {
+			display: table;
+			margin: auto;
+			width: 50px;
+			height: 50px;
+			border: 2px solid #ccc;
+			border-radius: 50%;
+			color: #ccc;
+			text-decoration: none;
+			outline: none;
+			&::before {
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				content: '\f107';
+				font-size: 30px;
+			}
+			&:hover {
+				border-color: white;
+				color: white;
+			}
 		}
 	}
 }
+
 
 section {
 	padding-top: 60px;
