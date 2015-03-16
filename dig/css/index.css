@@ -35,7 +35,6 @@ html, body {
 }
 
 header {
-  height: 100vh;
   min-height: 540px;
   padding-top: 120px;
   padding-bottom: 60px;

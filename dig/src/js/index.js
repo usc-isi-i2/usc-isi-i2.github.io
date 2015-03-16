@@ -6,7 +6,7 @@ $('a').each(function() {
 });
 
 // Let header fill the whole window
-// $('header').css('height', $)
+$('header').css('height', $(window).height());
 
 var navBarHeight = $('.dig-nav-bar').outerHeight();
 
