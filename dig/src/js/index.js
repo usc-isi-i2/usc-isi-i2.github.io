@@ -8,6 +8,9 @@ $('a').each(function() {
 // Let header fill the whole window
 $('header').css('height', $(window).height());
 
+// Adjust slides height
+$('.slides').css('height', $('.slides').width() * 0.8);
+
 var navBarHeight = $('.dig-nav-bar').outerHeight();
 
 // smooth scroll
@@ -27,6 +30,22 @@ $('a[href=#]').click(function() {
 		scrollTop: 0
 	}, 500);
 	return false;
+});
+
+// scroll spy
+$(window).on("scroll resize", function() {
+	var mid = $(window).scrollTop() + $(window).height() / 2;
+
+    $(".area").each(function() {
+    	var elemTop = $(this).offset().top;
+    	var elemBottom = elemTop + $(this).outerHeight();
+
+    	if (elemTop < mid && elemBottom > mid) {
+    		$(".dig-nav-bar .active").removeClass("active");
+    		var hash = "#" + $(this).attr("id");
+    		$(".dig-nav-bar a[href=" + hash + "]").addClass("active");
+    	}
+    });
 });
 
 // add title attribute if name or title overflows

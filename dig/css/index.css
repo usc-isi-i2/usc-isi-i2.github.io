@@ -30,7 +30,7 @@ html, body {
   -webkit-transition: color .3s ease;
           transition: color .3s ease;
 }
-.dig-nav-bar nav a:hover, .dig-nav-bar nav a:focus {
+.dig-nav-bar nav a:hover, .dig-nav-bar nav a.active {
   color: white;
 }
 
@@ -109,7 +109,7 @@ section .content {
 #quick-start .slides {
   margin: auto;
   width: 600px;
-  height: 481px;
+  max-width: 100%;
 }
 #quick-start .slides iframe {
   display: block;
