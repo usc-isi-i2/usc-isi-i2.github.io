@@ -123,7 +123,8 @@ section {
 	ul {
 		list-style: none;
 		margin: auto;
-		max-width: 1100px;
+		padding: 0;
+		max-width: 1000px;
 		@media (max-width: 500px) {
 			text-align: center;
 		}
