@@ -14,7 +14,7 @@ html, body {
 header {
   position: relative;
   min-height: 540px;
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 60px;
   background: #131922;
   text-align: center;
@@ -111,6 +111,11 @@ section .content {
   list-style: none;
   margin: auto;
   max-width: 1100px;
+}
+@media (max-width: 500px) {
+  #people ul {
+    text-align: center;
+  }
 }
 #people ul li {
   display: inline-block;

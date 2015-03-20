@@ -24,26 +24,26 @@ $('#people').find('.name, .title').each(function() {
 	}
 });
 
-// var navBarHeight = $('.dig-nav-bar').outerHeight();
-
-// smooth scroll
-$('a[href*=#]:not([href=#])').click(function() {
-	if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
-		var target = $(this.hash);
-		if (target.length) {
-			$('html, body').animate({
-				scrollTop: target.offset().top
-			}, 500);
-			return false;
+// smooth scroll on a large screen
+if ($(window).width() > 768) {
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+			var target = $(this.hash);
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 500);
+				return false;
+			}
 		}
-	}
-});
-$('a[href=#]').click(function() {
-	$('html, body').animate({
-		scrollTop: 0
-	}, 500);
-	return false;
-});
+	});
+	$('a[href=#]').click(function() {
+		$('html, body').animate({
+			scrollTop: 0
+		}, 500);
+		return false;
+	});
+}
 
 // scroll spy
 // $(window).on("scroll resize", function() {

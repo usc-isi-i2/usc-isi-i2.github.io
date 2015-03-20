@@ -20,7 +20,7 @@ html, body {
 header {
 	position: relative;
 	min-height: 540px;
-	padding-top: 120px;
+	padding-top: 100px;
 	padding-bottom: 60px;
 	background: #131922;
 	text-align: center;
@@ -124,6 +124,9 @@ section {
 		list-style: none;
 		margin: auto;
 		max-width: 1100px;
+		@media (max-width: 500px) {
+			text-align: center;
+		}
 		li {
 			display: inline-block;
 			margin: 15px;
