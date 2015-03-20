@@ -14,7 +14,7 @@ html, body {
 header {
   position: relative;
   min-height: 540px;
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 60px;
   background: #131922;
   text-align: center;
@@ -53,11 +53,9 @@ header .scroll-btn-container .scroll-btn {
   text-decoration: none;
   outline: none;
 }
-header .scroll-btn-container .scroll-btn::before {
+header .scroll-btn-container .scroll-btn i {
   display: table-cell;
   vertical-align: middle;
-  text-align: center;
-  content: '\f107';
   font-size: 30px;
 }
 header .scroll-btn-container .scroll-btn:hover {
@@ -113,7 +111,7 @@ section .content {
   padding: 0;
   max-width: 1000px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #people ul {
     text-align: center;
   }
@@ -158,9 +156,6 @@ section .content {
 
 #org {
   text-align: center;
-}
-#org .img-list {
-  margin: -20px 0;
 }
 #org img {
   width: 160px;

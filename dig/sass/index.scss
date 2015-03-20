@@ -20,7 +20,7 @@ html, body {
 header {
 	position: relative;
 	min-height: 540px;
-	padding-top: 100px;
+	padding-top: 120px;
 	padding-bottom: 60px;
 	background: #131922;
 	text-align: center;
@@ -56,11 +56,9 @@ header {
 			color: #ccc;
 			text-decoration: none;
 			outline: none;
-			&::before {
+			i {
 				display: table-cell;
 				vertical-align: middle;
-				text-align: center;
-				content: '\f107';
 				font-size: 30px;
 			}
 			&:hover {
@@ -125,7 +123,7 @@ section {
 		margin: auto;
 		padding: 0;
 		max-width: 1000px;
-		@media (max-width: 500px) {
+		@media (max-width: 600px) {
 			text-align: center;
 		}
 		li {
@@ -171,9 +169,6 @@ section {
 
 #org {
 	text-align: center;
-	.img-list {
-		margin: -20px 0;
-	}
 	img {
 		width: 160px;
 		margin: 20px;
