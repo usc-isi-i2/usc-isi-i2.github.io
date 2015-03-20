@@ -12,31 +12,9 @@ html, body {
 	color: $font-color;
 }
 
-.dig-nav-bar {
-	position: fixed;
-	z-index: 1;
-	width: 100%;
-	padding: 25px 0;
-	background: rgba(0,0,0,0.8);
-	.dig-nav-brand {
-		float: left;
-		width: 50px;
-	}
-	nav {
-		float: right;
-		a {
-			margin: 0 15px;
-			font-size: 15px;
-			font-weight: 600;
-			color: #aaa;
-			text-decoration: none;
-			outline: none;
-			transition: color .3s ease;
-			&:hover, &.active {
-				color: white;
-			} 
-		}
-	}
+.navbar {
+	font-size: 15px;
+	font-weight: 600;
 }
 
 header {
@@ -108,10 +86,10 @@ section {
 	}
 }
 
-#quick-start {
+#slides {
 	padding-bottom: 60px;
 	background: #111;
-	.slides {
+	.slides-container {
 		margin: auto;
 		width: 600px;
 		max-width: 100%;

@@ -3,26 +3,11 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 
 		clean: {
-			html: ['*.html'],
-			css: ['src/css/*.css', 'css/*.css'],
-			js: ['js/*.js']
+			css: ['css/*.css'],
 		},
 
 		htmllint: {
-			all: ['src/*.html']
-		},
-
-		htmlmin: {
-			options: {
-				removeComments: true,
-				collapseWhitespace: true
-			},
-			multiple: {
-				expand: true,
-				flatten: true,
-				src: 'src/*.html',
-				dest: ''
-			}
+			all: ['*.html']
 		},
 
 		sass: {
@@ -33,8 +18,8 @@ module.exports = function(grunt) {
 			multiple: {
 				expand: true,
 				flatten: true,
-				src: 'src/sass/*.scss',
-				dest: 'src/css',
+				src: 'sass/*.scss',
+				dest: 'css',
 				ext: '.css'
 			}
 		},
@@ -43,13 +28,13 @@ module.exports = function(grunt) {
 			multiple: {
 				expand: true,
 				flatten: true,
-				src: 'src/css/*.css',
+				src: 'css/*.css',
 				dest: 'css',
 			}
 		},
 
 		jshint: {
-			all: 'src/js/*.js',
+			all: 'js/*.js',
 			options: {
 				curly: true,
 				eqnull: true,
@@ -58,30 +43,21 @@ module.exports = function(grunt) {
 			}
 		},
 
-		uglify: {
-			js: {
-				expand: true,
-				cwd: 'src/js',
-				src: '*.js',
-				dest: 'js'
-			}
-		},
-
 		watch: {
 			options: {
 				livereload: true,
 			},
 			html: {
-				files: ['src/*.html'],
-				tasks: ['clean:html', 'htmllint', 'htmlmin']
+				files: ['*.html'],
+				tasks: ['htmllint']
 			},
 			sass: {
-				files: ['src/sass/*.scss'],
+				files: ['sass/*.scss'],
 				tasks: ['clean:css', 'sass', 'autoprefixer']
 			},
 			js: {
-				files: ['src/js/*.js'],
-				tasks: ['clean:js', 'jshint', 'uglify']
+				files: ['js/*.js'],
+				tasks: ['jshint']
 			}
 		}
 		
@@ -89,14 +65,12 @@ module.exports = function(grunt) {
 
 grunt.loadNpmTasks('grunt-contrib-clean');
 grunt.loadNpmTasks('grunt-html');
-grunt.loadNpmTasks('grunt-contrib-htmlmin');
 grunt.loadNpmTasks('grunt-contrib-sass');
 grunt.loadNpmTasks('grunt-autoprefixer');
 grunt.loadNpmTasks('grunt-contrib-jshint');
-grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-watch');
 
 grunt.registerTask('default', ['watch']);
-grunt.registerTask('all', ['clean', 'htmllint', 'htmlmin', 'sass', 'autoprefixer', 'jshint', 'uglify']);
+grunt.registerTask('all', ['clean', 'htmllint', 'sass', 'autoprefixer', 'jshint']);
 
 };

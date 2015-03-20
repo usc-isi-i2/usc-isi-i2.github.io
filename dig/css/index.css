@@ -6,32 +6,9 @@ html, body {
   color: #333;
 }
 
-.dig-nav-bar {
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  padding: 25px 0;
-  background: rgba(0, 0, 0, 0.8);
-}
-.dig-nav-bar .dig-nav-brand {
-  float: left;
-  width: 50px;
-}
-.dig-nav-bar nav {
-  float: right;
-}
-.dig-nav-bar nav a {
-  margin: 0 15px;
+.navbar {
   font-size: 15px;
   font-weight: 600;
-  color: #aaa;
-  text-decoration: none;
-  outline: none;
-  -webkit-transition: color .3s ease;
-          transition: color .3s ease;
-}
-.dig-nav-bar nav a:hover, .dig-nav-bar nav a.active {
-  color: white;
 }
 
 header {
@@ -102,16 +79,16 @@ section .content {
   color: #4d4d4d;
 }
 
-#quick-start {
+#slides {
   padding-bottom: 60px;
   background: #111;
 }
-#quick-start .slides {
+#slides .slides-container {
   margin: auto;
   width: 600px;
   max-width: 100%;
 }
-#quick-start .slides iframe {
+#slides .slides-container iframe {
   display: block;
   width: 100%;
   height: 100%;
