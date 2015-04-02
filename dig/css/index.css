@@ -106,7 +106,6 @@ section .content {
 }
 
 #people ul {
-  list-style: none;
   margin: auto;
   padding: 0;
   max-width: 1000px;
@@ -160,6 +159,14 @@ section .content {
 #org img {
   width: 160px;
   margin: 20px;
+}
+
+#pub .author {
+  font-size: 0.9em;
+}
+#pub .location {
+  font-size: 0.9em;
+  font-style: italic;
 }
 
 footer {

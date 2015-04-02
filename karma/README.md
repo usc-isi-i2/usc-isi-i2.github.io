@@ -1,5 +1,5 @@
-# [Dig](http://usc-isi-i2.github.io/dig/)
-This is the website of Dig search application.
+# [Dig](http://usc-isi-i2.github.io/karma/)
+This is the website of Karma.
 ## Set up
 1. Make sure you're on Mac OS or *nix!
 2. Install [Node.js](http://nodejs.org/)
