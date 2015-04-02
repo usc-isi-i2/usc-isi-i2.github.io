@@ -1,0 +1,213 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,400);
+
+$open-sans: 'Open Sans', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$font-color: #333;
+$bg-dark: #30303d;
+
+html, body {
+	font-family: $open-sans;
+	font-size: 16px;
+	color: $font-color;
+}
+
+.navbar {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+header {
+	position: relative;
+	min-height: 540px;
+	padding-top: 120px;
+	padding-bottom: 60px;
+	background: #131922;
+	text-align: center;
+	.logo {
+		width: 350px;
+		max-width: 90%;
+	}
+	h1 {
+		// font-size: 1.6em;
+		font-weight: 600;
+		color: white;
+	}
+	h2 {
+		font-size: 1.5em;
+		font-weight: 600;
+		color: #ccc;
+	}
+	.link-btn-container {
+		margin-top: 40px;
+		.link-btn {
+			margin: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 5px 15px;
+			color: #ccc;
+			text-decoration: none;
+			outline: none;
+			&:hover {
+				border-color: white;
+				color: white;
+			}
+		}
+	}
+	.credit {
+		margin-top: 40px;
+		div {
+			margin-top: 10px;
+			.isi-logo {
+				width: 250px;
+			}
+		}
+	}
+	.scroll-btn-container {
+		position: absolute;
+		top: 80%;
+		width: 100%;
+		.scroll-btn {
+			display: table;
+			margin: auto;
+			width: 50px;
+			height: 50px;
+			border: 2px solid #ccc;
+			border-radius: 50%;
+			color: #ccc;
+			text-decoration: none;
+			outline: none;
+			i {
+				display: table-cell;
+				vertical-align: middle;
+				font-size: 30px;
+			}
+			&:hover {
+				border-color: white;
+				color: white;
+			}
+		}
+	}
+}
+
+
+section {
+	padding-top: 60px;
+	h2 {
+		margin-top: 0;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.content {
+		margin: auto;
+		max-width: 700px;
+		color: lighten($font-color, 10%);
+	}
+}
+
+#video {
+	padding-bottom: 60px;
+	background: #111;
+	.video-container {
+		// margin: auto;
+		// width: 600px;
+		// max-width: 100%;
+		iframe {
+			display: block;
+			margin: auto;
+			border: none;
+		}
+	}
+}
+
+#about {
+}
+
+#tweets {
+	.twitter {
+		height: 400px;
+		text-align: center;
+		iframe {
+			display: block !important;
+			margin: auto !important;
+			width: 100% !important;
+			max-width: 700px !important;
+			height: 100% !important;
+		}
+	}
+}
+
+#people {
+	ul {
+		margin: auto;
+		padding: 0;
+		max-width: 1000px;
+		@media (max-width: 600px) {
+			text-align: center;
+		}
+		li {
+			display: inline-block;
+			margin: 15px;
+			width: 160px;
+			border-radius: 5px;
+			overflow: hidden;
+			background: #333;
+			&:hover {
+				background: black;
+			}
+			a {
+				display: block;
+				height: 160px;
+				background-repeat: no-repeat;
+				background-position: center 10%;
+				background-size: cover;
+			}
+			.description {
+				padding: 10px;
+				line-height: 1.2;
+				color: #ccc;
+				@mixin ellipsis {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				.name {
+					@include ellipsis;
+					margin-bottom: 5px;
+					font-size: 0.8em;
+					font-weight: 600;
+				}
+				.title {
+					@include ellipsis;
+					font-size: 0.7em;
+				}
+			}
+		}
+	}
+}
+
+#org {
+	text-align: center;
+	img {
+		width: 160px;
+		margin: 20px;
+	}
+}
+
+#pub {
+	.author {
+		font-size: 0.9em;
+	}
+	.location {
+		font-size: 0.9em;
+		font-style: italic;
+	}
+}
+
+footer {
+	margin-top: 60px;
+	background: #eee;
+	font-size: 0.9em;
+	text-align: center;
+	padding: 20px;
+}

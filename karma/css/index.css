@@ -1,0 +1,192 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,400);
+html, body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.navbar {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+header {
+  position: relative;
+  min-height: 540px;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background: #131922;
+  text-align: center;
+}
+header .logo {
+  width: 350px;
+  max-width: 90%;
+}
+header h1 {
+  font-weight: 600;
+  color: white;
+}
+header h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #ccc;
+}
+header .link-btn-container {
+  margin-top: 40px;
+}
+header .link-btn-container .link-btn {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: #ccc;
+  text-decoration: none;
+  outline: none;
+}
+header .link-btn-container .link-btn:hover {
+  border-color: white;
+  color: white;
+}
+header .credit {
+  margin-top: 40px;
+}
+header .credit div {
+  margin-top: 10px;
+}
+header .credit div .isi-logo {
+  width: 250px;
+}
+header .scroll-btn-container {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+}
+header .scroll-btn-container .scroll-btn {
+  display: table;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  color: #ccc;
+  text-decoration: none;
+  outline: none;
+}
+header .scroll-btn-container .scroll-btn i {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 30px;
+}
+header .scroll-btn-container .scroll-btn:hover {
+  border-color: white;
+  color: white;
+}
+
+section {
+  padding-top: 60px;
+}
+section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section .content {
+  margin: auto;
+  max-width: 700px;
+  color: #4d4d4d;
+}
+
+#video {
+  padding-bottom: 60px;
+  background: #111;
+}
+#video .video-container iframe {
+  display: block;
+  margin: auto;
+  border: none;
+}
+
+#tweets .twitter {
+  height: 400px;
+  text-align: center;
+}
+#tweets .twitter iframe {
+  display: block !important;
+  margin: auto !important;
+  width: 100% !important;
+  max-width: 700px !important;
+  height: 100% !important;
+}
+
+#people ul {
+  margin: auto;
+  padding: 0;
+  max-width: 1000px;
+}
+@media (max-width: 600px) {
+  #people ul {
+    text-align: center;
+  }
+}
+#people ul li {
+  display: inline-block;
+  margin: 15px;
+  width: 160px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #333;
+}
+#people ul li:hover {
+  background: black;
+}
+#people ul li a {
+  display: block;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  background-size: cover;
+}
+#people ul li .description {
+  padding: 10px;
+  line-height: 1.2;
+  color: #ccc;
+}
+#people ul li .description .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+#people ul li .description .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.7em;
+}
+
+#org {
+  text-align: center;
+}
+#org img {
+  width: 160px;
+  margin: 20px;
+}
+
+#pub .author {
+  font-size: 0.9em;
+}
+#pub .location {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+footer {
+  margin-top: 60px;
+  background: #eee;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 20px;
+}
