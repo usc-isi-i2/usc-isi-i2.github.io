@@ -82,10 +82,8 @@ section {
 #slides {
 	padding-bottom: 60px;
 	background: #111;
-	.slides-container {
-		margin: auto;
-		width: 600px;
-		max-width: 100%;
+	.content {
+		max-width: 600px;
 		.slides-wrapper {
 			position: relative;
 			padding-bottom: 80%;
@@ -100,22 +98,18 @@ section {
 }
 
 #tweets {
-	.twitter {
-		height: 400px;
+	.content {
 		text-align: center;
 		iframe {
 			display: block !important;
-			margin: auto !important;
 			width: 100% !important;
-			max-width: 700px !important;
-			height: 100% !important;
+			height: 400px !important;
 		}
 	}
 }
 
 #people {
-	ul {
-		margin: auto;
+	ul.content {
 		padding: 0;
 		max-width: 800px;
 		@media (max-width: 600px) {
