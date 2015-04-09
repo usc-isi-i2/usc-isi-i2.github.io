@@ -96,26 +96,21 @@ section {
 	}
 	.content {
 		margin: auto;
-		max-width: 700px;
+		max-width: 800px;
 	}
 }
 
 #video {
 	padding-bottom: 60px;
 	background: #111;
-	.video-container {
-		margin: auto;
-		width: 700px;
-		max-width: 100%;
-		.video-wrapper {
-			position: relative;
-			padding-bottom: 67%;
-			iframe {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				border: none;
-			}
+	.video-wrapper {
+		position: relative;
+		padding-bottom: 67%;
+		iframe {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			border: none;
 		}
 	}
 }
@@ -128,14 +123,12 @@ section {
 }
 
 #tweets {
-	.twitter {
+	.content {
 		height: 400px;
 		text-align: center;
 		iframe {
 			display: block !important;
-			margin: auto !important;
 			width: 100% !important;
-			max-width: 700px !important;
 			height: 100% !important;
 		}
 	}
@@ -167,10 +160,8 @@ section {
 }
 
 #people {
-	ul {
-		margin: auto;
+	ul.content {
 		padding: 0;
-		max-width: 800px;
 		@media (max-width: 600px) {
 			text-align: center;
 		}
@@ -211,24 +202,6 @@ section {
 				}
 			}
 		}
-	}
-}
-
-#org {
-	text-align: center;
-	img {
-		width: 160px;
-		margin: 20px;
-	}
-}
-
-#pub {
-	.author {
-		font-size: 0.9em;
-	}
-	.location {
-		font-size: 0.9em;
-		font-style: italic;
 	}
 }
 

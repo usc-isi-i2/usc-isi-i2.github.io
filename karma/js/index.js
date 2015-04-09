@@ -30,10 +30,4 @@ if ($(window).width() > 768) {
 			}
 		}
 	});
-	$('a[href=#]').click(function() {
-		$('html, body').animate({
-			scrollTop: 0
-		}, 500);
-		return false;
-	});
 }
