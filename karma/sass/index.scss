@@ -3,17 +3,13 @@
 
 $open-sans: 'Open Sans', sans-serif;
 $roboto-slab: 'Roboto Slab', serif;
-$font-color: #333;
-$bg-dark: #30303d;
 
 html, body {
 	font-family: $open-sans;
-	font-size: 16px;
-	color: $font-color;
+	font-size: 15px;
 }
 
 .navbar {
-	font-size: 15px;
 	font-weight: 600;
 }
 
@@ -101,7 +97,6 @@ section {
 	.content {
 		margin: auto;
 		max-width: 700px;
-		color: lighten($font-color, 10%);
 	}
 }
 
@@ -109,18 +104,27 @@ section {
 	padding-bottom: 60px;
 	background: #111;
 	.video-container {
-		// margin: auto;
-		// width: 600px;
-		// max-width: 100%;
-		iframe {
-			display: block;
-			margin: auto;
-			border: none;
+		margin: auto;
+		width: 700px;
+		max-width: 100%;
+		.video-wrapper {
+			position: relative;
+			padding-bottom: 67%;
+			iframe {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				border: none;
+			}
 		}
 	}
 }
 
-#about {
+#innovations {
+	h3 {
+		font-size: 1.2em;
+		font-weight: 600;
+	}
 }
 
 #tweets {
@@ -137,18 +141,43 @@ section {
 	}
 }
 
+#case {
+	li {
+		margin-top: 30px;
+		h3 {
+			font-size: 1.4em;
+			font-weight: 600;
+		}
+		.video-container {
+			margin-bottom: 10px;
+			width: 500px;
+			max-width: 100%;
+			.video-wrapper {
+				position: relative;
+				padding-bottom: 62%;
+				iframe {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					border: none;
+				}
+			}
+		}
+	}
+}
+
 #people {
 	ul {
 		margin: auto;
 		padding: 0;
-		max-width: 1000px;
+		max-width: 800px;
 		@media (max-width: 600px) {
 			text-align: center;
 		}
 		li {
 			display: inline-block;
-			margin: 15px;
-			width: 160px;
+			margin: 12px;
+			width: 130px;
 			border-radius: 5px;
 			overflow: hidden;
 			background: #333;
@@ -157,14 +186,13 @@ section {
 			}
 			a {
 				display: block;
-				height: 160px;
+				height: 130px;
 				background-repeat: no-repeat;
 				background-position: center 10%;
 				background-size: cover;
 			}
 			.description {
-				padding: 10px;
-				line-height: 1.2;
+				padding: 8px;
 				color: #ccc;
 				@mixin ellipsis {
 					overflow: hidden;
@@ -173,7 +201,7 @@ section {
 				}
 				.name {
 					@include ellipsis;
-					margin-bottom: 5px;
+					margin-bottom: 3px;
 					font-size: 0.8em;
 					font-weight: 600;
 				}

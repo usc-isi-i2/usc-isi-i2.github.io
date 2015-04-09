@@ -2,12 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,400);
 html, body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  color: #333;
+  font-size: 15px;
 }
 
 .navbar {
-  font-size: 15px;
   font-weight: 600;
 }
 
@@ -94,17 +92,31 @@ section h2 {
 section .content {
   margin: auto;
   max-width: 700px;
-  color: #4d4d4d;
 }
 
 #video {
   padding-bottom: 60px;
   background: #111;
 }
-#video .video-container iframe {
-  display: block;
+#video .video-container {
   margin: auto;
+  width: 700px;
+  max-width: 100%;
+}
+#video .video-container .video-wrapper {
+  position: relative;
+  padding-bottom: 67%;
+}
+#video .video-container .video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   border: none;
+}
+
+#innovations h3 {
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 #tweets .twitter {
@@ -119,10 +131,33 @@ section .content {
   height: 100% !important;
 }
 
+#case li {
+  margin-top: 30px;
+}
+#case li h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+#case li .video-container {
+  margin-bottom: 10px;
+  width: 500px;
+  max-width: 100%;
+}
+#case li .video-container .video-wrapper {
+  position: relative;
+  padding-bottom: 62%;
+}
+#case li .video-container .video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 #people ul {
   margin: auto;
   padding: 0;
-  max-width: 1000px;
+  max-width: 800px;
 }
 @media (max-width: 600px) {
   #people ul {
@@ -131,8 +166,8 @@ section .content {
 }
 #people ul li {
   display: inline-block;
-  margin: 15px;
-  width: 160px;
+  margin: 12px;
+  width: 130px;
   border-radius: 5px;
   overflow: hidden;
   background: #333;
@@ -142,21 +177,20 @@ section .content {
 }
 #people ul li a {
   display: block;
-  height: 160px;
+  height: 130px;
   background-repeat: no-repeat;
   background-position: center 10%;
   background-size: cover;
 }
 #people ul li .description {
-  padding: 10px;
-  line-height: 1.2;
+  padding: 8px;
   color: #ccc;
 }
 #people ul li .description .name {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-size: 0.8em;
   font-weight: 600;
 }

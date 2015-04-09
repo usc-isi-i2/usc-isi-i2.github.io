@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Karma</title>
+	<title>Karma: A Data Integration Tool</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/index.css">
@@ -32,17 +32,16 @@
 					<li><a href="#video">Video</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#tweets">Tweets</a></li>
+					<li><a href="#case">Case Study</a></li>
 					<li><a href="#people">People</a></li>
-					<li><a href="#org">Organizations</a></li>
 					<li><a href="#pub">Publications</a></li>
 				</ul>        
 			</div><!-- collapse navbar-collapse -->
 		</div><!-- container -->
 	</nav>
 
-	<header class="area" id="hero">
+	<header id="hero">
 		<div class="container">
-			<!-- <img class="dig-logo" src="img/dig.png" alt="Dig logo"> -->
 			<h1>Karma</h1>
 			<h2>A Data Integration Tool</h2>
 			<div class="link-btn-container">
@@ -59,35 +58,102 @@
 		</div>
 	</header>
 
-	<section class="area" id="video">
-		<div class="video-container">
-			<iframe width="700" height="470" src="https://www.youtube.com/embed/h3_yiBhAJIc" frameborder="0" allowfullscreen></iframe>
+	<section id="video">
+		<div class="container video-container">
+			<div class="video-wrapper">
+				<iframe src="https://www.youtube.com/embed/h3_yiBhAJIc" allowfullscreen></iframe>
+			</div>
 		</div>
 	</section>
 
-	<section class="area" id="about">
-		<div class="container">
-			<h2>WHAT IS DIG</h2>
-			<div class="content">
-				<p>DIG is a domain-specific indexing, search and analysis system. The DIG system harnesses state-of-the-art open source software combined with an open architecture and flexible set of APIs to facilitate the integration of a variety of extraction and analysis tools.</p>
-				<p>DIG builds on rich models of a domain that support fine-grained data collection, organization, and analysis. DIG builds a graph of the entities and relationships within a domain using scalable extraction and linking technologies.  DIG also includes a faceted content search interface for users to query DIGs and visualize information on maps, timelines, and tables.</p>
-				<p>DIG is designed to be scalable by building on open-source cloud-based infrastructure (i.e., HDFS, Hadoop, Elastic Search, etc.), supports a diversity of source types, and is rapidly re-targetable to new domains of interest.</p>
-				<p>DIG is one of the <a href="http://www.isi.edu/integration/group/html/projects.html">research projects</a> created by Information Integration Research Group at ISI.</p>
-			</div>
-		</div><!-- container -->
+	<section id="about" class="container">
+		<h2>WHAT IS KARMA</h2>
+		<div class="content">
+			<p>Karma is an information integration tool that enables users to quickly and easily integrate data from a variety of data sources including databases, spreadsheets, delimited text files, XML, JSON, KML and Web APIs. Users integrate information by modeling it according to an ontology of their choice using a graphical user interface that automates much of the process. Karma learns to recognize the mapping of data to ontology classes and then uses the ontology to propose a model that ties together these classes. Users then interact with the system to adjust the automatically generated model. During this process, users can transform the data as needed to normalize data expressed in different formats and to restructure it. Once the model is complete, users can published the integrated data as RDF or store it in a database.</p>
+			<p>All the project publications are <a href="#pub">here</a>. The best paper on the technical aspects of Karma is our <a href="http://www.isi.edu/integration/papers/knoblock12-eswc.pdf">ESWC'2012 paper</a>, and the best application paper is our <a href="http://www.isi.edu/~szekely/contents/papers/2013/eswc-2013-saam.pdf">ESWC'2013 paper</a>, which received the best in-use paper award at the conference.</p>
+			<p>Karma is one of the <a href="http://www.isi.edu/integration/group/html/projects.html">research projects</a> created by Information Integration Research Group at ISI.</p>
+		</div>
 	</section>
 
-	<section class="area" id="tweets">
-		<div class="container">
-			<h2>#digusc TWEETS</h2>
-			<div class="twitter">
-				<a class="twitter-timeline" href="https://twitter.com/hashtag/digusc" data-widget-id="576243784297512960" data-chrome="nofooter">#digusc Tweets</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			</div>
-		</div><!-- container -->
+	<section id="innovations" class="container">
+		<h2>KARMA INNOVATIONS</h2>
+		<div class="content">
+			<h3>Ease of Use</h3>
+			<p>Karma uses programming-by-example, learning techniques and a Steiner tree optimization algorithm to automate as much of the process as possible to enable end-users to map their data to a chosen ontology. Users adjust the automatically generated model using a graphical user interface and never see the complex mapping rules used in other systems.</p>
+			<h3>Hierarchical Sources</h3>
+			<p>Many systems have been developed to map tabular sources to ontologies. Karma is unique in that it also supports hierarchcal data sources such as XML, JSON and KML.</p>
+			<h3>Web APIs</h3>
+			<p>In addition to static sources (databases and files), Karma supports data integration from Web APIs, enabling users to leverage the thousands of data sources that are available today via Web APIs.</p>
+			<h3>Semantic Models</h3>
+			<p>Karma uses ontologies as a basis for integrating infomation, leveraring the class and property hierarchies, domain and range information and other ontology constructs to help users integrate their data. Karma allows users to combine multiple ontologies to enable users to map their data to standard vocabularies.</p>
+			<h3>Scalable Processing</h3>
+			<p>Users work with a subset of their data to define the models that integrate their data sources. This enables Karma to offer a responsive user interface when users are defining the model that integrates their data. Karma can then use these models in batch mode to integrate large data sources.</p>
+			<h3>Data Transformation</h3>
+			<p>Karma offers a programming-by-example interface to enable users to define data transformation scripts that transform data expressed in multiple data formats into a common format.</p>
+		</div>
 	</section>
 
-	<section class="area" id="people">
+	<section id="tweets" class="container">
+		<h2>@KarmaSemWeb TWEETS</h2>
+		<div class="twitter">
+			<a class="twitter-timeline" href="https://twitter.com/KarmaSemWeb" data-widget-id="270307372130504704" data-chrome="nofooter">Tweets by @KarmaSemWeb</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</section>
+
+	<section id="case" class="container">
+		<h2>CASE STUDY</h2>
+		<ul class="content list-unstyled">
+			<li>
+				<h3>Integration of Bio-Informatics Data</h3>
+				<p>We used Karma to replicate the mappings done in a scenario from the Semantic MediaWiki Linked Data Extension (SMW-LDE) work where researchers integrated ABA, Uniprot, KEGG Pathway, PharmGKB and Linking Open Drug Data datasets by mapping them to a common ontology. Papers: <a href="http://www.isi.edu/integration/papers/knoblock12-eswc.pdf">ESWC'2012</a>, <a href="http://www.isi.edu/integration/papers/knoblock11-lisc.pdf">ISWC'2011 Linked Science</a>.</p>
+			</li>
+			<li>
+				<h3>Mapping USC Faculty Data to VIVO</h3>
+				<div class="video-container">
+					<div class="video-wrapper">
+						<iframe src="http://www.youtube.com/embed/EQcMc4TrfuE" allowfullscreen=""></iframe>
+					</div>
+				</div>
+				<p><a href="http://vivoweb.org/">VIVO</a> is a system to build researcher networks across institutions. In this case study we used Karma to map data about USC faculty to the VIVO ontology and to publish the data in the RDF format that the VIVO system can ingest. Karma enables users to ingest data in VIVO by interacting with an easy to use graphical user interface, and does not require knowledge of SPARQL or other Web languages such as XSLT or XQuery. The video shows how to ingest the sample files provided in the <a href="http://www.vivoweb.org/data-ingest-guide">VIVO Data Ingest Guide</a>.</p>
+				<p>Karma at the VIVO'2012 Conference in Miami, Florida: Abstract (<a href="http://www.isi.edu/integration/karma/other-materials/vivo2012/Karma-Abstract-v2.pdf">PDF</a>), Slides (<a href="http://www.isi.edu/integration/karma/other-materials/vivo2012/2012-08-22-VIVO-Conference-Karma-v01.pptx">Powerpoint</a>), Ontology and datasets (<a href="http://www.isi.edu/integration/karma/other-materials/vivo2012/2012-08-22-VIVO-Conference-Demo-Files.zip">zip</a>)</p>
+			</li>
+			<li>
+				<h3>Smithsonian American Art Museum</h3>
+				<div class="video-container">
+					<div class="video-wrapper">
+						<iframe src="http://www.youtube.com/embed/1Vaytr09H1w" allowfullscreen=""></iframe>
+					</div>
+				</div>
+				<p>In this case study we used Karma to convert records of 44,000 of the museum’s holdings to Linked Open Data according to the <a href="http://www.europeana.eu/schemas/edm/">Europeana Data Model (EDM)</a>. The records are stored in several tables in a SQL Server database. Using Karma we modeled these tables in terms of the EDM ontology and converted the data into RDF. We are creating a 5-star Linked Data, linked to DBpedia, the Getty Union List of Artist Names (ULAN)® and the NY Times Linked Data. The USC <a href="http://universityofsoutherncalifornia.createsend1.com/t/ViewEmail/j/DEB74B7D328C85AA">press release</a>. Our paper on this work received the best in-use paper award at the ESWC'2013 conference: <a href="http://bit.ly/11X5YPo">paper</a>, <a href="http://slidesha.re/18vxMnn">slides</a>. The Linked Data is now deployed: each time you visit an <a href="http://americanart.si.edu/collections/search/artist/?id=4253">artist page</a> in the Smithsonian American Art Museum web site, a SPARQL query is issued to retrieve links to Wikipedia and the NY Times.</p>
+			</li>
+			<li>
+				<h3>Geospatial Data and Services</h3>
+				<div class="video-container">
+					<div class="video-wrapper">
+						<iframe src="http://www.youtube.com/embed/nlYCjSppPMU" allowfullscreen=""></iframe>
+					</div>
+				</div>
+				<p>In this case study we show how Karma could be used to help first responders plan evacuations of affected personnel in the event of a fire in an oil field. We used Karma to integrate <a href="http://www.conservation.ca.gov/dog/maps/Pages/GISMapping2.aspx">publicly available data about oil well</a> locations available in MS Excel format, data about personnel locations from a text file, information about the extent of the fire and the location of care centers from a KML file. In this example, no detailed road network information is available for the region in question, so our software extracted the road network data from a USGS map. In this case study we also show how Karma can invoke services that perform complex geospatial reasoning to 1) subtract from the road network the roads that intersect the region affected by the fire, 2) compute the shortest evacuation path for each person avoiding roads that go through the fire, and 3) perform a simulation of the likely spread of the fire based on wind conditions extracted from a public weather service. Users can perform the information integration tasks, invoke the services interactively and visualize the results on a map using Karma.</p>
+			</li>
+			<li>
+				<h3>Integration of Environmental Data</h3>
+				<p>In this case study we used Karma to help an environmental scientists to construct a model of the metabolism of the Merced river in California. An important bottleneck that the scientists face is to prepare the data used to fit and run the models. In this case, data came from the California Data Exchange Center (<a href="http://www.isi.edu/integration/karma/water.ca.gov">CDEC</a>), the scientists' own sensors, and weather information from <a href="http://www.noaa.gov/">NOAA</a>. The CDEC and NOAA data was accessible via web services, and the scientists' data was available in CSV files. In addition, the data used different formats to represent dates, times and units, different time resolutions and contained errors. We used Karma to retrieve, clean, normalize, integrate and publish the data. Karma published the data in the format needed by the executable models, and produced semantic metadata that allowed the <a href="http://www.wings-workflows.org/">WINGS</a> workflow system to help users compose the different parts of the <a href="http://www.wings-workflows.org/node/17618">workflow</a>. In addition, Karma exported the data preparation procedures in a script that could be executed every day to produce fresh data. This allowed WINGS to automatically execute the workflow every day. Paper: <a href="http://www.isi.edu/integration/papers/gil11-iswc.pdf">ISWC'2011</a>.</p>
+			</li>
+			<li>
+				<h3>Rapidly Integrating Services into the Linked Data Cloud</h3>
+				<div class="video-container">
+					<div class="video-wrapper">
+						<iframe src="http://www.youtube.com/embed/3L1G5kh5jYg" allowfullscreen=""></iframe>
+					</div>
+				</div>
+				<p>The amount of data available in the Linked Data cloud continues to grow. Yet, few services consume and produce linked data. There is recent work that allows a user to define a linked service from an online service, which includes the specifications for consuming and producing linked data, but building such models is time consuming and requires specialized knowledge of RDF and SPARQL. We present a new approach that allows domain experts to rapidly create semantic models of services by demonstration in an interactive web-based interface. First, the user provides examples of the service request URLs. Then, the system automatically proposes a service model the user can refine interactively. Finally, the system saves a service specification using a new expressive vocabulary that includes lowering and lifting rules. This approach empowers end users to rapidly model existing services and immediately use them to consume and produce linked data. Paper: <a href="http://www.isi.edu/~szekely/contents/papers/2012/iswc2012_cameraready_34.pdf">ISWC'2012</a>.</p>
+			</li>
+		</ul>
+	</section>
+
+
+	<section id="people">
 		<div class="container">
 			<h2>PEOPLE</h2>
 			<ul class="list-unstyled">
@@ -228,19 +294,7 @@
 		</div><!-- container -->
 	</section>
 
-	<section class="area" id="org">
-		<div class="container">
-			<h2>ORGANIZATIONS</h2>
-			<div>
-				<a href="http://www.inferlink.com"><img src="img/inferlink.png" alt=""></a>
-				<a href="http://www.nextcentury.com"><img src="img/next-century.png" alt=""></a>
-				<a href="http://www.columbia.edu"><img src="img/columbia-university.jpg" alt=""></a>
-				<a href="http://www.jpl.nasa.gov"><img src="img/nasa-jpl.png" alt=""></a>
-			</div>
-		</div><!-- container -->
-	</section>
-
-	<section class="area" id="pub">
+	<section id="pub">
 		<div class="container">
 			<h2>PUBLICATIONS</h2>
 			<ul class="content list-unstyled">
@@ -253,7 +307,7 @@
 		</div><!-- container -->
 	</section>
 
-	<section class="area">
+	<section>
 		<div class="container">
 			<h2>ACKNOWLEDGMENT</h2>
 			<p class="content">This research is supported by the Defense Advanced Research Projects Agency (DARPA) and the Air Force Research Laboratory (AFRL) under contract number FA8750-14-C-0240.</p>
