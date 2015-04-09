@@ -1,0 +1,157 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,400);
+
+$open-sans: 'Open Sans', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+
+html, body {
+	font-family: $open-sans;
+	font-size: 15px;
+}
+
+.navbar {
+	font-weight: 600;
+}
+
+header {
+	position: relative;
+	min-height: 540px;
+	padding-top: 120px;
+	padding-bottom: 60px;
+	background: #131922;
+	text-align: center;
+	h1 {
+		font-weight: 600;
+		color: white;
+	}
+	h2 {
+		font-size: 1.5em;
+		color: #ccc;
+	}
+	.link-btn-container {
+		margin-top: 40px;
+		.link-btn {
+			margin: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 7px 15px;
+			font-size: 1.1em;
+			color: #ccc;
+			text-decoration: none;
+			outline: none;
+			&:hover {
+				border-color: white;
+				color: white;
+			}
+		}
+	}
+	.credit {
+		margin-top: 40px;
+		div {
+			margin-top: 10px;
+			.isi-logo {
+				width: 250px;
+			}
+		}
+	}
+	.scroll-btn-container {
+		position: absolute;
+		top: 80%;
+		width: 100%;
+		.scroll-btn {
+			display: table;
+			margin: auto;
+			width: 50px;
+			height: 50px;
+			border: 2px solid #ccc;
+			border-radius: 50%;
+			color: #ccc;
+			text-decoration: none;
+			outline: none;
+			i {
+				display: table-cell;
+				vertical-align: middle;
+				font-size: 30px;
+			}
+			&:hover {
+				border-color: white;
+				color: white;
+			}
+		}
+	}
+}
+
+section {
+	padding-top: 60px;
+	h2 {
+		margin-top: 0;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.content {
+		margin: auto;
+		max-width: 700px;
+	}
+}
+
+#about {
+	img {
+		max-width: 600px;
+		max-width: 100%;
+	}
+}
+
+#people {
+	ul.content {
+		padding: 0;
+		max-width: 800px;
+		@media (max-width: 600px) {
+			text-align: center;
+		}
+		li {
+			display: inline-block;
+			margin: 12px;
+			width: 130px;
+			border-radius: 5px;
+			overflow: hidden;
+			background: #333;
+			&:hover {
+				background: black;
+			}
+			a {
+				display: block;
+				height: 130px;
+				background-repeat: no-repeat;
+				background-position: center 10%;
+				background-size: cover;
+			}
+			.description {
+				padding: 8px;
+				color: #ccc;
+				@mixin ellipsis {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				.name {
+					@include ellipsis;
+					margin-bottom: 3px;
+					font-size: 0.8em;
+					font-weight: 600;
+				}
+				.title {
+					@include ellipsis;
+					font-size: 0.7em;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	margin-top: 60px;
+	background: #eee;
+	font-size: 0.9em;
+	text-align: center;
+	padding: 20px;
+}
