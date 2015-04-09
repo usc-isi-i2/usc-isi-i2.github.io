@@ -91,7 +91,7 @@ section h2 {
 }
 section .content {
   margin: auto;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 #video {
@@ -149,6 +149,7 @@ section .content {
 
 #people ul.content {
   padding: 0;
+  max-width: 800px;
 }
 @media (max-width: 600px) {
   #people ul.content {
@@ -190,6 +191,13 @@ section .content {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 0.7em;
+}
+
+#pub .content {
+  max-width: 750px;
+}
+#pub .content #bibbase_body {
+  font-size: 0.9em;
 }
 
 footer {
