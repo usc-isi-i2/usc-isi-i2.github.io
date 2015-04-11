@@ -17,17 +17,12 @@ header {
   background: #131922;
   text-align: center;
 }
-header .logo {
-  width: 350px;
-  max-width: 90%;
-}
 header h1 {
   font-weight: 600;
   color: white;
 }
 header h2 {
   font-size: 1.5em;
-  font-weight: 600;
   color: #ccc;
 }
 header .link-btn-container {
@@ -37,7 +32,8 @@ header .link-btn-container .link-btn {
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 7px 15px;
+  font-size: 1.1em;
   color: #ccc;
   text-decoration: none;
   outline: none;
@@ -126,10 +122,6 @@ section .content {
 
 #case li {
   margin-top: 30px;
-}
-#case li h3 {
-  font-size: 1.4em;
-  font-weight: 600;
 }
 #case li .video-container {
   margin-bottom: 10px;

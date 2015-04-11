@@ -20,18 +20,12 @@ header {
 	padding-bottom: 60px;
 	background: #131922;
 	text-align: center;
-	.logo {
-		width: 350px;
-		max-width: 90%;
-	}
 	h1 {
-		// font-size: 1.6em;
 		font-weight: 600;
 		color: white;
 	}
 	h2 {
 		font-size: 1.5em;
-		font-weight: 600;
 		color: #ccc;
 	}
 	.link-btn-container {
@@ -40,7 +34,8 @@ header {
 			margin: 10px;
 			border: 1px solid #ccc;
 			border-radius: 5px;
-			padding: 5px 15px;
+			padding: 7px 15px;
+			font-size: 1.1em;
 			color: #ccc;
 			text-decoration: none;
 			outline: none;
@@ -85,7 +80,6 @@ header {
 		}
 	}
 }
-
 
 section {
 	padding-top: 60px;
@@ -137,10 +131,6 @@ section {
 #case {
 	li {
 		margin-top: 30px;
-		h3 {
-			font-size: 1.4em;
-			font-weight: 600;
-		}
 		.video-container {
 			margin-bottom: 10px;
 			width: 500px;

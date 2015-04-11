@@ -91,6 +91,10 @@ section .content {
   height: 100%;
   border: none;
 }
+#slides .content .more {
+  margin-top: 10px;
+  color: #666;
+}
 
 #tweets .content {
   text-align: center;
