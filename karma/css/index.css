@@ -26,9 +26,10 @@ header h2 {
   color: #ccc;
 }
 header .link-btn-container {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 header .link-btn-container .link-btn {
+  display: inline-block;
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
