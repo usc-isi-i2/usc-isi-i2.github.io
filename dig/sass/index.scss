@@ -168,12 +168,18 @@ section {
 }
 
 #pub {
-	.author {
-		font-size: 0.9em;
-	}
-	.location {
-		font-size: 0.9em;
-		font-style: italic;
+	li {
+		margin: 10px 0;
+		.title {
+			font-weight: bold;
+		}
+		.author {
+			font-size: 0.9em;
+		}
+		.location {
+			font-size: 0.9em;
+			font-style: italic;
+		}
 	}
 }
 

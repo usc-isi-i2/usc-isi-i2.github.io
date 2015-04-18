@@ -159,10 +159,16 @@ section .content {
   margin: 20px;
 }
 
-#pub .author {
+#pub li {
+  margin: 10px 0;
+}
+#pub li .title {
+  font-weight: bold;
+}
+#pub li .author {
   font-size: 0.9em;
 }
-#pub .location {
+#pub li .location {
   font-size: 0.9em;
   font-style: italic;
 }
