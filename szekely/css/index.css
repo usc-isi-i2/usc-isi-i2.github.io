@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,400);
+html, body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+.navbar {
+  font-weight: 600;
+}
+
+header {
+  position: relative;
+  min-height: 600px;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background: #131922;
+  text-align: center;
+}
+header .profile-image {
+  display: inline-block;
+  width: 140px;
+  height: 160px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  background-size: cover;
+}
+header h1 {
+  font-weight: 600;
+  color: white;
+}
+header p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+header p .link-btn {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 7px 15px;
+  color: #ccc;
+  text-decoration: none;
+  outline: none;
+}
+header p .link-btn:hover {
+  border-color: white;
+  color: white;
+}
+header .affiliation {
+  margin-top: 20px;
+}
+header .affiliation .link-image {
+  display: block;
+  margin-top: 10px;
+}
+header .affiliation .link-image .isi-logo {
+  width: 250px;
+}
+
+section {
+  padding-top: 60px;
+}
+section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section .content {
+  margin: auto;
+  max-width: 700px;
+}
+section .content .highlight {
+  background: #eee;
+  padding: 0.5em;
+}
+
+#about .video-container {
+  max-width: 100%;
+}
+#about .video-container .video-wrapper {
+  position: relative;
+  padding-bottom: 61%;
+}
+#about .video-container .video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#tweets .content {
+  max-width: 600px;
+  height: 400px;
+  text-align: center;
+}
+#tweets .content iframe {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#pub .content {
+  max-width: 750px;
+}
+#pub .content #bibbase_body {
+  font-size: 0.9em;
+}
+
+footer {
+  margin-top: 60px;
+  background: #eee;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 20px;
+}

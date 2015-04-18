@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pedro Szekely</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#hero">Pedro Szekely</a>
+			</div><!-- navbar-header -->
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#hero">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#tweets">Tweets</a></li>
+					<li><a href="#students">Students</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#pub">Publications</a></li>
+				</ul>        
+			</div><!-- collapse navbar-collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<header id="hero">
+		<div class="container">
+			<div class="profile-image" style="background-image:url('img/Pedro-Szekely.jpg')"></div>
+			<h1>Pedro Szekely</h1>
+			<p>Project Leader, Research Associate Professor</p>
+			<p>Ph.D. in Computer Science, CMU, 1987</p>
+			<p>
+				<a class="link-btn" href="http://isi.edu/~szekely/contents/szekely-cv.pdf" target="_blank">CV</a>
+				<a class="link-btn" href="#" target="_blank">Bio</a>
+			</p>
+			<div class="affiliation">
+				<a class="link-image" href="http://www.isi.edu"><img class="isi-logo" src="img/isi-logo.png" alt="ISI"></a>
+				<a class="link-image" href="http://www.usc.edu"><img class="usc-logo" src="img/usc-shield-name-white.png" alt="USC"></a>
+			<div>
+		</div><!-- container -->
+	</header>
+
+	<section id="about" class="container">
+		<h2>ABOUT</h2>
+		<div class="content">
+			<p>Detailed information about my work:</p>
+			<ul class="highlight list-unstyled">
+				<li>All my <strong>publications</strong> are on <a href="#pub">this page</a>, in <a href="http://scholar.google.com/citations?user=U1A6iBMAAAAJ&amp;hl=en">Google Scholar</a> and <a href="http://www.researchgate.net/profile/Pedro_Szekely/">Research Gate</a></li>
+				<li><strong>Videos</strong> are in <a href="https://www.youtube.com/playlist?list=PLdD4tO6i0DwMXmBhOwlt7zEZKoOWrWpOA">YouTube</a></li>
+				<li>Recent <strong>presentations</strong> are in <a href="http://www.slideshare.net/szeke/presentations">Slideshare</a></li>
+				<li><strong>News</strong> and useful tidbits for students are in my <a href="http://pedroszekely.blogspot.com">blog</a></li>
+				<li>Detailed information about <strong>Karma</strong> in the <a href="../karma">Karma page</a></li>
+			</ul>
+			<p>I would love to hear from you, connect with me on <a href="http://www.linkedin.com/pub/pedro-szekely/2/a16/671">LinkedIn</a>, <a href="https://www.facebook.com/pedro.szekely">Facebook</a>, <a href="https://twitter.com/szeke">Twitter</a>, <a href="http://www.flickr.com/photos/pedrosz">Flickr</a> or <a href="https://plus.google.com/112114906025524678483">Google+</a>.</p>
+			<p class="highlight">I like working with students. More info <a href="#students">here</a>.</p>
+
+			<h3>Research Interests</h3>
+			<p>Nowadays we have access to lots of data to make decisions, but it is difficult to combine these data to act on them. The problem is that these data are scattered in different sources, in different formats and schemas, and with no metadata to describe their meaning and provenance. Data can be in databases, Excel spreadsheets, CSV, XML or JSON files, or is accessible only via a Web service or REST API. My research objective is to help the consumers of these data to easily clean, transform and combine data to do analysis, and to help providers publish their data with the appropriate metadata so it is more useful to consumers.</p>
+			<p>Our approach is based on two ideas: semantics and examples. When tools understand the meaning of data, they can more effectively help users combine it in a meaningful way. To this end, we are developing techniques to semi-automatically infer the semantics of the data from examples. Users then show the system using the sample data how to they want the data combined and processed, and the system infers a workflow that can be used in batch on large datasets (big data).</p>
+			<p>I am interested in technology and applications. Our information integration toolkit Karma, is open source software that you can download to solve your information integration problems. I also collaborate with multiple organizations to apply Karma to build interesting applications in multiple domains such as intelligence analysis, bioinformatics, cultural heritage and business intelligence.</p>
+			<p>Here is a video that illustrates how we use Karma to publish the data from the <a href="http://americanart.si.edu">Smithsonian American Art Museum</a> as Linked Open Data:</p>
+			<div class="video-container">
+				<div class="video-wrapper">
+					<iframe src="http://www.youtube.com/embed/1Vaytr09H1w" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<h3>Collaborators</h3>
+			<p>At ISI I work in Craig Knoblock's <a href="http://www.isi.edu/integration/people/knoblock/index.html">Information Integration Group</a>, and I collaborate very closely with him on most projects. I collaborate with <a href="http://www.isi.edu/~ambite/">Jose Luis Ambite</a> on information integration topics, with <a href="http://www.isi.edu/people/burns/homepage">Gully Burns</a> on bioinformatics data integration, with <a href="http://www.isi.edu/~gil/">Yolanda Gil</a> on provenance and workflows, with <a href="http://www.isi.edu/~yaoyichi/">Yao-Yi Chiang</a> on data mining and geospatial data integration, and with <a href="http://www.isi.edu/~maheswar/">Rajiv Maheswaran</a> and <a href="http://www.yuhanchang.com/">Yu-Han Chang</a> in analysis of spatio-temporal data.</p>
+			<p>I am working with <a href="http://www.aifb.kit.edu/web/Rudi_Studer/en">Rudi Studer</a>, <a href="http://harth.org/andreas/">Andreas Harth</a> and <a href="http://www.aifb.kit.edu/web/Steffen_Stadtm%C3%BCller/en">Steffen Stadtmüller</a> from KIT on combinging their Dat-Fu engine with Karma to support integration of dynamic data; with <a href="http://ruben.verborgh.org/">Ruben Verborgh</a> from Ghent University to integrate an entity resolution (reconciliation) and entity extraction capabilities in Karma; with <a href="http://mayor2.dia.fi.upm.es/oeg-upm/index.php/en/phdstudents/50-fpriyatna">Freddy Priyatna</a> in Oscar Corcho's group to use Karma in his work with Google Fusion tables; with <a href="http://www.linkedin.com/in/aviggio">Alex Viggio</a> and other folks from the <a href="http://vivoweb.org/">VIVO</a> community to use Karma as a data ingestion tool for VIVO; with <a href="http://americanart.si.edu/visit/contact/search/staffsearch.cfm?lastname=Allen&amp;firstname=Rachel%20M.&amp;format=long">Rachel Allen</a> from the Smithsonian American Art Museum and Eleanor Fink on our work to publish museum data to the Linked Open Data cloud; with <a href="http://www.linkedin.com/pub/joan-cobb/a/799/648">Joan Cobb</a> from the Getty on publication of the Getty vocabularies to the Linked Open Data cloud; with <a href="http://be.linkedin.com/pub/miel-vander-sande/36/702/410">Miel Vander Sande</a> and an enthusiastic group of USC undergraduates to adapt his wonderful <a href="http://everythingisconnected.be/">everythingisconnected.be</a> work to produce stories using the Smithsonian American Art Museum data.</p>
+			<p>I am always looking for new opportunities to collaborate, so please send me a note if you see any topics of mutual interest. Nowadays, I attend the Semantic Web conferences (ISWC and ESWC) and the Intelligent User Interfaces Conference (IUI), so look for me there.</p>
+
+			<h3>Professional</h3>
+			<p>In the past, I was conference chair for UIST and IUI, and I was IUI program co-chair in 2013. I regulary review for HCI, semantic web and AI conferences. I figure I should review at least as many papers as I send. I often have at least 2 coauthors, so things should balance out.</p>
+			<p>Lately, I became interested in promoting Semantic Web in Latinoamerica. In 2012 and 2013 I taught summer courses on Semantic Web in the <a href="http://www.uniandes.edu.co/">Universidad de los Andes</a>, my undergraduate college, and <a href="http://puj-portal.javeriana.edu.co/">Pontificia Universidad Javeriana</a>, both in Bogota, Colombia. Both times I had enthusiastic students and it was a pleasure to teach the course. I intend to go back every summer to teach this class (I would like to do it in Medellin in 2014, and I need an invitation, hint?). I am also working with a team from the Universidad de los Andes in Bogota and Universidad Simon Bolivar in Caracas on a bid to host the 2015 International Semantic Web Conference, yes ISWC, in Latinamerica.</p>
+			<p>There is a group of latinamerican Semantic Web researchers, scattered all around the world, but eager to work to promote Semantic Web technologies in latinamerica. <a href="http://boris.villazon.terrazas.name/">Boris Villazon-Terrazas</a> is doing the heavy lifting organizing the group, kudos to him, and if you can help, please email me or contact Boris.</p>
+		</div>
+	</section>
+
+	<section id="tweets" class="container">
+		<h2>TWEETS</h2>
+		<div class="content">
+			<a class="twitter-timeline" href="https://twitter.com/szeke" data-widget-id="588823512216838144" data-chrome="nofooter">Tweets by @szeke</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</section>
+
+	<section id="students" class="container">
+		<h2>FOR STUDENTS</h2>
+		<div class="content">
+			<p><strong>Teaching:</strong> in Spring 2014 I will be co-teaching <a href="http://web-app.usc.edu/soc/20141/csci-548">CSCI 548</a> (<a href="http://web-app.usc.edu/soc/syllabus/20141/30232.pdf">syllabus</a>) with Professor <a href="http://isi.edu/~ambite">Ambite</a>. The class has a long waiting list, but we will teach it again in Fall 2014.</p>
+			<p><strong>Directed Research:</strong> there are many interesting projects that you can work on, including projects on semantic web-publishing, linked-data browsers, automatic data cleaning, record linkage, virtual museum, data integration and visualization of Twitter data.</p>
+			<ul>
+				<li><strong>Applying for DR:</strong> send me your CV. If your CV is strong, I will ask you to complete a programming assignment, and then schedule a meeting with you to discuss projects.</li>
+				<li><strong>Working on the DR:</strong> I expect you to do something that you and I will be proud of. To help you do that, we will meet every week to discuss the research and to plan the next tasks, which you will do as a homework assignment. I prefer that you spend one day week at ISI working on the DR, interacting with other students. If this is impractical, I can meet with you on Monday or Wednesday on campus.</li>
+				<li><strong>DR outcome:</strong> the most common outcome of DR projects is a software prototypes that does something interesting. The final product is your software, a 1 or 2 page description of what you did and if appropriate a video demonstration. I will grade each of your weekly assignments and give you credit for the DR if the average of you weekly grades is above 70% (the worst weekly grade will not count towards your average).</li>
+			</ul>            
+			<p><strong>PhD Students:</strong> I enjoy working with students. Let me know if you are interested in working with me.</p>
+			<p><strong>Meetings:</strong> I will be on campus every Monday afternoon and most of the day on Wednesdays. If you want to schedule an appointment with me, do the following. 1) Take a look at my <a href="http://bit.ly/18KLPBo">calendar</a> to find free times. Note that I blocked off Monday afternoon and all day Wednesday to be on campus, so it shows busy, but check for the little blocks to see when I am really busy; 2) Send me email with suggested times. I like to meet with students at the Tutor Cafe right between Tutor Hall and EEB, right <a href="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=34.02001,-118.289902&amp;hl=en&amp;geocode=&amp;sll=34.020021,-118.289983&amp;sspn=0.002214,0.00284&amp;vpsrc=0&amp;mra=mift&amp;mrsp=1&amp;sz=19&amp;ie=UTF8&amp;t=m&amp;z=19&amp;iwloc=ddw1">here</a>.</p>
+		</div>
+	</section>
+
+	<section id="pub" class="container">
+		<h2>PUBLICATIONS</h2>
+		<div class="content">
+			<script src="http://bibbase.org/show?bib=http://www.isi.edu/integration/karma/karma-bib.bib&jsonp=1"></script>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">&copy; 2015 The University of Southern California</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
