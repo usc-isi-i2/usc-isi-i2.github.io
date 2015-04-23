@@ -1,22 +1,18 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,400);
-
-$open-sans: 'Open Sans', sans-serif;
-$roboto-slab: 'Roboto Slab', serif;
-
 html, body {
-	font-family: $open-sans;
-	font-size: 15px;
+	height: 100%;
 }
-
 .navbar {
 	font-weight: 600;
 }
 
 header {
 	position: relative;
+	height: 100%;
 	min-height: 600px;
-	padding-top: 120px;
+	padding-top: 110px;
+	@media (max-width: 767px) {
+		padding-top: 80px;
+	} 
 	padding-bottom: 60px;
 	background: #131922;
 	text-align: center;
@@ -53,8 +49,7 @@ header {
 	}
 	.affiliation {
 		margin-top: 20px;
-		.link-image {
-			display: block;
+		div {
 			margin-top: 10px;
 			.isi-logo {
 				width: 250px;
@@ -82,10 +77,11 @@ section {
 
 #about {
 	.video-container {
+		width: 500px;
 		max-width: 100%;
 		.video-wrapper {
 			position: relative;
-			padding-bottom: 61%;
+			padding-bottom: 62.5%;
 			iframe {
 				position: absolute;
 				width: 100%;
@@ -112,8 +108,25 @@ section {
 #pub {
 	.content {
 		max-width: 750px;
+		.word-cloud {
+			width: 500px;
+			max-width: 100%;
+		}
 		#bibbase_body {
+			font-size: 13px;
+		}
+	}
+}
+
+#contact {
+	.content {
+		text-align: center;
+		font-size: 1.1em;
+		.address {
+			display: inline-block;
+			margin-top: 10px;
 			font-size: 0.9em;
+			color: #777;
 		}
 	}
 }

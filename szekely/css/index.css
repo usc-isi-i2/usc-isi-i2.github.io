@@ -1,8 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,400);
 html, body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  height: 100%;
 }
 
 .navbar {
@@ -11,11 +8,17 @@ html, body {
 
 header {
   position: relative;
+  height: 100%;
   min-height: 600px;
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 60px;
   background: #131922;
   text-align: center;
+}
+@media (max-width: 767px) {
+  header {
+    padding-top: 80px;
+  }
 }
 header .profile-image {
   display: inline-block;
@@ -51,11 +54,10 @@ header p .link-btn:hover {
 header .affiliation {
   margin-top: 20px;
 }
-header .affiliation .link-image {
-  display: block;
+header .affiliation div {
   margin-top: 10px;
 }
-header .affiliation .link-image .isi-logo {
+header .affiliation div .isi-logo {
   width: 250px;
 }
 
@@ -77,11 +79,12 @@ section .content .highlight {
 }
 
 #about .video-container {
+  width: 500px;
   max-width: 100%;
 }
 #about .video-container .video-wrapper {
   position: relative;
-  padding-bottom: 61%;
+  padding-bottom: 62.5%;
 }
 #about .video-container .video-wrapper iframe {
   position: absolute;
@@ -104,8 +107,23 @@ section .content .highlight {
 #pub .content {
   max-width: 750px;
 }
+#pub .content .word-cloud {
+  width: 500px;
+  max-width: 100%;
+}
 #pub .content #bibbase_body {
+  font-size: 13px;
+}
+
+#contact .content {
+  text-align: center;
+  font-size: 1.1em;
+}
+#contact .content .address {
+  display: inline-block;
+  margin-top: 10px;
   font-size: 0.9em;
+  color: #777;
 }
 
 footer {
