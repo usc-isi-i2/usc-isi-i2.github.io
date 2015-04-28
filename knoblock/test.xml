@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+	<channel>
+		<title><![CDATA[BibBase - http://usc-isi-i2.github.io/knoblock/doc/selected.bib]]></title>
+		<description><![CDATA[BibBase RSS feed]]></description>
+		<link>http://bibbase.org</link>
+		<generator>NodeJS RSS Module</generator>
+		<lastBuildDate>Sat, 25 Apr 2015 22:28:58 GMT</lastBuildDate>
+		<atom:link href="http://bibbase.org/rss?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib" rel="self" type="application/rss+xml" />
+		<item>
+			<title><![CDATA[A Scalable Architecture for Extracting, Aligning, Linking, and Visualizing Multi-Int Data]]></title>
+			<link>http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#knoblock15:spie</link>
+			<guid isPermaLink="true">http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#knoblock15:spie</guid>
+			<dc:creator><![CDATA[Knoblock, C.<nbsp>A., Szekely, P.]]></dc:creator>
+			<pubDate>Thu, 01 Jan 2015 00:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title><![CDATA[Exploiting Semantics for Big Data Integration]]></title>
+			<link>http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#knoblock15:aimag</link>
+			<guid isPermaLink="true">http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#knoblock15:aimag</guid>
+			<dc:creator><![CDATA[Knoblock, C.<nbsp>A., Szekely, P.]]></dc:creator>
+			<pubDate>Thu, 01 Jan 2015 00:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title><![CDATA[A Demonstration of Linked Data Source Discovery and Integration]]></title>
+			<link>http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#slepicka14:iswc-demo</link>
+			<guid isPermaLink="true">http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#slepicka14:iswc-demo</guid>
+			<dc:creator><![CDATA[Slepicka, J., Yin, C., Szekely, P., Knoblock, C.<nbsp>A.]]></dc:creator>
+			<pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title><![CDATA[Aligning ontologies of linked data]]></title>
+			<link>http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#parundekar2014ldm</link>
+			<guid isPermaLink="true">http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#parundekar2014ldm</guid>
+			<dc:creator><![CDATA[Parundekar, R., Knoblock, C.<nbsp>A., Ambite, J.<nbsp>L.]]></dc:creator>
+			<pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title><![CDATA[The Semantic Web--ISWC 2014: 13th International Semantic Web Conference, Riva del Garda, Italy, October 19-23, 2014. Proceedings]]></title>
+			<link>http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#mika2014semantic</link>
+			<guid isPermaLink="true">http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#mika2014semantic</guid>
+			<dc:creator><![CDATA[Mika, P., Bernstein, A., Welty, C., Knoblock, C.<nbsp>A., Vrandečić, D., Groth, P., Noy, N., Janowicz, K., Goble, C.]]></dc:creator>
+			<pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title><![CDATA[Iteratively Learning Conditional Statements in Transforming Data by Example]]></title>
+			<link>http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#wu2014iteratively</link>
+			<guid isPermaLink="true">http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#wu2014iteratively</guid>
+			<dc:creator><![CDATA[Wu, B., Knoblock, C.<nbsp>A.]]></dc:creator>
+			<pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title><![CDATA[Mapping hierarchical sources into RDF using the RML mapping language]]></title>
+			<link>http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#dimou2014mapping</link>
+			<guid isPermaLink="true">http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#dimou2014mapping</guid>
+			<dc:creator><![CDATA[Dimou, A., Sande, Vander, M., Slepicka, J., Szekely, P., Mannens, E., Knoblock, C.<nbsp>A., Walle, de, R.<nbsp>V.]]></dc:creator>
+			<pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title><![CDATA[How Linked Open Data Can Help in Locating Stolen or Looted Cultural Property]]></title>
+			<link>http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#fink2014linked</link>
+			<guid isPermaLink="true">http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#fink2014linked</guid>
+			<dc:creator><![CDATA[Fink, E.<nbsp>E., Szekely, P., Knoblock, C.<nbsp>A.]]></dc:creator>
+			<pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title><![CDATA[Location Prediction With Sparse GPS Data]]></title>
+			<link>http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#chiang14giscience-location</link>
+			<guid isPermaLink="true">http://bibbase.org/show?bib=http://usc-isi-i2.github.io/knoblock/doc/selected.bib#chiang14giscience-location</guid>
+			<dc:creator><![CDATA[Jaiswal, A., Chiang, Y., Knoblock, C.<nbsp>A., Lan, L.]]></dc:creator>
+			<pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate>
+		</item>
+	</channel>
+</rss>

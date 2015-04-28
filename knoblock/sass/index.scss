@@ -107,6 +107,7 @@ section {
 			border: 1px solid #ddd;
 			border-radius: 3px;
 			overflow: hidden;
+			cursor: pointer;
 			&::before {
 				content: '';
 				position: absolute;
@@ -132,10 +133,9 @@ section {
 				color: #34495e;
 				transition: background 0.1s linear;
 				.name {
-					margin-top: 15px;
+					margin: 15px;
 					margin-bottom: 5px;
 					font-weight: 600;
-					font-size: 1.4em;
 				}
 			}
 			&:hover {
@@ -148,15 +148,36 @@ section {
 				}
 			}
 		}
+		.modal-body {
+			text-align: left;
+			img {
+				width: 100%;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+#students {
+	.content {
+		.name {
+			font-weight: 600;
+			margin-top: 10px;
+		}
+		.work {
+		}
 	}
 }
 
 #pub {
 	.content {
 		max-width: 750px;
-		.word-cloud {
-			width: 500px;
-			max-width: 100%;
+		.word-cloud-container {
+			text-align: center;
+			svg {
+				width: 600px;
+				max-width: 100%;
+			}
 		}
 		#bibbase_body {
 			font-size: 13px;
