@@ -113,13 +113,9 @@ section {
 
 #tweets {
 	.content {
-		max-width: 600px;
-		height: 500px;
 		text-align: center;
 		iframe {
-			display: block !important;
-			width: 100% !important;
-			height: 100% !important;
+			height: 500px !important;
 		}
 	}
 }

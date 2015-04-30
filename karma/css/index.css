@@ -110,14 +110,10 @@ section .content {
 }
 
 #tweets .content {
-  max-width: 600px;
-  height: 500px;
   text-align: center;
 }
 #tweets .content iframe {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
+  height: 500px !important;
 }
 
 #case li {
