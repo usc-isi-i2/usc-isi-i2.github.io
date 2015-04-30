@@ -26,13 +26,13 @@ header h1 {
   font-weight: 600;
   color: white;
 }
-header .credit {
+header .affiliation {
   margin-top: 40px;
 }
-header .credit div {
+header .affiliation div {
   margin-top: 10px;
 }
-header .credit div .isi-logo {
+header .affiliation div .isi-logo {
   width: 250px;
 }
 header .scroll-btn-container {
@@ -97,12 +97,14 @@ section .content {
 }
 
 #tweets .content {
+  max-width: 600px;
+  height: 500px;
   text-align: center;
 }
 #tweets .content iframe {
   display: block !important;
   width: 100% !important;
-  height: 400px !important;
+  height: 100% !important;
 }
 
 #people ul.content {

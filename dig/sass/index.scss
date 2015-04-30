@@ -29,7 +29,7 @@ header {
 		font-weight: 600;
 		color: white;
 	}
-	.credit {
+	.affiliation {
 		margin-top: 40px;
 		div {
 			margin-top: 10px;
@@ -103,11 +103,13 @@ section {
 
 #tweets {
 	.content {
+		max-width: 600px;
+		height: 500px;
 		text-align: center;
 		iframe {
 			display: block !important;
 			width: 100% !important;
-			height: 400px !important;
+			height: 100% !important;
 		}
 	}
 }
