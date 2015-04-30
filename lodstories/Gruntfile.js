@@ -6,10 +6,6 @@ module.exports = function(grunt) {
 			css: ['css/*.css'],
 		},
 
-		htmllint: {
-			all: ['*.html']
-		},
-
 		sass: {
 			options: {
 				style: 'expanded',
@@ -49,7 +45,6 @@ module.exports = function(grunt) {
 			},
 			html: {
 				files: ['*.html'],
-				tasks: ['htmllint']
 			},
 			sass: {
 				files: ['sass/*.scss'],
@@ -64,13 +59,12 @@ module.exports = function(grunt) {
 	});
 
 grunt.loadNpmTasks('grunt-contrib-clean');
-grunt.loadNpmTasks('grunt-html');
 grunt.loadNpmTasks('grunt-contrib-sass');
 grunt.loadNpmTasks('grunt-autoprefixer');
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-watch');
 
 grunt.registerTask('default', ['watch']);
-grunt.registerTask('all', ['clean', 'htmllint', 'sass', 'autoprefixer', 'jshint']);
+grunt.registerTask('all', ['clean', 'sass', 'autoprefixer', 'jshint']);
 
 };

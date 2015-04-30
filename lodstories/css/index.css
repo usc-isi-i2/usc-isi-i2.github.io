@@ -1,8 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,400);
 html, body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  height: 100%;
 }
 
 .navbar {
@@ -11,6 +8,7 @@ html, body {
 
 header {
   position: relative;
+  height: 100%;
   min-height: 540px;
   padding-top: 120px;
   padding-bottom: 60px;
@@ -43,13 +41,13 @@ header .link-btn-container .link-btn:hover {
   border-color: white;
   color: white;
 }
-header .credit {
-  margin-top: 30px;
+header .affiliation {
+  margin-top: 40px;
 }
-header .credit div {
+header .affiliation div {
   margin-top: 10px;
 }
-header .credit div .isi-logo {
+header .affiliation div .isi-logo {
   width: 250px;
 }
 header .scroll-btn-container {
@@ -89,6 +87,21 @@ section h2 {
 section .content {
   margin: auto;
   max-width: 700px;
+}
+
+#video {
+  padding-bottom: 60px;
+  background: #111;
+}
+#video .video-wrapper {
+  position: relative;
+  padding-bottom: 67%;
+}
+#video .video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 #about img {
@@ -132,14 +145,14 @@ section .content {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-bottom: 3px;
-  font-size: 0.8em;
+  font-size: 0.85em;
   font-weight: 600;
 }
 #people ul.content li .description .title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 footer {
