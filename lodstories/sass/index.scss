@@ -94,7 +94,7 @@ section {
 	background: #111;
 	.video-wrapper {
 		position: relative;
-		padding-bottom: 67%;
+		padding-bottom: 75%;
 		iframe {
 			position: absolute;
 			width: 100%;
@@ -106,14 +106,12 @@ section {
 
 #about {
 	img {
-		max-width: 600px;
 		max-width: 100%;
 	}
 }
 
 #people {
 	ul.content {
-		padding: 0;
 		max-width: 800px;
 		@media (max-width: 600px) {
 			text-align: center;
