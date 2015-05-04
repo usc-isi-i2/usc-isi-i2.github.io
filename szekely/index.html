@@ -10,9 +10,17 @@
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	  <![endif]-->
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-42751761-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
@@ -24,11 +32,11 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#hero">Pedro Szekely</a>
+				<a class="navbar-brand" href="#home">Pedro Szekely</a>
 			</div><!-- navbar-header -->
 			<div class="collapse navbar-collapse" id="nav-links">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#hero">Home</a></li>
+					<li class="active"><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#tweets">Tweets</a></li>
 					<li><a href="#students">Students</a></li>
@@ -40,16 +48,12 @@
 		</div><!-- container -->
 	</nav>
 
-	<header id="hero">
+	<header id="home">
 		<div class="container">
 			<div class="profile-image" style="background-image:url('img/Pedro-Szekely.jpg')"></div>
 			<h1>Pedro Szekely</h1>
 			<p>Project Leader, Research Associate Professor</p>
 			<p>Ph.D. in Computer Science, CMU, 1987</p>
-			<p>
-				<a class="link-btn" href="doc/szekely-cv.pdf" target="_blank">CV</a>
-				<a class="link-btn" href="#" target="_blank">Bio Need attention!</a>
-			</p>
 			<div class="affiliation">
 				<div><a href="http://www.isi.edu"><img class="isi-logo" src="img/isi-logo.png"></a></div>
 				<div><a href="http://www.usc.edu"><img class="usc-logo" src="img/usc-shield-name-white.png"></a></div>
@@ -60,6 +64,14 @@
 	<section id="about" class="container">
 		<h2>ABOUT</h2>
 		<div class="content">
+			<ul class="list-inline social">
+				<li><a href="https://www.linkedin.com/pub/pedro-szekely/2/a16/671"><img src="img/social/linkedin.jpg"></a></li>
+				<li><a href="https://twitter.com/szeke"><img src="img/social/twitter.jpg"></a></li>
+				<li><a href="http://www.researchgate.net/profile/Pedro_Szekely"><img src="img/social/rg.jpg"></a></li>
+				<li><a href="http://scholar.google.com/citations?user=U1A6iBMAAAAJ&hl=en"><img src="img/social/google-scholar.png"></a></li>
+				<li><a href="http://www.slideshare.net/szeke/presentations"><img src="img/social/slideshare.jpg"></a></li>
+				<li><a href="doc/szekely-cv.pdf"><img src="img/social/cv.png"></a></li>
+			</ul>
 			<p>Detailed information about my work:</p>
 			<ul class="highlight list-unstyled">
 				<li>All my <strong>publications</strong> are on <a href="#pub">this page</a>, in <a href="http://scholar.google.com/citations?user=U1A6iBMAAAAJ&amp;hl=en">Google Scholar</a> and <a href="http://www.researchgate.net/profile/Pedro_Szekely/">Research Gate</a></li>
@@ -120,14 +132,302 @@
 	<section id="projects" class="container">
 		<h2>PROJECTS</h2>
 		<div class="content">
-		</div>
+		<div class="content text-center">
+			<h3>Current</h3>
+			<a class="project" href="../dig">
+				<div class="img-container" style="background-image:url(img/projects/dig.png)"></div>
+				<div class="description">
+					<h4 class="name">DIG</h4>
+					<div class="abstract">Technologies for building domain-specific knowledge graphs</div>
+				</div>
+			</a>
+			<a class="project" href="../karma">
+				<div class="img-container" style="background-image:url(img/projects/karma.png)"><b>Need a NEW LOGO!</b></div>
+				<div class="description">
+					<h4 class="name">Karma</h4>
+					<div class="abstract">A data integration tool</div>
+				</div>
+			</a>
+			<a class="project" href="../lodstories">
+				<div class="img-container" style="background-image:url(img/projects/lodstories.png)"><b>Need a NEW LOGO!</b></div>
+				<div class="description">
+					<h4 class="name">LODStories</h4>
+					<div class="abstract">Learning about art by building multimedia stories</div>
+				</div>
+			</a>
+			
+			<h3>Completed</h3>
+			<a class="project" data-toggle="modal" data-target="#data-preparation-modal">
+				<div class="img-container" style="background-image:url(img/projects/data-preparation.png)"></div>
+				<div class="description">
+					<h4 class="name">Data Preparation for Semantic Workflows (2011)</h4>
+					<div class="abstract"></div>
+				</div>
+			</a>
+			<div class="modal fade" id="data-preparation-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">Data Preparation for Semantic Workflows (2011)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/data-preparation.png">
+							<p>Scientific metadata containing semantic descriptions of scientific  data is expensive to capture and is typically not used across entire data analytic  processes. We present an  approach based on Karma and <a href="http://www.isi.edu/ikcap/wings/">WINGS</a> where semantic metadata is generated as  scientific data is being prepared, and then subsequently used to configure  models and to customize them to the data. The metadata captured includes  sensor descriptions, data characteristics, data types, and process documentation.   This metadata is then used in a workflow system to select analytic models  dynamically and to set up model parameters automatically. In addition, all  aspects of data processing are documented, and the system is able to generate  extensive provenance records for new data products based on the metadata. Papers: <a href="contents/papers/2011/gil-etal-iswc11.pdf">ISWC'2011</a>, Poster: <a href="contents/papers/2011/FallAGU2011-IN51C-1605-PDF.pdf">AGU'2011</a>.  Collaborators: <a href="http://www.isi.edu/integration/people/knoblock/index.html">Craig Knoblock</a>, <a href="http://www.isi.edu/~gil/">Yolanda Gil</a>, <a href="http://www.ucmerced.edu/faculty/directory/thomas-c-harmon">Tom Harmon</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+
+			<a class="project" data-toggle="modal" data-target="#gambit-modal">
+				<div class="img-container" style="background-image:url(img/projects/gambit.png)"></div>
+				<div class="description">
+					<h4 class="name">GAMBIT (2011)</h4>
+					<div class="abstract">Geospatial Analysis of Motion-Based Intelligence and Tracking</div>
+				</div>
+			</a>
+			<div class="modal fade" id="gambit-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">GAMBIT (2011)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/gambit.png">
+							<p>Movement data can be combined with geospatial information and transformed into probabilistic graphical models that represent both social and temporal relationships between objects in the observed area. We then apply machine-learning techniques to cluster patterns in these graphical models to assist human users in performing strategic level analysis such as behavior prediction and anomaly detection. We extended Karma to enrich the track data with information that provides the features that the analysis algorithms need to detect patterns of life in the track data and enables users to understand the context of the data. Collaborators: <a href="http://www.isi.edu/integration/people/knoblock/index.html">Craig Knoblock</a>, <a href="http://www.yuhanchang.com/">Yu-Han Chang</a>, <a href="http://www.isi.edu/~maheswar/">Rajiv Maheswaran</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+
+			<a class="project" data-toggle="modal" data-target="#Enriching-Sensor-Data-modal">
+				<div class="img-container" style="background-image:url(img/projects/Enriching-Sensor-Data.png)"></div>
+				<div class="description">
+					<h4 class="name">Enriching Sensor Data with Context Information (2011)</h4>
+					<div class="abstract"></div>
+				</div>
+			</a>
+			<div class="modal fade" id="Enriching-Sensor-Data-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">Enriching Sensor Data with Context Information (2011)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/Enriching-Sensor-Data.png">
+							<p>We extended Karma to enrich sensor data with information that enables users to understand the context in which the sensor data was collected. With Karma, users first extract from open sources a variety of information for the region of interest: business information from online phone books and directories, weather, news, events, and road vectors from raster maps. Once information is extracted, Karma helps users geolocate it, and then integrate it and associate it with sensors and buildings. Karma then exports all the information in KML layers, so that the <a href="http://gamepipe.usc.edu/USC_GamePipe_Laboratory/Home.html">Cosmopolis</a> game engine can load it and show it in the 3D environment. Collaborators: <a href="http://www.isi.edu/integration/people/knoblock/index.html">Craig Knoblock</a>, <a href="http://gamepipe.usc.edu/~zyda">Mike Zyda</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+
+			<a class="project" data-toggle="modal" data-target="#COMPASS-modal">
+				<div class="img-container" style="background-image:url(img/projects/COMPASS.png)"></div>
+				<div class="description">
+					<h4 class="name">COMPASS (2011)</h4>
+					<div class="abstract">Plan Analysis using Stochastic Simulation</div>
+				</div>
+			</a>
+			<div class="modal fade" id="COMPASS-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">COMPASS (2011)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/COMPASS.png">
+							<p>COMPASS is an interactive real-time tool that analyzes schedule uncertainty for a stochastic task network. An important feature is that it concurrently calculates stochastic critical paths and critical tasks. COMPASS visualizes this information on top of a traditional Gantt view, giving users insight into how delays caused by uncertain durations propagate down the schedule. Users use sliders to adjust the distribution of the duration of any set of activities and see in real-time the effects on the start and end times of activities, and the critical paths they give rise to. Evaluations with 10 users show that users can use compass to answer a variety of questions about the possible evolutions of a schedule (e.g., what is the likelihood that all activities will complete before a given date?). Movie: <a href="http://youtu.be/vmT86VXTN9Y">COMPASS features</a>, Paper: <a href="contents/papers/2012/szekely2012-iui.pdf">IUI'2012</a>. Students: Yan Wang, Huihui Chen, Karan Singh. Collaborators: <a href="http://www.isi.edu/~maheswar/">Rajiv Maheswaran</a>, <a href="http://www.yuhanchang.com/">Yu-Han Chang</a></p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+
+			<a class="project" data-toggle="modal" data-target="#VizScript-modal">
+				<div class="img-container" style="background-image:url(img/projects/VizScript.png)"></div>
+				<div class="description">
+					<h4 class="name">VizScript (2007-2010)</h4>
+					<div class="abstract">Visualization Tools for Understanding Complex Systems</div>
+				</div>
+			</a>
+			<div class="modal fade" id="VizScript-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">VizScript (2007-2010)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/VizScript.png">
+							<p>VizScript is a generic framework that expedites the process of creating  visualizations to debug and under- stand complex multi-agent systems. VizScript combines a generic application instrumentation, a knowledge-base, and simple scene definitions primitives with a reasoning system, to produce an easy to use visualization platform. Using VizScript, users are able to recreate the visualizations for a complex multi- agent system with an order-of-magnitude less effort than was required in a Java implementation. Papers: <a href="contents/papers/2008/iui08-vizscript.pdf">IUI'2008a</a>, <a href="contents/papers/2008/iui08-interfaces-team-coordination.pdf">IUI'2008b</a>. Student: Jin Jing (graduated), Collaborators: <a href="http://www.isi.edu/~maheswar/">Rajiv Maheswaran</a>, <a href="http://yalma.fime.uanl.mx/~romeo/">Romeo Sanchez</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+
+			<a class="project" data-toggle="modal" data-target="#VizPattern-modal">
+				<div class="img-container" style="background-image:url(img/projects/VizPattern.png)"></div>
+				<div class="description">
+					<h4 class="name">VizPattern (2008-2010)</h4>
+					<div class="abstract">Visual Analytics Tools</div>
+				</div>
+			</a>
+			<div class="modal fade" id="VizPattern-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">VizPattern (2008-2010)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/VizPattern.png">
+							<p>VizPattern is an interactive visual query environment that uses a comic strip metaphor to enable users to easily and quickly define and locate complex temporal patterns. Evalu- ations provide evidence that VizPattern is applicable in many domains, and that it enables a wide variety of users to answer questions about temporal data faster and with fewer errors than existing state-of-the-art visual analysis systems. <a href="http://www.youtube.com/watch?v=T5EcQItuJqM">Movie</a>, Papers: <a href="papers/2009/vlhcc09QueryMarvel.pdf">VL/HCC'2009</a>, <a href="papers/2010/vast2010.pdf">VAST'2010</a>. Student: Jin Jing (graduated).</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+
+			<a class="project" data-toggle="modal" data-target="#Living-Classroom-modal">
+				<div class="img-container" style="background-image:url(img/projects/Living-Classroom.png)"></div>
+				<div class="description">
+					<h4 class="name">Living Classroom (2010)</h4>
+					<div class="abstract"></div>
+				</div>
+			</a>
+			<div class="modal fade" id="Living-Classroom-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">Living Classroom (2010)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/Living-Classroom.png">
+							<p>The Living Classroom project seeked to offer children unique, differentiated learning experiences that reflect their specific needs and to do so with the affordability and ease of use that brings premiere teaching within the reach of every American student. Its goal: to provide teachers with the comprehensive, integrated information they need to customize each child's experiences readily every school day. <a href="http://k12.isi.edu/">Project web site</a></p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+
+			<a class="project" data-toggle="modal" data-target="#CSC-modal">
+				<div class="img-container" style="background-image:url(img/projects/CSC.png)"></div>
+				<div class="description">
+					<h4 class="name">CSC (2005-2009)</h4>
+					<div class="abstract">Criticality-Sensitive Coodination</div>
+				</div>
+			</a>
+			<div class="modal fade" id="CSC-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">CSC (2005-2009)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/CSC.png">
+							<p>The objective is to create distributed intelligent software systems that  will help fielded units adapt their mission plans as the situation around them changes and impacts their plans. Intelligent software Coordinators do this by reasoning about the tasks assigned to a given  unit, the task timings, how the tasks interact with those of other units, and by evaluating possible changes such as changing task timings, task assignments, or selecting from pre-planned contingencies. Movies: <a href="http://www.youtube.com/watch?v=kpkrP5RlAVQ">AAMAS/ICAPS 2010 demo</a>, <a href="Videos/csc-demo-v01.swf">system</a>, Papers: <a href="papers/2005/icaps05realityCheck.pdf">ICAPS'2005 (wkshp)</a>, <a href="papers/2006/SS0604SzekelyP.pdf">AAAI SS'2006</a>, <a href="papers/2006/aamas06csc.pdf">AAMAS'2006</a>, <a href="papers/2006/msdm06paper.pdf">AAMAS MSDM'2006</a>, <a href="papers/2006/lsmas06paper.pdf">AAMAS LSMAS'2006</a>, <a href="papers/2007/aaai07-centralized-distributed.pdf">AAAI'2007</a>, <a href="papers/2008/aamas08-predictability-criticality.pdf">AAMAS'2008</a>, <a href="papers/2008/ICAPS08-027.pdf">ICAPS'2008</a>, <a href="papers/2009/aamas09-multi-agent-systems-real-world.pdf">AAMAS'2009</a>, <a href="papers/2010/psuu2010.pdf">ICAPS PSUU'2010</a>, <a href="papers/2010/optmas2010.pdf">AAMAS OPTMAS'2010</a>, <a href="papers/2010/aamas2010demo.pdf">AAMAS'2010</a> (best demo), <a href="papers/2010/chacie2010.pdf">AAMAS CHACIE'2010</a>, <a href="papers/2010/arde2010.pdf">AAMAS ARDE'2010</a>, <a href="papers/2011/maheswaran11-prima.pdf">PRIMA'2011</a></p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+
+			<a class="project" data-toggle="modal" data-target="#LANdroids-modal">
+				<div class="img-container" style="background-image:url(img/projects/LANdroids.png)"></div>
+				<div class="description">
+					<h4 class="name">LANdroids (2009)</h4>
+					<div class="abstract">Distributed Control Algorithms</div>
+				</div>
+			</a>
+			<div class="modal fade" id="LANdroids-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">LANdroids (2009)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/LANdroids.png">
+							<p>The objective is to develop intelligent autonomous radio relay nodes that exploit movement to establish and manage mesh networks in  urban settings using small, inexpensive, smart robotic  radio relay nodes. As the situation changes, the nodes will adapt the network, self-healing if nodes are destroyed, stretching if soldiers move. Through movement and density, the LANdroids will enable effective communications in  complex non-line-of-sight environments. Our bio-inspired, distributed control algorithm called <em>TENTACLES</em> directs robots' exploration to grow <em>tentacles</em> starting from soldiers of the gateway, establishing links when tentacles meet. Tentacles are disolved when they fail to meet other tentacles. Simulation movies <a href="contents/Videos/landroids/marcher-1.mov">1</a>, <a href="contents/Videos/landroids/marcher-2.mov">2</a>, <a href="Images/iRobot.png" class="hoverZoomLink">3</a>. Paper: <a href="contents/papers/2009/tentacles.pdf">IROS'2009</a></p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+
+			<a class="project" data-toggle="modal" data-target="#Commander-modal">
+				<div class="img-container" style="background-image:url(img/projects/Commander.png)"></div>
+				<div class="description">
+					<h4 class="name">Commander's Coordinator (2007)</h4>
+					<div class="abstract">Human in the Loop Planning and Scheduling</div>
+				</div>
+			</a>
+			<div class="modal fade" id="Commander-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">Commander's Coordinator (2007)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/Commander.png">
+							<p>The Commander's Coordinator retrieves current status from the units in the field and assembles and integrated plan overview that shows Commanders who is doing what and where. It monitors plan execution predicting possible failures, presents options for Commanders to choose from, intelligently alerts affected units about possible ripple effects, and distributes plan modifications to repair plans.</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+
+			<a class="project" data-toggle="modal" data-target="#SNAP-modal">
+				<div class="img-container" style="background-image:url(img/projects/SNAP.png)"></div>
+				<div class="description">
+					<h4 class="name">SNAP (2000-2005)</h4>
+					<div class="abstract">Schedules Negotiated by Agent-based Planners</div>
+				</div>
+			</a>
+			<div class="modal fade" id="SNAP-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">SNAP (2000-2005)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/SNAP.png">
+							<p>The objective was to build a human-in-the-loop scheduling system that enables operators to state scheduling goals and that helps them refine their goals and the schedule to produce schedules that balance many conflicting goals. The system was implemented in the context of US Marines aviation, and was used to <a href="contents/papers/2002/snap-vs-manual-comparison.pdf">help operators</a> produce weekly and daily flight schedules. The system was deployed for testing in the US Marines air base in Yuma Arizona and onboard ships operating in the Middle East. More details available from the <a href="contents/papers/2004/CAMERA final report.pdf">Final Report to DARPA</a>,   <a href="http://www.isi.edu/~szekely/antsebook/ebook/">ANTS ebook</a> and the <a href="http://www.isi.edu/camera/">project web site</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+
+			<a class="project" data-toggle="modal" data-target="#DEALMAKER-modal">
+				<div class="img-container" style="background-image:url(img/projects/DEALMAKER.png)"></div>
+				<div class="description">
+					<h4 class="name">DEALMAKER (1998-2000)</h4>
+					<div class="abstract">End-User Programming of Rules to Select Purchase Contracts</div>
+				</div>
+			</a>
+			<div class="modal fade" id="DEALMAKER-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h4 class="modal-title">DEALMAKER (1998-2000)</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/projects/DEALMAKER.png">
+							<p>The objective was to build a system to enable end-users to specify rules for specifying the best contracts for fullfilling orders in a purchasing system. The system receives requisitions for items in electronic form, queries a database of preferred vendors to determine possible sources of supply, and applies rules to filter and rank these sources according to policies established by contract managers. The system was developed and tested in the context of applications for the Defense Logistics Agency (DLA). <a href="contents/papers/1999/Dealmaker/Dealmaker-Final-Documentation.pdf">Project final documentation</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- modal -->
+		</div><!-- content -->
 	</section>
 
 	<section id="pub" class="container">
 		<h2>PUBLICATIONS</h2>
 		<div class="content">
 			<p>My publications are here, and you can also find them in <a href="http://scholar.google.com/citations?user=U1A6iBMAAAAJ&amp;hl=en">Google Scholar</a> and <a href="http://www.researchgate.net/profile/Pedro_Szekely/">Research Gate</a>. The tag cloud shows the common words in my last 12 publications.</p>
-			<p><img class="word-cloud" src="img/word-cloud.png"></p>
+			<div id="word-cloud-container" data-bib="doc/karma.bib" data-min-word-count="1" data-max-word-count="15" data-min-font-size="10" data-max-font-size="40"></div>
 			<script src="http://bibbase.org/show?bib=http://www.isi.edu/integration/karma/karma-bib.bib&jsonp=1"></script>
 		</div>
 	</section>
@@ -153,6 +453,10 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="js/lib/bibtex-parser.js"></script>
+	<script src="js/lib/d3.layout.cloud.js"></script>
+	<script src="js/word-cloud.js"></script>
 	<script src="js/index.js"></script>
 </body>
 </html>

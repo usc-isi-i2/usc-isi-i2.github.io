@@ -48,7 +48,7 @@ header {
 		}
 	}
 	.affiliation {
-		margin-top: 20px;
+		margin-top: 30px;
 		div {
 			margin-top: 10px;
 			.isi-logo {
@@ -76,12 +76,20 @@ section {
 }
 
 #about {
+	.social {
+		margin: 20px 0;
+		text-align: center;
+		img {
+			width: 40px;
+			border-radius: 5px;
+		}
+	}
 	.video-container {
 		width: 500px;
 		max-width: 100%;
 		.video-wrapper {
 			position: relative;
-			padding-bottom: 62.5%;
+			padding-bottom: calc(100% / 16 * 9);
 			iframe {
 				position: absolute;
 				width: 100%;
@@ -94,13 +102,72 @@ section {
 
 #tweets {
 	.content {
-		max-width: 600px;
-		height: 400px;
 		text-align: center;
 		iframe {
-			display: block !important;
-			width: 100% !important;
-			height: 100% !important;
+			height: 500px !important;
+		}
+	}
+}
+
+#projects {
+	.content {
+		max-width: 900px;
+		a.project {
+			position: relative;
+			display: inline-block;
+			margin: 10px;
+			width: 250px;
+			height: 250px;
+			border: 1px solid #ddd;
+			border-radius: 3px;
+			overflow: hidden;
+			cursor: pointer;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				transition: background 0.1s linear;
+			}
+			.img-container {
+				width: 100%;
+				height: 60%;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			.description {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 40%;
+				background: #ECF0F1;
+				color: #34495e;
+				transition: background 0.1s linear;
+				.name {
+					margin: 15px;
+					margin-bottom: 5px;
+					font-weight: 600;
+				}
+			}
+			&:hover {
+				&::before {
+					background: rgba(0,0,0,0.5);
+				}
+				.description {
+					background: #555;
+					color: white;
+				}
+			}
+		}
+		.modal-body {
+			text-align: left;
+			img {
+				width: 100%;
+				margin-bottom: 15px;
+			}
 		}
 	}
 }
@@ -108,9 +175,12 @@ section {
 #pub {
 	.content {
 		max-width: 750px;
-		.word-cloud {
-			width: 500px;
-			max-width: 100%;
+		#word-cloud-container {
+			text-align: center;
+			svg {
+				width: 600px;
+				max-width: 100%;
+			}
 		}
 		#bibbase_body {
 			font-size: 13px;
