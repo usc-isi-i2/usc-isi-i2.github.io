@@ -129,7 +129,7 @@ section .content {
 }
 #case li .video-container .video-wrapper {
   position: relative;
-  padding-bottom: 62%;
+  padding-bottom: calc(100% / 16 * 9);
 }
 #case li .video-container .video-wrapper iframe {
   position: absolute;

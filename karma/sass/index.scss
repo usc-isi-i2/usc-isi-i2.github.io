@@ -132,7 +132,7 @@ section {
 			max-width: 100%;
 			.video-wrapper {
 				position: relative;
-				padding-bottom: 62%;
+				padding-bottom: calc(100% / 16 * 9);
 				iframe {
 					position: absolute;
 					width: 100%;
