@@ -96,7 +96,7 @@ function createWordCloud(data) {
 		cloud.enter().append("text")
 		.style("fill", function(d, i) { return d3.rgb(colors[i % colors.length]).darker(1); })
 		.style("font-family", '"Helvetica Neue", Helvetica, Arial, sans-serif')
-		.style("font-size", function(d) { return d.size; })
+		.style("font-size", function(d) { return d.size + "px"; })
 		.style("font-weight", "bold")
 		.attr("text-anchor", "middle")
 		.text(function(d) { return d.text; })
