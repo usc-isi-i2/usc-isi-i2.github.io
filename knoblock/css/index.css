@@ -84,14 +84,10 @@ section .content {
 }
 
 #tweets .content {
-  max-width: 600px;
-  height: 400px;
   text-align: center;
 }
 #tweets .content iframe {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
+  height: 500px !important;
 }
 
 #projects .content {
@@ -115,8 +111,8 @@ section .content {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: background 0.1s linear;
-          transition: background 0.1s linear;
+  -webkit-transition: background 0.3s linear;
+          transition: background 0.3s linear;
 }
 #projects .content a.project .img-container {
   width: 100%;
@@ -132,8 +128,8 @@ section .content {
   height: 40%;
   background: #ECF0F1;
   color: #34495e;
-  -webkit-transition: background 0.1s linear;
-          transition: background 0.1s linear;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
 }
 #projects .content a.project .description .name {
   margin: 15px;
@@ -155,6 +151,23 @@ section .content {
   margin-bottom: 15px;
 }
 
+#teaching .content .course {
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+  height: 160px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #ECF0F1;
+  color: #34495e;
+}
+#teaching .content .course .title {
+  font-size: 1.1em;
+  line-height: 1.3;
+}
+
 #students .content .name {
   font-weight: 600;
   margin-top: 10px;
@@ -163,10 +176,10 @@ section .content {
 #pub .content {
   max-width: 750px;
 }
-#pub .content .word-cloud-container {
+#pub .content #word-cloud-container {
   text-align: center;
 }
-#pub .content .word-cloud-container svg {
+#pub .content #word-cloud-container svg {
   width: 600px;
   max-width: 100%;
 }

@@ -84,13 +84,9 @@ section {
 
 #tweets {
 	.content {
-		max-width: 600px;
-		height: 400px;
 		text-align: center;
 		iframe {
-			display: block !important;
-			width: 100% !important;
-			height: 100% !important;
+			height: 500px !important;
 		}
 	}
 }
@@ -115,7 +111,7 @@ section {
 				left: 0;
 				width: 100%;
 				height: 100%;
-				transition: background 0.1s linear;
+				transition: background 0.3s linear;
 			}
 			.img-container {
 				width: 100%;
@@ -131,7 +127,7 @@ section {
 				height: 40%;
 				background: #ECF0F1;
 				color: #34495e;
-				transition: background 0.1s linear;
+				transition: all 0.3s linear;
 				.name {
 					margin: 15px;
 					margin-bottom: 5px;
@@ -158,6 +154,27 @@ section {
 	}
 }
 
+#teaching {
+	.content {
+		.course {
+			display: inline-block;
+			vertical-align: middle;
+			width: 200px;
+			height: 160px;
+			margin: 10px;
+			padding: 15px;
+			border: 1px solid #ddd;
+			border-radius: 3px;
+			background: #ECF0F1;
+			color: #34495e;
+			.title {
+				font-size: 1.1em;
+				line-height: 1.3;
+			}
+		}
+	}
+}
+
 #students {
 	.content {
 		.name {
@@ -172,7 +189,7 @@ section {
 #pub {
 	.content {
 		max-width: 750px;
-		.word-cloud-container {
+		#word-cloud-container {
 			text-align: center;
 			svg {
 				width: 600px;

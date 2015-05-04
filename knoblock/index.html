@@ -31,7 +31,8 @@
 					<li class="active"><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#tweets">Tweets</a></li>
-					<li><a href="#projects">Projects</a></li>
+					<li><a href="#projects">Research</a></li>
+					<li><a href="#teaching">Teaching</a></li>
 					<li><a href="#students">Students</a></li>
 					<li><a href="#pub">Publications</a></li>
 					<li><a href="#contact">Contact</a></li>
@@ -50,7 +51,7 @@
 			<div class="affiliation">
 				<div><a href="http://www.isi.edu"><img class="isi-logo" src="img/isi-logo.png"></a></div>
 				<div><a href="http://www.usc.edu"><img class="usc-logo" src="img/usc-shield-name-white.png"></a></div>
-			<div>
+			</div>
 		</div><!-- container -->
 	</header>
 
@@ -59,11 +60,11 @@
 		<div class="content">
 			<ul class="list-inline social">
 				<li><a href="https://www.linkedin.com/in/craigknoblock"><img src="img/social/linkedin.jpg"></a></li>
-				<li><a href="https://twitter.com/caknoblock"><img src="img/social/twitter.jpg" class="hoverZoomLink"></a></li>
+				<li><a href="https://twitter.com/caknoblock"><img src="img/social/twitter.jpg"></a></li>
 				<li><a href="http://www.researchgate.net/profile/Craig_Knoblock"><img src="img/social/rg.jpg"></a></li>
-				<li><a href="https://scholar.google.com/citations?user=onXXy6MAAAAJ&amp;hl=en"><img src="img/social/google-scholar.png"></a></li>
+				<li><a href="https://scholar.google.com/citations?user=onXXy6MAAAAJ&hl=en"><img src="img/social/google-scholar.png"></a></li>
 				<li><a href="http://www.slideshare.net/CraigKnoblock"><img src="img/social/slideshare.jpg"></a></li>
-				<li><a href="doc/vita.pdf" target="_blank"><img src="img/social/cv.png"></a></li>
+				<li><a href="doc/vita.pdf"><img src="img/social/cv.png"></a></li>
 			</ul>
 			<p>Craig Knoblock is a Research Professor in both Computer Science and Spatial Sciences at the University of Southern California (USC), Director of Information Integration at the Information Sciences Institute, and Associate Director of Informatics Program at USC.
 			<p>He received his Bachelor of Science degree from Syracuse University and his Master’s and Ph.D. from Carnegie Mellon University in computer science. His research focuses on techniques related to information integration and the Semantic Web for describing, acquiring, and exploiting the semantics of data. He has published more than 250 journal articles, book chapters, and conference papers on these topics.</p>
@@ -80,7 +81,7 @@
 	</section>
 
 	<section id="projects" class="container">
-		<h2>PROJECTS</h2>
+		<h2>RESEARCH</h2>
 		<div class="content text-center">
 			<h3>Current</h3>
 			<a class="project" href="../dig">
@@ -172,6 +173,38 @@
 					</div>
 				</div>
 			</div><!-- modal -->
+		</div><!-- content -->
+	</section>
+
+	<section id="teaching" class="container">
+		<h2>TEACHING</h2>
+		<div class="content text-center">
+			<div class="course">
+				<h4 class="number">INF 553</h4>
+				<div class="semester">Fall 2015</div>
+				<h4 class="title"><a>Foundations and Applications of Data Mining</a></h4>
+			</div>
+			<div class="course">
+				<h4 class="number">SSCI 580</h4>
+				<div class="semester">TBD</div>
+				<h4 class="title"><a href="doc/courses/SSCI_580_Spatial Computing.pdf">Spatial Computing</a></h4>
+			</div>
+			<div class="course">
+				<h4 class="number">CSCI 548</h4>
+				<div class="semester">Spring 2015</div>
+				<h4 class="title"><a href="doc/courses/CSCI548_Syllabus_Spring_2015.pdf">Information Integration on the Web</a></h4>
+			</div>
+			<div class="course">
+				<h4 class="number">CSCI 648</h4>
+				<div class="semester">Spring 2015</div>
+				<h4 class="title"><a href="doc/courses/CSCI648_Syllabus_Spring_2015.pdf">Advanced Information Integration</a></h4>
+			</div>
+			<div class="course">
+				<h4 class="number">CSCI 599</h4>
+				<div class="semester">Spring 2014</div>
+				<h4 class="title"><a href="doc/courses/CSCI_599_Spatial_Data_Integration.pdf">Geospatial Data Integration</a></h4>
+			</div>
+			
 		</div><!-- content -->
 	</section>
 
@@ -287,8 +320,7 @@
 	<section id="pub" class="container">
 		<h2>PUBLICATIONS</h2>
 		<div class="content">
-			<!-- <p><img class="word-cloud" src="img/test.svg"></p> -->
-			<div class="word-cloud-container"></div>
+			<div id="word-cloud-container" data-bib="doc/full.bib" data-min-word-count="1" data-max-word-count="60" data-min-font-size="2" data-max-font-size="40"></div>
 			<script src="http://bibbase.org/show?bib=usc-isi-i2.github.io/knoblock/doc/selected.bib&jsonp=1"></script>
 		</div>
 	</section>

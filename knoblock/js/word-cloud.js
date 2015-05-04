@@ -1,4 +1,5 @@
-var bibtex = "doc/full.bib";
+var bibtex = $("#word-cloud-container").data("bib");
+
 d3.text(bibtex, function(error, data) {
 	if (error) {
 		console.warn(error);
@@ -7,7 +8,8 @@ d3.text(bibtex, function(error, data) {
 	var text = "";
 	var entries = BibtexParser(data).entries;
 	entries.forEach(function(entry) {
-		text += entry.Fields.title || entry.Fields.Title + " ";
+		text += entry.Fields.title || entry.Fields.Title;
+		text += " ";
 	});
 
 	var wordCount = {};
@@ -45,15 +47,13 @@ d3.text(bibtex, function(error, data) {
 
 	// extract the 50 most frequent words
 	wordCountList = wordCountList.slice(-50);
-	console.log(wordCountList);
 
-	var wordCloud = createWordCloud(wordCountList);
-
+	createWordCloud(wordCountList);
 });
 
 function createWordCloud(data) {
 	// Construct the word cloud's SVG element
-	var svg = d3.select(".word-cloud-container").append("svg");
+	var svg = d3.select("#word-cloud-container").append("svg");
 	var width = 600;
 	var height = 250;
 
@@ -63,11 +63,12 @@ function createWordCloud(data) {
 	.attr("transform", "translate(" + width/2 + "," + height/2 +")")
 
 	// map word count to word font size
-	var minCount = 1;
-	var maxCount = 60;
-	var minFontSize = 2;
-	var maxFontSize = 40;
-	var count2size = d3.scale.sqrt().domain([minCount, maxCount]).range([minFontSize, maxFontSize]);
+	var config = $("#word-cloud-container").data();
+	var minWordCount = config.minWordCount;
+	var maxWordCount = config.maxWordCount;
+	var minFontSize = config.minFontSize;
+	var maxFontSize = config.maxFontSize;
+	var count2size = d3.scale.sqrt().domain([minWordCount, maxWordCount]).range([minFontSize, maxFontSize]);
 
 	d3.layout.cloud()
 	.size([width, height])
@@ -95,7 +96,7 @@ function createWordCloud(data) {
 		cloud.enter().append("text")
 		.style("fill", function(d, i) { return d3.rgb(colors[i % colors.length]).darker(1); })
 		.style("font-family", '"Helvetica Neue", Helvetica, Arial, sans-serif')
-		.style("font-size", function(d) { return d.size; })
+		.style("font-size", function(d) { return d.size + "px"; })
 		.style("font-weight", "bold")
 		.attr("text-anchor", "middle")
 		.text(function(d) { return d.text; })
