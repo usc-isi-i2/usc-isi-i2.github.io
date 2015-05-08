@@ -7,12 +7,34 @@ $('a').each(function() {
 
 $('body').scrollspy({ target: '#nav-links' });
 
-// add title attribute if name or title overflows
-$('#people').find('.name, .title').each(function() {
-	if (this.scrollWidth > this.clientWidth) {
-		$(this).attr('title', $(this).text());
+// populate teaching section with data from courses.json
+d3.json('doc/courses.json', function(error, data) {
+	var $courses = $('#teaching .content');
+
+	if (error) {
+		$courses.append(error);
+		return;
 	}
+
+	data.forEach(function(course) {
+		var $number = $('<h4/>').addClass('number').text(course.number);
+		var $semester = $('<div/>').addClass('semester').text(course.semester);
+		var $title = $('<h4/>').addClass('title').text(course.title);
+		if (course.syllabus) {
+			$link = $('<a/>').attr('href', course.syllabus).attr('target', '_blank').text(course.title);
+			$title.empty();
+			$title.append($link);
+		}
+
+		var $course = $('<div/>').addClass('course');
+		$course.append($number);
+		$course.append($semester);
+		$course.append($title);
+
+		$courses.append($course);
+	});
 });
+
 
 $('a[href*=#]:not([href=#])').click(function() {
 	// smooth scroll on a large screen
