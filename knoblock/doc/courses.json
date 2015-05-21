@@ -1,17 +1,5 @@
 [
-	{
-		"number": "INF 553",
-		"semester": "Fall 2015",
-		"title": "Foundations and Applications of Data Mining",
-		"syllabus": ""
-	},
-
-	{
-		"number": "SSCI 580",
-		"semester": "TBD",
-		"title": "Spatial Computing",
-		"syllabus": "doc/syllabus/SSCI_580_Spatial Computing.pdf"
-	},
+	
 
 	{
 		"number": "CSCI 548",
@@ -32,5 +20,19 @@
 		"semester": "Spring 2014",
 		"title": "Geospatial Data Integration",
 		"syllabus": "doc/syllabus/CSCI_599_Spatial_Data_Integration.pdf"
+	},
+
+	{
+		"number": "INF 553",
+		"semester": "Fall 2015",
+		"title": "Foundations and Applications of Data Mining",
+		"syllabus": ""
+	},
+
+	{
+		"number": "SSCI 680",
+		"semester": "TBD",
+		"title": "Spatial Computing",
+		"syllabus": "doc/syllabus/SSCI_680_Spatial Computing.pdf"
 	}
 ]
