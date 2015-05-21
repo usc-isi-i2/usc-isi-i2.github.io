@@ -117,9 +117,12 @@ section .content {
 #projects .content a.project .img-container {
   width: 100%;
   height: 60%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+#projects .content a.project .img-container.contain {
+  background-size: contain;
 }
 #projects .content a.project .description {
   position: absolute;
