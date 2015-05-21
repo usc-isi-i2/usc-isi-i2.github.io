@@ -1,5 +1,5 @@
-# [Craig Knoblock](http://usc-isi-i2.github.io/knoblock/)
-This is the website of Craig Knoblock.
+# [Semantic Modeling](http://usc-isi-i2.github.io/semantic-modeling)
+This is the website of Semantic Modeling.
 ## Set up
 1. Make sure you're on Mac OS or *nix!
 2. Install [Node.js](http://nodejs.org/)
