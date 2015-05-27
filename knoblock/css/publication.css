@@ -1,7 +1,10 @@
+#bibbase_body {
+  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
+}
+
 .bibbase_group {
   font-size: 10pt;
   font-weight: bold;
-  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   text-decoration: none;
   color: black;
 }
@@ -22,7 +25,6 @@ img.bibbase_icon {
 
 .bibbase_icon_text {
   color: #5D0001;
-  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   font-size: 9pt;
   line-height: 12pt;
   margin-bottom: 10px;
@@ -42,14 +44,12 @@ span.bibbase_icon_text {
    */
 span.bibbase_paper_titleauthoryear {
   color: #000000;
-  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   font-size: 9pt;
   display: block;
 }
 
 span.bibbase_paper_title {
   color: #000000;
-  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   font-size: 10pt;
   line-height: 12pt;
   font-weight: bold;
@@ -69,7 +69,6 @@ span.bibbase_paper_title a:hover {
 
 span.bibbase_paper_author {
   color: #000000;
-  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   font-size: 9pt;
   line-height: 12pt;
   margin-bottom: 0px;
@@ -77,7 +76,6 @@ span.bibbase_paper_author {
 
 span.bibbase_paper_year {
   color: #000000;
-  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   font-size: 9pt;
   line-height: 12pt;
   margin-bottom: 0px;
@@ -85,7 +83,6 @@ span.bibbase_paper_year {
 
 span.bibbase_paper_content {
   font-size: 9pt;
-  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   line-height: 11pt;
   letter-spacing: -0.5px;
   text-decoration: none;
@@ -93,7 +90,6 @@ span.bibbase_paper_content {
 
 .bibbase_paper_content a {
   font-size: 9pt;
-  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   line-height: 11pt;
   letter-spacing: -0.5px;
   text-decoration: none;
@@ -102,14 +98,12 @@ span.bibbase_paper_content {
 
 span.bibbase_paper_venue {
   font-size: 9pt;
-  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   line-height: 11pt;
   letter-spacing: -0.5px;
 }
 
 span.bibbase_paper_note {
   font-size: 9pt;
-  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   line-height: 11pt;
   letter-spacing: -0.5px;
 }
