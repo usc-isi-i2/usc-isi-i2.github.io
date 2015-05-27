@@ -182,9 +182,6 @@ section .content .highlight {
   width: 600px;
   max-width: 100%;
 }
-#pub .content #bibbase_body {
-  font-size: 13px;
-}
 
 #contact .content {
   text-align: center;
