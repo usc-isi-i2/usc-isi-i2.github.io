@@ -1,9 +1,9 @@
-tr.bibbase_group {
+.bibbase_group {
 	font-size: 10pt;
 	font-weight: bold;
 	font-family: "Trebuchet MS", verdana, geneva, sans-serif; 
 	text-decoration:none;
-	color: #000000;
+	color: black;
 }
 
 .bibbase_paper {
@@ -38,7 +38,7 @@ span.bibbase_icon_text {
 
 /* the parts of each entry are: title_author_year venue note (newline) content 
    where "content" is the set of urls and possibly an abstract
-*/
+   */
 
 span.bibbase_paper_titleauthoryear {
 	color:	#000000;
@@ -51,8 +51,6 @@ span.bibbase_paper_title {
 	font-family: "Trebuchet MS", verdana, geneva, sans-serif; 
 	font-size: 10pt;
 	line-height: 12pt;
-	margin-bottom:0px;
-	margin-top:0sspx;
 	font-weight:bold;
 	display:block;
 }
@@ -68,7 +66,7 @@ span.bibbase_paper_title a:hover {
 }
 
 span.bibbase_paper_author {
- color:	#000000;
+	color:	#000000;
 	font-family: "Trebuchet MS", verdana, geneva, sans-serif; 
 	font-size: 9pt;
 	line-height: 12pt;
@@ -76,15 +74,15 @@ span.bibbase_paper_author {
 }
 
 span.bibbase_paper_year {
-color:	#000000;
+	color:	#000000;
 	font-family: "Trebuchet MS", verdana, geneva, sans-serif; 
 	font-size: 9pt;
 	line-height: 12pt;
 	margin-bottom: 0px;
-	}
+}
 
 span.bibbase_paper_content {
- 	font-size:9pt;
+	font-size:9pt;
 	font-family: "Trebuchet MS", verdana, geneva, sans-serif; 
 	line-height: 11pt;
 	letter-spacing: -0.5px;
@@ -92,7 +90,7 @@ span.bibbase_paper_content {
 }
 
 .bibbase_paper_content a {
- 	font-size:9pt;
+	font-size:9pt;
 	font-family: "Trebuchet MS", verdana, geneva, sans-serif; 
 	line-height: 11pt;
 	letter-spacing: -0.5px;
@@ -102,7 +100,7 @@ span.bibbase_paper_content {
 
 
 span.bibbase_paper_venue {
-font-size:9pt;
+	font-size:9pt;
 	font-family: "Trebuchet MS", verdana, geneva, sans-serif; 
 	line-height: 11pt;
 	letter-spacing: -0.5px;

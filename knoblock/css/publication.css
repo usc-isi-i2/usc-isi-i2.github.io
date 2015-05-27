@@ -1,9 +1,9 @@
-tr.bibbase_group {
+.bibbase_group {
   font-size: 10pt;
   font-weight: bold;
   font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   text-decoration: none;
-  color: #000000;
+  color: black;
 }
 
 .bibbase_paper {
@@ -39,7 +39,7 @@ span.bibbase_icon_text {
 
 /* the parts of each entry are: title_author_year venue note (newline) content 
    where "content" is the set of urls and possibly an abstract
-*/
+   */
 span.bibbase_paper_titleauthoryear {
   color: #000000;
   font-family: "Trebuchet MS", verdana, geneva, sans-serif;
@@ -52,8 +52,6 @@ span.bibbase_paper_title {
   font-family: "Trebuchet MS", verdana, geneva, sans-serif;
   font-size: 10pt;
   line-height: 12pt;
-  margin-bottom: 0px;
-  margin-top: 0sspx;
   font-weight: bold;
   display: block;
 }
