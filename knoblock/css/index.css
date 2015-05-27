@@ -92,6 +92,7 @@ section .content {
 
 #projects .content {
   max-width: 900px;
+  text-align: center;
 }
 #projects .content a.project {
   position: relative;
