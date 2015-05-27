@@ -9,7 +9,7 @@ $('body').scrollspy({ target: '#nav-links' });
 
 // populate teaching section with data from courses.json
 d3.json('doc/courses.json', function(error, data) {
-	var $courses = $('#teaching .content');
+	var $courses = $('#teaching .content .courses');
 
 	if (error) {
 		$courses.append(error);
