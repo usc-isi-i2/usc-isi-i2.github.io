@@ -7,15 +7,6 @@ $('a').each(function() {
 
 $('body').scrollspy({ target: '#nav-links' });
 
-(function normalizeCarouselHeight() {
-	var height = $('#carousel .item.active').height();
-	var $images = $('#carousel .item img');
-
-    $images.each(function() {
-    	$(this).css("height", height);
-    });
-})();
-
 // add title attribute if name or title overflows
 $('#people').find('.name, .title').each(function() {
 	if (this.scrollWidth > this.clientWidth) {
@@ -37,3 +28,13 @@ $('a.scroll').click(function() {
 		}
 	}
 });
+
+// use onload to make sure the carousel is fully loaded 
+window.onload = function normalizeCarouselHeight() {
+	var height = $('#carousel .item.active').height();
+	var $images = $('#carousel .item img');
+
+    $images.each(function() {
+    	$(this).css("height", height);
+    });
+};
