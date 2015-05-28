@@ -24,9 +24,6 @@ header .affiliation {
 header .affiliation div {
   margin-top: 10px;
 }
-header .affiliation div .isi-logo {
-  width: 250px;
-}
 header .scroll-btn-container {
   position: absolute;
   top: 80%;
