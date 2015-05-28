@@ -14,7 +14,7 @@ $('#people').find('.name, .title').each(function() {
 	}
 });
 
-$('a[href*=#]:not([href=#])').click(function() {
+$('a.scroll').click(function() {
 	// smooth scroll on a large screen
 	if ($(window).width() >= 768) {
 		if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {

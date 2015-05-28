@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/publication.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -32,17 +33,17 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#home">Karma</a>
+				<a class="navbar-brand scroll" href="#home">Karma</a>
 			</div><!-- navbar-header -->
 			<div class="collapse navbar-collapse" id="nav-links">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#home">Home</a></li>
-					<li><a href="#video">Video</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#tweets">Tweets</a></li>
-					<li><a href="#case">Case Study</a></li>
-					<li><a href="#people">People</a></li>
-					<li><a href="#pub">Publications</a></li>
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+					<li><a class="scroll" href="#video">Video</a></li>
+					<li><a class="scroll" href="#about">About</a></li>
+					<li><a class="scroll" href="#tweets">Tweets</a></li>
+					<li><a class="scroll" href="#case">Case Study</a></li>
+					<li><a class="scroll" href="#people">People</a></li>
+					<li><a class="scroll" href="#pub">Publications</a></li>
 				</ul>        
 			</div><!-- collapse navbar-collapse -->
 		</div><!-- container -->
@@ -57,12 +58,13 @@
 				<a class="link-btn" href="https://github.com/usc-isi-i2/Web-Karma/wiki">User Guide</a>
 			</div>
 			<div class="affiliation">
-				<div><a href="http://www.isi.edu"><img class="isi-logo" src="img/isi-logo.png"></a></div>
-				<div><a href="http://www.usc.edu"><img class="usc-logo" src="img/usc-shield-name-white.png"></a></div>
+				<div><a href="../"><img src="img/iig-logo.png" width="280"></a></div>
+				<div><a href="http://www.isi.edu"><img src="img/isi-logo.png" width="250"></a></div>
+				<div><a href="http://www.usc.edu"><img src="img/usc-shield-name-white.png"></a></div>
 			</div>
 		</div><!-- container -->
 		<div class="scroll-btn-container hidden-xs">
-			<a class="scroll-btn" href="#video"><i class="fa fa-angle-down"></i></a>
+			<a class="scroll-btn scroll" href="#video"><i class="fa fa-angle-down"></i></a>
 		</div>
 	</header>
 
@@ -79,7 +81,6 @@
 		<div class="content">
 			<p>Karma is an information integration tool that enables users to quickly and easily integrate data from a variety of data sources including databases, spreadsheets, delimited text files, XML, JSON, KML and Web APIs. Users integrate information by modeling it according to an ontology of their choice using a graphical user interface that automates much of the process. Karma learns to recognize the mapping of data to ontology classes and then uses the ontology to propose a model that ties together these classes. Users then interact with the system to adjust the automatically generated model. During this process, users can transform the data as needed to normalize data expressed in different formats and to restructure it. Once the model is complete, users can published the integrated data as RDF or store it in a database.</p>
 			<p>All the project publications are <a href="#pub">here</a>. The best paper on the technical aspects of Karma is our <a href="http://www.isi.edu/integration/papers/knoblock12-eswc.pdf">ESWC'2012 paper</a>, and the best application paper is our <a href="http://www.isi.edu/~szekely/contents/papers/2013/eswc-2013-saam.pdf">ESWC'2013 paper</a>, which received the best in-use paper award at the conference.</p>
-			<p>Karma is one of the <a href="http://www.isi.edu/integration/group/html/projects.html">research projects</a> created by Information Integration Research Group at ISI.</p>
 		</div>
 	</section>
 
@@ -289,7 +290,7 @@
 	<section id="pub" class="container">
 		<h2>PUBLICATIONS</h2>
 		<div class="content">
-			<script src="http://bibbase.org/show?bib=http://www.isi.edu/integration/karma/karma-bib.bib&jsonp=1"></script>
+			<script src="http://bibbase.org/show?bib=http://www.isi.edu/integration/karma/karma-bib.bib&group0=type&css=1&jsonp=1"></script>
 		</div>
 	</section>
 
