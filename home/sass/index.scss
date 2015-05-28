@@ -2,7 +2,7 @@ html, body {
 	height: 100%;
 }
 
-.navbar-nav {
+.navbar {
 	font-weight: 600;
 }
 
@@ -86,52 +86,6 @@ section {
 	}
 }
 
-#people {
-	ul.content {
-		max-width: 800px;
-		@media (max-width: 600px) {
-			text-align: center;
-		}
-		li {
-			display: inline-block;
-			margin: 12px;
-			width: 130px;
-			border-radius: 5px;
-			overflow: hidden;
-			background: #333;
-			&:hover {
-				background: black;
-			}
-			a {
-				display: block;
-				height: 130px;
-				background-repeat: no-repeat;
-				background-position: center 10%;
-				background-size: cover;
-			}
-			.description {
-				padding: 8px;
-				color: #ccc;
-				@mixin ellipsis {
-					overflow: hidden;
-					text-overflow: ellipsis;
-					white-space: nowrap;
-				}
-				.name {
-					@include ellipsis;
-					margin-bottom: 3px;
-					font-size: 0.85em;
-					font-weight: 600;
-				}
-				.title {
-					@include ellipsis;
-					font-size: 0.8em;
-				}
-			}
-		}
-	}
-}
-
 #projects {
 	.content {
 		max-width: 900px;
@@ -186,6 +140,55 @@ section {
 				.description {
 					background: #555;
 					color: white;
+				}
+			}
+		}
+	}
+}
+
+#people {
+	ul.content {
+		max-width: 800px;
+		@media (max-width: 600px) {
+			text-align: center;
+		}
+		h3 {
+			text-align: center;
+		}
+		li {
+			display: inline-block;
+			margin: 12px;
+			width: 130px;
+			border-radius: 5px;
+			overflow: hidden;
+			background: #333;
+			&:hover {
+				background: black;
+			}
+			a {
+				display: block;
+				height: 130px;
+				background-repeat: no-repeat;
+				background-position: center 10%;
+				background-size: cover;
+			}
+			.description {
+				padding: 8px;
+				color: #ccc;
+				@mixin ellipsis {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				.name {
+					@include ellipsis;
+					margin-bottom: 3px;
+					font-size: 0.85em;
+					font-weight: 600;
+				}
+				.title {
+					@include ellipsis;
+					font-size: 0.8em;
 				}
 			}
 		}

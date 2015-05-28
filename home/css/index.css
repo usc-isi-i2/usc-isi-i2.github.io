@@ -2,7 +2,7 @@ html, body {
   height: 100%;
 }
 
-.navbar-nav {
+.navbar {
   font-weight: 600;
 }
 
@@ -78,51 +78,6 @@ section .content {
   height: 500px !important;
 }
 
-#people ul.content {
-  max-width: 800px;
-}
-@media (max-width: 600px) {
-  #people ul.content {
-    text-align: center;
-  }
-}
-#people ul.content li {
-  display: inline-block;
-  margin: 12px;
-  width: 130px;
-  border-radius: 5px;
-  overflow: hidden;
-  background: #333;
-}
-#people ul.content li:hover {
-  background: black;
-}
-#people ul.content li a {
-  display: block;
-  height: 130px;
-  background-repeat: no-repeat;
-  background-position: center 10%;
-  background-size: cover;
-}
-#people ul.content li .description {
-  padding: 8px;
-  color: #ccc;
-}
-#people ul.content li .description .name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin-bottom: 3px;
-  font-size: 0.85em;
-  font-weight: 600;
-}
-#people ul.content li .description .title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 0.8em;
-}
-
 #projects .content {
   max-width: 900px;
   text-align: center;
@@ -179,6 +134,54 @@ section .content {
 #projects .content a.project:hover .description {
   background: #555;
   color: white;
+}
+
+#people ul.content {
+  max-width: 800px;
+}
+@media (max-width: 600px) {
+  #people ul.content {
+    text-align: center;
+  }
+}
+#people ul.content h3 {
+  text-align: center;
+}
+#people ul.content li {
+  display: inline-block;
+  margin: 12px;
+  width: 130px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #333;
+}
+#people ul.content li:hover {
+  background: black;
+}
+#people ul.content li a {
+  display: block;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  background-size: cover;
+}
+#people ul.content li .description {
+  padding: 8px;
+  color: #ccc;
+}
+#people ul.content li .description .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 3px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+#people ul.content li .description .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.8em;
 }
 
 footer {
