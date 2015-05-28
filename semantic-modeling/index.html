@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/publication.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -24,15 +25,15 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#home">Semantic Modeling</a>
+				<a class="navbar-brand scroll" href="#home">Semantic Modeling</a>
 			</div><!-- navbar-header -->
 			<div class="collapse navbar-collapse" id="nav-links">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#home">Home</a></li>
-					<li><a href="#slides">Slides</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#people">People</a></li>
-					<li><a href="#pub">Publications</a></li>
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+					<li><a class="scroll" href="#slides">Slides</a></li>
+					<li><a class="scroll" href="#about">About</a></li>
+					<li><a class="scroll" href="#people">People</a></li>
+					<li><a class="scroll" href="#pub">Publications</a></li>
 				</ul>        
 			</div><!-- collapse navbar-collapse -->
 		</div><!-- container -->
@@ -43,12 +44,13 @@
 			<h1>Semantic Modeling</h1>
 			<h2>Automatically building semantic descriptions of sources</h2>
 			<div class="affiliation">
-				<div><a href="http://www.isi.edu"><img class="isi-logo" src="img/isi-logo.png"></a></div>
-				<div><a href="http://www.usc.edu"><img class="usc-logo" src="img/usc-shield-name-white.png"></a></div>
+				<div><a href="../"><img src="img/iig-logo.png" width="280"></a></div>
+				<div><a href="http://www.isi.edu"><img src="img/isi-logo.png" width="250"></a></div>
+				<div><a href="http://www.usc.edu"><img src="img/usc-shield-name-white.png"></a></div>
 			</div>
 		</div><!-- container -->
 		<div class="scroll-btn-container hidden-xs">
-			<a class="scroll-btn" href="#slides"><i class="fa fa-angle-down"></i></a>
+			<a class="scroll-btn scroll" href="#slides"><i class="fa fa-angle-down"></i></a>
 		</div>
 	</header>
 
@@ -65,7 +67,6 @@
 		<div class="content">
 			<p>Information sources such as relational databases, spreadsheets, XML, JSON, and Web APIs contain a tremendous amount of structured data that can be leveraged to build and augment knowledge graphs. However, they rarely provide a semantic model to describe their contents. Semantic models of data sources represent the implicit meaning of the data by specifying the concepts and the relationships within the data. Such models are the key ingredients to automatically publish the data into knowledge graphs. Manually modeling the semantics of data sources requires significant effort and expertise, and although desirable, building these models automatically is a challenging problem. Most of the related work focuses on semantic annotation of the data fields (source attributes). However, constructing a semantic model that explicitly describes the relationships between the attributes in addition to their semantic types is critical.</p>
 			<p>We present a novel approach that exploits the knowledge from a domain ontology and the semantic models of previously modeled sources to automatically learn a rich semantic model for a new source. This model represents the semantics of the new source in terms of the concepts and relationships defined by the domain ontology. Given some sample data from the new source, we leverage the knowledge in the domain ontology and the known semantic models to construct a weighted graph that represents the space of plausible semantic models for the new source. Then, we compute the top k candidate semantic models and suggest to the user a ranked list of the semantic models for the new source. The approach takes into account user corrections to learn more accurate semantic models on future data sources. Our evaluation shows that our method generates expressive semantic models for data sources and services with minimal user input. These precise models make it possible to automatically integrate the data across sources and provide rich support for source discovery and service composition. They also make it possible to automatically publish semantic data into knowledge graphs.</p>
-			<p>Semantic Modeling is one of the <a href="http://www.isi.edu/integration/group/html/projects.html">research projects</a> created by Information Integration Research Group at ISI.</p>
 		</div>
 	</section>
 
@@ -113,7 +114,7 @@
 	<section id="pub" class="container">
 		<h2>PUBLICATIONS</h2>
 		<div class="content">
-			<script src="http://bibbase.org/show?bib=http://www.isi.edu/integration/karma/karma-bib.bib&jsonp=1"></script>
+			<script src="http://bibbase.org/show?bib=http://usc-isi-i2.github.io/karma/doc/karma-bib.bib&group0=type&css=1&jsonp=1"></script>
 		</div>
 	</section>
 

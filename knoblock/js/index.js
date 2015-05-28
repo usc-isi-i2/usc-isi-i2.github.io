@@ -36,7 +36,7 @@ d3.json('doc/courses.json', function(error, data) {
 });
 
 
-$('a[href*=#]:not([href=#])').click(function() {
+$('a.scroll').click(function() {
 	// smooth scroll on a large screen
 	if ($(window).width() >= 768) {
 		if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {

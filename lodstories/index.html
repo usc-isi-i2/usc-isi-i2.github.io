@@ -24,14 +24,14 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#home">LODStories</a>
+				<a class="navbar-brand scroll" href="#home">LODStories</a>
 			</div><!-- navbar-header -->
 			<div class="collapse navbar-collapse" id="nav-links">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#home">Home</a></li>
-					<li><a href="#video">Video</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#people">People</a></li>
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+					<li><a class="scroll" href="#video">Video</a></li>
+					<li><a class="scroll" href="#about">About</a></li>
+					<li><a class="scroll" href="#people">People</a></li>
 				</ul>        
 			</div><!-- collapse navbar-collapse -->
 		</div><!-- container -->
@@ -47,12 +47,13 @@
 				<a class="link-btn" href="http://lodstories.isi.edu/LODStories/paper/LODStories_Presentation.pdf">Presentation</a>
 			</div>
 			<div class="affiliation">
-				<div><a href="http://www.isi.edu"><img class="isi-logo" src="img/isi-logo.png"></a></div>
-				<div><a href="http://www.usc.edu"><img class="usc-logo" src="img/usc-shield-name-white.png"></a></div>
+				<div><a href="../"><img src="img/iig-logo.png" width="280"></a></div>
+				<div><a href="http://www.isi.edu"><img src="img/isi-logo.png" width="250"></a></div>
+				<div><a href="http://www.usc.edu"><img src="img/usc-shield-name-white.png"></a></div>
 			</div>
 		</div><!-- container -->
 		<div class="scroll-btn-container hidden-xs">
-			<a class="scroll-btn" href="#video"><i class="fa fa-angle-down"></i></a>
+			<a class="scroll-btn scroll" href="#video"><i class="fa fa-angle-down"></i></a>
 		</div>
 	</header>
 
@@ -69,7 +70,6 @@
 		<div class="content">
 			<h3>Introduction</h3>
 			<p>LODStories is an engaging application where people learn about art while constructing multimedia stories about art. LODStories mines the Linked Open Data cloud to discover interesting connections between artworks, artists, places and ideas. LODStories guides users to construct a storyboard that connects the entities in an interesting way. It then fetches text, images and videos that users can arrange to create a multimedia story, and finally constructs a narrated video that users can edit and then publish to tell their story. The process is fun, and students learn about art and its connection to the world they live in. The paper describes the architecture of the system and the algorithms to make the exploration entertaining and educational.</p>
-			<p>LODStories is one of the <a href="http://www.isi.edu/integration/group/html/projects.html">research projects</a> created by Information Integration Research Group at ISI.</p>
 			<h3>Step 1: Search for Art...</h3>
 			<img src="img/path-search.png">
 			<p>Type the name of the artist or the artwork that you are interested in, and click GO, the app will find other nodes that have relationship with the one you searched, and create path accordingly.</p>
