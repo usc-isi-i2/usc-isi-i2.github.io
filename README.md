@@ -27,8 +27,7 @@ Please get yourself familiar with the following stuff at first. It will make you
 - (required) Working knoledge of Git and Unix shell
 - (required) HTML, JavaScript, Bootstrap
 - (required) Sass
-- [Node.js](http://nodejs.org/) and `npm`
-- [Grunt](http://gruntjs.com/)
+- To automate workflow: [Node.js](http://nodejs.org/), `npm`, [Grunt](http://gruntjs.com/)
 
 ## Local Set Up
 1. Make sure you're on Mac OS or *nix!
