@@ -10,7 +10,7 @@ USC ISI information integration group website
   - `doc` put your bibtex file and other related documents here. To be consistent, we recommend you name your bibtex of all publications `complete.bib` and bibtex of selected publications to show on your page `selected.bib`
 
 ## Change CSS
-The css files in folder `css` are compiled from the scss files in folder `scss`. **Don't** change the css directly. Check out [Technology Stack](#technology-stack) to see how to run the compilation automatically.
+The css files in folder `css` are compiled from the scss files in folder `scss`. **Don't change the css files directly**. Check out [Technology Stack](#technology-stack) to see how to run the compilation automatically.
 
 ## How Word Cloud Works
 I use the one in knoblock's page as an example.
