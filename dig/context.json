@@ -129,9 +129,6 @@
     "dateCreated": {
       "@id": "http://schema.org/dateCreated"
     },
-    "keywords": {
-      "@id": "http://schema.org/keywords"
-    },
     "databaseId": {
       "@id": "http://memexproxy.com/ontology/databaseId"
     },
