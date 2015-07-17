@@ -12,6 +12,10 @@
       "@type": "@id",
       "@id": "http://schema.org/WebPage"
     },
+    "ScholarlyArticle": {
+      "@type": "@id",
+      "@id": "http://schema.org/ScholarlyArticle"
+    },
     "WebPageElement": {
       "@type": "@id",
       "@id": "http://schema.org/WebPageElement"
@@ -162,7 +166,7 @@
       "@id": "http://memexproxy.com/ontology/featureName"
     },
     "isAuthorOf": {
-        "@id": "http://memexproxy.com/ontology/isAuthorOf"
+      "@id": "http://memexproxy.com/ontology/isAuthorOf"
     },
     "featureValue": {
       "@id": "http://memexproxy.com/ontology/featureValue"
