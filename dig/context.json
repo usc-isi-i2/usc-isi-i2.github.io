@@ -507,7 +507,7 @@
       "@id": "http://memexproxy.com/ontology/text_title_unicode_signature"
     },
     "author": {
-      "@id": "http://memexproxy.com/ontology/author"
+      "@id": "http://schema.org/author"
     },
     "content_type": {
       "@id": "http://memexproxy.com/ontology/content_type"
