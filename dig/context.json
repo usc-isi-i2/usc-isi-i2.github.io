@@ -20,17 +20,9 @@
         "@type": "@id",
         "@id": "http://memexproxy.com/ontology/PhoneNumber"
     },
-    "AggregateRating": {
-        "@type": "@id",
-        "@id": "http://schema.org/AggregateRating"
-    },
     "Place": {
         "@type": "@id",
         "@id": "http://schema.org/Place"
-    },
-    "ScholarlyArticle": {
-        "@type": "@id",
-        "@id": "http://schema.org/ScholarlyArticle"
     },
     "GeoCoordinates": {
         "@type": "@id",
@@ -112,11 +104,6 @@
         "@id": "http://memexproxy.com/ontology/PersonOrOrganization"
     },
     "a": "@type",
-
-    "author": {"@id": "http://schema.org/author"},
-    "aggregateRating": {"@id": "http://schema.org/aggregateRating"},
-    "ratingValue": {"@id": "http://schema.org/ratingValue"},
-
     "legalName": {"@id": "http://schema.org/legalName"},
     "provider": {"@id": "http://schema.org/provider"},
     "category": {"@id": "http://schema.org/category"},
@@ -129,12 +116,6 @@
     "databaseId": {"@id": "http://memexproxy.com/ontology/databaseId"},
     "digitalObjectIdentifier": {"@id": "http://memexproxy.com/ontology/digitalObjectIdentifier"},
     "textChecksum": {"@id": "http://memexproxy.com/ontology/textChecksum"},
-
-    "isPostOf": {"@id": "http://memexproxy.com/ontology/isPostOf"},
-
-
-
-    "activityCount": {"@id": "http://memexproxy.com/ontology/activityCount"},
 
     "hasBodyPart": {"@id": "http://memexproxy.com/ontology/hasBodyPart"},
     "hasImagePart": {"@id": "http://memexproxy.com/ontology/hasImagePart"},
@@ -246,11 +227,6 @@
     "startDate": {"@id": "http://schema.org/startDate"},
     "identifier": {"@id": "http://memexproxy.com/ontology/identifier"},
     "itemOffered": {"@id": "http://schema.org/itemOffered"},
-
-
-    "isAuthorOf": {"@id": "http://memexproxy.com/ontology/isAuthorOf"},
-
-
 
     "creditcardaccepted": {"@id": "http://memexproxy.com/ontology/creditcardaccepted"},
 
@@ -394,6 +370,5 @@
     "emailDomainsMentioned_feature":{"@id": "http://memexproxy.com/ontology/emailDomainsMentioned_feature"},
     "fromUser_feature": {"@id": "http://memexproxy.com/ontology/fromUser_feature"},
     "toUsers_feature": {"@id": "http://memexproxy.com/ontology/toUsers_feature"},
-    "transactionTypesMentioned_feature": {"@id": "http://memexproxy.com/ontology/transactionTypesMentioned_feature"},
-     "geonames_addresses":{"@id": "http://memexproxy.com/ontology/geonames_addresses"}
+    "transactionTypesMentioned_feature": {"@id": "http://memexproxy.com/ontology/transactionTypesMentioned_feature"}
     }}
