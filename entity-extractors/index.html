@@ -185,7 +185,7 @@
 			</ol>
 			
 			<h4>GENERATE QUALIFICATION TASK</h4>
-			<p>Whats is a qualification test?</p>
+			<p>The Qualification Task is a small test where the user practice the hit before do the paid one. The objective of the test is teach the user by practicing, so for each wrong answer the user receives a feedback with the explanation of how to correctly answer it. The user just can do the real hit after be approved in the Qualification Task, and the test can be done several times of after a delay (defined for the test).</p>
 			<ol>
 				<li>If an extraction requires qualification, it has to be generated before creating hits. To generate a qualification task, you need the following:</li>
 				<li>Name of your qualification. Let's call it $NAME.</li>
@@ -197,22 +197,26 @@
 			<h4>Steps to create qualification:</h4>
 			<ol>
 				<li><code>newQualification.sh $EXTRACTON</code>- this will copy config JSON from extractions/boilerplate/qualification/ to $GITHUB/dig-mturk/extractions/$EXTRACTION/qualification/qual_${EXTRACTION}.json</li>
-				<li>Edit this to reflect categories, sentences, answers, etc. to define your qualification domain. The JSON key <code>explanation.wrong</code> needn't be edited. The py script will populate this field as required before generating HTML.</li>
+				<li>The JSON key <code>explanation.wrong</code> needn't be edited. The py script will populate this field as required before generating HTML. Edit the fields above to define your qualification domain:</li>
 				<ol>
-					<li>categories: label</li>
-					<li>total-questions:</li>
-					<li>correct-questions:</li>
-					<li>title:</li>
-					<li>subtitle: </li>
-					<li>description:</li>
-					<li>average-time:</li>
-					<li>instructions:</li>
-					<li>example:</li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li>categories [label]: put the name of the attributes that should be selected</li>
+					<li>total-questions: set the total number of questions in the test</li>
+					<li>correct-questions: set the number of questions that the user have to do correctly to be approved</li>
+					<li>title: change the company's name </li>
+					<li>subtitle: change the categories names</li>
+					<li>average-time: average time that a regular user spend to finish the test</li>
+					<li>help [title]: change the categories names</li>
+					<li>help [html]: paste a html code with the explanation/image that helps the user to figure out the correct way to select the words for this domain</li>
+					<li>aprove-message [html]: change the number for the number of correct question that the user have to answer</li>
+				</ol>
+				<p>For each sentence, change:</p>
+				<ol>
+					<li>id: should be in crescent order</li>
+					<li>text: the complete sentence that should be analized</li>
+					<li>annotations: set "yes" if there are selections to be done in the sentence and "no" if there is no word to select in the text</li>
+					<li>select: specify which categories should be selected in this question (can be all the categories or just one. For more than one, put each categories separeted for comma</li>
+					<li>answer [categorie]: for each category, get all the words that should be selected. If there is more than one, put the answers separated for /t. If there is no answer for this category, set as ""</li>
+					<li>explanation [wrong] [text]: write the explanation for why the sentence have to be selected like you specified in the answer. This text just will be shown when the user selects a wrong answer for the question</li>
 				</ol>
 				<li>When the qual_$EXTRACTION.json file is complete it must be uploaded to S3 in bucket/extractions/$EXTRACTION/qualification/</li>
 				<li><code>python mturk/src/main/python/qualGenerator.py</code>. This will generate and publish qualification HTML to S3. It will also generate qualification.cfg.</li>
