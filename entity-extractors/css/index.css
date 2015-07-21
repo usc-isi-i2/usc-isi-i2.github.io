@@ -20,9 +20,12 @@ header .dig-logo {
   max-width: 90%;
 }
 header h1 {
-  font-size: 1.6em;
-  font-weight: 600;
+  font-size: 36px;
   color: white;
+}
+header h2 {
+  font-size: 1.5em;
+  color: #ccc;
 }
 header .affiliation {
   margin-top: 40px;
