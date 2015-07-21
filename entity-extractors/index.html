@@ -81,9 +81,13 @@
 		<h2>TUTORIAL: HOW TO USE THE TOOL</h2>
 		
 		<div class="content">
-			<p>Utilities to set up and process annotation tasks in the IST platform or in Mechanical Turk. Transform the ad hoc directory and convention structure in place to principled version promulgated by Pedro's design. See attachments.</p>
+			<p>We need a new one.</p>
+
+			<h3>ABOUT MTURK</h3>
+				<p>MTurk hits can be run in sanbox (developer) or live environment. Hits can be created with/without qualifications. All the possibilities are explained below.</p>
 			<h4>REQUIREMENTS</h4>
 			<ol>
+				<li>Git, GitHub acct. $GITHUB.</li>
 				<li>Install python 2.7, java 1.7, maven 3 using system installers (apt-get, yum, Mac installer, etc.).
 				<li>Install <a href="https://github.com/usc-isi-i2/Web-Karma">Web-Karma</a>, <a href="https://github.com/usc-isi-i2/dig-mturk">dig-mturk</a> in $GITHUB.</li>
 				<li>Install following python libraries:</li>
@@ -96,7 +100,7 @@
 			</ol>
 			<h4>ENVIRONMENT</h4>
 			<ol>
-				<li>We will refer to your github root dir as $GITHUB. Your home directory is $HOME.</li>
+				<li>Your home directory is $HOME.</li>
 				<li>Edit (at the bottom will work well) your ~/.profile or other sh init file (e.g. .bash_profile) to contain the following:</li>
 					<p><code>export GITHUB=&lt;your github repository root folder&gt;</code></p> 
 					<p><code>export PATH="$PATH:$GITHUB/dig-mturk/generic/scripts</code></p>
@@ -144,16 +148,13 @@
 						secret_key=&lt;AWS SECRET ACCESS KEY&gt;<br/>
 					</code></p>
 			</ol>
-			
-			<h3>ABOUT MTURK</h3>
-				<p>MTurk hits can be run in sanbox (developer) or live environment. Hits can be created with/without qualifications. All the possibilities are explained below.</p>
-			<h4>SETUP</h4>
+			<h4>SETUP A NEW EXTRACTION</h4>
 			<ol>
 				<li><code>cd $GITHUB/dig-mturk</code></li>
 				<li>Determine the name of the extraction. Examples are 'eyehair' and 'ethnic' (no spaces, lower case).</li>
 				<li>For convenience, <code>export EXTRACTION=&lt;extraction&gt;</code></li>
 				<li><code>newExtraction.sh $EXTRACTION</code> This will create $GITHUB/dig-mturk/extractions/$EXTRACTION and copy/adapt a few files dig-mturk/extractions/boilerplate/ to /dig-mturk/extractions/$EXTRACTION/.</li>
-				<ul>
+				<ol>
 					<li>create.cfg</li>
 					<li>hitdata.pyfmt</li>
 					<li>fetchSentences.sh</li>
@@ -162,24 +163,29 @@
 					<li>$EXTRACTION-context.json, $EXTRACTION-model.png, $EXTRACTION-model.ttl, $EXTRACTION-report.md</li>
 					<li>qualification/*</li>
 					<li>karma/</li>
-				</ul>
-				<li>Edit these configuration files. You will want a small set of categories and associated labels. The category name itself should be a simple lower case identifier without punctuation. The label can be rendered in English. For example, in 'eyehair' we might have categories 'eye' and label ('Eye Color') and 'hair' (label 'Hair Type').</li>
+				</ol>
+				<li>Edit these configuration files. You will want a small set of categories and associated labels. The category name itself should be a simple lower case identifier without punctuation. The label can be rendered in English. For example, for extract 'eyehair' we might have categories 'eye' with label ('Eye Color') and 'hair' (label 'Hair Type').</li>
 				<ul>
-					<li>create.cfg: Edit as desired number of hits, number of sentences, elastic search path is very important to verify.</li>
+					<li>create.cfg: Edit as desired number of hits, number of sentences, elastic search path is very important to verify if you are getting data frames. Full path: <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/</code></li>
 					<li>hitdata.pyfmt: Edit the task description, title, and categories. You should leave the scratch_category as it is. You may wish to edit the keywords. You should leave {instructions}, {qualifiations} and {sentences} as they are.</li>
-					<li>fetchSentences.sh: edit the ES index where data will be obtained, number of ES hits desired, etc.</li>
+					<li>fetchSentences.sh: edit the ES index where data will be obtained, number of ES hits desired, etc. There are two aways to supply data:
+					<ol>
+						<li>Sentences.txt: about how number they need.</li>
+						<li>Sentences.json.</li>
+					</ol>
+					</li>
 					<li>query.json: edit the query (see <a href="elasticsearch.co/" target="_blank">Elastic Seach</a>).</li>
 					<li>head.html: no change.</li>
 					<li>instructions.html: change the sample content and the categories to conform to your categories and likely data. There are five necessary modifications in instructions.html. Each is introduced by a comment suggesting what needs to be changed.</li>
 					<li>tail.html: change the tail.html if you consider the boilerplate text confusing in context.</li>
 					<li>you can inspect the look of the instructions by performing: <code>cat head.html instructions.html tail.html > page.html; open page.html</code></li>
-					<li>qualification/*</li>
 					<li>karma/: o edit the karma/preloaded-ontologies/mturk-ontology.ttl: add/edit relation(s) corresponding to the categories you are defining o edit the karma/python/mturk.py: for each relation there should be a mapping to a category; they may be the same string if legal TTL identifier, or you can make the category name a pretty name (i.e., with spaces, punctuation).</li>
 				</ul>
-				<li><code>fetchSentences.sh $EXTRACTION $TRAIL $SIZE</code> $SIZE is the number of sentences to be fetched from ES. This will generate extractions/$EXTRACTION/sentences.json.</li>
+				<li><code>fetchSentences.sh $EXTRACTION $TRIAL $SIZE</code> $SIZE is the number of sentences to be fetched from ES. This will generate extractions/$EXTRACTION/sentences.json.</li>
 			</ol>
 			
 			<h4>GENERATE QUALIFICATION TASK</h4>
+			<p>Whats is a qualification test?</p>
 			<ol>
 				<li>If an extraction requires qualification, it has to be generated before creating hits. To generate a qualification task, you need the following:</li>
 				<li>Name of your qualification. Let's call it $NAME.</li>
@@ -190,14 +196,30 @@
 			</ol>
 			<h4>Steps to create qualification:</h4>
 			<ol>
-				<li><code>newQualification.sh $EXTRACTON</code>- this will copy config JSON from extractions/boilerplate/qualification/ to extractions/$EXTRACTION/qualification/qual_${EXTRACTION}.json</li>
+				<li><code>newQualification.sh $EXTRACTON</code>- this will copy config JSON from extractions/boilerplate/qualification/ to $GITHUB/dig-mturk/extractions/$EXTRACTION/qualification/qual_${EXTRACTION}.json</li>
 				<li>Edit this to reflect categories, sentences, answers, etc. to define your qualification domain. The JSON key <code>explanation.wrong</code> needn't be edited. The py script will populate this field as required before generating HTML.</li>
-				<li>When the qual_$NAME.json file is complete it must be uploaded to S3 in bucket/extractions/$EXTRACTION/qualification/</li>
+				<ol>
+					<li>categories: label</li>
+					<li>total-questions:</li>
+					<li>correct-questions:</li>
+					<li>title:</li>
+					<li>subtitle: </li>
+					<li>description:</li>
+					<li>average-time:</li>
+					<li>instructions:</li>
+					<li>example:</li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<li>When the qual_$EXTRACTION.json file is complete it must be uploaded to S3 in bucket/extractions/$EXTRACTION/qualification/</li>
 				<li><code>python mturk/src/main/python/qualGenerator.py</code>. This will generate and publish qualification HTML to S3. It will also generate qualification.cfg.</li>
 				<li>Create qualification in MTurk:</li>
 				<ul>
 					<li><code>./createQualification.sh -sandbox $GITHUB/dig-mturk/extractions/$EXTRACTION/qualification.cfg</code> to create qualification in sandbox. This will update qualification.cfg with the qualification ID generated by Amazon.</li>
-					<li><code>./createQualification.sh -live $GITHUB/dig-mturk/extractions/$EXTRACTION/qualification.cfg</code> to create qualification in live. This will update qualification.cfg with the quualification ID generated by Amazon.</li>
+					<li><code>./createQualification.sh -live $GITHUB/dig-mturk/extractions/$EXTRACTION/qualification.cfg</code> to create qualification in live. This will update qualification.cfg with the qualification ID generated by Amazon.</li>
 				</ul>
 				<li>Create a cron job that executes <code>mturk/src/main/python/respondQualification.py</code> for every 5 minutes. This job approves/rejects all qualification requests.</li>
 			</ol>
@@ -206,7 +228,7 @@
 			<ol>
 				<li>For sandbox, choose a trial name (e.g., trial01, sandbox01). For convenience <code>export TRIAL=&lt;trial&gt;</code></li>
 				<li><code>mkdir $GITHUB/dig-mturk/extractions/$EXTRACTION/$TRIAL</code></li>
-				<li><code>createHits.sh $EXTRACTION $TRIAL</code>. This will create config json for hits and upload it to S3 at extractions/$EXTRACTION/$TRAIL/config/.</li>
+				<li><code>createHits.sh sandbox $EXTRACTION $TRIAL</code>. This will create config json for hits and upload it to S3 at extractions/$EXTRACTION/$TRAIL/config/.</li>
 				<li><code>deployHits.sh -sandbox $EXTRACTION $TRIAL</code>. This will create all files requires to create a HIT and publish those to extractions/$EXTRACTION/$TRAIL/hits/ in S3 and yield a few sandbox URLs, which you can annotate yourself to test things out. If hit was created using qualification you need to take the qualification test, get qualified before you are allowed to do the hits.</li>
 				<li>When you are satisfied with the look/feel and complete at least 3 sandbox tests on the same hit, <code>hitResults.sh -sandbox $EXTRACTION $TRIAL</code>. This will approve the unapproved assignments of the hits and create tab separated result files in S3 (extractions/$EXTRACTION/$TRAIL/hits/).</li>
 			</ol>
