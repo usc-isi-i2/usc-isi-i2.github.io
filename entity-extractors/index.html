@@ -163,7 +163,7 @@
 					<li>qualification/*</li>
 					<li>karma/</li>
 				</ul>
-				<li>Edit these configuration files. You will want a small set of categories and associated labels. The category name itself should be a simple lower case identifier without punctuation. The label can be rendered in English. For example, in 'eyehair' we might have categories 'eye' and label ('Eye Color') and 'hair' (label 'Hair Type').</li>
+				<li>Edit these configuration files. You will want a small set of categories and associated labels. The category name itself should be a simple lower case identifier without punctuation. The label can be rendered in English. For example, for an extraction <code>eyehair</code> we might have categories <code>eye</code>, with human-readable label <code>Eye Color</code> and <code>hair</code>, with label <code>Hair Type</code>.</li>
 				<ul>
 					<li>create.cfg: Edit as desired number of hits, number of sentences, elastic search path is very important to verify.</li>
 					<li>hitdata.pyfmt: Edit the task description, title, and categories. You should leave the scratch_category as it is. You may wish to edit the keywords. You should leave {instructions}, {qualifiations} and {sentences} as they are.</li>
@@ -174,7 +174,9 @@
 					<li>tail.html: change the tail.html if you consider the boilerplate text confusing in context.</li>
 					<li>you can inspect the look of the instructions by performing: <code>cat head.html instructions.html tail.html > page.html; open page.html</code></li>
 					<li>qualification/*</li>
-					<li>karma/: o edit the karma/preloaded-ontologies/mturk-ontology.ttl: add/edit relation(s) corresponding to the categories you are defining o edit the karma/python/mturk.py: for each relation there should be a mapping to a category; they may be the same string if legal TTL identifier, or you can make the category name a pretty name (i.e., with spaces, punctuation).</li>
+					<li>karma: We need to instruct the Karma information integration system how to interpret the categories and labels we chose above, when processing the results.<br/>
+					  edit <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/karma/preloaded-ontologies/mturk-ontology.ttl</code>
+					  edit <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/karma/python/mturk.py</code></li>
 				</ul>
 				<li><code>fetchSentences.sh $EXTRACTION $TRAIL $SIZE</code> $SIZE is the number of sentences to be fetched from ES. This will generate extractions/$EXTRACTION/sentences.json.</li>
 			</ol>
