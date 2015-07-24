@@ -815,6 +815,12 @@
     },
     "transactionTypesMentioned_feature": {
       "@id": "http://memexproxy.com/ontology/transactionTypesMentioned_feature"
+    },
+    "sourceOrganization": {
+      "@id": "http://schema.org/sourceOrganization"
+    },
+    "email": {
+      "@id": "http://schema.org/email"
     }
   }
 }
