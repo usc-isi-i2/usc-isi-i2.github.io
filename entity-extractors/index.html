@@ -93,27 +93,27 @@
 			<p>Some Mechanical Turk extractions will benefit from having the workers undergo training and vetting.  This project includes capabilities to define and populate an optional special task, called a <em>qualification</em> task, to carry this out.</p>
 			<h4>REQUIREMENTS</h4>
 			<ol>
-				<li>Install git, python 2.7, java 1.7, and maven 3</li>
-				<li>Establish a github account</li>
-				<li>Install <a href="https://github.com/usc-isi-i2/Web-Karma">Web-Karma</a> and <a href="https://github.com/usc-isi-i2/dig-mturk">dig-mturk</a> in your github repository root folder.</li>
-				<li>Install following python libraries:</li>
-				<ul>
-					<li><code>pip install requests</code></li>
-					<li><code>pip install boto</code></li>
-					<li><code>pip install nltk</code></li>
-					<li><code>pip install awscli</code></li>
-				<ul>
+			  <li>Install git, python 2.7, java 1.7, and maven 3</li>
+			  <li>Establish a github account</li>
+			  <li>Install <a href="https://github.com/usc-isi-i2/Web-Karma">Web-Karma</a> and <a href="https://github.com/usc-isi-i2/dig-mturk">dig-mturk</a> in your github repository root folder.</li>
+			  <li>Install following python libraries:</li>
+			  <ul>
+			    <li><code>pip install requests</code></li>
+			    <li><code>pip install boto</code></li>
+			    <li><code>pip install nltk</code></li>
+			    <li><code>pip install awscli</code></li>
+			    </ul>
 			</ol>
 			<h4>ENVIRONMENT</h4>
 			<ol>
-				<li>Your home directory is <code>$HOME</code>.</li>
-				<li>You will want to edit your shell init file, typically <code>~/.bashrc</code>, <code>~/.profile</code>, or <code>~/.bash_profile</code>
-				<li>Edit (at the bottom will work well) your shell init file to contain the following:</li>
-					<p><code>export GITHUB=&lt;your github repository root folder&gt;</code></p> 
-					<p><code>export PATH="$PATH:$GITHUB/dig-mturk/generic/scripts"</code></p>
-				<li><code>source &lt;shell init file&gt;</code></li>
-				<li><code>cd $GITHUB/dig-mturk; git checkout master; git pull; cd mturk; mvn clean install</code></li>
-				<li><code>cd $GITHUB/Web-Karma; git checkout development; git pull; mvn clean install</code></li>
+			  <li>Your home directory is <code>$HOME</code>.</li>
+			  <li>You will want to edit your shell init file, typically <code>~/.bashrc</code>, <code>~/.profile</code>, or <code>~/.bash_profile</code>
+			  <li>Edit (at the bottom will work well) your shell init file to contain the following:</li>
+			  <p><code>export GITHUB=&lt;your github repository root folder&gt;</code></p> 
+			  <p><code>export PATH="$PATH:$GITHUB/dig-mturk/generic/scripts"</code></p>
+			  <li><code>source &lt;shell init file&gt;</code></li>
+			  <li><code>cd $GITHUB/dig-mturk; git checkout master; git pull; cd mturk; mvn clean install</code></li>
+			  <li><code>cd $GITHUB/Web-Karma; git checkout development; git pull; mvn clean install</code></li>
 			</ol>
 			<h4>AWS Configuration</h4>
 			<ol>
