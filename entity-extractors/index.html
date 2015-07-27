@@ -225,7 +225,7 @@
 				<li><code>mkdir $GITHUB/dig-mturk/extractions/$EXTRACTION/$TRIAL</code></li>
 				<li><code>createHits.sh sandbox $EXTRACTION $TRIAL</code>. This will create config json for hits and upload it to S3 at extractions/$EXTRACTION/$TRIAL/config/.</li>
 				<li><code>deployHits.sh -sandbox $EXTRACTION $TRIAL</code>. This will create all files requires to create a HIT and publish those to <code>$BUCKET/extractions/$EXTRACTION/$TRIAL/hits/</code> in S3 and will also yield a few sandbox URLs, which you can annotate yourself to test things out. If hit was created requiring qualification you need to take the qualification test to be qualified before you are allowed to do the hits, even for sandbox deployment.</li>
-				<li>When you are satisfied with the look/feel of the tasks, execute <code>hitResults.sh -sandbox $EXTRACTION $TRIAL</code>. This will approve the unapproved assignments of the hits and create tab separated result files in S3 in <code>$BUCKET/extractions/$EXTRACTION/$TRIAL/hits/).</li>
+				<li>When you are satisfied with the look/feel of the tasks, execute <code>hitResults.sh -sandbox $EXTRACTION $TRIAL</code>. This will approve the unapproved assignments of the hits and create tab separated result files in S3 in <code>$BUCKET/extractions/$EXTRACTION/$TRIAL/hits/</code>.</li>
 			</ol>
 			<h4>LIVE SCALE RUN</h4>
 			<p>When your task well formed, you are ready to create <em>live</em> hits for the Mechanical Turk community to perform for you.</p>
