@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ISI Group website, Karma , data integration , data mashups">
+    <meta name="author" content="ANIMESH MANGLIK">
+    <title>Information Integration Research Group</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  </head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="805">
+<td width="1" bgcolor="#FFFFFF"></td>
+<td width="1" bgcolor="#B5B5B5"></td>
+<td width="600" valign="top" class="main_page_text">
+<table width="1000" border="0" cellspacing="0" cellpadding="0" class="page_content">
+	    <tr>
+	      <td width="17">&nbsp;</td>
+	      <td width="300">&nbsp;</td>
+	      <td width="265">&nbsp;</td>
+	      <td width="18">&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="page_sub_header_cardinal"><b>Entity Linkage</b></td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	            <td></td>
+	            <td colspan="3" height="2"></td>
+              </tr>
+	          <tr>
+	            <td></td>
+	            <td colspan="2" height="1" bgcolor="#6C0000"></td>
+                <td></td>
+              </tr>
+	          <tr>
+	            <td></td>
+	            <td colspan="3" height="16"></td>
+              </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">The current approaches for linking information across sources, often called record linkage, require finding com-mon attributes between the sources and comparing the records using those attributes.  This often leads to unsatisfactory results because the sources are often missing information or contain incorrect or outdated information. We are addressing this problem by developing the technology to build massive entity knowledgebases, which we call EntityBases.  The key idea is to create a comprehensive knowledgebase for the entities of interest (e.g., companies).  In order to build such a knowledge base, we must address the issues of linking entities with multi-valued attributes obtained from heterogeneous sources and providing a virtual repository that can be efficiently queried.</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr><td>&nbsp;</td>
+	      <td colspan="2" class="paragraph_header_black">Motivating Example</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">Consider the following real-world example of the need for EntityBases.  Figure 1 shows extracts of two news releases from the U.S. Immigration and Customs Enforcement, an agency of the U.S Department of Homeland Security.  The documents describe a case involving several individuals and companies accused of illegal exports to Iran. </td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">Entity extraction software can automatically extract entities, such as company, person or location names, from these documents.  For example, &quot;Mohammad Ali Sherbaf&quot;, &quot;Kenneth L. Wainstein&quot;, and &quot;Khalid Mahmood Chaudhary&quot;, etc., would be recognized as person names. Similarly, &quot;Sepahan Lifter Company&quot;, &quot;Sharp Line Trading&quot;, and &quot;Clark Material Handling Corporation&quot; would be labeled as companies, and &quot;Esfahan&quot; as a city and &quot;Iran&quot; as a country.</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">However, simple entity extraction is not enough. The relationship between these two documents cannot be established without the kind of record linkage reasoning that our EntityBase provides.  In particular, note that the 2002 document refers to one of the key persons involved in the case as &quot;Mohammad Ali Sherbaf&quot; while the 2006 document as &quot;Mohammad A. Sharbaf&quot; (even though the documents come from the same government agency).  Different transliterations of foreign names, such as in this case, would foil simple match techniques. The multiplicity of names that refer to the same real-world entity is not limited to people --- other entities, such as companies and locations, exhibit the same phenomenon. For exam-ple, both &quot;Isfahan&quot; and &quot;Esfahan&quot; are common transliterations for the same Iranian city.</td>
+	      <td>&nbsp;</td>
+	      </tr><tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">The EntityBase approach uses previously gathered knowledge to help differentiate the entities that appear in docu-ments like these and provide additional information. Our EntityBase can recognize that &quot;Mohammad Ali Sherbaf&quot; and &quot;Mohammad A. Sharbaf&quot; are the same person and that &quot;Sepahan Lifter Company&quot;, &quot;Sepahan Lifter&quot;, &quot;Sepahan Lifter Co.&quot; refer to the  same company. Moreover, the EntityBase also shows that this company has its headquarters in &quot;Nos. 27 and 29, Malekian Alley, North Iranshahr Ave., Tehran (15847)&quot; and its factory in &quot;Mahyaran Industrial Town, Isfahan&quot;; that its commercial manager is &quot;Mohammad Kharazi&quot; and its headquarters&rsquo; phone and fax  numbers are (+98-21) 8830360-1 and (+98-21) 8839643, respectively.  At the same time, the EntityBase shows that &quot;Sepahan Lifter Company&quot;, &quot;Behsazan Gran-ite Sepahan Co.&quot;, or &quot;Rahgostar Nakhostin Sepahan Co.&quot; are different companies that are all located in Isfahan, Iran.</td>
+	      <td>&nbsp;</td>
+	      </tr><tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="center"><img src="img/entity_link_1.png" width="400" class="black_border"><br><b>Figure 1.</b> Entity Resolution Problem in New Articles</td>
+	      <td>&nbsp;</td>
+	      </tr><tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr><td>&nbsp;</td>
+	      <td colspan="2" class="paragraph_header_black">Entity Linkage</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">Figure 2 shows an example of the matching process.  An incoming news document mentions the company &quot;Sepahan Lifter Corp&quot; as well as &quot;Mohammad Sherbaf&quot;.  This information can be used to query the EntityBase (which consists of millions of company entities).  The blocking process efficiently identifies candidates that appear consistent with the information we know.  As the example shows, many of the candidates have tokens that also appear in the query, so even applying a Jaccard-style metric (i.e., token overlap) or TF-IDF would be sufficient to yield the candidates shown.</td>
+	      <td>&nbsp;</td>
+	      </tr><tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="center"><img src="img/entity_link_2.png" width="500" class="black_border"><br><b>Figure 2.</b> Entity blocking and linkage</td>
+	      <td>&nbsp;</td>
+	      </tr><tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">The linkage process then compares the data in greater detail, parsing the incoming query to realize that &quot;Corp&quot; is a previously unseen term associated with the company&rsquo;s name, and that &quot;Ali&quot; is missing from Mohammad Sherbaf&rsquo;s name.  It also evaluates the other candidates and identifies similar differences.  In evaluating the candidates, the linkage phase associates metric scores to quantify the similarity (or lack there of).  A second part of the linkage process evaluates the similarities/dissimilarities and then judges the implications of such scores.  For example, the linkage process could have identified that Corp is just a common company formation acronym (like &quot;Inc.&quot; or &quot;LLP&quot;) and that the missing &quot;Ali&quot; from the person&rsquo;s name is not critical (as opposed to a mismatch on last name, for example).</td>
+	      <td>&nbsp;</td>
+	      </tr><tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr><td>&nbsp;</td>
+	      <td colspan="2" class="paragraph_header_black">Exploiting Geospatial Context</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">When querying and matching entities, we can exploit the geospatial extents of the entities to help identify and assess possible matches.  Consider our running example shown in Figure 2, where a document understanding system queries the EntityBase to match the company &quot;Sepahan Lifter Corp&quot; and the person &quot;Mohammad Sherbaf,&quot; which are extracted from a document.  The EntityBase may provide many candidates (e.g., entity #12, #109 and #87190) even after applying the blocking process.  However, by exploiting the geospatial extents of these entities, the system can deduce additional infor-mation to narrow down the relevant entities.  For example, the company mentioned in the document is located within area X shown in Figure 3. The system infers that entity #109 is located within area X as well (based on its &quot;phone&quot; attribute).  It also infers that the companies of the entities #12 and #87190 are located within area Y (based on their associated &quot;phone&quot; attribute).  This in turn implies lower similarity between the company mentioned in the document and the two entities #12 and #87190.</td>
+	      <td>&nbsp;</td>
+	      </tr><tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">One can build an EntityBase for just about any type of entity, including people, organizations, companies, terrorist groups, and so on.  These knowledge bases of entities can then be used for a wide variety of applications.  In this page we described how an EntityBase can be used for associating and linking text documents with the actual entities that are mentioned in the documents.  An EntityBase could also be used to process data in a database or to reason about the relationships between entities (such as finding all organizations that are located in the same region and are mentioned in the same document).</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="center"><img src="img/entity_link_3.png" width="300" class="black_border"><br><b>Figure 3.</b> Geocoordinates of the companies in Iran</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify"><b>This research was sponsored by the Air Force Research Laboratory, Air Force Materiel Command, USAF, under Con-tract number FA8750-05-C-0116.</b></td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td height="16">&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+      </table>
+<td width="1" bgcolor="#B5B5B5"></td>
+</table>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ISI Group website, Karma , data integration , data mashups">
+    <meta name="author" content="ANIMESH MANGLIK">
+    <title>Information Integration Research Group</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  </head>
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="805">
+<td width="1" bgcolor="#FFFFFF"></td>
+<td width="1" bgcolor="#B5B5B5"></td>
+<td width="600" valign="top" class="main_page_text">
+<table width="1000" border="0" cellspacing="0" cellpadding="0" class="page_content">
+	    <tr>
+	      <td width="17">&nbsp;</td>
+	      <td width="280">&nbsp;</td>
+	      <td width="285">&nbsp;</td>
+	      <td width="18">&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="page_sub_header_cardinal"><b>Map Discovery</b></td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	            <td></td>
+	            <td colspan="3" height="2"></td>
+              </tr>
+	          <tr>
+	            <td></td>
+	            <td colspan="2" height="1" bgcolor="#6C0000"></td>
+                <td></td>
+              </tr>
+	          <tr>
+	            <td></td>
+	            <td colspan="3" height="16"></td>
+              </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">There are a huge number of high quality maps on the Internet that can be used to extract useful geospatial information about the region they describe. For example, by aligning satellite images with these maps, as shown in Figure 1, we can label the streets automatically. This procedure is even more useful for areas such as the Middle East, where we do not have detailed road vector data but there do exist maps for large parts of it.</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="center"><img src="img/mpd_conflation.png" class="black_border" width="500"><br>
+          <b>Figure 1:</b> This figure shows a map of Washington D.C. conflated with its satellite imagery</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+           <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">But identifying these high quality maps from among the huge number of images that exist on the Internet is a difficult task. First, there is no meta-data to directly identify these maps. This makes it necessary to look at the content of the images to distinguish between the maps and other images. Second, many such high quality maps are embedded in other documents such as PDF reports, PowerPoint presentations, etc. Therefore, we have to analyze these documents as well to obtain those high quality maps.</td>
+	      <td>&nbsp;</td>
+	      </tr>
+           <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+           <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">Simply using Web-based image search engines does not solve the problem, as is evident from the snapshot of results page on Yahoo Image Search shown in Figure 2. For the query term <b>'Tehran maps'</b>, the first page returns only two maps among the top 21 matching images. This happens because image search engines only use the textual information surrounding the image, such as its name, title of the page it is displayed on, etc. to identify them.</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="center"><img src="img/mpd_yahoo.jpg" width="500"><br>
+          <b>Figure 2:</b> A snapshot of search results on Yahoo Image Search</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+           <tr><td>&nbsp;</td>
+	      <td colspan="2" class="paragraph_header_black_head">Approach</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+          <td class="main_page_text" align="justify" colspan="2">We solve both the above mentioned problems through our approach described here. Figure 3 depicts the architecture of our system. We start by collecting images and documents of an area from the Internet. Then, we parse the documents to extract the images embedded in them. Having collected the candidate maps, we use a Content Based Image Retreival (CBIR) technique to classify each image as a map or nonmap based on a new set of features extracted from it.</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+           <tr>
+	      <td>&nbsp;</td>
+	      <td class="main_page_text" align="center" colspan="2"><img src="img/mpd_architecture.jpg" width="300" class="black_border"><br>
+          <b>Figure 3:</b> The architecture of our MapFinder system</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+           <tr><td>&nbsp;</td>
+	      <td colspan="2" class="paragraph_header_black_head">Content Based Image Retreival</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+          <td class="main_page_text" align="justify" colspan="2">Maps come in wide varieties and the graphical characteristics of each type of map varies significantly from the other types. In order to identify all kinds of maps accurately, we use a Content Based Image Retrieval technique to match each query image with a pre-labeled repository of images, and then classify it based on the most similar images found. Figure 4 shows how we find the most similar images using the CBIR technique. Given a new query image, the CBIR system matches it with all the images in the map and nonmap repository and then finds the most similar images.</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+           <tr>
+	      <td>&nbsp;</td>
+	      <td class="main_page_text" align="center" colspan="2"><img src="img/mpd_cbirreal.jpg" width="500" class="black_border"><br>
+          <b>Figure 4:</b> The architecture of our MapFinder system</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+           <tr><td>&nbsp;</td>
+	      <td colspan="2" class="paragraph_header_black_head">Features</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td>&nbsp;</td>
+	      <td colspan="2" class="main_page_text" align="justify">In order to compare images using the CBIR technique, we have introduced a new set of features that we believe are much more effective in capturing the characteristics of maps. These features operate on the individual edge sections in the Canny edge map of the original image. Figure 5 shows a sample map in color, its Canny edge map and an enlarged sub part to show the individual edge sections. We extract properties of each edge section such as its length, the number of branches in it, etc. Then, we find aggregate features for the entire image from these properties.</td>
+	      <td>&nbsp;</td>
+	      </tr>         
+          <tr>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+           <tr>
+	      <td>&nbsp;</td>
+	      <td class="main_page_text" align="center" colspan="2"><img src="img/mpd_wfexample.jpg" width="500" class="black_border"><br>
+          <b>Figure 5:</b> A sample map, its Canny edge map and a sub part enlarged to show disjoint edge sections</td>
+	      <td>&nbsp;</td>
+	      </tr>
+          <tr>
+	      <td height="16">&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      <td>&nbsp;</td>
+	      </tr>
+      </table>
+<td width="1" bgcolor="#B5B5B5"></td>
+</table>
+</body>
+</html>

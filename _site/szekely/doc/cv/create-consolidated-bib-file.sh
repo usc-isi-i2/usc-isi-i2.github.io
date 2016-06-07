@@ -1,0 +1,1 @@
+cat szekely_conference.bib szekely_demos_posters.bib szekely_edited_works.bib szekely_invited.bib szekely_journal.bib szekely_workshop.bib > szekely_bib.bib

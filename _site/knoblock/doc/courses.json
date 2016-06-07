@@ -1,0 +1,36 @@
+[
+	{
+		"number": "CSCI 548",
+		"semester": "Spring 2015",
+		"title": "Information Integration on the Web",
+		"syllabus": "doc/syllabus/CSCI548_Syllabus_Spring_2015.pdf"
+	},
+
+	{
+		"number": "CSCI 648",
+		"semester": "Spring 2015",
+		"title": "Advanced Information Integration",
+		"syllabus": "doc/syllabus/CSCI648_Syllabus_Spring_2015.pdf"
+	},
+
+	{
+		"number": "CSCI 599",
+		"semester": "Spring 2014",
+		"title": "Geospatial Data Integration",
+		"syllabus": "doc/syllabus/CSCI_599_Spatial_Data_Integration.pdf"
+	},
+
+	{
+		"number": "INF 553",
+		"semester": "Fall 2015",
+		"title": "Foundations and Applications of Data Mining",
+		"syllabus": "doc/syllabus/INF553_Syllabus_Fall_2015.pdf"
+	},
+
+	{
+		"number": "SSCI 680",
+		"semester": "TBD",
+		"title": "Spatial Computing",
+		"syllabus": "doc/syllabus/SSCI_680_Spatial Computing.pdf"
+	}
+]
