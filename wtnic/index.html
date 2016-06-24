@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WTNIC: Web Text-based Network Industry Classifications</title>
+	<link rel="icon" type="image/png" href="../favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-62418606-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scroll" href="http://usc-isi-i2.github.io/home/"><img src="img/iig-logo.png" height="20" alt="Information Integration Group Page"></a>
+				<a class="navbar-brand scroll" href="http://usc-isi-i2.github.io/dig/"><img src="img/dig.png" height="20" alt="DIG Page"></a>
+			</div><!-- navbar-header -->
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+					<li><a class="scroll" href="#slides">Slides</a></li>
+					<li><a class="scroll" href="#about">About</a></li>
+					<li><a class="scroll" href="#tutorial">Tutorial</a></li>
+					<!--<li><a class="scroll" href="#pub">Publications</a></li>-->
+					<li><a class="scroll" href="#people">People</a></li>
+				</ul>        
+			</div><!-- collapse navbar-collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<header id="home">
+		<div class="container">
+			<h1>Entity Extractors</h1>
+			<h2>For Domain-Specific Insight Graphs</h2>
+			<h2>Easily extract features from free text using Amazon Mechanical Turk</h2>
+			<div class="affiliation">
+				<div><a href="../"><img src="img/iig-logo.png" width="280"></a></div>
+				<div><a href="http://www.isi.edu"><img src="img/isi-logo.png" width="250"></a></div>
+				<div><a href="http://www.usc.edu"><img src="img/usc-shield-name-white.png"></a></div>
+			</div>
+		</div><!-- container -->
+		<div class="scroll-btn-container hidden-xs">
+			<a class="scroll-btn scroll" href="#slides"><i class="fa fa-angle-down"></i></a>
+		</div>
+	</header>
+	
+	<section id="slides">
+		<div class="content">
+			<div class="slides-wrapper">
+				<iframe src="https://www.haikudeck.com/e/QGvSJbOOiZ/?isUrlHashEnabled=false&isPreviewEnabled=false&isHeaderVisible=false" width="640" height="541" frameborder="0" marginheight="0" marginwidth="0"></iframe><br/><span style="font-family: arial, sans-serif; font-size: 8pt;"><a title="Entity Extractors In One Hour Presentation" href="https://www.haikudeck.com/p/QGvSJbOOiZ/entity-extractors-in-one-hour?utm_campaign=embed&utm_source=webapp&utm_medium=text-link">Entity Extractors In One Hour</a> - Created with Haiku Deck, presentation software that inspires</span>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="container">
+		<h2>WHAT IS ENTITY EXTRACTOR?</h2>
+		<div class="content">
+			<p>tbd</p>
+			<img src="img/entity-extractors.jpg" width="700">
+		</div>
+	</section>
+
+	<section id="tutorial" class="container">
+		<h2>TUTORIAL: HOW TO USE THE TOOL</h2>
+		
+		<div class="content">
+			<h3>ABOUT MTURK</h3>
+				<p>MTurk hits can be run in sandbox (developer) or live environment. Hits can be created with/without qualifications. All the possibilities are explained below.</p>
+			<h4>TERMINOLOGY</h4>
+			<p>We will be definining an <em>extraction</em> which is named; the name forms the identifier for this effort.  This identifier must be chose as a string which can be safely used as a directory component with only lower case letters, digits and the underscore character.  For example, we might define a <code>catalog</code> extraction for getting information from online stores, or a <code>makemodel</code> for extracting atributes of automobiles for sale.</p>
+			<p>Within our extraction we will be defining one or more categories.  A <em>category</em> is a class of entities to be recognized and extracted.  For example, in the <code>catalog</code> extractor, we might define categories <code>price</code>, <code>description</code>, and <code>modelnumber</code>.  The category names should be simple identifiers with only lower case letters, digits, and the underscore character.  Each category also has an English <em>label</em>, suitable for presentation to users, which can include spaces and upper case letters.  For example, in the <code>catalog</code> extractor, we might define the category labels as "Price", "Item Description", and "Model Number".</p>
+			<p>We will define a corpus of example texts too train and test our extractors.  These are conventionally called <em>sentences</em> but they may be fragments of a sentence, multiple sentences, etc., as long as they can be annotated by users in the interface without scrolling.  These sentences should have a fair number of instances of the categories of this extraction.</p>
+			<p>Mechanical Turk microwork tasks are conventionally termed <em>hits</em> and we will use that terminology as well.</p>
+			<p>Some Mechanical Turk extractions will benefit from having the workers undergo training and vetting.  This project includes capabilities to define and populate an optional special task, called a <em>qualification</em> task, to carry this out.</p>
+			<h4>REQUIREMENTS</h4>
+			<ol>
+			  <li>Install git, python 2.7, java 1.7, and maven 3</li>
+			  <li>Establish a github account</li>
+			  <li>Install <a href="https://github.com/usc-isi-i2/Web-Karma">Web-Karma</a> and <a href="https://github.com/usc-isi-i2/dig-mturk">dig-mturk</a> in your github repository root folder.</li>
+			  <li>Install following python libraries:</li>
+			  <ul>
+			    <li><code>pip install requests</code></li>
+			    <li><code>pip install boto</code></li>
+			    <li><code>pip install nltk</code></li>
+			    <li><code>pip install awscli</code></li>
+			    </ul>
+			</ol>
+			<h4>ENVIRONMENT</h4>
+			<ol>
+			  <li>Your home directory is <code>$HOME</code>.</li>
+			  <li>You will want to edit your shell init file, typically <code>~/.bashrc</code>, <code>~/.profile</code>, or <code>~/.bash_profile</code>
+			  <li>Edit (at the bottom will work well) your shell init file to contain the following:</li>
+			  <p><code>export GITHUB=&lt;your github repository root folder&gt;</code></p> 
+			  <p><code>export PATH="$PATH:$GITHUB/dig-mturk/generic/scripts"</code></p>
+			  <li><code>source &lt;shell init file&gt;</code></li>
+			  <li><code>cd $GITHUB/dig-mturk; git checkout master; git pull; cd mturk; mvn clean install</code></li>
+			  <li><code>cd $GITHUB/Web-Karma; git checkout development; git pull; mvn clean install</code></li>
+			</ol>
+			<h4>AWS Configuration</h4>
+			<ol>
+			  <li>To configure for Amazon AWS, you will need an account with AWS username, AWS Access Key Id, and AWS Secret Access Key; and an Amazon S3 bucket that is writable using those credentials.</li>
+			  <li>(At ISI you can obtain this information from <a href="http://www.isi.edu/~philpot/">Andrew</a> or <a href="https://www.linkedin.com/in/subessware">Suba</a>)</li>
+			  <li><code>aws configure</code></li>
+			  <ul>
+			    <li>AWS Access Key ID = key id obtained</li>
+			    <li>AWS Secret Access Key = secret key obtained</li>
+			    <li>Default region name = usc-west-2</li>
+			    <li>Default output format = json</li>
+			  </ul>
+
+			</ol>
+			<h4>SET UP A NEW EXTRACTION</h4>			
+			<ol>
+				<li><code>cd $GITHUB/dig-mturk</code></li>
+				<li>For convenience, <code>export EXTRACTION=&lt;extraction&gt;</code></li>
+				<li><code>newExtraction.sh $EXTRACTION</code> This will create <code>$GITHUB/dig-mturk/extractions/$EXTRACTION</code> and copy/adapt a few files from <code>$GITHUB/dig-mturk/extractions/boilerplate/</code> to <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/</code></li>
+				<li>Edit these copied configuration files using your preferred text editor to reflect your extraction name, categories, and category labels:
+
+				<ul>
+				  <li>sentence data:</li>
+				  <ul>
+				    <li>If you are providing sentence data from a plain text file, edit <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/sentences.txt</code> to contain the sentence data, one sentence per line.</li>
+				    <li>If you are obtaining sentence data from an ElasticSearch index, edit <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/fetchSentences.sh</code> and/or <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/query.json</code> to specify the index name, desired hit count, credentials, query fields, and query path.  Then execute the script:<br/><code>fetchSentences.sh $EXTRACTION $TRIAL $SIZE</code> where $SIZE is the number of sentences to be fetched from ES. This will generate <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/sentences.json</code>.</li>
+				    
+				  </ul>
+
+				  <li><code>$GITHUB/dig-mturk/extractions/$EXTRACTION/create.cfg</code> is a configuration file with parameters defining how Mechanical Turk tasks are created.<br/>
+				    In the <code>[create]</code> section, edit parameters to specify the desired number of hits to be created, the number of sentences in each hit, etc.  If your data comes from ElasticSearch, be sure the <code>[field]</code> parameter specifies how data is obtained from each ElasticSearch result 'hit'.  In the <code>[boto]</code> section, edit the parameters to specify the AWS/S3 configurations specified above.</li>
+
+				  <li><code>$GITHUB/dig-mturk/extractions/$EXTRACTION/hitdata.pyfmt</code> is a template file specifying details of Mechanical Turk hits.  For this file, you should edit the task description, title, and categories. You should leave the <code>scratch_category</code> as it is. You may wish to edit the keywords. You should leave the bracketed expressions <code>{instructions}</code>, <code>{qualifications}</code> and <code>{sentences}</code> as they are: they will be filled in by the page generator.</li>
+
+
+				  <li>
+				    The files <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/head.html</code>, <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/instructions.html</code>, and <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/tail.html</code> will be combined to become an instructions page for the users.
+				    <ul>
+				      <li><code>$GITHUB/dig-mturk/extractions/$EXTRACTION/head.html</code>: no change.</li>
+				      <li><code>$GITHUB/dig-mturk/extractions/$EXTRACTION/instructions.html</code>: Change the sample content and the categories to conform to your categories and likely data. There are five necessary modifications in <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/instructions.html</code>. Each is introduced by a comment suggesting what needs to be changed.</li>
+				      <li><code>$GITHUB/dig-mturk/extractions/$EXTRACTION/tail.html</code>: Change the <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/tail.html</code> if you consider the standard boilerplate text confusing in context when presented to a user as part of the instructions.</li>
+				      <li>You can inspect the look of the instructions by performing: <code>cd $GITHUB/dig-mturk/extractions/$EXTRACTION; cat head.html instructions.html tail.html > page.html; open page.html</code></li>
+				      </ul>
+				  </li>
+
+				  
+				  <li>The <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/karma/</code> folder contains information so that the Karma information integration system can transform the Mechanical Turk workers' outputs into a format useful for training a CRF model.
+				    <ul>
+				      <li>Edit <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/karma/preloaded-ontologies/mturk-ontology.ttl</code>: Define the categories as relations (see embedded example) and use the labels as the <code>rdfs:label</code>.</li>
+				      <li>Edit <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/karma/python/mturk.py</code>: In the definition of data structure <code>categoryToAnnotationClass</code> at the top of the file, insert a mapping between your categories and their labels.</li>
+				    </ul>
+				  </li>
+
+				  
+				  <li>The <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/qualification/</code> folder contains specifications and files used to specify a qualification task. (See below.)</li>
+				</ul>
+			
+			<h4>GENERATE QUALIFICATION TASK</h4>
+			<p>The qualification task is a small test where the user practices annotating examples before performing the real, paid tasks.  The objective of the test is to teach the user by practicing, so for each wrong answer the user receives feedback with the explanation of how to correctly answer it.  Once the user has successfully completed the qualification task, he/she will be allowed to continue to the actual tasks.  A user who is not successful at the qualification task can try again after a specified delay.</p>
+			<p>If an extraction requires qualification, the qualification task has to be generated before creating hits.  A user wishing to perform a hit belong to your extraction will be first directed to satisfy the qualification if you have specified one.</p>
+			<p>To generate a qualification task, you need the following:</p>
+			<ol>
+			  <li>Name of your qualification. Typically, we name the qualification the same as the extraction it supports.  So herein we will use <code>$EXTRACTION</code> as the name of the qualification.</li>
+				<li>Categories for this extraction.</li> 
+				<li>Example sentences.</li>
+				<li>The answers for those sentences.</li>
+				<li>Explanations of the answers (used to provide feedback during qualification testing).</li>
+			</ol>
+			<h4>Steps to create qualification:</h4>
+			<ol>
+				<li><code>newQualification.sh $EXTRACTION</code>- this will copy config JSON from <code>$GITHUB/dig-mturk/extractions/boilerplate/qualification/</code> to <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/qualification/qual_${EXTRACTION}.json.</code>   It will also generate qualification.cfg.</li>
+				<li>Edit <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/qualification.cfg</code> to reflect your organization name, Amazon S3 bucket name, Amazon access_key_id and Amazon secret_access_key.</li>
+				<li>Edit <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/qual_${EXTRACTION}.json</code> to reflect categories, sentences, answers, etc. to define your qualification domain.  Note: the JSON key <code>explanation.wrong</code> needn't be edited. The script will populate this field as required before generating HTML.</li>
+				<ol>
+				  <li>categories [label]: put the name of the attributes that should be selected, specifying both the category name (simple identifier) and label (English string)</li>
+				  <li>total-questions: set the total number of questions in the test</li>
+				  <li>correct-questions: set the number of questions that the user have to do correctly to be approved</li>
+				  <li>title: change the company's name </li>
+				  <li>subtitle: change the categories names</li>
+				  <li>average-time: average time that a regular user spend to finish the test</li>
+				  <li>help [title]: change the categories names</li>
+				  <li>help [html]: paste a html code with the explanation/image that helps the user to figure out the correct way to select the words for this domain</li>
+				  <li>aprove-message [html]: change the number for the number of correct question that the user have to answer</li>
+				</ol>
+				<p>For each sentence, change:
+				  <ol>
+				    <li>id: should be in increasing order</li>
+				    <li>text: the complete sentence that should be analyzed</li>
+				    <li>annotations: set "yes" if there are selections to be done in the sentence and "no" if there is no word to select in the text</li>
+				    <li>select: specify which categories should be selected in this question (can be all the categories or just one. For more than one, put each categories separated by comma.</li>
+				    <li>answer [category]: for each category, get all the words that should be selected. If there is more than one, put the answers separated using <code>\t</code>. If there is no answer for this category, set as "".</li>
+				    <li>explanation [wrong] [text]: write the explanation for why the sentence have to be annotated as the answer specifies. The explanation text will be shown when the user selects a wrong answer for the question.</li>
+				  </ol>
+				</p>
+				<li><code>newQualification.sh $EXTRACTION</code>- this will copy config JSON from <code>$GITHUB/dig-mturk/extractions/boilerplate/qualification/</code> to <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/qualification/qual_${EXTRACTION}.json</code></li>
+				<li><code>generateQualification.sh $EXTRACTION --publish --upload</code>. This will generate and publish the qualification page HTML and assets to Amazon S3, based on the <code>qual_${EXTRACTION}.json</code> data.</li>
+				<li><code>generateQualification.sh $EXTRACTION --render</code> (optional) can be used to preview the qualification test sentences and correction essages (message presented to user after incorrect response).</li>
+				<li>Deploy qualification to MTurk:</li>
+				<ul>
+				  <li><code>deployQualification.sh -sandbox $GITHUB/dig-mturk/extractions/$EXTRACTION/qualification.cfg</code> to create qualification in sandbox. This will update qualification.cfg with the qualification ID generated by Amazon for sandbox trials of the qualification test.</li>
+				  <li><code>deployQualification.sh -live $GITHUB/dig-mturk/extractions/$EXTRACTION/qualification.cfg</code> to create qualification in live. This will update qualification.cfg with the qualification ID generated by Amazon for live use by any interested Turkers.</li>
+				</ul>
+				<li>(Optional) Create a cron job that executes <code>$GITHUB/dig-mturk/mturk/src/main/python/respondQualification.py</code> every 5 minutes. This job approves/rejects all qualification requests.</li>
+			</ol>
+			<h4>SANDBOX DRY RUN</h4>
+			<p>You may want to edit <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/create.cfg</code> for a small number of hits, small number of sentences/hit.</p>
+			<ol>
+				<li>For sandbox, choose a trial name (e.g., trial01, sandbox01). For convenience <code>export TRIAL=&lt;trial&gt;</code></li>
+				<li><code>mkdir $GITHUB/dig-mturk/extractions/$EXTRACTION/$TRIAL</code></li>
+				<li><code>createHits.sh sandbox $EXTRACTION $TRIAL</code>. This will create config json for hits and upload it to S3 at extractions/$EXTRACTION/$TRIAL/config/.</li>
+				<li><code>deployHits.sh -sandbox $EXTRACTION $TRIAL</code>. This will create all files requires to create a HIT and publish those to <code>$BUCKET/extractions/$EXTRACTION/$TRIAL/hits/</code> in S3 and will also yield a few sandbox URLs, which you can annotate yourself to test things out. If hit was created requiring qualification you need to take the qualification test to be qualified before you are allowed to do the hits, even for sandbox deployment.</li>
+				<li>When you are satisfied with the look/feel of the tasks, execute <code>hitResults.sh -sandbox $EXTRACTION $TRIAL</code>. This will approve the unapproved assignments of the hits and create tab separated result files in S3 in <code>$BUCKET/extractions/$EXTRACTION/$TRIAL/hits/</code>.</li>
+			</ol>
+			<h4>LIVE SCALE RUN</h4>
+			<p>When your task well formed, you are ready to create <em>live</em> hits for the Mechanical Turk community to perform for you.</p>
+			<p>You may want to edit <code>$GITHUB/dig-mturk/extractions/$EXTRACTION/create.cfg</code> to significantly increase the number of hits and/or to standardize the number of sentences/hit.</p>
+			<ol>
+			  <li>For live, choose a trial name (e.g., trial01, live01). If you want previous sandbox hits to be retained, be sure to use a different trial name. For convenience <code>export TRIAL=&lt;trial&gt;</code></li>
+			  <li><code>mkdir $GITHUB/dig-mturk/extractions/$EXTRACTION/$TRIAL</code></li>
+			  <li><code>createHits.sh $EXTRACTION $TRIAL</code>. This will create config json for hits and upload it to S3 at extractions/$EXTRACTION/$TRIAL/config/.</li>
+			  <li><code>deployHits.sh -live $EXTRACTION $TRIAL</code>. This will create all files requires to create a HIT and publish those to extractions/$EXTRACTION/$TRIAL/hits/ in S3 and yield a few sandbox URLs, which you can annotate yourself to test things out. If hit was created using qualification you need to take the qualification test, get qualified before you are allowed to do the hits.</li>
+			  <li>The progress of hits can be monitored in the Mechanical Turk requester interface (##NEED URL##). When a significant number of assignments have been completed, <code>hitResults.sh -live $EXTRACTION $TRIAL</code>. This will create all files requires to create a HIT and publish those to <code>$BUCKET/extractions/$EXTRACTION/$TRIAL/hits/</code> in S3.</li>
+			</ol>
+			<h4>AFTER PUBLISHING HITS (common steps for both live and sandbox)</h4>
+			<p>Since these are processing done on results fetched from hits and stored in S3, these steps don't depend on the staging area (live/sandbox) of the hits.</p>
+			<ol>
+			  <li><code>consolidateResults.sh $EXTRACTION $TRIAL</code># Note: no -sandbox since it is independent of Mturk. This will consolidate the result files for all hits in a particular trial.</li>
+			  <li><code>fetchConsolidated.sh $EXTRACTION $TRIAL</code>. This will download consolidated result file from S3.</li>
+			  <li><code>modelConsolidated.sh $EXTRACTION $TRIAL</code>. This will do offline karma model for the results fetched from S3.</li>
+			  <li><code>adjudicate.sh $EXTRACTION $TRIAL</code>. This will compute the agreement amongst the Turkers for each annotation. Adjudicated results are in $GITHUB/dig-mturk/extractions/$EXTRACTION/$TRIAL/adjudicated_$EXTRACTION_$TRIAL.json</li>
+			  <li>adjudicated_$EXTRACTION_$TRIAL.json can be used to TRAIN the CRF.</li>
+			  <li>TBD: apply trained CRF++ extractor to data.</li>
+			  <li>TBD: karma model for CRF++ extracted data.</li>
+			  <li>TBD: integrate karma mode for CRF++.</li>
+			  <li>wget --no-check-certificate <a href="https://drive.google.com/uc?id=0B4y35FiV1wh7QVR6VXJ5dWExSTQ">https://drive.google.com/uc?id=0B4y35FiV1wh7QVR6VXJ5dWExSTQ</a> -O crfpp-0.58.tgz</li>
+			</ol>
+		</div>
+	</section>
+	<!--
+	<section id="pub" class="container">
+		<h2>PUBLICATIONS</h2>
+		<ul class="content list-unstyled">
+			<li>
+				<div class="title"><a href="http://www.isi.edu/integration/papers/knoblock15-spie.pdf">A Scalable Architecture for Extracting, Aligning, Linking, and Visualizing Multi-Int Data</a></div>
+				<div class="author">Knoblock, C. A. and Szekely, P.</div>
+				<div class="location">In Proceedings of the Conference on the Next Generation Analyst III, 2015. SPIE, 9499</div>
+			</li>
+			<li>
+				<div class="title"><a href="http://www.forbes.com/sites/thomasbrewster/2015/04/17/darpa-nasa-and-partners-show-off-memex">Watch Out Google, DARPA Just Open Sourced All This Swish 'Dark Web' Search Tech</a></div>
+				<div class="author">Forbes</div>
+			</li>
+                       <li>
+				<div class="title"><a href="http://www.wired.co.uk/news/archive/2015-05/19/human-trafficking-data-hack">The escort database that combats human trafficking</a></div>
+				<div class="author">wired.co.uk</div>
+			</li>
+		</ul>
+	</section>
+	-->
+	<section id="people" class="container">
+		<h2>PEOPLE</h2>
+		<ul class="content list-unstyled">
+			<li>
+				<a style="background-image:url('img/people/Pedro-Szekely.jpg')" href="../szekely"></a>
+				<div class="description">
+					<div class="name">Pedro Szekely</div>
+					<div class="title">Project Leader & Research Associate Professor</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('img/people/Craig-Knoblock.jpg')" href="../knoblock"></a>
+				<div class="description">
+					<div class="name">Craig Knoblock</div>
+					<div class="title">Director & Research Professor</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('img/people/Kevin-Knight.jpg')" href="http://www.isi.edu/~knight"></a>
+				<div class="description">
+					<div class="name">Kevin Knight</div>
+					<div class="title">Director & Professor</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('img/people/Daniel-Marcu.jpg')" href="http://www.isi.edu/~marcu"></a>
+				<div class="description">
+					<div class="name">Daniel Marcu</div>
+					<div class="title">Director & Research Associate Professor</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('img/people/Andrew-Philpot.jpg')" href="http://www.isi.edu/~philpot/"></a>
+				<div class="description">
+					<div class="name">Andrew G. Philpot</div>
+					<div class="title">Computer Scientist</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('img/people/Subessware-S-K.jpg')" href="https://www.linkedin.com/in/subessware"></a>
+				<div class="description">
+					<div class="name">Subessware S K</div>
+					<div class="title">Student</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('img/people/Lidia-Ferreira.jpg')" href="http://homepages.dcc.ufmg.br/~lidiaferreira/indexen.html"></a>
+				<div class="description">
+					<div class="name">Lidia Ferreira <sup>1</sup></div>
+					<div class="title">Student</div>
+					<!--test-->
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section class="container">
+		<h2>ACKNOWLEDGMENT</h2>
+		<p class="content">This research is supported by the Defense Advanced Research Projects Agency (DARPA) and the Air Force Research Laboratory (AFRL) under contract number FA8750-14-C-0240.</p>
+		<p class="content"><sup>1</sup> The student Lidia Ferreira thank to Science Without Borders Program, CAPES Scholarship - Proc. Nº 88888.030514/2013-00.</p>
+	</section>
+
+	<footer>
+		<div class="container">&copy; 2015 The University of Southern California</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
