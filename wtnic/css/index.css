@@ -93,11 +93,11 @@ section .content {
 #video .content {
   max-width: 600px;
 }
-#video .content .video-wrapper .image-wrapper{
+#video .content .video-wrapper{
   position: relative;
   padding-bottom: 75%;
 }
-#video .content .video-wrapper .image-wrapper iframe {
+#video .content .video-wrapper iframe {
   position: absolute;
   width: 100%;
   height: 100%;
