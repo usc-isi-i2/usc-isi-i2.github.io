@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <title>Count Of TLD With Extractions</title>
+  <meta charset="utf-8">
+
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script src="//vega.github.io/vega/vega.js"></script>
+  <script src="//vega.github.io/vega-lite/vega-lite.js"></script>
+  <script src="//vega.github.io/vega-editor/vendor/vega-embed.js"></script>
+
+  <style media="screen">
+    /* Add space between vega-embed links  */
+    .vega-actions a {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Count Of TLD With Extractions</h1>
+  <!--<div>See code at <a href="https://github.com/vega/vega-lite-demo">https://github.com/vega/vega-lite-demo</a></div>-->
+  <!-- Container for the visualization -->
+  <div id="vis"></div>
+
+  <script>
+  // Assign the specification to a local variable vlSpec.
+  var vlSpec = {
+    "description": "Visualization of Page Counts by Extractor on Ground Truth Data.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/szeke/visualizations/master/data/tld_counts_data.json"
+    },
+    "mark": "bar",
+    "encoding": {
+      "row": {
+        "field": "_attribute",
+        "type": "nominal",
+        "scale": {"padding": 5},
+        "axis": {
+          "title": "Attribute",
+          "orient": "left",
+          "labelAngle": 0.1
+        }
+      },
+      "y": {
+        "field": "extractor",
+        "type": "nominal",
+        "axis": false,
+        "scale": {"bandSize": 6}
+      },
+      "x": {
+        "aggregate": "sum",
+        "field": "page_count",
+        "type": "quantitative",
+        "axis": {"title": "TLD Count","grid": true}
+      },
+      "color": {"field": "extractor","type": "nominal"}
+    },
+    "config": {
+      "cell": {"width": 400},
+      "facet": {"cell": {"strokeWidth": 0}}
+    }
+  };
+  var embedSpec = {
+    mode: "vega-lite",  // Instruct Vega-Embed to use the Vega-Lite compiler
+    spec: vlSpec,
+    actions: false
+    // You can add more vega-embed configuration properties here. 
+    // See https://github.com/vega/vega/wiki/Embed-Vega-Web-Components#configuration-propeties for more information.
+  };
+  // Embed the visualization in the container with id `vis`
+  vg.embed("#vis", embedSpec, function(error, result) {
+    // Callback receiving the View instance and parsed Vega spec
+    // result.view is the View, which resides under the '#vis' element
+  });
+  </script>
+</body>
+</html>
