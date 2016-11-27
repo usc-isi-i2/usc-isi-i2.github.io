@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Count Of Pages With Extractions</title>
+  <title>Count Of TLD With Extractions</title>
   <meta charset="utf-8">
 
   <script src="//d3js.org/d3.v3.min.js"></script>
@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-  <h1>Count Of Pages With Extractions</h1>
+  <h1>Count Of TLD With Extractions</h1>
   <!--<div>See code at <a href="https://github.com/vega/vega-lite-demo">https://github.com/vega/vega-lite-demo</a></div>-->
   <!-- Container for the visualization -->
   <div id="vis"></div>
@@ -26,7 +26,7 @@
   var vlSpec = {
     "description": "Visualization of Page Counts by Extractor on Ground Truth Data.",
     "data": {
-      "url": "https://raw.githubusercontent.com/szeke/visualizations/master/data/page_counts_data.json"
+      "url": "https://raw.githubusercontent.com/szeke/visualizations/master/data/tld_counts_data.json"
     },
     "mark": "bar",
     "encoding": {
@@ -50,7 +50,7 @@
         "aggregate": "sum",
         "field": "page_count",
         "type": "quantitative",
-        "axis": {"title": "Page Count","grid": true}
+        "axis": {"title": "TLD Count","grid": true}
       },
       "color": {"field": "extractor","type": "nominal"}
     },
