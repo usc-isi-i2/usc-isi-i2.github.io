@@ -1,0 +1,11 @@
+<Data>
+ <AttributeSet>
+  <Attribute>attribute1</Attribute>
+  <Attribute>attr2</Attribute>
+ </AttributeSet>
+ <MethodSet>
+  <Method>token</Method>
+  <Method>firstN_3</Method>
+  <Method>ngram_4</Method>
+ </MethodSet>
+</Data>

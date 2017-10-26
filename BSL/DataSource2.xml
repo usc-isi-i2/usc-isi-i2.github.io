@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ReferenceSets>
+     <ReferenceSet> 
+	  <Name>DataSource2Name</Name>
+	  <Attributes>
+	       <Attr>attribute1</Attr>
+	       <Attr>attr2</Attr>
+	  </Attributes>
+	  <Database>
+	       <URL>jdbc:odbc:myDS2ConnectionName</URL>
+	       <Login>myODBCConnection</Login>
+	       <Password>myODBCPassword</Password>
+	       <ID_Attr>Source2_id</ID_Attr>
+	       <TableName>ds2TableName</TableName>
+	  </Database>
+     </ReferenceSet>
+</ReferenceSets>

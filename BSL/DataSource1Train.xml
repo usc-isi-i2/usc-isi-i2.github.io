@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ReferenceSets>
+     <ReferenceSet> 
+	  <Name>TrainingSetName</Name>
+	  <Attributes>
+	       <Attr>attribute1</Attr>
+	       <Attr>attr2</Attr>
+	  </Attributes>
+	  <Database>
+	       <URL>jdbc:odbc:MyODBCConnectionName</URL>
+	       <Login>myODBCConnection</Login>
+	       <Password>myODBCPassword</Password>
+	       <ID_Attr>Source1id</ID_Attr>
+	       <TableName>trainTableName</TableName>
+	  </Database>
+     </ReferenceSet>
+</ReferenceSets>
