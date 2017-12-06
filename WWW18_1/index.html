@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WWW 2018 Tutorial</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scroll" href="../home#tutorials">Tutorials</a>
+			</div><!-- navbar-header -->
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a class="scroll" href="../home">Home</a></li>
+<!-- 					<li><a class="scroll" href="#image">Image</a></li>
+					<li><a class="scroll" href="#about">About</a></li>
+					<li><a class="scroll" href="#tweets">Tweets</a></li> -->
+					<li><a class="scroll" href="#people">People</a></li>
+				</ul>        
+			</div><!-- collapse navbar-collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<header id="home">
+		<div class="container">
+			<h1>WWW 2018</h1>
+			<!-- <h2>KDD'17</h2> -->
+			<div class="affiliation">
+				<div><a href="../"><img src="../img/logo/iig-logo.png" width="280"></a></div>
+				<div><a href="http://www.isi.edu"><img src="../img/logo/isi-logo.png" width="250"></a></div>
+				<div><a href="http://www.usc.edu"><img src="../img/logo/usc-shield-name-white.png"></a></div>
+			</div>
+		</div><!-- container -->
+		<div class="scroll-btn-container hidden-xs">
+			<a class="scroll-btn scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+		</div>
+	</header>
+
+	<section id="about" class="container">
+		<h2>Scalable Construction and Querying of Massive Knowledge Bases</h2>
+		<div class="content">
+		<h3>Abstract</h3>
+ 		<p> In today's computerized and information-based society, people are inundated with vast amounts of text data, ranging from news articles, social media posts, scientific publications, to a wide range of textual information from various vertical domains (\eg, corporate reports, advertisements, legal acts, medical reports). How to turn such massive and unstructured text data into structured, actionable knowledge, and how to enable effective and user-friendly access to such knowledge is a grand challenge to the research community.</p>
+
+ 		<p>In the first half of the tutorial, we introduce data-driven methods on mining structured facts (\ie, entities and their relations for types of interest) from massive text corpora to construct knowledge bases, with a focus on methods that are minimally-supervised, domain-independent, and language-independent for timely knowledge base construction across various application domains (\eg, news, social media, biomedical, business).In the second half of the tutorial, we discuss the challenges of querying large-scale knowledge bases, and give a systematic discussion on several emerging \emph{schema-agnostic} querying paradigms for knowledge bases, including keyword query, graph query, natural language query (\ie, question answering), and query by example, which allow users to easily query knowledge bases without writing complex structured queries like SPARQL. We will also dedicate a session to a hands-on exercise that will take attendees through the process of creating and searching their own knowledge graphs using the Domain-specific Insight Graph (DIG) knowledge graph construction architecture.</p></div>
+<!-- <div class="content"> -->
+<!-- <h3>Slides</h3>
+ 		<p> Tutorial slides: <a href="../slides/2017-08-13-kdd-tutorial-kejriwal-szekely.pdf">[PDF]</a>. </p>
+<h3>Goals</h3>
+<p>Tutorial attendees will:</p>
+ 		<p>Gain a comprehensive understanding of the difficulties in mining unusual domains, which include both illicit domains e.g., human trafficking and securities fraud, as well as non-illicit domains not studied too often but with immense social utility e.g., humanitarian and disaster relief. We articulate case studies (from a data science perspective) in aspects
+of noise, scale, content, models and user desiderata that make data mining in
+such domains challenging and novel.</p>
+<p>Gain an overview of an end-to-end knowledge graph-centric architecture
+for mining data in unusual domains. Using demos and examples, we will provide
+attendees with insight into how familiar (imperfectly solved) tasks like information extraction, entity resolution, clustering, graph embeddings, graphical user
+interfaces and entity-centric search can be integrated into a viable data mining
+framework.</p>
+<p>Gain detailed insight into two extremely important, and well-studied, tasks
+in knowledge graph construction, namely information extraction and entity resolution. We cover why traditional research in these areas can be problematic in
+illicit domains, and some solutions presented by recent research.</p>
+<p>Gain insight into two systems-level implementations of knowledge graph
+construction and mining that have been (very recently) evaluated on real-world
+data collected in unusual domains.</p>
+<h3>Audience and Prerequisites</h3>
+<p>We anticipate a diverse target audience, including practitioners and researchers
+with an interest in knowledge graphs, Web domains, information extraction, entity resolution, link prediction and text mining. We believe that almost anyone
+with an interest in a sub-area of data mining will find a corresponding research
+challenge in illicit domains, with real-world characteristics (e.g. scale and noise)
+and complexity. Interestingly, illicit domains share many characteristics with
+social media; we will explicitly make this connection (with real-world examples),
+including applicable similarities and differences, in the first 15 minutes of the
+tutorial. We believe this will further highlight the need for collaboration and
+interdisciplinary work in these areas.</p>
+<p>Our technical focus will largely center on knowledge graphs (including construction, querying and inference); thus, some basic background on graph theory, information retrieval and machine learning will be useful. We will introduce
+concepts from the ground-up, and will not cover intricate mathematical treatments. The goal is to allow everyone to follow from the beginning, even if they
+have not directly worked with knowledge graphs, Web domains and illicit data.
+The tutorial will rely heavily on actual examples and case-studies, demos by the
+tutors, and visual intuition.</p>
+<h3>Related Work</h3>
+<p>Data mining in unusual domains draws on
+several different research areas and systems, and we will do our best to provide
+coverage on, and synthesize core elements of, the areas most relevant to the task
+at hand. Among prior work describing illicit domains (generally), especially in
+the Dark Web, we will cover elements of [6, 4]. Also, because of our extensive
+experience with a specific illicit domain, human trafficking, we will also cover the
+main conclusions in [1, 5] to highlight problems, challenges and characteristics
+of data. However, we will not limit ourselves only to illicit domains. For example, we have extensive experience in mining data in domains such as humanitarian and disaster relief, and we will also be covering those.</p> 
+<p>Research areas especially important to this tutorial are (high-level descriptions of) knowledge graphs, and knowledge graph (also, knowledge base)
+construction [14, 15], information extraction [3, 11], entity resolution [7, 2, 23]
+and documented implementations (esp. DIG and DeepDive [20, 19]). Our group
+has recent work in several of those areas [11, 12, 23]. We will briefly cover the
+principles of those methods (implemented in DIG) and their relevance to prob-
+lems in illicit domains.</p>
+<p>If we cover the optional material, references that we will draw upon for
+conceptual coverage of knowledge graph embeddings are [17, 13, 22, 8, 21], in
+addition to (not necessarily knowledge-) graph embeddings (e.g. DeepWalk [16])
+that were not specifically proposed for knowledge graphs but are also applicable.
+For entity-centric search (ECS), we will draw on concepts best expressed in [18,
+9], along with our own recent implementation that won the DARPA MEMEX
+challenge in the summer of 2016 and that is currently under submission at an
+information retrieval conference [10].</p>
+
+<h3>Equipment</h3>
+<p>Attendees are not required to bring a laptop to follow the tutorial, although
+it might be useful, especially if they want to check out the DIG codebase or
+otherwise access elements such as previous slides or references while we are
+giving the tutorial.</p>
+
+<h3>References</h3>
+<p>[1] H. Alvari, P. Shakarian, and J. K. Snyder. A non-parametric learning
+approach to identify online human trafficking. In Intelligence and Security
+Informatics (ISI), 2016 IEEE Conference on, pages 133-138. IEEE, 2016.</p>
+<p>[2] D. G. Brizan and A. U. Tansel. A. survey of entity resolution and record
+linkage methodologies. Communications of the IIMA, 6(3):5, 2015.</p>
+<p>[3] C.-H. Chang, M. Kayed, M. R. Girgis, and K. F. Shaalan. A survey of web
+information extraction systems. IEEE transactions on knowledge and data
+engineering, 18(10):1411-1428, 2006.</p>
+<p>[4] H. Chen. Dark web: Exploring and data mining the dark side of the web,
+volume 30. Springer Science & Business Media, 2011.</p>
+<p>[5] A. Dubrawski, K. Miller, M. Barnes, B. Boecking, and E. Kennedy. Leveraging publicly available data to discern patterns of human-trafficking activity. Journal of Human Tracking, 1(1):65-85, 2015.</p>
+<p>[6] T. Fu, A. Abbasi, and H. Chen. A focused crawler for dark web forums.
+Journal of the American Society for Information Science and Technology,
+61(6):1213-1231, 2010.</p>
+<p>[7] L. Getoor and A. Machanavajjhala. Entity resolution: theory, practice &
+open challenges. Proceedings of the VLDB Endowment, 5(12):2018-2019,
+2012.</p>
+<p>[8] S. Guo, Q. Wang, B. Wang, L. Wang, and L. Guo. Semantically smooth
+knowledge graph embedding. In ACL (1), pages 84-94, 2015.</p>
+<p>[9] A. Harth, A. Hogan, R. Delbru, J. Umbrich, S. O'Riain, and S. Decker.
+Swse: Answers before links! In Proceedings of the 2007 International Conference on Semantic Web Challenge-Volume 295, pages 137-144. CEUR-
+WS. org, 2007.</p>
+<p>[10] M. Kejriwal and P. Szekely. Entity-centric search in the human trafficking
+domain (under review). In SIGIR. ACM, 2017.</p>
+<p>[11] M. Kejriwal and P. Szekely. Information extraction in illicit domains. In World Wide Web. ACM, 2017.</p>
+<p>[12] M. Kejriwal, P. Szekely, and C. Knoblock. Investigative knowledge discovery for combating illicit activities (to appear). In Intelligent Systems
+Magazine. IEEE, 2017.</p>
+<p>[13] Y. Lin, Z. Liu, M. Sun, Y. Liu, and X. Zhu. Learning entity and relation
+embeddings for knowledge graph completion. In AAAI, pages 2181-2187,
+2015.</p>
+<p>[14] F. Niu, C. Zhang, C. Re, and J. Shavlik. Elementary: Large-scale
+knowledge-base construction via machine learning and statistical inference. International Journal on Semantic Web and Information Systems
+(IJSWIS), 8(3):42-73, 2012.</p>
+<p>[15] F. Niu, C. Zhang, C. Re, and J. W. Shavlik. Deepdive: Web-
+scale knowledge-base construction using statistical learning and inference.
+VLDS, 12:25-28, 2012.</p>
+<p>[16] B. Perozzi, R. Al-Rfou, and S. Skiena. Deepwalk: Online learning of social
+representations. In Proceedings of the 20th ACM SIGKDD international
+conference on Knowledge discovery and data mining, pages 701-710. ACM,
+2014.</p>
+<p>[17] P. Ristoski and H. Paulheim. Rdf2vec: Rdf graph embeddings for data mining. In International Semantic Web Conference, pages 498-514. Springer,
+2016.</p>
+<p>[18] P. Saleiro, J. Teixeira, C. Soares, and E. Oliveira. Timemachine: Entity-
+centric search and visualization of news archives. In European Conference
+on Information Retrieval, pages 845-848. Springer, 2016.</p>
+<p>[19] J. Shin, S. Wu, F. Wang, C. De Sa, C. Zhang, and C. Re. Incremental
+knowledge base construction using deepdive. Proceedings of the VLDB
+Endowment, 8(11):1310-1321, 2015.</p>
+<p>[20] P. Szekely, C. A. Knoblock, J. Slepicka, A. Philpot, A. Singh, C. Yin,
+D. Kapoor, P. Natarajan, D. Marcu, K. Knight, et al. Building and using a
+knowledge graph to combat human trafficking. In International Semantic
+Web Conference, pages 205-221. Springer, 2015.</p>
+<p>[21] Z.Wang, J. Zhang, J. Feng, and Z. Chen. Knowledge graph and text jointly
+embedding. In EMNLP, volume 14, pages 1591-1601. Citeseer, 2014.</p>
+<p>[22] Z. Wang, J. Zhang, J. Feng, and Z. Chen. Knowledge graph embedding by
+translating on hyperplanes. In AAAI, pages 1112-1119. Citeseer, 2014.</p>
+<p>[23] L. Zhu, M. Ghasemi-Gol, P. Szekely, A. Galstyan, and C. A. Knoblock.
+Unsupervised entity resolution on multi-type graphs. In International Semantic Web Conference, pages 649-667. Springer, 2016.</p>
+ 		</div>
+	</section> -->
+
+	
+	<!-- <section id="tweets" class="container">
+		<h2>#wtnicusc TWEETS</h2>
+		<div class="content">
+			<a class="twitter-timeline" href="https://twitter.com/hashtag/wtnicusc" data-widget-id="750810950672850945" data-chrome="nofooter">#wtnicusc Tweets</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div> -->
+	</section> 
+
+	<section id="people" class="container">
+		<h2>PEOPLE</h2>
+		<ul class="content list-unstyled">
+		     <li>
+				<a style="background-image:url('../img/people/Xiang-Sean-Ren.jpg')" href="http://xren7.web.engr.illinois.edu/"></a>
+				<div class="description">
+					<div class="name">Xiang (Sean) Ren</div>
+					<div class="title">Assistant Professor</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/Yu-Su.jpg')" href="http://cs.ucsb.edu/~ysu/"></a>
+				<div class="description">
+					<div class="name">Yu Su</div>
+					<div class="title">Ph.D Student at UCSB</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/Pedro-Szekely.jpg')" href="../szekely"></a>
+				<div class="description">
+					<div class="name">Pedro Szekely</div>
+					<div class="title">Project Leader & Research Associate Professor</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/Mayank-Kejriwal.jpg')" href="../kejriwal"></a>
+				<div class="description">
+					<div class="name">Mayank Kejriwal</div>
+					<div class="title">Computer Scientist</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/Xifeng-Yan.jpg')" href="http://www.cs.ucsb.edu/~xyan/"></a>
+				<div class="description">
+					<div class="name">Xifeng Yan</div>
+					<div class="title">Professor at UCSB</div>
+				</div>
+			</li>
+		</ul>
+		
+	</section>
+	
+	<!-- <section class="container">
+		<h2>ACKNOWLEDGMENT</h2>
+		<p class="content">This material is based on research sponsored in part by the National Science Foundation under Grant No. 1561057.</p>
+	</section> -->
+	
+	<footer>
+		<div class="container">&copy; 2017 The University of Southern California</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
