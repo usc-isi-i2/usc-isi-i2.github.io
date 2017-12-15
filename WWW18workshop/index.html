@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ISWC 2017 Workshop</title>
+	<title>WWW 2018 Workshop</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/index.css">
@@ -24,7 +24,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand scroll" href="#home">ISWC 2017</a>
+				<a class="navbar-brand scroll" href="#home">WWW 2018</a>
 			</div><!-- navbar-header -->
 			<div class="collapse navbar-collapse" id="nav-links">
 				<ul class="nav navbar-nav navbar-right">
@@ -59,7 +59,12 @@
 	<section id="introduction" class="container">
 		<h2>Introduction</h2>
 		<div class="content">
- 		<p>Understanding the semantics of Web content is at the core of many applications, ranging from Web search, news aggregation and machine translation to personal assistant services such as Amazon Echo, Cortana, Siri, and Google Home. Presently, two different approaches apply to this task. The first approach utilizes a rich suite of information retrieval and machine learning techniques that capture meaning through powerful statistical tools like neural networks and distributional semantics (e.g., word2vec). Recently, such emerging semantic models have achieved state-of-the-art results in several predictive applications (e.g. recommendation, node classification, knowledge graph completion) relevant not just to the Semantic Web, but allied communities such as data mining and natural language processing. The second, more traditional, approach conveys meaning in a structured form through embedded data markup (using Schema.org, OGP, etc.) and ontologies, and can be further enhanced through available knowledge bases such as Freebase and DBpedia. Ontological notions of semantics play a central role in the Semantic Web community, permitting publishers and consumers of data to interact using a well-defined ontology. Such models give practitioners the powerful ability to reason about, and represent, instances in a well-defined manner. HSSUES is a half-day workshop that will explore the synergy, from perspectives of theory, application, experiments (including negative results) and vision, between both approaches, and how such synergies can be exploited to advance the state-of-the-art. We are interested in mechanisms, both theoretical and experimental, that range the spectrum of possible strategies and provide novel functionalities through hybrid approaches to statistical and symbolic understanding. The broader goal is to foster a discussion that will lead to cross-cutting ideas and collaborations at a timely moment when Semantic Web research has significantly started intersecting with the natural language processing and knowledge discovery communities.
+ 		<p>Understanding the semantics of Web content is at the core of many applications, ranging from Web search, news aggregation and machine translation to personal assistant services such as Amazon Echo, Cortana, Siri, and Google Home. Latent Semantics utilizes a rich suite of information retrieval and machine learning techniques that capture meaning through powerful statistical neural network-based methods like word2vec and node2vec. Recently, such emerging semantic models have achieved state-of-the-art results in several predictive applications (e.g. recommendation, node classification, knowledge graph completion) relevant not just to the broader World Wide Web research community, but also allied communities such as Semantic Web, data mining and natural language processing. In the LSW workshop, we explore the convergence of latent semantics (LS) models and the Web. We explore several aspects of LS models that are particularly relevant to the Web, namely 
+<br/>•	Novel methods, including embedding methods, that take into account the specific properties of the Web (e.g., link structure, multimedia content…) 
+		<br/>•	Evaluation of LS methods, especially in a Web context
+		<br/>•	Intersection of LS models with traditional ontological semantics
+		<br/>•	Reasoning about such models in a rigorous way
+<br/>•Extending the scope of these models with techniques such as zero-shot learning and transfer learning.
 </p>
  		</div>
 	</section>
@@ -67,7 +72,7 @@
 	<section id="format" class="container">
 		<h2>Format</h2>
 		<div class="content">
- 		<p>We are looking forward to a highly interactive workshop with participants from a wide range of backgrounds, from researchers to application builders, and from academia to industry. Researchers with an interdisciplinary interest in exploring synergies between declarative semantics such as ontologies and machine learning and knowledge discovery methods, especially graph (including knowledge graph) embeddings and deep neural networks, are especially invited to participate and submit papers. In addition to oral presentations selected from submitted papers, we will have poster sessions, and an invited talk from industry.
+ 		<p>We are looking forward to a highly interactive workshop with participants from a wide range of backgrounds, from researchers to application builders, and from academia to industry. Researchers with an interdisciplinary interest in exploring synergies between various areas, especially graph (including knowledge graph) embeddings, World Wide Web and deep neural networks, are especially invited to participate and submit papers. In addition to oral presentations selected from submitted papers, we will have poster sessions, and an invited talk.
  		</p>
  		</div>
 	</section>
@@ -77,19 +82,17 @@
 		<div class="content">
  		<p><b>Short and long papers </b>are solicited for the following set of <b>non-exhaustive </b>topics:
  		<h3>Theory, Algorithms and Methods:</h3>
- 		<br/>•	Emerging semantic models e.g., distributional semantics, onto-distributional and other non-declarative or pseudo-declarative semantics 
- 		<br/>•	Synergies between emerging and ontological semantics e.g., using semantic data and technologies to explain or improve distributional models, using distributional approaches to acquire knowledge bases
- 		
- 		<br/>•	Foundational proposals for content models that combine statistical and symbolic representations
-		
-		<br/>•	Novel embedding algorithms, especially for diverse data such as knowledge graphs, RDF, and ontologies
-		
-		<br/>•	Statistical machine learning methods and algorithms for symbolic representations 
+ 		<br/>•	Novel Latent Semantic (LS) and embedding models, especially for diverse data such as webpages, RDF graphs, and ontologies
+ 		<br/>•	Theoretical foundations of LS models
+ 		<br/>•	Novel algorithms for representing and embedding knowledge graphs
+		<br/>•	Novel methods for Knowledge graph completion
+		<br/>•	Novel synergies for combining LS models with graphical models like Probabilistic Soft Logic (PSL) and Markov Logic Networks (MLNs)
+ 		<br/>•	Innovative and efficient methods for querying LS models
+		<br/>•	Theoretically grounded methods for evaluating LS models
 		</p>
 		<h3>Applications</h3>
 		<p>
-		•	Creating symbolic representations from machine learning
- 		<br/>•	Web search 
+		 	<br/>•	Web search 
 		<br/>•	Question answering
 		<br/>•	Personalization
 		<br/>•	Data Mining
@@ -98,26 +101,22 @@
 		<br/>•	Link prediction
 		<br/>•	Node classification
 		<br/>•	Instance matching/Entity resolution
-		<br/>•	Knowledge graph embeddings
-		<br/>•	Knowledge graph completion
+		
  		</p>
 		<h3>Experiments, Systems and Data</h3>
  		<p>
- 		<br/>•	Novel datasets, especially datasets acquired through, or useful for evaluating, hybrid approaches
+ 		<br/>•	Novel datasets, especially datasets acquired through, or useful for evaluating, Web-specific LS models
 		<br/>•	Novel methodologies, concerning both evaluations and data curation/collection
 		<br/>•	Experimental results using existing methods, including negative results of interest
-		<br/>•	Systems issues in hybrid systems, including best practices, case studies, lessons learned, and feature descriptions
+		<br/>•	Descriptions of best practices, case studies, lessons learned, and features
  		</p>
  		<p>We will also accept a small number of <b>vision, opinion and position papers that provide discussions on challenges and roadmaps (for hybrid systems, and emerging semantic models). </b>
  		</p>
- 		<p>All papers should be formatted according to the standard <a href="http://www.springer.com/us/computer-science/lncs/conference-proceedings-guidelines">LNCS Style</a>. All papers will be peer reviewed, single-blinded. Authors whose papers are accepted to the workshop will have the opportunity to participate in a poster session, and some set may also be chosen for oral presentation. Long papers should not exceed than 12 pages, and short papers should not exceed 6 pages, including all references. The accepted papers will be published online in CEUR-WS and will not be considered archival. Proceedings will be available for download after the conference.
+ 		<p>All papers should be formatted according to the latest ACM double-column conference format also used for the main research track at WWW. All papers will be peer reviewed, single-blinded. Authors whose papers are accepted to the workshop will have the opportunity to participate in a poster session, and some set may also be chosen for oral presentation. Long papers should not exceed than 8 pages, and short papers should not exceed 4 pages, including all references. The accepted papers will be published in the WWW18 Satellite Proceedings and will not be considered archival.
  		</p>
  		<p>
- 		All papers will be peer reviewed, single-blinded. Authors whose papers are accepted to the workshop will have the opportunity to participate in a poster session, and some set may also be chosen for oral presentation. Long papers should not exceed than 12 pages, and short papers should not exceed 6 pages, including all references. The accepted papers will be published online and will not be considered archival. Proceedings will be available for download after the conference.
- 		</p>
-		<p>
- 		We are using the EasyChair system for submissions. Please upload your submissions to our EasyChair <a href="https://easychair.org/conferences/?conf=hssues2017">submission</a> system.
- 		</p>
+ 			
+ 		We are using the EasyChair system for submissions. Details will be posted here shortly. 		</p>
  		<p>
  		Please email any enquiries to <a href="mailto:kejriwal@isi.edu">kejriwal@isi.edu</a>
  		</p>	
