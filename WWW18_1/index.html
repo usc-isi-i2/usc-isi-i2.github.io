@@ -60,7 +60,151 @@
  		<p> In today's computerized and information-based society, people are inundated with vast amounts of text data, ranging from news articles, social media posts, scientific publications, to a wide range of textual information from various vertical domains (e.g., corporate reports, advertisements, legal acts, medical reports). How to turn such massive and unstructured text data into structured, actionable knowledge, and how to enable effective and user-friendly access to such knowledge is a grand challenge to the research community.</p>
 
  		<p>In the first half of the tutorial, we introduce data-driven methods on mining structured facts (\ie, entities and their relations for types of interest) from massive text corpora to construct knowledge bases, with a focus on methods that are minimally-supervised, domain-independent, and language-independent for timely knowledge base construction across various application domains (e.g., news, social media, biomedical, business).In the second half of the tutorial, we discuss the challenges of querying large-scale knowledge bases, and give a systematic discussion on several emerging \emph{schema-agnostic} querying paradigms for knowledge bases, including keyword query, graph query, natural language query (\ie, question answering), and query by example, which allow users to easily query knowledge bases without writing complex structured queries like SPARQL. We will also dedicate a session to a hands-on exercise that will take attendees through the process of creating and searching their own knowledge graphs using the Domain-specific Insight Graph (DIG) knowledge graph construction architecture.</p></div>
-<!-- <div class="content"> -->
+
+		<div class="content">
+		<H3>Outline</H3>
+		<ol>
+		  <li>Overview of Knowledge Base Construction and Querying [<a href="CIKM17-Intro.pdf" target="_blank">slides</a>]</li>
+		  <li>Effort-light Knowledge Base Construction  [<a href="CIKM17-KB_construction.pdf" target="_blank">slides</a>]</li>
+		    <ul>
+		     <li>Phrase Mining from Massive Text Corpora</li>
+		     <li>Entity Recognition and Typing</li>
+		     <li>Fine-grained Entity Typing </li>
+		     <li>Co-extraction of Entities and Relationships</li>
+		    </ul>
+		  <li>Schema-agnostic Knowledge Base Querying [<a href="CIKM17-KB_querying.pdf" target="_blank">slides</a>]</li>
+		    <ul>
+		     <li>Keyword Query: Query like Search Engine</li>
+		     <li>Graph Query: Add a Little Structure</li>
+		     <li>Natural Language Query: As Natural as You Want</li>
+		     <li>Query by Example: Just Show Me Examples</li>
+		    </ul>
+		  <li>Trends and research problems [<a href="CIKM17-summary.pdf" target="_blank">slides</a>]</li>
+		</ol>
+
+		[<a href="CIKM17-tutorial.pdf" target="_blank">Full Slides</a>]
+		</div>
+		
+		<div class="content">
+		    <H3>Projects</H3>
+		    <li>
+		    Multi-tasking sequence labeling [<a href="https://liyuanlucasliu.github.io/LM-LSTM-CRF/" target="_blank">project</a>]
+		    </li>
+
+		    <li>
+		    Learning with Heterogeneous Supervision [<a href="https://liyuanlucasliu.github.io/ReHession/" target="_blank">project</a>]
+		    </li>
+
+		    <li>
+		    Learning with Indirection Supervision [<a href="https://ellenmellon.github.io/ReQuest/" target="_blank">project</a>]
+		    </li>
+		</div>
+		
+		<div class="content">
+		    <H3>Code & Data</H3>
+		    <li>
+		    Sequence Tagging: [<a href="https://github.com/LiyuanLucasLiu/LM-LSTM-CRF" target="_blank">LM-LSTM-CRF</a>]
+		    </li>
+
+		    <li>
+		    Phrase Mining: [<a href="https://github.com/shangjingbo1226/AutoPhrase" target="_blank">AutoPhrase</a>]
+		    </li>
+
+		    <li>
+		    Entity Typing: [<a href="https://github.com/shanzhenren/PLE" target="_blank">PLE</a>] [<a href="https://github.com/shanzhenren/AFET" target="_blank">AFET</a>] 
+		    </li>
+
+		    <li>
+		    Relation Extraction: [<a href="https://github.com/LiyuanLucasLiu/ReHession/" target="_blank">ReHession</a>] [<a href="https://github.com/shanzhenren/ReQuest" target="_blank">ReQuest</a>]
+		    </li>
+
+		    <li>
+		    Co-extraction of Entities and Relations: [<a href="https://github.com/shanzhenren/CoType" target="_blank">CoType</a>]</li>
+
+		    <li>
+		    Knowledge-based Question Answering: [<a href="https://github.com/ysu1989/GraphQuestions">GraphQuestions</a>]
+		    </li>
+		</div>
+		
+		<div class="content">
+		    <H3>Publications</H3>
+		    <ul>
+		    <li>
+		    <p><a href="https://arxiv.org/abs/1710.11169" target="_blank">Indirect Supervision for Relation Extraction using Question-Answer Pairs</a><br />
+		    Ellen Wu, <u>Xiang Ren</u>, Frank Xu, Ji Li, Jiawei Han.<br/>
+		    <i>ACM International Conference on Web Search and Data Mining</i> (<b>WSDM</b>), 2018.<br/>
+		    [<a href="https://ellenmellon.github.io/ReQuest/" target="_blank">Project</a>] [<a href="https://github.com/shanzhenren/ReQuest" target="_blank">Github</a>]
+		    </p>
+		    </li>
+
+		    <li>
+		    <p><a href="https://arxiv.org/abs/1709.04109" target="_blank">Empower Sequence Labeling with Task-Aware Neural Language Model</a><br />
+		    Liyuan Liu, Jingbo Shang, <u>Xiang Ren</u>, Frank Xu, Huan Gui, Jian Peng, Jiawei Han.<br/>
+		    <i>The AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), 2018.<br/>
+		    <a href="https://github.com/LiyuanLucasLiu/LM-LSTM-CRF" target="_blank">[Github]</a> <a href="https://liyuanlucasliu.github.io/LM-LSTM-CRF/" target="_blank">[Project]</a> <a href="http://lm-lstm-crf.readthedocs.io/en/latest/" target="_blank">[Documents]</a>
+		    </p>
+		    </li>
+
+		    <li>
+		    <p><a href="https://arxiv.org/abs/1707.00166" target="_blank">Heterogeneous Supervision for Relation Extraction: A Representation Learning Approach</a><br />
+		    Liyuan Liu*, <u>Xiang Ren</u>*, Qi Zhu, Shi Zhi, Huan Gui, Heng Ji, Jiawei Han.<br/>
+		    <i>Conference on Empirical Methods in Natural Language Processing</i> (<b>EMNLP</b>), 2017. 
+		    [<a href="https://liyuanlucasliu.github.io/ReHession/" target="_blank">Project</a>] [<a href="https://github.com/LiyuanLucasLiu/ReHession" target="_blank">Github</a>]
+		    </p>
+		    </li>
+
+		    <li>
+		    <p><a href="https://arxiv.org/pdf/1610.08763.pdf" target="_blank">CoType: Joint Extraction of Typed Entities and Relations with Knowledge Bases</a><br />
+		    <u>Xiang Ren</u>, Zeqiu Wu, Wenqi He, Meng Qu, Clare R. Voss, Heng Ji, <br>
+		    Tarek F. Abdelzaher, Jiawei Han.<br />
+		    <i>International World-Wide Web Conference</i> (<b>WWW</b>), 2017.<br>
+		    [<a href="https://github.com/shanzhenren/CoType" target="_blank">Github</a>] [<a href="www17-CoType.pdf" target="_blank">slides</a>] [<a href="https://arxiv.org/abs/1610.08763" target="_blank">arxiv</a>]
+		    </p>
+		    </li>
+
+
+		    <li>
+		    <p><a href="kdd16-LNR.pdf" target="_blank">Label Noise Reduction in Entity Typing by Heterogeneous Partial-Label Embedding</a><br />
+		    <u>Xiang Ren</u>*, Wenqi He*, Meng Qu, Heng Ji, Clare R. Voss, Jiawei Han.<br />
+		    <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining</i> (<b>KDD</b>), 2016. [<a href="https://github.com/shanzhenren/PLE" target="_blank">Github</a>] [<a href="http://www.kdd.org/kdd2016/subtopic/view/label-noise-reduction-in-entity-typing-by-heterogeneous-partial-label-embed" target="_blank">video</a>]</p>
+		    </li>
+
+		    <li>
+			<p><a href="https://arxiv.org/pdf/1704.05974.pdf" target="_blank">Cross-domain Semantic Parsing via Paraphrasing</a>
+			<br>Yu Su, Xifeng Yan.<br>
+			<i>Conference on Empirical Methods in Natural Language Processing</i> (<b>EMNLP</b>), 2017.<br>
+			</p>
+		    </li>
+		    <li>
+			<p><a href="http://cs.ucsb.edu/~ysu/papers/emnlp16_graphquestions.pdf" target="_blank">On Generating Characteristic-rich Question Sets for QA Evaluation</a>
+			<br>Yu Su, Huan Sun, Brian Sadler, Mudhakar Srivatsa, Izzeddin Gur, Zenghui Yan, Xifeng Yan.<br>
+			<i>Conference on Empirical Methods in Natural Language Processing</i> (<b>EMNLP</b>), 2016.<br>
+			</p>
+		    </li>
+		    <li>
+			<p><a href="http://cs.ucsb.edu/~ysu/papers/kdd15_feedback.pdf" target="_blank">Exploiting Relevance Feedback in Knowledge Graph Search</a>
+			<br>Yu Su, Shengqi Yang, Huan Sun, Mudhakar Srivatsa, Sue Kase, Michelle Vanni, Xifeng Yan.<br>
+			<i>ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</i> (<b>KDD</b>), 2015.<br>
+			</p>
+		    </li>
+		    <li>
+			<p><a href="http://ranger.uta.edu/~cli/pubs/2015/gqbe-tkde-jklye-complete.pdf" target="_blank">Querying Knowledge Graphs by
+		Example Entity Tuples</a>
+			<br>Nandish Jayaram, Arijit Khan, Chengkai Li, Xifeng Yan, Ramez Elmasri.<br>
+			<i>IEEE Transactions on Knowledge and Data Engineering</i> (<b>TKDE</b>), 2015.<br>
+			</p>
+		    </li>
+		    <li>
+			<p><a href="http://www.cs.ucsb.edu/~xyan/papers/vldb14_slq.pdf" target="_blank">Schemaless and Structureless Graph Querying</a>
+			<br>Shengqi Yang, Yinghui Wu, Huan Sun, Xifeng Yan.<br>
+			<i>International Conference on Very Large Databases</i> (<b>VLDB</b>), 2014.<br>
+			</p>
+		    </li>
+		    </ul>
+		</div>
+		
+		
+		<!-- <div class="content"> -->
 <!-- <h3>Slides</h3>
  		<p> Tutorial slides: <a href="../slides/2017-08-13-kdd-tutorial-kejriwal-szekely.pdf">[PDF]</a>. </p>
 <h3>Goals</h3>
@@ -210,7 +354,7 @@ Unsupervised entity resolution on multi-type graphs. In International Semantic W
 				<a style="background-image:url('../img/people/Yu-Su.jpg')" href="http://cs.ucsb.edu/~ysu/"></a>
 				<div class="description">
 					<div class="name">Yu Su</div>
-					<div class="title">Ph.D Student at UCSB</div>
+					<div class="title">Incoming Assistant Professor at OSU</div>
 				</div>
 			</li>
 			<li>
