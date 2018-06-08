@@ -1,0 +1,21 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/mint/dataCatalog/0.1.0> a prov:Entity;
+	 dc:title "The MINT Data Catalog Ontology";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.
+:agent0 a prov:Agent; foaf:name "Jay Pujara".
+:agent1 a prov:Agent; foaf:name "Arunkumar Rajendran".
+:agent2 a prov:Agent; foaf:name "Binh Vu".
+:agent3 a prov:Agent; foaf:name "Craig Knoblock".
+:agent4 a prov:Agent; foaf:name "Dan Feldman".
+:agent5 a prov:Agent; foaf:name "Daniel Garijo".
+:agent6 a prov:Agent; foaf:name "Yao-Yi Chiang".
