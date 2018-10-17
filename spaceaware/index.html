@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SpaceAware</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scroll" href="#home"></a>
+			</div><!-- navbar-header -->
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+<!-- 					<li><a class="scroll" href="#image">Image</a></li>
+					<li><a class="scroll" href="#about">About</a></li>
+					<li><a class="scroll" href="#tweets">Tweets</a></li> -->
+					<li><a class="scroll" href="#people">People</a></li>
+				</ul>        
+			</div><!-- collapse navbar-collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<header id="home">
+		<div class="container">
+			<h1>SpaceAware</h1>
+			<h2>Multi-Source Data Fusion for Space Situational Awareness</h2>
+			<div class="affiliation">
+				<div><a href="../"  style="color: #FDC93F;font-size: 24px;font-style: italic;font-family: Georgia" >Center on Knowledge Graphs</a></div>
+				<div><a href="http://www.isi.edu" style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia" >Information Sciences Institute</a></div>
+				<div><a href="http://www.usc.edu"><img src="../img/logo/usc-shield-name-white.png"></a></div>
+			</div>
+		</div><!-- container -->
+		<div class="scroll-btn-container hidden-xs">
+			<a class="scroll-btn scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+		</div>
+	</header>
+
+	<section id="about" class="container">
+		<h2>ABOUT</h2>
+		<div class="content">
+			<!-- <h3>PRINCESS</h3> -->
+			<p>To date, satellite tracking has been focused on validation of an object’s orbit and whether it is operational or not. While physics-based information, and thus accuracy of a space object’s track, is increasing—so too is the overall scale of objects to track. The space catalog is currently at 20K objects with expectations to increase to 100K and possibly 500K within 5 to 7 years.  Given the increase in scale of objects expected and existence of congestion and deconfliction of orbits, maintaining the chain of custody from launch, validation of intent, attribution, and resolution of anomalies or actions have become of paramount importance to space operators.  The ability to not just predict and avoid physical conjunctions with better fidelity, but the ability to assess an object’s risks before it gets into trouble may now be required.</p>
+
+			<p>In this project we are developing a modular evolving knowledge graph, called SpaceAware, for current and future space operations. SpaceAware addresses the current multi-data fusion challenge from information sources as disparate as orbitology, satellite updates, and socio-economic sources, while providing expansion capability for addressing space traffic management for commercial and operational missions. Through high-performance computing, plug-in algorithmic portals, an evolving knowledge graph, and the ability to provide indications and warnings, SpaceAware offers a backbone for the development of systems allowing multiple levels of operators and the ability for long-term commercial planners to play out multiple COAs through an evolving operating picture.  </p>
+		</div>
+	</section>
+	
+	<!-- <section id="tweets" class="container">
+		<h2>#wtnicusc TWEETS</h2>
+		<div class="content">
+			<a class="twitter-timeline" href="https://twitter.com/hashtag/wtnicusc" data-widget-id="750810950672850945" data-chrome="nofooter">#wtnicusc Tweets</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</section> -->
+
+	<section id="people" class="container">
+		<h2>PEOPLE</h2>
+		<ul class="content list-unstyled">
+			<li>
+				<a style="background-image:url('../img/people/Craig-Knoblock.jpg')" href="../knoblock"></a>
+				<div class="description">
+					<div class="name">Craig Knoblock</div>
+					<div class="title">Interim Executive Director</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/Anoop-Kumar.jpg')" href="../anoopkum"></a>
+				<div class="description">
+					<div class="name">Anoop Kumar</div>
+					<div class="title">Senior Computer Scientist</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/avatar.jpg')"></a>
+				<div class="description">
+					<div class="name">David Barnhart</div>
+					<div class="title">Director, USC Space Engineering Research Center</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/Dipsy-Kapoor.jpg')" href="https://www.linkedin.com/in/dipsy"></a>
+				<div class="description">
+					<div class="name">Dipsy Kapoor</div>
+					<div class="title">Research Programmer</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/avatar.jpg')"></a>
+				<div class="description">
+					<div class="name">Brian Duffy</div>
+					<div class="title"></div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/avatar.jpg')" href="https://www.linkedin.com/in/erdong-hu-300197102/"></a>
+				<div class="description">
+					<div class="name">Erdong Hu</div>
+					<div class="title">Student</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/Varun-Iyer.png')" href="https://varuniyer.us/"></a>
+				<div class="description">
+					<div class="name">Varun Iyer</div>
+					<div class="title">Student, UMass</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/avatar.jpg')" ></a>
+				<div class="description">
+					<div class="name">Rebecca Rodgers</div>
+					<div class="title"></div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/avatar.jpg')" ></a>
+				<div class="description">
+					<div class="name">Alon Tivon</div>
+					<div class="title">Student</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/avatar.jpg')" ></a>
+				<div class="description">
+					<div class="name">Chase Hainsworth</div>
+					<div class="title">Student</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/avatar.jpg')" ></a>
+				<div class="description">
+					<div class="name">Alexander Gednov</div>
+					<div class="title">Student</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/avatar.jpg')" ></a>
+				<div class="description">
+					<div class="name">Alexander Gednov</div>
+					<div class="title">Student</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/Nicholas-Truong.jpeg')" href="https://www.linkedin.com/in/nicholas-truong-698873123/"></a>
+				<div class="description">
+					<div class="name">Nicholas Truong</div>
+					<div class="title">Student</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+	
+	<footer>
+		<div class="container">&copy; 2016 The University of Southern California</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
