@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DSBox</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/publication.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scroll" href="#home">DSBox</a>
+			</div><!-- navbar-header -->
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+<!-- 					<li><a class="scroll" href="#image">Image</a></li>
+					<li><a class="scroll" href="#about">About</a></li>
+					<li><a class="scroll" href="#tweets">Tweets</a></li> -->
+					<li><a class="scroll" href="#people">People</a></li>
+					<li><a class="scroll" href="#pub">Publications</a></li> 
+				</ul>        
+			</div><!-- collapse navbar-collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<header id="home">
+		<div class="container">
+			<h1>DSBox</h1>
+			<h2>Data Scientist in a Box</h2>
+			<div class="affiliation">
+				<div><a href="../"><a href="../"  style="color: #FDC93F;font-size: 24px;font-style: italic;font-family: Georgia" >Center on Knowledge Graphs</a></div>
+				<div><a href="http://www.isi.edu" style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia" >Information Sciences Institute</a></div>
+				<div><a href="http://www.usc.edu"><img src="../img/logo/usc-shield-name-white.png"></a></div>
+			</div>
+		</div><!-- container -->
+		<div class="scroll-btn-container hidden-xs">
+			<a class="scroll-btn scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+		</div>
+	</header>
+	
+
+	<section id="about" class="container">
+		<h2>ABOUT</h2>
+		<div class="content">
+		<!--	<h3>EFFECT</h3> -->
+			<p>In today’s big data era, there are tremendous opportunities for exploiting available information to solve many kinds of problems by building empirical, data-driven models of complex phenomena. Yet, building such models is generally an elaborate process, often requiring a data scientist trained in the requisite computer science technologies. Subject matter experts (SMEs) have the domain knowledge required to define useful empirical models, but often lack the computer science expertise to construct them from scratch. Today, creating empirical models requires a SME/data-scientist team, making production and refinement of models expensive and time consuming. </p>
+            <p>“Data Scientist in a Box” (DSBox) technologies captures the expertise of a data scientist in a computer system. DSBox innovations address the key bottlenecks in the creation of empirical models. Data preparation is known to take 60% to 80% of the effort to build models: DSBox proposes technology that uses machine learning to profile a dataset and to automatically detect and correct all the common errors that data scientists fix today using a variety of tools and scripts. Creation of appropriate features is known to be the key to create accurate empirical models: DSBox proposes a mathematically general approach for constructing useful and informative features in a domain-agnostic way. Deep learning has shown large performance improvements in some application domains: DSBox proposes new algorithms to make deep learning more broadly applicable. Composition of machine learning pipelines is difficult because there are many alternative ways of featurizing data and many alternative machine learning algorithms with varying performance characteristics: DSBox proposes technology that learns from prior expert-grade solutions, encoding them in a knowledge base, and using them to automatically create working models with minimal effort and to refine them to optimize their performance. </p>
+</p>
+		</div>
+	</section>
+	
+	<!-- <section id="tweets" class="container">
+		<h2>#wtnicusc TWEETS</h2>
+		<div class="content">
+			<a class="twitter-timeline" href="https://twitter.com/hashtag/wtnicusc" data-widget-id="750810950672850945" data-chrome="nofooter">#wtnicusc Tweets</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</section> -->
+
+	<section id="people" class="container">
+		<h2>PEOPLE</h2>
+		<ul class="content list-unstyled">
+		<h3>Current Researchers</h3>
+		<li>
+				<a style="background-image:url('../img/people/Pedro-Szekely.jpg')" href="../szekely"></a>
+				<div class="description">
+					<div class="name">Pedro Szekely</div>
+					<div class="title">Research Director</div>
+				</div>
+			</li>
+		<li>
+				<a style="background-image:url('../img/people/Ki-Thia-Yao.jpg')" href="https://www.isi.edu/people/kyao/about"></a>
+				<div class="description">
+					<div class="name">Ki-Thia Yao</div>
+					<div class="title">Project Leader and Research Scientist</div>
+				</div>
+			</li>
+		<li>
+				<a style="background-image:url('../img/people/Daniel-Garijo.png')" href="https://www.isi.edu/people/dgarijo/about"></a>
+				<div class="description">
+					<div class="name">Daniel Garijo</div>
+					<div class="title">Computer Scientist</div>
+				</div>
+			</li>
+		<li>
+				<a style="background-image:url('../img/people/Varun-Ratnakar.jpeg')" href="https://www.linkedin.com/in/varun-ratnakar-2b537a78/"></a>
+				<div class="description">
+					<div class="name">Varun Ratnakar</div>
+					<div class="title">Director, Karya Limited</div>
+				</div>
+			</li>
+		<li>
+				<a style="background-image:url('../img/people/Yolanda-Gil.png')" href="https://www.isi.edu/people/gil/"></a>
+				<div class="description">
+					<div class="name">Yolanda Gil</div>
+					<div class="title">Associate Division Director for Research</div>
+				</div>
+		</li>
+		<li>
+				<a style="background-image:url('../img/people/Mayank-Kejriwal.jpg')" href="../kejriwal"></a>
+				<div class="description">
+					<div class="name">Mayank Kejriwal</div>
+					<div class="title">Computer Scientist</div>
+				</div>
+		</li>
+		<li>
+				<a style="background-image:url('../img/people/Greg-Ver-Steeg.jpg')" href="https://www.isi.edu/people/gregv/about"></a>
+				<div class="description">
+					<div class="name">Greg Ver Steeg</div>
+					<div class="title">Research Assistant Professor</div>
+				</div>
+		</li>
+		<li>
+				<a style="background-image:url('../img/people/Aram-Galstyan.jpg')" href="https://www.isi.edu/people/galstyan/about"></a>
+				<div class="description">
+					<div class="name">Aram Galstyan</div>
+					<div class="title">Research Director</div>
+				</div>
+		</li>
+		<li> 
+				<a style="background-image:url('../img/people/Dongyu-Li.jpg')" href="https://www.linkedin.com/in/dongyu-li-7ba894a1/"></a>
+				<div class="description">
+					<div class="name">Dongyu Li</div>
+					<div class="title">Research Programmer</div>
+				</div>
+			</li>
+		<li> 
+				<a style="background-image:url('../img/people/Jun-Liu.jpeg')" href="https://www.linkedin.com/in/jun-liu-8aa312121/"></a>
+				<div class="description">
+					<div class="name">Jun Liu</div>
+					<div class="title">MS Student</div>
+				</div>
+			</li>
+		<li> 
+				<a style="background-image:url('../img/people/Muxin-Liang.png')" href="https://www.linkedin.com/in/muxin-liang-4ba51614b/"></a>
+				<div class="description">
+					<div class="name">Muxin Liang</div>
+					<div class="title">MS Student</div>
+				</div>
+			</li>
+		<li>
+				<a style="background-image:url('../img/people/ehsan-qasemi.jpg')" href="http://ehsanqasemi.com"></a>
+				<div class="description">
+					<div class="name">Ehsan Qasemi</div>
+					<div class="title">PhD Student</div>
+				</div>
+			</li>
+		<li>
+				<a style="background-image:url('../img/people/Serban-Stan.jpeg')" href="https://www.linkedin.com/in/serban012/"></a>
+				<div class="description">
+					<div class="name">Serban Stan</div>
+					<div class="title">Ph.D. Student</div>
+				</div>
+		</li>
+		<li>
+				<a style="background-image:url('../img/people/Rob-Brekelmans.jpeg')" href="https://www.linkedin.com/in/rob-brekelmans-80b95816/"></a>
+				<div class="description">
+					<div class="name">Rob Brekelmans</div>
+					<div class="title">Ph.D. Student</div>
+				</div>
+		</li>
+		<li>
+				<a style="background-image:url('../img/people/Lucas-Ferrer.png')" href="http://linkedin.com/in/lukas-ferrer-9596a410b"></a>
+				<div class="description">
+					<div class="name">Lucas Ferrer</div>
+					<div class="title">Research Programmer</div>
+				</div>
+		</li>
+		<li> 
+				<a style="background-image:url('../img/people/avatar.jpg')" href="https://www.linkedin.com/in/zhihao-george-shan-69958a136/"></a>
+				<div class="description">
+					<div class="name">Zhihao Shan</div>
+					<div class="title">MS Student</div>
+				</div>
+		</li>
+		<li> 
+				<a style="background-image:url('../img/people/Lu-Zhang.jpg')" href="http://home.ustc.edu.cn/~zlsx/"></a>
+				<div class="description">
+					<div class="name">Lu Zhang</div>
+					<div class="title">MS Student</div>
+				</div>
+			</li>
+		<li> 
+				<a style="background-image:url('../img/people/Chen-Lou.jpg')" href="https://www.linkedin.com/in/chen-lou-24a438143/"></a>
+				<div class="description">
+					<div class="name">Chen Lou</div>
+					<div class="title">MS Student</div>
+				</div>
+		</li>
+		<li> 
+				<a style="background-image:url('../img/people/Bhavya-Gulati.jpeg')" href="https://www.linkedin.com/in/bhavyagulati/"></a>
+				<div class="description">
+					<div class="name">Bhavya Gulati</div>
+					<div class="title">MS Student</div>
+				</div>
+		</li>
+		<li> 
+				<a style="background-image:url('../img/people/Qingyuandi-Lin.png')" href="https://www.linkedin.com/in/qingyuandi-lin-374996108/"></a>
+				<div class="description">
+					<div class="name">Qingyuandi Lin</div>
+					<div class="title">MS Student</div>
+				</div>
+		</li>
+		<li> 
+				<a style="background-image:url('../img/people/Juan-Roldan.jpeg')" href="https://www.linkedin.com/in/juancroldan/"></a>
+				<div class="description">
+					<div class="name">Juan C Roldan</div>
+					<div class="title">PhD Student</div>
+				</div>
+		</li>
+		<li> 
+				<a style="background-image:url('../img/people/Sukriti-Sharma.jpg')" href="https://www.linkedin.com/in/sukriti-sharma-20/"></a>
+				<div class="description">
+					<div class="name">Sukriti Sharma</div>
+					<div class="title">MS Student</div>
+				</div>
+			</li>
+
+			<h3> Project Alumni</h3>
+			<li> 
+				<a style="background-image:url('../img/people/Runqi-Shao.jpg')" href="https://www.linkedin.com/in/runqi-shao-9304a5a4/"></a>
+				<div class="description">
+					<div class="name">Runqi Shao</div>
+					<div class="title">Research Programmer</div>
+				</div>
+			</li>
+				<li> 
+				<a style="background-image:url('../img/people/Fanghao-Luo.jpg')" href="https://www.linkedin.com/in/fanghaoluo/"></a>
+				<div class="description">
+					<div class="name">Fanghao Luo</div>
+					<div class="title">MS Student</div>
+				</div>
+			</li>	
+			<li> 
+				<a style="background-image:url('../img/people/I-Hui-Huang.png')" href="https://www.linkedin.com/in/i-hui-huang-a15703104/"></a>
+				<div class="description">
+					<div class="name">I-Hui Huang</div>
+					<div class="title">MobLab</div>
+				</div>
+			</li>
+			
+		</ul>
+	</section>
+
+	<section id="pub" class="container">
+		<h2>PUBLICATIONS</h2>
+		<div class="content">
+			<script src="https://bibbase.org/show?bib=usc-isi-i2.github.io/effect/doc/complete.bib&group0=year&css=1&jsonp=1"></script>
+		</div>
+	</section>
+	
+	
+	<footer>
+		<div class="container">&copy; 2016 The University of Southern California</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
