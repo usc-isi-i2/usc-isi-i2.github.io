@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ISWC 2020 Tutorial</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scroll" href="#home">ISWC 2017 Tutorial</a>
+			</div><!-- navbar-header -->
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+<!-- 					<li><a class="scroll" href="#image">Image</a></li>
+					<li><a class="scroll" href="#about">About</a></li>
+					<li><a class="scroll" href="#tweets">Tweets</a></li> -->
+					<li><a class="scroll" href="#people">People</a></li>
+				</ul>        
+			</div><!-- collapse navbar-collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<header id="home">
+		<div class="container">
+			<h1>ISWC 2017</h1>
+		<!-- 	<h2>ISWC'17</h2> -->
+			<div class="affiliation">
+				<div><a href="../"><a href="../"  style="color: #FDC93F;font-size: 24px;font-style: italic;font-family: Georgia" >Center on Knowledge Graphs</a></div>
+				<div><a href="http://www.isi.edu" style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia" >Information Sciences Institute</a></div>
+				<div><a href="http://www.usc.edu"><img src="../img/logo/usc-shield-name-white.png"></a></div>
+			</div>
+		</div><!-- container -->
+		<div class="scroll-btn-container hidden-xs">
+			<a class="scroll-btn scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+		</div>
+	</header>
+
+	<section id="about" class="container">
+        <h2>Common Sense Knowledge Graphs (CSKGs)</h2>
+		<div class="content">
+		<h3>Abstract</h3>
+ 		<p>Commonsense reasoning is an important aspect of building robust AI systems and is receiving significant attention in the natural language understanding, computer vision, and knowledge graphs communities. At present, a number of valuable commonsense knowledge sources exist, with different foci, strengths and weaknesses. Our tutorial will survey the most important commonsense knowledge resources, and introduce a new commonsense knowledge graph (CSKG) to integrate several existing resources. The tutorial will also introduce several tools to work with CSKG including query mechanisms, knowledge graph embeddings, and a framework to create a commonsense question answering systems. In a hands-on session, participants will use the framework and tools to build a question answering application using CSKG and language models.
+ 		</p>
+ 		</div>
+<div class="content">
+		<h3>Motivation</h3>
+        <p>Capturing, representing, and leveraging commonsense knowledge has been a paramount for AI since its early days, cf. (McCarthy, 1960). In the light of the modern large (commonsense) knowledge graphs and various neural advancements, the recently introduced DARPA Machine Common Sense program represents a new effort to understand commonsense knowledge through question-answering evaluation benchmarks. Intuitively, graphs of (commonsense) knowledge are essential in such tasks in order to inject background knowledge that humans possess and apply, but machines cannot access or distill directly in communication.</p>
+
+        <p>Our team has been working on several aspects of commonsense knowledge found in knowledge graphs. Firstly, we have been integrating a number of knowledge graphs in a single commonsense knowledge graph, including: ConceptNet, WordNet, Visual Genome, FrameNet, ATOMIC, WebChild, Wikidata, and Cyc. Secondly, we have been building software to perform intrinsic operations on the consolidated CSKG, such as generating embeddings and performing knowledge graph completion. Thirdly, we have a framework that allows us to integrate (parts of) our CSKG into a reasoning system that answers questions phrased in natural language. These questions come from several commonsense evaluation datasets, focused on social, physical, visual, and situational reasoning.</p>
+
+        <p>We believe that it is important for the semantic web community to keep pace with this new ‘wave’ of commonsense knowledge representation and reasoning for downstream applications. A full-day tutorial at ISWC would be a notable contribution to this goal. Aspects that we seek to answer during through our presentation and activities are: what is a commonsense knowledge graph? Which kind of knowledge is captured by existing CSKGs? What are their major strengths and weaknesses? How can they be integrated into a graph that is more than ‘a sum of its parts’? How can this graph be refined/enriched with more semantics or missing information? How can it be applied on downstream applications in natural language understanding? Our tutorial will be very practical, and will answer these questions in a focused, foundational manner that all Semantic Web researchers will be able to easily follow.</p>
+
+	</section>
+	
+	<!-- <section id="tweets" class="container">
+		<h2>#wtnicusc TWEETS</h2>
+		<div class="content">
+			<a class="twitter-timeline" href="https://twitter.com/hashtag/wtnicusc" data-widget-id="750810950672850945" data-chrome="nofooter">#wtnicusc Tweets</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</section> -->
+
+	<section id="people" class="container">
+		<h2>PEOPLE</h2>
+		<ul class="content list-unstyled">
+		<li>
+				<a style="background-image:url('../img/people/Filip-Ilievski.jpg')" href="../ilievski"></a>
+				<div class="description">
+					<div class="name">Filip Ilievski</div>
+					<div class="title">Computer Scientist</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/Pedro-Szekely.jpg')" href="../szekely"></a>
+				<div class="description">
+					<div class="name">Pedro Szekely</div>
+					<div class="title">Principal Scientist & Research Director</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/people/Mayank-Kejriwal.jpg')" href="../kejriwal"></a>
+				<div class="description">
+					<div class="name">Mayank Kejriwal</div>
+					<div class="title">Research Lead</div>
+				</div>
+			</li>
+		</ul>
+		
+	</section>
+	
+	<!-- <section class="container">
+		<h2>ACKNOWLEDGMENT</h2>
+		<p class="content">This material is based on research sponsored in part by the National Science Foundation under Grant No. 1561057.</p>
+	</section> -->
+	
+	<footer>
+		<div class="container">&copy; 2017 The University of Southern California</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
