@@ -24,7 +24,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand scroll" href="#home">ISWC 2017 Tutorial</a>
+				<a class="navbar-brand scroll" href="#home">ISWC 2020 Tutorial</a>
 			</div><!-- navbar-header -->
 			<div class="collapse navbar-collapse" id="nav-links">
 				<ul class="nav navbar-nav navbar-right">
@@ -40,8 +40,8 @@
 
 	<header id="home">
 		<div class="container">
-			<h1>ISWC 2017</h1>
-		<!-- 	<h2>ISWC'17</h2> -->
+			<h1>ISWC 2020</h1>
+		<!-- 	<h2>ISWC'20</h2> -->
 			<div class="affiliation">
 				<div><a href="../"><a href="../"  style="color: #FDC93F;font-size: 24px;font-style: italic;font-family: Georgia" >Center on Knowledge Graphs</a></div>
 				<div><a href="http://www.isi.edu" style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia" >Information Sciences Institute</a></div>
@@ -68,7 +68,55 @@
 
         <p>We believe that it is important for the semantic web community to keep pace with this new ‘wave’ of commonsense knowledge representation and reasoning for downstream applications. A full-day tutorial at ISWC would be a notable contribution to this goal. Aspects that we seek to answer during through our presentation and activities are: what is a commonsense knowledge graph? Which kind of knowledge is captured by existing CSKGs? What are their major strengths and weaknesses? How can they be integrated into a graph that is more than ‘a sum of its parts’? How can this graph be refined/enriched with more semantics or missing information? How can it be applied on downstream applications in natural language understanding? Our tutorial will be very practical, and will answer these questions in a focused, foundational manner that all Semantic Web researchers will be able to easily follow.</p>
 
-	</section>
+        <h3>Learning Outcomes</h3>
+        <ol>
+            <li>Familiarization with the state-of-the-art knowledge sources that provide commonsense knowledge</li>
+            <li>Understanding how these sources can be integrated into a single commonsense knowledge graph</li>
+            <li>Hands-on activities involving analysis of a consolidated CSKG, intrinsic operations (e.g., computation of embeddings), and application of the CSKG on standing commonsense tasks in a natural language form.</li>
+        </ol>
+
+        <h3>Tutorial Program</h3>
+        <p>Our tutorial, as proposed here, would consist of two main parts:
+        <ol>
+            <li>presentations that introduce the individual knowledge graphs, their integration and consolidation in a single CSKG, refining operations, explanation of how we compute embeddings, how we complete missing knowledge, and how it can be applied to reason on natural language questions.</li>
+            <li>A hands-on session that allows tutorial participants to load and inspect (parts of) our graph (e.g., using graph-tool in python), understand how the embeddings are computed in code (using the numbatch approach as in ConceptNet), understand how to perform CSKG completion (e.g., using the ambiverse library), and several algorithms that use CSKG to reason over CSKG to answer questions.</li>
+        </ol>
+
+        <p>Detailed agenda and logistics considerations will be made available shortly.</p>
+
+        <h3>Presentation Style</h3>
+        <p>Presentation style will be informal and very hands-on. We will avoid representation specifics and terminology used by the individual graphs to the best extent possible (i.e. without losing rigor, or over-simplifying). Our slides will focus on visual intuition, use actual examples, present lessons learned from our latest implementations of algorithms and commonsense reasoning frameworks, and will be accompanied by demos and hands-on activities that participants will be able to do without requiring extensive platform-dependent setup. We will permit questions and interactions throughout the tutorial. All three of us will be mostly present throughout the tutorial but will be individually presenting our sections. At present (see ‘Tutors’ below), Dr. Ilievski will discuss the integration of commonsense knowledge into a CSKG, Dr. Kejriwal will present the intrinsic operations we perform on our graph, and Dr. Szekely will talk about answering natural language questions with CSKG.</p>
+
+        <h3>Prior Knowledge and Prerequisites</h3>
+
+        <p>Prior knowledge expected from participants (beyond fairly basic Python 3 skills, and familiarity with Semantic Web concepts like RDF) will be minimal. Some knowledge of machine learning, including basic concepts like training, testing and validating, feature engineering etc. will be helpful but are not absolute prerequisites, as we will not go into advanced machine learning math or optimization. Additionally, where possible, we will introduce basic machine learning concepts so that everyone has an opportunity to follow along. Participants are not expected to have any knowledge of answering natural language commonsense questions.</p>
+
+        <p>We will be using our own computers for presenting demos and PowerPoint slides and only require equipment to facilitate such projection for an extended period of time (e.g., projector, table, power outlet). We (and also the participants) will require an internet/wifi connection to access the tutorial material. There are no audio elements to our presentation. All demos and hands-on activities will be doable on a reasonable laptop by interested participants. We will also bring extra USB storage devices with copies of code, programs and slides in case some participants did not download the material prior to the tutorial.</p>
+        
+
+        <h3>Expected Coverage</h3>
+        <p>Tools and data:</p>
+        <ul>
+            <li>Our latest commonsense knowledge graph (link to download the graph will be shared with the participants)</li>
+            <li>Our <a href="https://github.com/usc-isi-i2/mowgli-in-the-jungle">mowgli-in-the-jungle</a> framework for building question answering models that leverage the CSKG</li>
+            <li>Code for analysing the contents of CSKG</li>
+            <li>Code for computing embeddings based on ConceptNet’s Numberbatch code</li>
+            <li><a href="https://docs.ampligraph.org/en/1.2.0/">AmpliGraph</a> library for predicting links in a knowledge graph</li>
+        </ul>
+
+        <p>Bibliography:</p>
+        <ul>
+            <li>Gunning, D. (2018). Machine common sense concept paper. arXiv preprint arXiv:1810.07528</li>
+            <li>Speer, R., Chin, J., & Havasi, C. (2017, February). Conceptnet 5.5: An open multilingual graph of general knowledge. In Thirty-First AAAI Conference on Artificial Intelligence.</li>
+            <li>Krishna, R., Zhu, Y., Groth, O., Johnson, J., Hata, K., Kravitz, J., ... & Bernstein, M. S. (2017). Visual genome: Connecting language and vision using crowdsourced dense image annotations. International Journal of Computer Vision, 123(1), 32-73.</li>
+            <li>Miller, G. A. (1995). WordNet: a lexical database for English. Communications of the ACM, 38(11), 39-41.</li>
+            <li>Speer, R., & Chin, J. (2016). An ensemble method to produce high-quality word embeddings. arXiv preprint arXiv:1604.01692.</li>
+            <li>Costabello, L., Pai, S., Le Van, C., McGrath, R., McCarthy, N., & Tabacof, P. Ampli-Graph: a Library for Representation Learning on Knowledge Graphs, March 2019. URL https://doi. org/10.5281/zenodo, 2595043.</li>
+            <li>Zellers, R., Holtzman, A., Bisk, Y., Farhadi, A., & Choi, Y. (2019). HellaSwag: Can a Machine Really Finish Your Sentence?. arXiv preprint arXiv:1905.07830.</li>
+            <li>Sap, M., Rashkin, H., Chen, D., LeBras, R., & Choi, Y. (2019). Socialiqa: Commonsense reasoning about social interactions. arXiv preprint arXiv:1904.09728.</li>
+            <li>Zellers, R., Bisk, Y., Farhadi, A., & Choi, Y. (2019). From recognition to cognition: Visual commonsense reasoning. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (pp. 6720-6731).</li>
+        </ul>
+    </section>
 	
 	<!-- <section id="tweets" class="container">
 		<h2>#wtnicusc TWEETS</h2>
@@ -108,11 +156,11 @@
 	
 	<!-- <section class="container">
 		<h2>ACKNOWLEDGMENT</h2>
-		<p class="content">This material is based on research sponsored in part by the National Science Foundation under Grant No. 1561057.</p>
+        <p class="content">This material is based upon work sponsored by the DARPA MCS program under Contract No. N660011924033 with the United States Office Of Naval Research.</p>
 	</section> -->
 	
 	<footer>
-		<div class="container">&copy; 2017 The University of Southern California</div>
+		<div class="container">&copy; 2020 The University of Southern California</div>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
