@@ -1,0 +1,110 @@
+#bibbase {
+  font-family: "Trebuchet MS", verdana, geneva, sans-serif;
+  font-size: 14px;
+}
+
+.bibbase_group {
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.bibbase_paper {
+  font-size: 9pt;
+}
+
+/* choose between icons and text (or both). Choose which one _not_ to show: */
+img.bibbase_icon {
+  display: none;
+  text-decoration: none;
+}
+
+#img.bibbase_icon_text {
+  display: none;
+}
+
+.bibbase_icon_text {
+  color: #5D0001;
+  font-size: 9pt;
+  line-height: 12pt;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.bibbase_icon_text:after {
+  content: " | ";
+}
+
+span.bibbase_icon_text {
+  text-decoration: none;
+}
+
+/* the parts of each entry are: title_author_year venue note (newline) content 
+   where "content" is the set of urls and possibly an abstract
+   */
+span.bibbase_paper_titleauthoryear {
+  color: #000000;
+  font-size: 9pt;
+  display: block;
+}
+
+span.bibbase_paper_title {
+  color: #000000;
+  font-size: 10pt;
+  line-height: 12pt;
+  font-weight: bold;
+  display: block;
+}
+
+span.bibbase_paper_title a, span.bibbase_paper_title a:link, span.bibbase_paper_title a:visited {
+  color: #5D0001;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+span.bibbase_paper_title a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+span.bibbase_paper_author {
+  color: #000000;
+  font-size: 9pt;
+  line-height: 12pt;
+  margin-bottom: 0px;
+}
+
+span.bibbase_paper_year {
+  color: #000000;
+  font-size: 9pt;
+  line-height: 12pt;
+  margin-bottom: 0px;
+}
+
+span.bibbase_paper_content {
+  font-size: 9pt;
+  line-height: 11pt;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+}
+
+.bibbase_paper_content a {
+  font-size: 9pt;
+  line-height: 11pt;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+span.bibbase_paper_venue {
+  font-size: 9pt;
+  line-height: 11pt;
+  letter-spacing: -0.5px;
+}
+
+span.bibbase_paper_note {
+  font-size: 9pt;
+  line-height: 11pt;
+  letter-spacing: -0.5px;
+}
