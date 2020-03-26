@@ -8,5 +8,8 @@
 ehthumbs.db
 Thumbs.db
 
+# IDE Generated files #
+.idea
+
 # backup file #
 *~
