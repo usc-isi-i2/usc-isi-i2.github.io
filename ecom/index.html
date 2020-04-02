@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>AI, Networks and Society</title>
+        <title>E-Commerce</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/index.css">
@@ -24,7 +24,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand scroll" href="#home">AI, Networks and Society</a>
+				<a class="navbar-brand scroll" href="#home">E-Commerce</a>
 			</div><!-- navbar-header -->
 			<div class="collapse navbar-collapse" id="nav-links">
 				<ul class="nav navbar-nav navbar-right">
@@ -33,7 +33,7 @@
 					<li><a class="scroll" href="#about">About</a></li>
 					<li><a class="scroll" href="#tweets">Tweets</a></li> -->
 					<li><a class="scroll" href="#people">People</a></li>
-					
+					<li><a class="scroll" href="#org">Organizations</a></li>
 				</ul>        
 			</div><!-- collapse navbar-collapse -->
 		</div><!-- container -->
@@ -41,8 +41,8 @@
 
 	<header id="home">
 		<div class="container">
-			<h1>AI, Networks and Society</h1>
-			<h2>Data-driven explorations of social phenomena through AI and Network Science</h2>
+			<h1>E-Commerce</h1>
+			<h2>E-Commerce Knowledge Graphs and Representation Learning</h2>
 			<div class="affiliation">
 				<div><a href="../"  style="color: #FDC93F;font-size: 24px;font-style: italic;font-family: Georgia" >Center on Knowledge Graphs</a></div>
 				<div><a href="http://www.isi.edu" style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia" >Information Sciences Institute</a></div>
@@ -59,18 +59,26 @@
 		<h2>ABOUT</h2>
 		<div class="content">
 		<!--	<h3>EFFECT</h3> -->
-			<p>Coming soon</p>
+			<p>The increasing number of entities created online raises the problem of integrating and relating entities from different sources. In this work, we focus on product entities. In E-commerce, product data pose some important problems e.g., entity resolution, which is the difficult problem of matching products from one domain (e.g., Amazon) to another domain (e.g., eBay); link prediction and personalized recommendation (which product should be targeted to which user), and product canonicalization (clustering products and materializing prototypes for each cluster and sub-cluster). </p>
+            
+            <p>There are several challenges in tackling product databases for tasks like link prediction and entity resolution. The first challenge, which mostly arises when the data is scoured from external sources like schema.org markup on webpages, is due to the poor quality of data, such as different spellings, missing values and ambiguity. This makes traditional pairwise distance measures approaches less effective with noisy content and context. The second challenge is due to the one-to-many and many-to-many relation between entities. For instance, in the product entity resolution example, a product might be associated with many prices (normal or discount), and each manufacturer is associated with many products. The heterogeneous nature of relationships brings in an additional challenge when using a collective approach such as Probabilistic Soft Logic: to determine which kind of relationship is best suited for resolving a particular type of entity.
+</p>
+
+<p>It was usually the case that all of these different tasks (such as entity resolution and recommendation) were tackled piecemeal by researchers from different communities, without much sharing of algorithmic methodology between the communities (notwithstanding the common use of machine learning and statistical algorithms). However, with the advent of neural networks, including both deep nets but also shallower architectures like ‘skip-gram’, representation learning has emerged as a powerful unifying methodology within machine learning that takes the guesswork out of important problems like feature engineering. Many (though not all) representation learning algorithms work in an unsupervised fashion on big datasets, taking the dataset itself as input (e.g., a corpus of sentences, or a large social network or graph, which is the closest analog to the problem we are tackling) and returning continuous, low-dimensional vectors for elements in the dataset.
+</p>
+
+<p>The E-Commerce project explores how best to learn such representations on product and E-commerce graphs in order to support tasks like entity resolution, product categorization and recommendation. Beyond algorithmic research, it is also focused on gathering resources to support open innovation in E-commerce knowledge graphs. We anticipate making available a range of resources, including datasets compiled and cleaned from sources like the Web Common Crawl, ground-truth datasets on public sources and open-source codebases on GitHub exposing graph modeling and representation learning best practices for product and E-commerce graphs.</p>
 
 		</div>
         
         <h2>RELATED LINKS</h2>
         <div class="content">
             <!--    <h3>EFFECT</h3> -->
-            <p>Coming Soon</p>
+            <ul>
+                <li><a href="https://research.yahoo.com/news/congratulations-2019-faculty-and-research-engagement-program-frep-recipients-3">2019 Yahoo! FREP Recipients</a></li>
+            </ul>
+            
         </div>
-        
-        
-        
 	</section>
 	
 	<!-- <section id="tweets" class="container">
@@ -92,62 +100,29 @@
                 </div>
             </li>
             <li>
-                <a style="background-image:url('../img/people/Minda-Hu.jpg')" href="https://github.com/noble6emc2"></a>
+                <a style="background-image:url('../img/people/Ravi-Kiran-Selvam.JPG')" href="https://www.linkedin.com/in/ravikiran0606/"></a>
                 <div class="description">
-                    <div class="name">Minda Hu</div>
+                    <div class="name">Ravi Kiran Selvam</div>
                     <div class="title">Graduate Student</div>
                 </div>
             </li>
 			
 			
-				
 		</ul>
-        
-        <h2>COLLABORATORS</h2>
-        <ul class="content list-unstyled">
-            <li>
-                <a style="background-image:url('../img/people/Kristina-Lerman.jpg')" href="https://viterbi.usc.edu/directory/faculty/Lerman/Kristina"></a>
-                <div class="description">
-                    <div class="name">Kristina Lerman</div>
-                    <div class="title">Research Associate Professor</div>
-                </div>
-            </li>
-            
-                
-        </ul>
-        
-        <h2>ALUMNI</h2>
-        <ul class="content list-unstyled">
-            <li>
-                <a style="background-image:url('../img/people/Akarsh-Dang.jpeg')" href="https://www.linkedin.com/in/akarsh-dang/"></a>
-                <div class="description">
-                    <div class="name">Akarsh Dang</div>
-                    <div class="title">Graduate Student</div>
-                </div>
-            </li>
-            <li>
-                <a style="background-image:url('../img/people/Xin-Huang.jpeg')" href="https://www.linkedin.com/in/xin-huang-b9a65ab1/"></a>
-                <div class="description">
-                    <div class="name">Xin Huang</div>
-                    <div class="title">Graduate Student</div>
-                </div>
-            </li>
-                
-                </ul>
 	</section>
 
-	<!-- <section id="org" class="container">
+	<section id="org" class="container">
 		<h2>ORGANIZATIONS</h2>
 		<div>
-			<a href="https://engineering.purdue.edu/IE"><img src="../img/org/Purdue.png"></a>
+			<a href="https://research.yahoo.com/"><img src="../img/org/yahoo.png"></a>
 			
 		</div>
 	</section>
 	
 	<section class="container">
 		<h2>ACKNOWLEDGMENT</h2>
-		<p class="content">Originally, the research was supported under the <a href="https://www.darpa.mil/program/memex">DARPA MEMEX</a> program (see our work on the <a href="http://usc-isi-i2.github.io/dig/"></a> project). Since 2019, this research has been supported by an endowment from the Keston Family.</p>
-	</section> -->
+		<p class="content">This research is supported by a gift under a 2019-2020 Yahoo! Faculty Research Engagement Program (FREP) awarded to Dr. Kejriwal.</p>
+	</section> 
 	
 	<footer>
 		<div class="container">&copy; 2020 The University of Southern California</div>
