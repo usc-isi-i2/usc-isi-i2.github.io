@@ -1,0 +1,174 @@
+html, body {
+  height: 100%;
+}
+
+.navbar {
+  font-weight: 600;
+}
+
+header {
+  position: relative;
+  height: 100%;
+  min-height: 540px;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background: #131922;
+  text-align: center;
+}
+header .dig-logo {
+  width: 350px;
+  max-width: 90%;
+}
+header h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: white;
+}
+header .affiliation {
+  margin-top: 40px;
+}
+header .affiliation div {
+  margin-top: 10px;
+}
+header .scroll-btn-container {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+}
+header .scroll-btn-container .scroll-btn {
+  display: table;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  color: #ccc;
+  text-decoration: none;
+  outline: none;
+}
+header .scroll-btn-container .scroll-btn i {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 30px;
+}
+header .scroll-btn-container .scroll-btn:hover {
+  border-color: white;
+  color: white;
+}
+
+section {
+  padding-top: 60px;
+}
+section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section .content {
+  margin: auto;
+  max-width: 700px;
+}
+
+#slides {
+  padding-bottom: 60px;
+  background: #111;
+}
+#slides .content {
+  max-width: 600px;
+}
+#slides .content .slides-wrapper {
+  position: relative;
+  padding-bottom: 80%;
+}
+#slides .content .slides-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#slides .content .more {
+  margin-top: 10px;
+  color: #666;
+}
+
+#tweets .content {
+  text-align: center;
+}
+#tweets .content iframe {
+  height: 500px !important;
+}
+
+#people ul.content {
+  max-width: 800px;
+}
+@media (max-width: 600px) {
+  #people ul.content {
+    text-align: center;
+  }
+}
+#people ul.content li {
+  display: inline-block;
+  margin: 12px;
+  width: 130px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #333;
+}
+#people ul.content li:hover {
+  background: black;
+}
+#people ul.content li a {
+  display: block;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  background-size: cover;
+}
+#people ul.content li .description {
+  padding: 8px;
+  color: #ccc;
+}
+#people ul.content li .description .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 3px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+#people ul.content li .description .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.8em;
+}
+
+#org {
+  text-align: center;
+}
+#org img {
+  width: 150px;
+  margin: 20px;
+}
+
+#pub li {
+  margin: 10px 0;
+}
+#pub li .title {
+  font-weight: bold;
+}
+#pub li .author {
+  font-size: 0.95em;
+}
+#pub li .location {
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+footer {
+  margin-top: 60px;
+  background: #eee;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 20px;
+}
