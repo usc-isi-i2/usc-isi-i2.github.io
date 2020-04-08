@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ISWC 2017 Workshop</title>
+	<title>KDD 2020 Workshop</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/index.css">
@@ -24,7 +24,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand scroll" href="#home">ISWC 2017</a>
+				<a class="navbar-brand scroll" href="#home">KDD 2020</a>
 			</div><!-- navbar-header -->
 			<div class="collapse navbar-collapse" id="nav-links">
 				<ul class="nav navbar-nav navbar-right">
@@ -44,11 +44,11 @@
 
 	<header id="home">
 		<div class="container">
-			<h1>ISWC 2017</h1>
-			<h3 style="color:white;">Hybrid Statistical Semantic Understanding and Emerging Semantics(HSSUES)</h3>
+			<h1>KDD 2020</h1>
+			<h3 style="color:white;">Knowledge Graphs and E-commerce</h3>
 			<br/>
-			<h4 style="color:#FFC300;">Held in conjunction with ISWC’17, October 21-22, 2017</h4>
-			<h4 style="color:#FFC300;">International Workshop on Hybrid Statistical Semantic Understanding and Emerging Semantics (HSSUES)</h4>
+			<h4 style="color:#FFC300;">Held in conjunction with KDD’20, San Diego, August 21-26, 2020</h4>
+			
 			</div>
 		<div class="scroll-btn-container hidden-xs">
 			<a class="scroll-btn scroll" href="#introduction"><i class="fa fa-angle-down"></i></a>
@@ -58,15 +58,38 @@
 	<section id="introduction" class="container">
 		<h2>Introduction</h2>
 		<div class="content">
- 		<p>Understanding the semantics of Web content is at the core of many applications, ranging from Web search, news aggregation and machine translation to personal assistant services such as Amazon Echo, Cortana, Siri, and Google Home. Presently, two different approaches apply to this task. The first approach utilizes a rich suite of information retrieval and machine learning techniques that capture meaning through powerful statistical tools like neural networks and distributional semantics (e.g., word2vec). Recently, such emerging semantic models have achieved state-of-the-art results in several predictive applications (e.g. recommendation, node classification, knowledge graph completion) relevant not just to the Semantic Web, but allied communities such as data mining and natural language processing. The second, more traditional, approach conveys meaning in a structured form through embedded data markup (using Schema.org, OGP, etc.) and ontologies, and can be further enhanced through available knowledge bases such as Freebase and DBpedia. Ontological notions of semantics play a central role in the Semantic Web community, permitting publishers and consumers of data to interact using a well-defined ontology. Such models give practitioners the powerful ability to reason about, and represent, instances in a well-defined manner. HSSUES is a half-day workshop that will explore the synergy, from perspectives of theory, application, experiments (including negative results) and vision, between both approaches, and how such synergies can be exploited to advance the state-of-the-art. We are interested in mechanisms, both theoretical and experimental, that range the spectrum of possible strategies and provide novel functionalities through hybrid approaches to statistical and symbolic understanding. The broader goal is to foster a discussion that will lead to cross-cutting ideas and collaborations at a timely moment when Semantic Web research has significantly started intersecting with the natural language processing and knowledge discovery communities.
+            <p>Knowledge Graphs (KGs) have become immensely popular in recent years, both in industry and
+            academia. Although graphs have been ubiquitous in AI and knowledge discovery since the
+            earliest days, the Google Knowledge Graph led to the realization that representing
+            ‘knowledge’ by way of sets of triples, often automatically extracted from raw data, could be used
+            to power rich applications like knowledge panels and semantic search. Academic and industrial
+            interest in the subject flourished soon after, with research published across topics as diverse as
+            Entity Resolution and knowledge graph embeddings (primarily in venues like NIPS, AAAI and
+            KDD), to representation and reasoning over knowledge graphs (primarily in venues like VLDB
+            and ISWC). More recently, with the rapid rise and ongoing growth of e-commerce, there has
+            been growing interest from major retailers and e-commerce players alike, including Walmart,
+            Amazon and Home Depot, to adopt knowledge graphs (or an analogous graph-based
+            technology like Amazon’s Product Graph) for facilitating rich machine learning and e-commerce
+            applications. This workshop will cover knowledge discovery and knowledge graphs, including construction, application and
+            embeddings, primarily for e-commerce and enterprise applications.
 </p>
  		</div>
 	</section>
 	
 	<section id="format" class="container">
-		<h2>Format</h2>
+		<h2>Audience and Format</h2>
 		<div class="content">
- 		<p>We are looking forward to a highly interactive workshop with participants from a wide range of backgrounds, from researchers to application builders, and from academia to industry. Researchers with an interdisciplinary interest in exploring synergies between declarative semantics such as ontologies and machine learning and knowledge discovery methods, especially graph (including knowledge graph) embeddings and deep neural networks, are especially invited to participate and submit papers. In addition to oral presentations selected from submitted papers, we will have poster sessions, and an invited talk from industry.
+            <p>This workshop welcomes submissions from both researchers and industry practitioners in
+            knowledge graphs (KG) and e-commerce, and KG applications, with a particular emphasis on
+            real-world deployment and pipelines that are relevant to industrial settings. We solicit research
+            that is broadly related to e-commerce KG research and sub-fields, including data
+            cleaning (e.g., Entity Resolution), representation learning and embeddings, natural language processing (e.g., information
+            extraction) and information retrieval (e.g., semantic search). <b>Full paper submissions</b> (maximum
+            8 pages) are solicited in the form of research papers which propose new techniques and
+            advances with industrial potential using data mining techniques for KGs, as well as papers from
+            industry that describe practical applications and system innovations in e-commerce application
+            areas. <b>Short papers</b> (maximum 4 pages) describing case studies or work-in-progress are also
+            solicited. Exceptionally well-argued position papers are also welcome.
  		</p>
  		</div>
 	</section>
@@ -76,46 +99,54 @@
 		<div class="content">
  		<p><b>Short and long papers </b>are solicited for the following set of <b>non-exhaustive </b>topics:
  		<h3>Theory, Algorithms and Methods:</h3>
- 		<br/>•	Emerging semantic models e.g., distributional semantics, onto-distributional and other non-declarative or pseudo-declarative semantics 
- 		<br/>•	Synergies between emerging and ontological semantics e.g., using semantic data and technologies to explain or improve distributional models, using distributional approaches to acquire knowledge bases
+        <br/>•Knowledge graph construction e.g., constructing KGs from structured, semi-structured and
+        natural language data
+        <br/>• Novel definitions and theories regarding KGs , especially taking into account attributes and
+        features commonly found in enterprise settings, including customers, products and
+        spatiotemporal dependencies in KGs.
+        <br/>•Querying and infrastructure of KG-centric architectures and applications
+        <br/>•Effective use of public KGs
+        <br/>•Foundational proposals for content models that combine statistical and symbolic
+        representations
+        <br/>•Novel embedding algorithms , especially for large-scale KGs
+        <br/>•Statistical learning methods and algorithms for working with noisy KGs
+        <br/>•Data quality assessment for large-scale enterprise KGs
  		
- 		<br/>•	Foundational proposals for content models that combine statistical and symbolic representations
-		
-		<br/>•	Novel embedding algorithms, especially for diverse data such as knowledge graphs, RDF, and ontologies
-		
-		<br/>•	Statistical machine learning methods and algorithms for symbolic representations 
 		</p>
 		<h3>Applications</h3>
 		<p>
-		•	Creating symbolic representations from machine learning
- 		<br/>•	Web search 
-		<br/>•	Question answering
-		<br/>•	Personalization
-		<br/>•	Data Mining
-		<br/>•	User interfaces and visualization
-		<br/>•	Semantic recommendations
-		<br/>•	Link prediction
-		<br/>•	Node classification
-		<br/>•	Instance matching/Entity resolution
-		<br/>•	Knowledge graph embeddings
-		<br/>•	Knowledge graph completion
+       <br/>• Web search
+        <br/>• Question answering
+        <br/>• Personalization
+        <br/>• Data Mining
+        <br/>• User interfaces and visualization
+        <br/>•Semantic recommendations
+        <br/>•E-commerce
+        <br/>•Link prediction
+        <br/>•Node classification
+        <br/>•Instance matching/Entity resolution
+        <br/>•Knowledge graph embeddings
+        <br/>• Knowledge graph completion
  		</p>
 		<h3>Experiments, Systems and Data</h3>
  		<p>
- 		<br/>•	Novel datasets, especially datasets acquired through, or useful for evaluating, hybrid approaches
-		<br/>•	Novel methodologies, concerning both evaluations and data curation/collection
-		<br/>•	Experimental results using existing methods, including negative results of interest
-		<br/>•	Systems issues in hybrid systems, including best practices, case studies, lessons learned, and feature descriptions
+        <br/>•Novel datasets , especially datasets acquired through, or useful for evaluating, hybrid KG
+        construction approaches utilizing a combination of structured, semi-structured and natural
+        language data
+        <br/>•Novel methodologies , concerning both evaluations and data curation/collection
+        <br/>•Experimental results using existing methods, including negative results of interest
+        <br/>•Systems issues in KG-centric systems , including best practices, case studies, lessons
+        learned, and feature descriptions
  		</p>
- 		<p>We will also accept a small number of <b>vision, opinion and position papers that provide discussions on challenges and roadmaps (for hybrid systems, and emerging semantic models). </b>
+ 		<p>We will also accept a small number of <b>vision, opinion and position papers</b> that provide discussions on challenges and roadmaps (for KG-centric systems, applications and emerging models for e-commerce and product data).
  		</p>
- 		<p>All papers should be formatted according to the standard <a href="http://www.springer.com/us/computer-science/lncs/conference-proceedings-guidelines">LNCS Style</a>. All papers will be peer reviewed, single-blinded. Authors whose papers are accepted to the workshop will have the opportunity to participate in a poster session, and some set may also be chosen for oral presentation. Long papers should not exceed than 12 pages, and short papers should not exceed 6 pages, including all references. The accepted papers will be published online in CEUR-WS and will not be considered archival. Proceedings will be available for download after the conference.
+ 		<p>All papers should be formatted according to the standard 2-column ACM Conference Style, similar to regular KDD papers. All papers will be peer reviewed, single-blinded. Authors whose papers are accepted to the workshop will have the opportunity to participate in a poster session, and some set may also be chosen for oral presentation. Long papers should not exceed than 8 pages, and short papers should not exceed 4 pages, including all references. The accepted papers will be published online and will not be considered archival. Select papers may be invited to a special journal issue on e-commerce and knowledge graphs. Proceedings will be available for download after the conference.
  		</p>
- 		<p>
+ 		<!--<p>
  		All papers will be peer reviewed, single-blinded. Authors whose papers are accepted to the workshop will have the opportunity to participate in a poster session, and some set may also be chosen for oral presentation. Long papers should not exceed than 12 pages, and short papers should not exceed 6 pages, including all references. The accepted papers will be published online and will not be considered archival. Proceedings will be available for download after the conference.
- 		</p>
+ 		</p>-->
 		<p>
- 		We are using the EasyChair system for submissions. Please upload your submissions to our EasyChair <a href="https://easychair.org/conferences/?conf=hssues2017">submission</a> system.
+ 		We are using the EasyChair system for submissions. Submission instructions and link will be released here by April 15.
  		</p>
  		<p>
  		Please email any enquiries to <a href="mailto:kejriwal@isi.edu">kejriwal@isi.edu</a>
@@ -126,12 +157,12 @@
 		<h2>Key Dates</h2>
 		<div class="content">
  		<p>
- 		May 6: First call for papers
-		<br/>June 21: Submissions open
-		<br/>August 6 (extended): Workshop papers due
-		<br/>August 24: Notification of accepted papers
-		<br/>September 21: Publication of workshop proceedings
-		<br/>Oct. 21 (9:00 AM-12:20 PM): Workshop
+ 		April 10: First call for papers
+		<br/>April 15: Submissions open
+		<br/>May 20: Workshop papers due
+		<br/>June 15: Notification of accepted papers
+		<br/>July 2: Release of final workshop schedule
+		<br/>Aug. 24: Workshop (Half-Day)
  		</p>
  		</div>
 	</section>
@@ -139,7 +170,8 @@
 	<section id="acceptedpapers" class="container">
 		<h2>Accepted Papers</h2>
 		<div class="content">
- 		<p>
+            TBD
+ 		<!--<p>
  		Flexible Similarity Search of Semantic Vectors Using Fulltext Search Engines. <b> Michal Růžička, Vít Novotný, Petr Sojka, Jan Pomikálek and Radim Řehůřek. </b><a href="accepted-papers/HSSUES_2017_paper_2.pdf">[Paper]</a>
 
  		</p>
@@ -163,14 +195,15 @@
  		</p>
 <p>
  		Semantic Web: Learning from Machine Learning. <b> Dan Brickley. </b><a href="accepted-papers/HSSUES_2017_paper_9.pdf">[Paper]</a>
- 		</p>
+ 		</p>-->
  	</div>
  	</section>
  	
  	<section id="schedule" class="container">
 		<h2>Schedule</h2>
 		<div class="content">
-		<p>
+            TBD
+	<!--	<p>
  		<b>9:00: Introduction and Welcome</b>
  		</p>
  		<p>
@@ -195,15 +228,15 @@
  		</p>
  		<p>
  		<b>12:15~12:20: Closing Notes</b>
- 		</p>
+ 		</p>-->
  	</div>
  	</section>
  	
  	<section id="keynotespeakers" class="container">
-		<h2>Keynote Speaker</h2>
+		<h2>Keynote Speakers</h2>
 		<div class="content">
  		<p>
- 		<b>Michael Witbrock (IBM)</b> is currently a distinguished staff member at IBM Research, working at the intersection of learning and reasoning. Earlier, he was VP of Research at Cycorp, principal scientist at Lycos and systems scientist at Carnegie Mellon University.
+ 		TBD
  		</p>
  		
  	</div>
@@ -213,80 +246,45 @@
 		<h2>Organization</h2>
 		<h3>Chair</h3>
 		<ul class="content list-unstyled">
+            <li>
+                <a style="background-image:url('../img/people/Mayank-Kejriwal.jpg')" href="../kejriwal"></a>
+                <div class="description">
+                    <div class="name">Mayank Kejriwal</div>
+                    <div class="title">University of Southern California</div>
+                </div>
+            </li>
 		<li>
-				<a style="background-image:url('../img/people/Xin-Luna-Dong.jpg')" href="https://www.linkedin.com/in/xin-luna-dong-6820953b/"></a>
+				<a style="background-image:url('../img/people/Qi-He.jpeg')" href="https://www.linkedin.com/in/qi-he/"></a>
 				<div class="description">
-					<div class="name">Xin Luna Dong</div>
-					<div class="title">Amazon</div>
+					<div class="name">Qi He</div>
+					<div class="title">LinkedIn</div>
 				</div>
 			</li>
 			<li>
-				<a style="background-image:url('../img/people/guha.jpg')" href="https://en.wikipedia.org/wiki/Ramanathan_V._Guha"></a>
+				<a style="background-image:url('../img/people/Faizan-Javed.jpeg')" href="https://www.linkedin.com/in/faizanjaved/"></a>
 				<div class="description">
-					<div class="name">R. V. Guha</div>
-					<div class="title">Schema.org</div>
+					<div class="name">Faizan Javed</div>
+					<div class="title">The Home Depot</div>
 				</div>
 			</li>
 				<li>
-					<a style="background-image:url('../img/people/Pascal-Hitzler.jpg')" href="https://www.linkedin.com/in/pascalhitzler/"></a>
+					<a style="background-image:url('../img/people/Anoop-Kumar.jpg')" href="https://www.linkedin.com/in/anoop-kumar-293191/"></a>
 				<div class="description">
-					<div class="name">Pascal Hitzler</div>
-					<div class="title">Wright State University</div>
+					<div class="name">Anoop Kumar</div>
+					<div class="title">Amazon</div>
 				</div>
 			</li>
-			<li>
-				<a style="background-image:url('../img/people/Mayank-Kejriwal.jpg')" href="../kejriwal"></a>
-				<div class="description">
-					<div class="name">Mayank Kejriwal</div>
-					<div class="title">Computer Scientist</div>
-				</div>
-			</li>
-			<li>
-				<a style="background-image:url('../img/people/Freddy-Lecue.jpg')" href="https://www.linkedin.com/in/freddylecue/"></a>
-				<div class="description">
-					<div class="name">Freddy Lecue</div>
-					<div class="title">Accenture Technology Labs, Dublin</div>
-				</div>
-			</li>
-			<li>
-				<a style="background-image:url('../img/people/avatar.jpg')" href="https://www.linkedin.com/in/d-sivakumar-858ba964/"></a>
-				<div class="description">
-					<div class="name">D. Sivakumar</div>
-					<div class="title">Google</div>
-				</div>
-			</li>
-			<li>
-				<a style="background-image:url('../img/people/Pedro-Szekely.jpg')" href="../szekely"></a>
-				<div class="description">
-					<div class="name">Pedro Szekely</div>
-					<div class="title">Project Leader & Research Associate Professor</div>
-				</div>
-			</li>
-			<li>
-				<a style="background-image:url('../img/people/Michael-Witbrock.jpg')" href="https://www.linkedin.com/in/witbrock/"></a>
-				<div class="description">
-					<div class="name">Michael Witbrock</div>
-					<div class="title">IBM</div>
-				</div>
-			</li>
+                <li>
+                    <a style="background-image:url('../img/people/Andrey-Kan.jpeg')" href="https://www.linkedin.com/in/malysch/"></a>
+                    <div class="description">
+                        <div class="name">Andrey Kan</div>
+                        <div class="title">Amazon</div>
+                    </div>
+                </li>
+			
 		</ul>
 	<h3>Program Committee</h3>
-			Dan Brickley, Google
-			<br/>Derek Doran, Wright State University
-			<br/>Stefano Faralli, University of Manheim
-			<br/>Evgeniy Gabrilovich, Google
-			<br/>Majid Ghasemi-Gol, Information Sciences Institute/USC
-			<br/>Goran Glavaš, University of Manheim
-			<br/>Vineet Gupta, Google
-			<br/>Sabrina Kirrane, Vienna University of Economics and Business
-			<br/>Brigitte Krenn, Austrian Research Institute for Artificial Intelligence
-			<br/>Steve Macbeth, Microsoft
-			<br/>John McCrae, Insight Center for Data Analytics, National University of Ireland Galway
-			<br/>Vivek Raghunathan, Google
-			<br/>Enrico Santus, Singapore University of Technology and Design
-			<br/>Michael Spranger, Sony Computer Science Laboratories Inc.
-			<br/>Srinivasan Venkatachary, Laserlike Inc.
-			<br/>Jiewen A. Wu, Accenture	
+			TBD
 			</div>
 	</section>
 	
