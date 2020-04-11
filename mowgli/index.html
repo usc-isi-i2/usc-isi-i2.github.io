@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mowgli</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/publication.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scroll" href="#home">Mowgli</a>
+			</div><!-- navbar-header -->
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+<!-- 					<li><a class="scroll" href="#image">Image</a></li>
+					<li><a class="scroll" href="#about">About</a></li>
+					<li><a class="scroll" href="#tweets">Tweets</a></li> -->
+					<li><a class="scroll" href="#people">People</a></li>
+					<li><a class="scroll" href="#pub">Publications</a></li> 
+				</ul>        
+			</div><!-- collapse navbar-collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<header id="home">
+		<div class="container">
+			<h1>Mowgli</h1>
+			<h2>Multi-modal Open World Grounded Learning and Inference</h2>
+			<div class="affiliation">
+				<div><a href="../"><a href="../"  style="color: #FDC93F;font-size: 24px;font-style: italic;font-family: Georgia" >Center on Knowledge Graphs</a></div>
+				<div><a href="http://www.isi.edu" style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia" >Information Sciences Institute</a></div>
+				<div><a href="http://www.usc.edu"><img src="../img/logo/usc-shield-name-white.png"></a></div>
+			</div>
+		</div><!-- container -->
+		<div class="scroll-btn-container hidden-xs">
+			<a class="scroll-btn scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+		</div>
+	</header>
+
+	<section id="image" align="center">
+		<div class="content">
+			<img src="../img/projects/mowgli.jpg" alt="&copy; AI2 Illustration" width="400">
+		</div>
+		<span style="font-size: 5px;">&copy; AI2 Illustration</span>
+	</section>
+	
+
+	<section id="about" class="container">
+		<h2>ABOUT</h2>
+		<div class="content">
+			<p align="justify">The Multi-modal Open World Grounded Learning and Inference (MOWGLI) project is our commonsense reasoning project. The goal is to build a system that can answer a wide range of common sense questions posed using either an image or natural language, about everyday intuitive phenomena such as abduction, analogy, causality, agency, physics, and social interactions. Our approach combines knowledge graphs (KG) and language models in novel ways to leverage the detailed knowledge contained in knowledge graphs and the robustness of language models. To that end we are building a first of its kind Commonsense Knowledge Graph (CSKG) that integrates a existing commonsense KGs such as ConceptNet and Atomic, lexical resources such as Wordnet, Roget and FrameNet/VerbNet, factual KGs such as Wikidata, and other resources such as VisualGenome. We are investigating reasoning algorithms that use language models and deep learning to reason over the CSKG to produce explainable answers to commonsense questions. We are collaborating with Jure LesKovec at Stanford, Sameer Singh at UCI, Deborah McGuinness at RPI and Henry Lieberman at MIT.</p>
+		</div>
+	</section>
+
+	<section id="people" class="container">
+		<h2>PEOPLE</h2>
+		<ul class="content list-unstyled">
+		<h3>Current Researchers</h3>
+
+			<li>
+				<a style="background-image:url('../img/people/Pedro-Szekely.jpg')" href="../szekely"></a>
+				<div class="description">
+					<div class="name">Pedro Szekely</div>
+					<div class="title">Research Director</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Filip-Ilievski.jpg')" href="../ilievski"></a>
+				<div class="description">
+					<div class="name">Filip Ilievski</div>
+					<div class="title">Computer Scientist</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Jay-Pujara.png')" href="https://www.jaypujara.org/"></a>
+				<div class="description">
+					<div class="name">Jay Pujara</div>
+					<div class="title">Research Assistant Professor, Research Lead</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Mayank-Kejriwal.jpg')" href="../kejriwal"></a>
+				<div class="description">
+					<div class="name">Mayank Kejriwal</div>
+					<div class="title">Research Assistant Professor of Industrial and Systems Engineering, Research Lead</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Xiang-Sean-Ren.jpg')" href="http://xren7.web.engr.illinois.edu/"></a>
+				<div class="description">
+					<div class="name">Xiang (Sean) Ren</div>
+					<div class="title">Research Assistant</div>
+				</div>
+			</li>
+
+			<h3>PhD Students</h3>
+
+			<li>
+				<a style="background-image:url('../img/people/Lee-Kezar.jfif')" href="https://www.linkedin.com/in/lee-kezar-b73388139/"></a>
+				<div class="description">
+					<div class="name">Lee Kezar</div>
+					<div class="title">PhD Student</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/avatar.jpg')" href="https://www.linkedin.com/in/rahul-khanna-1b97317a/"></a>
+				<div class="description">
+					<div class="name">Rahul Khanna</div>
+					<div class="title">PhD Student</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Yuchen-Lin.png')" href="https://yuchenlin.xyz/"></a>
+				<div class="description">
+					<div class="name">Bill Yuchen Lin</div>
+					<div class="title">PhD Student</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Sowmyaroop-Nandi.jfif')" href="https://www.linkedin.com/in/soumyaroop-nandi-6a412967/"></a>
+				<div class="description">
+					<div class="name">Soumyaroop Nandi</div>
+					<div class="title">PhD Student</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/ehsan-qasemi.jpg')" href="http://ehsanqasemi.com"></a>
+				<div class="description">
+					<div class="name">Ehsan Qasemi</div>
+					<div class="title">PhD Student</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Avijit-Thawani.jpeg')" href="https://avi-jit.github.io/"></a>
+				<div class="description">
+					<div class="name">Avijit Thawani</div>
+					<div class="title">PhD Student</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Peifeng-Wang.jpg')" href="https://scholar.google.com/citations?user=3jfQnM4AAAAJ&hl=en"></a>
+				<div class="description">
+					<div class="name">Peifeng Wang</div>
+					<div class="title">PhD Student</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/avatar.jpg')" href="#"></a>
+				<div class="description">
+					<div class="name">Jun Yan</div>
+					<div class="title">PhD Student</div>
+				</div>
+			</li>
+
+
+			<li>
+				<a style="background-image:url('../img/people/Pei-Zhou.jpg')" href="https://sites.google.com/g.ucla.edu/peizhou/home"></a>
+				<div class="description">
+					<div class="name">Pei Zhou</div>
+					<div class="title">PhD Student</div>
+				</div>
+			</li>
+
+
+
+			<h3>Collaborators</h3>
+
+			<li>
+				<a style="background-image:url('../img/people/Jingwei-Cheng.jfif')" href="https://www.linkedin.com/in/jingwei-cheng-b2308720/"></a>
+				<div class="description">
+					<div class="name">Jingwei Cheng</div>
+					<div class="title">Instructor in Medicine at Harvard Medical School and Dana-Farber Cancer Institute</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Jure-Leskovec.jpg')" href="https://cs.stanford.edu/people/jure/"></a>
+				<div class="description">
+					<div class="name">Jure Leskovec</div>
+					<div class="title">Associate Professor of Computer Science at Stanford University, Chief Scientist at Pinterest, and investigator at Chan Zuckerberg Biohub</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Henry-Leibermann.jpg')" href="http://web.media.mit.edu/~lieber/"></a>
+				<div class="description">
+					<div class="name">Henry Lieberman</div>
+					<div class="title">Research Scientist at Massachusetts Institute of Technology</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Deborah-McGuinness.jpg')" href="https://www.linkedin.com/in/deborah-mcguinness-088167/"></a>
+				<div class="description">
+					<div class="name">Deborah McGuinness</div>
+					<div class="title">Tetherless World Senior Constellation Chair and Professor at RPI and CEO McGuinness Associates Consulting</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Daniel-Schwabe.jfif')" href="https://www.linkedin.com/in/dschwabe"></a>
+				<div class="description">
+					<div class="name">Daniel Schwabe</div>
+					<div class="title">Prof. at PUC-Rio and Information Technology and Services Consultant</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Sameer-Singh.jpg')" href="http://sameersingh.org/"></a>
+				<div class="description">
+					<div class="name">Sameer Singh</div>
+					<div class="title">Assistant Professor of Computer Science at the University of California, Irvine</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/Rok-Sosic.jpg')" href="https://profiles.stanford.edu/rok-sosic"></a>
+				<div class="description">
+					<div class="name">Rok Sosic</div>
+					<div class="title">Senior Researcher at Stanford University</div>
+				</div>
+			</li>
+
+			<li>
+				<a style="background-image:url('../img/people/avatar.jpg')" href="https://www.linkedin.com/in/fu-zhang/"></a>
+				<div class="description">
+					<div class="name">Fu Zhang</div>
+					<div class="title">MBA Candidate at University of Virginia Darden School of Business</div>
+				</div>
+			</li>
+
+		</ul>
+	</section>
+
+	<section id="pub" class="container">
+		<h2>PUBLICATIONS</h2>
+		<div class="content">
+<!--			<script src="https://bibbase.org/show?bib=usc-isi-i2.github.io/effect/doc/complete.bib&group0=year&css=1&jsonp=1"></script>-->
+		</div>
+	</section>
+
+	<section class="container">
+		<h2>ACKNOWLEDGMENT</h2>
+<!--		<p class="content">This material is based on research sponsored in part by theNational Science Foundation under grant OIA-1937153.</p>-->
+	</section>
+
+	<footer>
+		<div class="container">&copy; 2019 The University of Southern California</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
