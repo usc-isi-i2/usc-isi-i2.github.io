@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Common Sense Knowledge Graphs (CSKGs), ISWC 2020 Tutorial</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scroll" href="#home">ISWC 2020 Tutorial</a>
+			</div><!-- navbar-header -->
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+<!-- 					<li><a class="scroll" href="#image">Image</a></li>
+					<li><a class="scroll" href="#about">About</a></li>
+					<li><a class="scroll" href="#tweets">Tweets</a></li> -->
+					<li><a class="scroll" href="#people">People</a></li>
+				</ul>        
+			</div><!-- collapse navbar-collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<header id="home">
+		<div class="container">
+			<h1>Common Sense Knowledge Graphs (CSKGs)</h1>
+			<div class="affiliation">
+				<div><a href="../"><a href="../"  style="color: #FDC93F;font-size: 24px;font-style: italic;font-family: Georgia" >Center on Knowledge Graphs</a></div>
+				<div><a href="http://www.isi.edu" style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia" >Information Sciences Institute</a></div>
+				<div><a href="http://www.usc.edu"><img src="../img/logo/usc-shield-name-white.png"></a></div>
+			</div>
+		</div><!-- container -->
+		<div class="scroll-btn-container hidden-xs">
+			<a class="scroll-btn scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+		</div>
+	</header>
+
+	<section id="people" class="container">
+        <div class="content">
+            <h2>Organizers</h2>
+            <ul class="content list-unstyled">
+            <li>
+                    <a style="background-image:url('../img/people/Filip-Ilievski.jpg')" href="../ilievski"></a>
+                    <div class="description">
+                        <div class="name">Filip Ilievski</div>
+                        <div class="title">Computer Scientist</div>
+                    </div>
+                </li>
+                <li>
+                    <a style="background-image:url('../img/people/Pedro-Szekely.jpg')" href="../szekely"></a>
+                    <div class="description">
+                        <div class="name">Pedro Szekely</div>
+                        <div class="title">Principal Scientist & Research Director</div>
+                    </div>
+                </li>
+                <li>
+                    <a style="background-image:url('../img/people/Mayank-Kejriwal.jpg')" href="../kejriwal"></a>
+                    <div class="description">
+                        <div class="name">Mayank Kejriwal</div>
+                        <div class="title">Research Lead</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+	</section>
+
+	<section id="about" class="container">
+		<div class="content">
+ 		<p>Commonsense reasoning is an important aspect of building robust AI systems and is receiving significant attention in the natural language understanding, computer vision, and knowledge graphs communities. At present, a number of valuable commonsense knowledge sources exist, with different foci, strengths and weaknesses. Our tutorial will survey the most important commonsense knowledge resources, and introduce a new commonsense knowledge graph (CSKG) to integrate several existing resources. The tutorial will also introduce several tools to work with CSKG including query mechanisms, knowledge graph embeddings, and a framework to create a commonsense question answering systems. In a hands-on session, participants will use the framework and tools to build a question answering application using CSKG and language models.
+ 		</p>
+ 		</div>
+<div class="content">
+        <h3>Tutorial Program</h3>
+        <p>Our tutorial will consist of two main parts:
+        <ol>
+            <li>presentations that introduce the individual knowledge graphs, their integration and consolidation in a single CSKG, refining operations, explanation of how we compute embeddings, how we complete missing knowledge, and how it can be applied to reason on natural language questions.</li>
+            <li>A hands-on session that allows tutorial participants to load and inspect (parts of) our graph (e.g., using graph-tool in python), understand how the embeddings are computed in code (using the numbatch approach as in ConceptNet), understand how to perform CSKG completion (e.g., using the ambiverse library), and several algorithms that use CSKG to reason over CSKG to answer questions.</li>
+        </ol>
+
+        <p><b>Preliminary agenda:</b></p>
+
+        <table>
+<tbody>
+<tr>
+<td width="102">
+<p><strong>Time</strong></p>
+</td>
+<td width="318">
+<p><strong>Content</strong></p>
+</td>
+<td width="186">
+<p><strong>Material/Format</strong></p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>09:00-09:15</em></p>
+</td>
+<td width="318">
+<p>Introduction to commonsense knowledge</p>
+</td>
+<td width="186">
+<p>Slides</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>09:15-09:40</em></p>
+</td>
+<td width="318">
+<p>Review of existing commonsense knowledge graphs</p>
+</td>
+<td width="186">
+<p>Slides</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>09:40-10:30</em></p>
+</td>
+<td width="318">
+<p>Consolidating commonsense graphs</p>
+</td>
+<td width="186">
+<p>Slides</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>10:30-11:00</em></p>
+</td>
+<td width="318">
+<p>Coffee Break</p>
+</td>
+<td width="186">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>11:00-11:15</em></p>
+</td>
+<td width="318">
+<p>Introduction to activities/set-up</p>
+</td>
+<td width="186">
+<p>Slides/Data/Executable Code</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>11:15-12:10</em></p>
+</td>
+<td width="318">
+<p>2 Hands-on activities: loading and analyzing CSKGs</p>
+</td>
+<td width="186">
+<p>Slides</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>12:10-12:30</em></p>
+</td>
+<td width="318">
+<p>Wrap up of integrating CSKG</p>
+</td>
+<td width="186">
+<p>Slides</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>12:30-14:00</em></p>
+</td>
+<td width="318">
+<p>Lunch break</p>
+</td>
+<td width="186">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>14:00-14:45</em></p>
+</td>
+<td width="318">
+<p>Embeddings and KG completion</p>
+</td>
+<td width="186">
+<p>Slides</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>14:45-15:30</em></p>
+</td>
+<td width="318">
+<p>2 hands-on activities involving embeddings and KGC</p>
+</td>
+<td width="186">
+<p>Slides/Data/Executable Code</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>15:30-16:00</em></p>
+</td>
+<td width="318">
+<p>Coffee Break</p>
+</td>
+<td width="186">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>16:00-16:30</em></p>
+</td>
+<td width="318">
+<p>Answering questions with CSKG</p>
+</td>
+<td width="186">
+<p>Slides</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>16:30-17:10</em></p>
+</td>
+<td width="318">
+<p>1 hands-on activity</p>
+</td>
+<td width="186">
+<p>Slides/Data/Executable Code</p>
+</td>
+</tr>
+<tr>
+<td width="102">
+<p><em>17:10-17:30</em></p>
+</td>
+<td width="318">
+<p>Open problems, wrap-up and discussion</p>
+</td>
+<td width="186">
+<p>Slides</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+        <p><b>Learning Outcomes:</b></p>
+        <ol>
+            <li>Familiarization with the state-of-the-art knowledge sources that provide commonsense knowledge</li>
+            <li>Understanding how these sources can be integrated into a single commonsense knowledge graph</li>
+            <li>Hands-on activities involving analysis of a consolidated CSKG, intrinsic operations (e.g., computation of embeddings), and application of the CSKG on standing commonsense tasks in a natural language form.</li>
+        </ol>
+
+        <p><b>Presentation Style</b> style will be informal and very hands-on. We will avoid representation specifics and terminology used by the individual graphs to the best extent possible (i.e. without losing rigor, or over-simplifying). Our slides will focus on visual intuition, use actual examples, present lessons learned from our latest implementations of algorithms and commonsense reasoning frameworks, and will be accompanied by demos and hands-on activities that participants will be able to do without requiring extensive platform-dependent setup. We will permit questions and interactions throughout the tutorial. All three of us will be mostly present throughout the tutorial but will be individually presenting our sections. </p>
+
+        <h3>Background & Requirements</h3>
+        <p>Capturing, representing, and leveraging commonsense knowledge has been a paramount for AI since its early days, cf. (McCarthy, 1960). In the light of the modern large (commonsense) knowledge graphs and various neural advancements, the recently introduced DARPA Machine Common Sense program represents a new effort to understand commonsense knowledge through question-answering evaluation benchmarks. Intuitively, graphs of (commonsense) knowledge are essential in such tasks in order to inject background knowledge that humans possess and apply, but machines cannot access or distill directly in communication.</p>
+
+        <p>Our team has been working on several aspects of commonsense knowledge found in knowledge graphs. Firstly, we have been integrating a number of knowledge graphs in a single commonsense knowledge graph, including: ConceptNet, WordNet, Visual Genome, FrameNet, ATOMIC, WebChild, Wikidata, and Cyc. Secondly, we have been building software to perform intrinsic operations on the consolidated CSKG, such as generating embeddings and performing knowledge graph completion. Thirdly, we have a framework that allows us to integrate (parts of) our CSKG into a reasoning system that answers questions phrased in natural language. These questions come from several commonsense evaluation datasets, focused on social, physical, visual, and situational reasoning.</p>
+
+        <p>It is important for the semantic web community to keep pace with this new ‘wave’ of commonsense knowledge representation and reasoning for downstream applications. Aspects that we seek to address during through our presentation and activities are: what is a commonsense knowledge graph? Which kind of knowledge is captured by existing CSKGs? What are their major strengths and weaknesses? How can they be integrated into a graph that is more than ‘a sum of its parts’? How can this graph be refined/enriched with more semantics or missing information? How can it be applied on downstream applications in natural language understanding? Our tutorial will be very practical, and will answer these questions in a focused, foundational manner that all Semantic Web researchers will be able to easily follow.</p>
+
+        <p>Prior knowledge expected from participants (beyond fairly basic Python 3 skills, and familiarity with Semantic Web concepts like RDF) will be minimal. Some knowledge of machine learning, including basic concepts like training, testing and validating, feature engineering etc. will be helpful but are not absolute prerequisites, as we will not go into advanced machine learning math or optimization. Additionally, where possible, we will introduce basic machine learning concepts so that everyone has an opportunity to follow along. Participants are not expected to have any knowledge of answering natural language commonsense questions.</p>
+
+        <p>We will be using our own computers for presenting demos and PowerPoint slides and only require equipment to facilitate such projection for an extended period of time (e.g., projector, table, power outlet). We (and also the participants) will require an internet/wifi connection to access the tutorial material. There are no audio elements to our presentation. All demos and hands-on activities will be doable on a reasonable laptop by interested participants. We will also bring extra USB storage devices with copies of code, programs and slides in case some participants did not download the material prior to the tutorial.</p>
+        
+
+        <h3>Expected Coverage</h3>
+        <p>Tools and data:</p>
+        <ul>
+            <li>Our latest commonsense knowledge graph (link to download the graph will be shared with the participants)</li>
+            <li>Our <a href="https://github.com/usc-isi-i2/mowgli-in-the-jungle">mowgli-in-the-jungle</a> framework for building question answering models that leverage the CSKG</li>
+            <li>Code for analysing the contents of CSKG</li>
+            <li>Code for computing embeddings based on ConceptNet’s Numberbatch code</li>
+            <li><a href="https://docs.ampligraph.org/en/1.2.0/">AmpliGraph</a> library for predicting links in a knowledge graph</li>
+        </ul>
+
+        <p>Bibliography:</p>
+        <ul>
+            <li>Gunning, D. (2018). Machine common sense concept paper. arXiv preprint arXiv:1810.07528</li>
+            <li>Speer, R., Chin, J., & Havasi, C. (2017, February). Conceptnet 5.5: An open multilingual graph of general knowledge. In Thirty-First AAAI Conference on Artificial Intelligence.</li>
+            <li>Krishna, R., Zhu, Y., Groth, O., Johnson, J., Hata, K., Kravitz, J., ... & Bernstein, M. S. (2017). Visual genome: Connecting language and vision using crowdsourced dense image annotations. International Journal of Computer Vision, 123(1), 32-73.</li>
+            <li>Miller, G. A. (1995). WordNet: a lexical database for English. Communications of the ACM, 38(11), 39-41.</li>
+            <li>Speer, R., & Chin, J. (2016). An ensemble method to produce high-quality word embeddings. arXiv preprint arXiv:1604.01692.</li>
+            <li>Costabello, L., Pai, S., Le Van, C., McGrath, R., McCarthy, N., & Tabacof, P. Ampli-Graph: a Library for Representation Learning on Knowledge Graphs, March 2019. URL https://doi. org/10.5281/zenodo, 2595043.</li>
+            <li>Zellers, R., Holtzman, A., Bisk, Y., Farhadi, A., & Choi, Y. (2019). HellaSwag: Can a Machine Really Finish Your Sentence?. arXiv preprint arXiv:1905.07830.</li>
+            <li>Sap, M., Rashkin, H., Chen, D., LeBras, R., & Choi, Y. (2019). Socialiqa: Commonsense reasoning about social interactions. arXiv preprint arXiv:1904.09728.</li>
+            <li>Zellers, R., Bisk, Y., Farhadi, A., & Choi, Y. (2019). From recognition to cognition: Visual commonsense reasoning. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (pp. 6720-6731).</li>
+        </ul>
+    </section>
+	
+	<!-- <section id="tweets" class="container">
+		<h2>#wtnicusc TWEETS</h2>
+		<div class="content">
+			<a class="twitter-timeline" href="https://twitter.com/hashtag/wtnicusc" data-widget-id="750810950672850945" data-chrome="nofooter">#wtnicusc Tweets</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</section> -->
+	
+	<!-- <section class="container">
+		<h2>ACKNOWLEDGMENT</h2>
+        <p class="content">This material is based upon work sponsored by the DARPA MCS program under Contract No. N660011924033 with the United States Office Of Naval Research.</p>
+	</section> -->
+	
+	<footer>
+		<div class="container">&copy; 2020 The University of Southern California</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
