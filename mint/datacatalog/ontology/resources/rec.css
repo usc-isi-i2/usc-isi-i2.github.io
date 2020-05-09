@@ -59,7 +59,7 @@ p.copyright { font-size: small }
 p.copyright small { font-size: small }
 
 @media screen {  /* hide from IE3 */
-a[href]:hover { background: #ffa }
+a[rel="noopener" href=]:hover { background: #ffa }
 }
 
 pre { margin-left: 2em }
