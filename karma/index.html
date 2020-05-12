@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="ISI's Center on Knowledge Graphs research group combines artificial intelligence, the semantic web, and database integration techniques to solve complex information integration problems">
 	<title>Karma: A Data Integration Tool</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -53,13 +54,13 @@
 			<h1>Karma</h1>
 			<h2>A Data Integration Tool</h2>
 			<div class="link-btn-container">
-				<a class="link-btn" href="https://github.com/InformationIntegrationGroup/Web-Karma">GitHub</a>
-				<a class="link-btn" href="https://github.com/usc-isi-i2/Web-Karma/wiki">User Guide</a>
+				<a class="link-btn" rel="noopener" href="https://github.com/InformationIntegrationGroup/Web-Karma">GitHub</a>
+				<a class="link-btn" rel="noopener" href="https://github.com/usc-isi-i2/Web-Karma/wiki">User Guide</a>
 			</div>
 			<div class="affiliation">
 				<div><a href="../"  style="color: #FDC93F;font-size: 24px;font-style: italic;font-family: Georgia" >Center on Knowledge Graphs</a></div>
-				<div><a href="http://www.isi.edu" style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia" >Information Sciences Institute</a></div>
-				<div><a href="http://www.usc.edu"><img src="../img/logo/usc-shield-name-white.png"></a></div>
+				<div><a rel="noopener" href="http://www.isi.edu" style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia" >Information Sciences Institute</a></div>
+				 <div><a rel="noopener" href="http://www.usc.edu"><img src="../img/logo/usc-shield-name-white.png" alt="usc-shield-name-white"></a></div>
 			</div>
 		</div><!-- container -->
 		<div class="scroll-btn-container hidden-xs">
@@ -79,7 +80,7 @@
 		<h2>WHAT IS KARMA</h2>
 		<div class="content">
 			<p>Karma is an information integration tool that enables users to quickly and easily integrate data from a variety of data sources including databases, spreadsheets, delimited text files, XML, JSON, KML and Web APIs. Users integrate information by modeling it according to an ontology of their choice using a graphical user interface that automates much of the process. Karma learns to recognize the mapping of data to ontology classes and then uses the ontology to propose a model that ties together these classes. Users then interact with the system to adjust the automatically generated model. During this process, users can transform the data as needed to normalize data expressed in different formats and to restructure it. Once the model is complete, users can published the integrated data as RDF or store it in a database.</p>
-			<p>All the project publications are <a href="#pub">here</a>. The best paper on the technical aspects of Karma is our <a href="http://www.isi.edu/integration/papers/knoblock12-eswc.pdf">ESWC'2012 paper</a>, and the best application paper is our <a href="http://www.isi.edu/~szekely/contents/papers/2013/eswc-2013-saam.pdf">ESWC'2013 paper</a>, which received the best in-use paper award at the conference.</p>
+			<p>All the project publications are <a rel="noopener" href="#pub">here</a>. The best paper on the technical aspects of Karma is our <a rel="noopener" href="http://www.isi.edu/integration/papers/knoblock12-eswc.pdf">ESWC'2012 paper</a>, and the best application paper is our <a rel="noopener" href="http://www.isi.edu/~szekely/contents/papers/2013/eswc-2013-saam.pdf">ESWC'2013 paper</a>, which received the best in-use paper award at the conference.</p>
 		</div>
 	</section>
 
@@ -106,7 +107,7 @@
 		<ul class="content list-unstyled">
 			<li>
 				<h3>Integration of Bio-Informatics Data</h3>
-				<p>We used Karma to replicate the mappings done in a scenario from the Semantic MediaWiki Linked Data Extension (SMW-LDE) work where researchers integrated ABA, Uniprot, KEGG Pathway, PharmGKB and Linking Open Drug Data datasets by mapping them to a common ontology. Papers: <a href="http://www.isi.edu/integration/papers/knoblock12-eswc.pdf">ESWC'2012</a>, <a href="http://www.isi.edu/integration/papers/knoblock11-lisc.pdf">ISWC'2011 Linked Science</a>.</p>
+				<p>We used Karma to replicate the mappings done in a scenario from the Semantic MediaWiki Linked Data Extension (SMW-LDE) work where researchers integrated ABA, Uniprot, KEGG Pathway, PharmGKB and Linking Open Drug Data datasets by mapping them to a common ontology. Papers: <a rel="noopener" href="http://www.isi.edu/integration/papers/knoblock12-eswc.pdf">ESWC'2012</a>, <a rel="noopener" href="http://www.isi.edu/integration/papers/knoblock11-lisc.pdf">ISWC'2011 Linked Science</a>.</p>
 			</li>
 			<li>
 				<h3>Mapping USC Faculty Data to VIVO</h3>
@@ -115,8 +116,8 @@
 						<iframe src="http://www.youtube.com/embed/EQcMc4TrfuE" allowfullscreen=""></iframe>
 					</div>
 				</div>
-				<p><a href="http://vivoweb.org/">VIVO</a> is a system to build researcher networks across institutions. In this case study we used Karma to map data about USC faculty to the VIVO ontology and to publish the data in the RDF format that the VIVO system can ingest. Karma enables users to ingest data in VIVO by interacting with an easy to use graphical user interface, and does not require knowledge of SPARQL or other Web languages such as XSLT or XQuery. The video shows how to ingest the sample files provided in the <a href="https://wiki.duraspace.org/display/VIVO/VIVO+1.2+Data+Ingest+Guide">VIVO Data Ingest Guide</a>.</p>
-				<p>Karma at the VIVO'2012 Conference in Miami, Florida: Abstract (<a href="/karma/doc/karma-abstract-v2.pdf">PDF</a>), Slides (<a href="/slides/szekely12-vivo-slides.pdf">Powerpoint</a>), Ontology and datasets (<a href="/data/karma/szekely12-vivodemo.zip">zip</a>)</p>
+				<p><a rel="noopener" href="http://vivoweb.org/">VIVO</a> is a system to build researcher networks across institutions. In this case study we used Karma to map data about USC faculty to the VIVO ontology and to publish the data in the RDF format that the VIVO system can ingest. Karma enables users to ingest data in VIVO by interacting with an easy to use graphical user interface, and does not require knowledge of SPARQL or other Web languages such as XSLT or XQuery. The video shows how to ingest the sample files provided in the <a rel="noopener" href="https://wiki.duraspace.org/display/VIVO/VIVO+1.2+Data+Ingest+Guide">VIVO Data Ingest Guide</a>.</p>
+				<p>Karma at the VIVO'2012 Conference in Miami, Florida: Abstract (<a rel="noopener" href="/karma/doc/karma-abstract-v2.pdf">PDF</a>), Slides (<a rel="noopener" href="/slides/szekely12-vivo-slides.pdf">Powerpoint</a>), Ontology and datasets (<a rel="noopener" href="/data/karma/szekely12-vivodemo.zip">zip</a>)</p>
 			</li>
 			<li>
 				<h3>Smithsonian American Art Museum</h3>
@@ -125,7 +126,7 @@
 						<iframe src="http://www.youtube.com/embed/1Vaytr09H1w" allowfullscreen=""></iframe>
 					</div>
 				</div>
-				<p>In this case study we used Karma to convert records of 44,000 of the museum’s holdings to Linked Open Data according to the <a href="http://www.europeana.eu/schemas/edm/">Europeana Data Model (EDM)</a>. The records are stored in several tables in a SQL Server database. Using Karma we modeled these tables in terms of the EDM ontology and converted the data into RDF. We are creating a 5-star Linked Data, linked to DBpedia, the Getty Union List of Artist Names (ULAN)® and the NY Times Linked Data. The USC <a href="http://universityofsoutherncalifornia.createsend1.com/t/ViewEmail/j/DEB74B7D328C85AA">press release</a>. Our paper on this work received the best in-use paper award at the ESWC'2013 conference: <a href="http://bit.ly/11X5YPo">paper</a>, <a href="http://slidesha.re/18vxMnn">slides</a>. The Linked Data is now deployed: each time you visit an <a href="http://americanart.si.edu/collections/search/artist/?id=4253">artist page</a> in the Smithsonian American Art Museum web site, a SPARQL query is issued to retrieve links to Wikipedia and the NY Times.</p>
+				<p>In this case study we used Karma to convert records of 44,000 of the museum’s holdings to Linked Open Data according to the <a rel="noopener" href="http://www.europeana.eu/schemas/edm/">Europeana Data Model (EDM)</a>. The records are stored in several tables in a SQL Server database. Using Karma we modeled these tables in terms of the EDM ontology and converted the data into RDF. We are creating a 5-star Linked Data, linked to DBpedia, the Getty Union List of Artist Names (ULAN)® and the NY Times Linked Data. The USC <a rel="noopener" href="http://universityofsoutherncalifornia.createsend1.com/t/ViewEmail/j/DEB74B7D328C85AA">press release</a>. Our paper on this work received the best in-use paper award at the ESWC'2013 conference: <a rel="noopener" href="http://bit.ly/11X5YPo">paper</a>, <a rel="noopener" href="http://slidesha.re/18vxMnn">slides</a>. The Linked Data is now deployed: each time you visit an <a rel="noopener" href="http://americanart.si.edu/collections/search/artist/?id=4253">artist page</a> in the Smithsonian American Art Museum web site, a SPARQL query is issued to retrieve links to Wikipedia and the NY Times.</p>
 			</li>
 			<li>
 				<h3>Geospatial Data and Services</h3>
@@ -138,7 +139,7 @@
 			</li>
 			<li>
 				<h3>Integration of Environmental Data</h3>
-				<p>In this case study we used Karma to help an environmental scientists to construct a model of the metabolism of the Merced river in California. An important bottleneck that the scientists face is to prepare the data used to fit and run the models. In this case, data came from the California Data Exchange Center (<a href="http://cdec.water.ca.gov/">CDEC</a>), the scientists' own sensors, and weather information from <a href="http://www.noaa.gov/">NOAA</a>. The CDEC and NOAA data was accessible via web services, and the scientists' data was available in CSV files. In addition, the data used different formats to represent dates, times and units, different time resolutions and contained errors. We used Karma to retrieve, clean, normalize, integrate and publish the data. Karma published the data in the format needed by the executable models, and produced semantic metadata that allowed the WINGS workflow system to help users compose the different parts of the <a href="http://www.wings-workflows.org/node/17618">workflow</a>. In addition, Karma exported the data preparation procedures in a script that could be executed every day to produce fresh data. This allowed WINGS to automatically execute the workflow every day. Paper: <a href="http://www.isi.edu/integration/papers/gil11-iswc.pdf">ISWC'2011</a>.</p>
+				<p>In this case study we used Karma to help an environmental scientists to construct a model of the metabolism of the Merced river in California. An important bottleneck that the scientists face is to prepare the data used to fit and run the models. In this case, data came from the California Data Exchange Center (<a rel="noopener" href="http://cdec.water.ca.gov/">CDEC</a>), the scientists' own sensors, and weather information from <a rel="noopener" href="http://www.noaa.gov/">NOAA</a>. The CDEC and NOAA data was accessible via web services, and the scientists' data was available in CSV files. In addition, the data used different formats to represent dates, times and units, different time resolutions and contained errors. We used Karma to retrieve, clean, normalize, integrate and publish the data. Karma published the data in the format needed by the executable models, and produced semantic metadata that allowed the WINGS workflow system to help users compose the different parts of the <a rel="noopener" href="http://www.wings-workflows.org/node/17618">workflow</a>. In addition, Karma exported the data preparation procedures in a script that could be executed every day to produce fresh data. This allowed WINGS to automatically execute the workflow every day. Paper: <a rel="noopener" href="http://www.isi.edu/integration/papers/gil11-iswc.pdf">ISWC'2011</a>.</p>
 			</li>
 			<li>
 				<h3>Rapidly Integrating Services into the Linked Data Cloud</h3>
@@ -147,7 +148,7 @@
 						<iframe src="http://www.youtube.com/embed/3L1G5kh5jYg" allowfullscreen=""></iframe>
 					</div>
 				</div>
-				<p>The amount of data available in the Linked Data cloud continues to grow. Yet, few services consume and produce linked data. There is recent work that allows a user to define a linked service from an online service, which includes the specifications for consuming and producing linked data, but building such models is time consuming and requires specialized knowledge of RDF and SPARQL. We present a new approach that allows domain experts to rapidly create semantic models of services by demonstration in an interactive web-based interface. First, the user provides examples of the service request URLs. Then, the system automatically proposes a service model the user can refine interactively. Finally, the system saves a service specification using a new expressive vocabulary that includes lowering and lifting rules. This approach empowers end users to rapidly model existing services and immediately use them to consume and produce linked data. Paper: <a href="http://www.isi.edu/~szekely/contents/papers/2012/iswc2012_cameraready_34.pdf">ISWC'2012</a>.</p>
+				<p>The amount of data available in the Linked Data cloud continues to grow. Yet, few services consume and produce linked data. There is recent work that allows a user to define a linked service from an online service, which includes the specifications for consuming and producing linked data, but building such models is time consuming and requires specialized knowledge of RDF and SPARQL. We present a new approach that allows domain experts to rapidly create semantic models of services by demonstration in an interactive web-based interface. First, the user provides examples of the service request URLs. Then, the system automatically proposes a service model the user can refine interactively. Finally, the system saves a service specification using a new expressive vocabulary that includes lowering and lifting rules. This approach empowers end users to rapidly model existing services and immediately use them to consume and produce linked data. Paper: <a rel="noopener" href="http://www.isi.edu/~szekely/contents/papers/2012/iswc2012_cameraready_34.pdf">ISWC'2012</a>.</p>
 			</li>
 		</ul>
 	</section>
@@ -172,7 +173,7 @@
 			</li>
 			
 			<li>
-				<a style="background-image:url('../img/people/Gully-Burns.jpg')" href="http://www.isi.edu/people/burns/homepage"></a>
+				<a style="background-image:url('../img/people/Gully-Burns.jpg')" rel="noopener" href="http://www.isi.edu/people/burns/homepage"></a>
 				<div class="description">
 					<div class="name">Gully Burns</div>
 					<div class="title">Project Leader</div>
@@ -180,14 +181,14 @@
 			</li>
 			
 			<li>
-				<a style="background-image:url('../img/people/Dipsy-Kapoor.jpg')" href="https://www.linkedin.com/in/dipsy"></a>
+				<a style="background-image:url('../img/people/Dipsy-Kapoor.jpg')" rel="noopener" href="https://www.linkedin.com/in/dipsy"></a>
 				<div class="description">
 					<div class="name">Dipsy Kapoor</div>
 					<div class="title">Research Programmer</div>
 				</div>
 			</li>
 			<li>
-				<a style="background-image:url('../img/people/Jason-Slepicka.jpg')" href="http://www.linkedin.com/pub/jason-slepicka/4a/732/410/en"></a>
+				<a style="background-image:url('../img/people/Jason-Slepicka.jpg')" rel="noopener" href="http://www.linkedin.com/pub/jason-slepicka/4a/732/410/en"></a>
 				<div class="description">
 					<div class="name">Jason Slepicka</div>
 					<div class="title">PhD Student</div>
@@ -195,7 +196,7 @@
 			</li>
 			
 			<li> 
-				<a style="background-image:url('../img/people/Minh-Pham.jpg')" href="https://www.linkedin.com/in/minh-pham-b88312113"></a>
+				<a style="background-image:url('../img/people/Minh-Pham.jpg')" rel="noopener" href="https://www.linkedin.com/in/minh-pham-b88312113"></a>
 				<div class="description">
 					<div class="name">Minh Pham</div>
 					<div class="title">PhD Student</div>
@@ -207,7 +208,7 @@
 	<section id="pub" class="container">
 		<h2>PUBLICATIONS</h2>
 		<div class="content">
-			<script src="http://bibbase.org/show?bib=http://usc-isi-i2.github.io/karma/doc/karma-bib.bib&group0=year&css=1&jsonp=1"></script>
+			<script src="https://bibbase.org/show?bib=http://usc-isi-i2.github.io/karma/doc/karma-bib.bib&group0=year&css=1&jsonp=1"></script>
 		</div>
 	</section>
 

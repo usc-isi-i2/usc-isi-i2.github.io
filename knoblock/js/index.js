@@ -21,7 +21,7 @@ d3.json('doc/courses.json', function(error, data) {
 		var $semester = $('<div/>').addClass('semester').text(course.semester);
 		var $title = $('<h4/>').addClass('title').text(course.title);
 		if (course.syllabus) {
-			$link = $('<a/>').attr('href', course.syllabus).attr('target', '_blank').text(course.title);
+			$link = $('<a/>').attr('rel="noopener" href=', course.syllabus).attr('target', '_blank').text(course.title);
 			$title.empty();
 			$title.append($link);
 		}
