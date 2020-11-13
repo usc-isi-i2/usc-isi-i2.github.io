@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background-color: #e8f5e9;
+}
+
+
+.navbar h1{
+  color: #1b5e20;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.embed-responsive{
+  position: relative;
+  overflow: hidden;
+}
+
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 1000px;
+}
+
+
+.carousel-inner img {
+  width: 100%;
+  height: 1000px;
+
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: transalateY(-50)
+}
+
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500%;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #1b5e20;
+  border: 1px solid #1b5e20;
+}
+
+.btn-primary:hover {
+  background-color: #24361d;
+  border: 1px solid #24361d;
+}
+
+.col-12{
+  overflow-wrap:break-word;
+}
+
+
+.jumbotron {
+  background-color: #1b5e20;
+  background-image: url('img/mono11.png');
+  color:white;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.jumbotron h1{
+  font-size: 300%;
+}
+
+.display-4 {
+  padding-top: 50px;
+  font-weight: bold;
+  color: #1b5e20
+}
+
+
+.img-fluid {
+  width: 200%;
+  height: auto;
+}
+
+a{
+  color: green;
+}
+
+#pic {
+  height: 400px;
+}
+
+.px-2 {
+  padding-left: ($spacer * .15) !important;
+  padding-right: ($spacer * .5) !important;
+}
+
+
+.ml-1 {
+  margin-left: ($spacer * .25) !important;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease,
+  +++++++++++++++++++++++++++++++++++++++++++++++ -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #563d7c;
+}
+#fixed {
+  background-image: url('img/mono12.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
