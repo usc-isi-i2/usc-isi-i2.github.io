@@ -73,6 +73,13 @@ header .scroll-btn-container .scroll-btn:hover {
   color: white;
 }
 
+.videoWrapper {
+	position: relative;
+}
+.videoWrapper iframe {
+    width:100%;
+}
+
 section {
   padding-top: 60px;
 }
