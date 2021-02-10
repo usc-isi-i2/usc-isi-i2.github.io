@@ -86,6 +86,13 @@ section .content {
   max-width: 700px;
 }
 
+.videoWrapper {
+    position: relative;
+}
+.videoWrapper iframe {
+    width:100%;
+}
+
 #video {
   padding-bottom: 60px;
   background: #111;
