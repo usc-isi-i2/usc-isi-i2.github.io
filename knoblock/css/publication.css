@@ -37,6 +37,7 @@ img.bibbase_icon {
 }
 
 span.bibbase_icon_text {
+  display: inline;
   text-decoration: none;
 }
 
