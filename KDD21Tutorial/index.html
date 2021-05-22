@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Table understanding is an important problem for translating structured data into knowledge. This tutorial covers the important tasks and models for table understanding.">
+    <title>From Tables to Knowledge: Recent Advances in Table Understanding</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	 </head>
+  <body>
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+      <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand scroll" href="#home">KDD 2021 Tutorial: From Tables to Knowledge: Recent Advances in Table Understanding</a>
+	</div><!-- navbar-header -->
+	<div class="collapse navbar-collapse" id="nav-links">
+	  <ul class="nav navbar-nav navbar-right">
+	    <li class="active"><a class="scroll" href="#home">Home</a></li>
+	    <!--                    <li><a class="scroll" href="#recording">Recording</a></li> -->
+	    <li><a class="scroll" href="#about">Program</a></li>
+	    <li><a class="scroll" href="#people">Presenters</a></li>
+	  </ul>        
+	</div><!-- collapse navbar-collapse -->
+      </div><!-- container -->
+    </nav>
+
+    <header id="home">
+      <div class="container">
+	<h1>From Tables to Knowledge: Recent Advances in Table Understanding</h1>
+	<div class="affiliation">
+	  <div style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia">KDD'21 Tutorial</div>
+          <div style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia">August 14, 2021</div>
+	  <div><a rel="noopener" href="http://www.usc.edu"><img src="../img/logo/usc-shield-name-white.png" alt="usc-shield-name-white"></a></div>
+	</div>
+      </div><!-- container -->
+      <div class="scroll-btn-container hidden-xs">
+	<a class="scroll-btn scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+      </div>
+    </header>
+    <section id="recording" class="container">
+      <div class="content videoWrapper">
+      </div>
+    </section>
+    <section id="about" class="container">
+      <div class="content">
+	A wealth of human knowledge is expressed in structured tables, across web pages, scientific articles, spreadsheets, and databases. This wealth of knowledge is mirrored by diversity in the vast number of layout structures, content types, formats, and surface forms used to express tables. Recent advances in representation learning and knowledge representation have made progress in exploiting structural regularities in tabular data to unlock this knowledge. In this tutorial, we provide a survey of these advances for a host of table understanding tasks, including table segmentation, semantic typing of cells, transforming tables to knowledge graphs, entity linking, and table retrieval tasks for question answering.	
+      </div>
+      <div class="content">
+        <h3>Tutorial Program</h3>
+        <p>All times are tentative and given in Singapore Time (UTC +8).</p>
+        <table>
+	  <tbody>
+	    <tr>
+	      <td width="102">
+		<p><strong><u>Time</u></strong></p>
+	      </td>
+	      <td width="450">
+		<p><strong><u>Subject</u></strong></p>
+	      </td>
+	      <td width="150">
+		<p><strong><u>Presenter</u></strong></p>
+	      </td>
+	      <td width="100">
+		<p><strong><u>Description</u></strong></p>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td width="102">
+		<p><em>00:00 - 00:20</em></p>
+	      </td>
+	      <td width="250">
+		<p><b>Introduction to Table Understanding</b></p>
+	      </td>
+	      <td width="150">
+		<p><b>Jay Pujara</b></p>
+	      </td>
+	      <td width="300">
+		A brief review on tables and table organization from a human communication perspective. An introduction of the core tasks and applications in table understanding.<br>&nbsp;
+	      </td>
+	    </tr>
+	    <tr>
+	      <td width="102">
+		<p><em>00:20 - 00:50</em></p>
+	      </td>
+	      <td width="250">
+		<p><b>Understanding Table Structures</b></p>
+	      </td>
+	      <td width="150">
+		<p><b>Jay Pujara</b></p>
+	      </td>
+	      <td width="300">
+		Tables found on the Web and other structured sources take diverse forms. Understanding cell-level features, functional blocks, and relational structure are an important task for modeling tabular data.<br>&nbsp;
+	      </td>
+	    </tr>
+	    <tr>
+	      <td width="102">
+		<p><em>00:50 - 01:00</em></p>
+	      </td>
+	      <td width="250">
+		<p><b>Break</b></p>
+	      </td>
+	      <td width="150">
+	      </td>
+	      <td width="300">
+	      </td>
+	    </tr>
+	    <tr>
+	      <td width="102">
+		<p><em>01:00 - 01:30</em></p>
+	      </td>
+	      <td width="250">
+		<p><b>Semantic Understanding of Tables (Part I)</b></p>
+	      </td>
+	      <td width="150">
+		<p><b>Pedro Szekely</b></p>
+	      </td>
+	      <td width="300">
+		Semantic models are the key to representing the knowledge in tables. Identifying entities, relationships, and meta-information in tables are important subproblems of semantic modeling.<br>&nbsp;
+	      </td>
+	    </tr>
+	    <tr>
+	      <td width="102">
+		<p><em>01:30 - 02:00</em></p>
+	      </td>
+	      <td width="250">
+		<p><b>Semantic Understanding of Tables (Part 2)</b></p>
+	      </td>
+	      <td width="150">
+		<p><b>Huan Sun</b></p>
+	      </td>
+	      <td width="300">
+		Representation learning approaches have demonstrated great success in solving multiple table understanding tasks. <br>&nbsp;
+	      </td>
+	    </tr>
+	    <tr>
+	      <td width="102">
+		<p><em>02:00 - 02:10</em></p>
+	      </td>
+	      <td width="250">
+		<p><b>Break</b></p>
+	      </td>
+	      <td width="150">
+	      </td>
+	      <td width="300">
+	      </td>
+	    </tr>
+	    <tr>
+	      <td width="102">
+		<p><em>02:10 - 2:40</em></p>
+	      </td>
+	      <td width="250">
+		<p><b>Bridging Tables and Human Language</b></p>
+	      </td>
+	      <td width="150">
+		<p><b>Muhao Chen</b></p>
+	      </td>
+	      <td width="300">
+		The ultimate test of table understanding is the ability to interface with human language.<br>&nbsp;
+	      </td>
+	    </tr>
+	    <tr>
+	      <td width="102">
+		<p><em>02:40 - 03:00</em></p>
+	      </td>
+	      <td width="250">
+		<p><b>Getting Involved with Table Understanding Research</b></p>
+	      </td>
+	      <td width="150">
+		<p><b>Jay Pujara</b></p>
+	      </td>
+	      <td width="300">
+		We present key datasets, applications and downstream tasks, and promising directions fo future research.<br>&nbsp;
+	      </td>
+	    </tr>
+	  </tbody>
+	</table>
+
+        <h3>Background & Requirements</h3>
+	<p>A wealth of human knowledge is expressed in structured tables, across web pages, scientific articles, spreadsheets, and databases. This wealth of knowledge is mirrored by diversity in the vast number of layout structures, content types, formats, and surface forms used to express tables. Recent advances in representation learning and knowledge representation have made progress in exploiting structural regularities in tabular data to unlock this knowledge. In this tutorial, we provide a survey of these advances for a host of table understanding tasks, including table segmentation, semantic typing of cells, transforming tables to knowledge graphs, entity linking, and table retrieval tasks for question answering.
+
+<p>The structure of the tutorial will include three major modules. The first will provide attendees an introduction to the seminal work in organization of data in tables, and cover the major goals and approaches of computational systems that undertake table understanding. The second module will cover specific models used for table understanding tasks, such as table discovery, table segmentation and layout detection, cell classification and semantic typing, mapping tables to knowledge graphs and linking to known entities, and table retrieval in search and question answering. The final tutorial module will provide a primer for researchers who want to get involved with the table understanding community, providing them a guide to the most commonly used benchmark datasets and models, downstream applications and evaluations, and a sketch of the open problems in table understanding.
+
+<p>The target audience of this tutorial are researchers in computer science and data science who are interested in receiving a high-level overview of the recent research undertaken in table understanding. We expect the audience to be broadly familiar with important concepts in data science, such as machine learning concepts of training, testing, multi-class prediction, and basic ideas from representation learning approaches. After the tutorial, the attendees will be abreast of the fundamental ideas in the field, and be abreast of the current research advances enabling them to dive deeper and contribute to table understanding research.
+	
+	
+        <p>Bibliography:</p>
+        <ul>
+        </ul>
+    </section>
+
+    <section id="people" class="container">
+      <div class="content">
+        <h2>Presenters</h2>
+        <ul class="content list-unstyled">
+          <li>
+            <a style="background-image:url('../img/people/Jay-Pujara.png')" href="https://www.jaypujara.org"></a>
+            <div class="description">
+              <div class="name">Jay Pujara</div>
+              <div class="title">USC/ISI</div>
+            </div>
+          </li>
+          <li>
+            <a style="background-image:url('../img/people/Pedro-Szekely.jpg')" href="https://usc-isi-i2.github.io/szekely/"></a>
+            <div class="description">
+              <div class="name">Pedro Szekely</div>
+              <div class="title">USC/ISI</div>
+            </div>
+          </li>
+          <li>
+            <a style="background-image:url('../img/external/Huan-Sun.png')" href="http://web.cse.ohio-state.edu/~sun.397/"></a>
+            <div class="description">
+              <div class="name">Huan Sun</div>
+              <div class="title">Ohio State University</div>
+            </div>
+          </li>
+          <li>
+            <a style="background-image:url('../img/people/Muhao-Chen.jpg')" href="https://muhaochen.github.io/"></a>
+            <div class="description">
+              <div class="name">Muhao Chen</div>
+              <div class="title">USC/ISI</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <footer>
+      <div class="container">&copy; 202` The University of Southern California</div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
