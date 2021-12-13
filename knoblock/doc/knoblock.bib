@@ -10,7 +10,8 @@
   month     = {8},
   note      = {Main Track},
   doi       = {10.24963/ijcai.2021/488},
-  url       = {http://usc-isi-i2.github.io/papers/pham21-ijcai.pdf}
+  urlPaper  = {http://usc-isi-i2.github.io/papers/pham21-ijcai.pdf},
+  urlLink   = {https://www.ijcai.org/proceedings/2021/488}
 }
 
 @inproceedings{10.1145/3486635.3491070,
@@ -20,7 +21,8 @@ year = {2021},
 isbn = {9781450391207},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
-url = {http://usc-isi-i2.github.io/papers/li21-acm.pdf},
+urlPaper = {http://usc-isi-i2.github.io/papers/li21-acm.pdf},
+urlLink = {https://dl.acm.org/doi/abs/10.1145/3486635.3491070}
 doi = {10.1145/3486635.3491070},
 abstract = {Many historical map sheets are publicly available for studies that require long-term historical geographic data. The cartographic design of these maps includes a combination of map symbols and text labels. Automatically reading text labels from map images could greatly speed up the map interpretation and helps generate rich metadata describing the map content. Many text detection algorithms have been proposed to locate text regions in map images automatically, but most of the algorithms are trained on out-of-domain datasets (e.g., scenic images). Training data determines the quality of machine learning models, and manually annotating text regions in map images is labor-extensive and time-consuming. On the other hand, existing geographic data sources, such as Open-StreetMap (OSM), contain machine-readable map layers, which allow us to separate out the text layer and obtain text label annotations easily. However, the cartographic styles between OSM map tiles and historical maps are significantly different. This paper proposes a method to automatically generate an unlimited amount of annotated historical map images for training text detection models. We use a style transfer model to convert contemporary map images into historical style and place text labels upon them. We show that the state-of-the-art text detection models (e.g., PSENet) can benefit from the synthetic historical maps and achieve significant improvement for historical map text detection.},
 booktitle = {Proceedings of the 4th ACM SIGSPATIAL International Workshop on AI for Geographic Knowledge Discovery},
@@ -41,7 +43,9 @@ publisher="Springer International Publishing",
 address="Cham",
 pages="304--320",
 abstract="There are millions of high-quality tables available in Wikipedia. These tables cover many domains and contain useful information. To make use of these tables for data discovery or data integration, we need precise descriptions of the concepts and relationships in the data, known as semantic descriptions. However, creating semantic descriptions is a complex process requiring considerable manual effort and can be error prone. In this paper, we present a novel probabilistic approach for automatically building semantic descriptions of Wikipedia tables. Our approach leverages hyperlinks in a Wikipedia table and existing knowledge in Wikidata to construct a graph of possible relationships in the table and its context, and then it uses collective inference to distinguish genuine and spurious relationships to form the final semantic description. In contrast to existing methods, our solution can handle tables that require complex semantic descriptions of n-ary relations (e.g., the population of a country in a particular year) or implicit contextual values to describe the data accurately. In our empirical evaluation, our approach outperforms state-of-the-art systems on the SemTab2020 dataset and outperforms those systems by as much as 28{\%} in F1 score on a large set of Wikipedia tables.",
-isbn="978-3-030-88361-4"
+isbn="978-3-030-88361-4",
+urlLink="https://link.springer.com/chapter/10.1007/978-3-030-88361-4_18",
+urlPaper="http://usc-isi-i2.github.io/papers/vu21-springer.pdf"
 }
 
 @article{10.1145/3453172,
@@ -54,7 +58,8 @@ address = {New York, NY, USA},
 volume = {11},
 number = {2},
 issn = {2160-6455},
-url = {http://usc-isi-i2.github.io/papers/gil21-acm.pdf},
+urlPaper = {http://usc-isi-i2.github.io/papers/gil21-acm.pdf},
+urlLink = {https://dl.acm.org/doi/10.1145/3453172},
 doi = {10.1145/3453172},
 abstract = {Major societal and environmental challenges involve complex systems that have diverse multi-scale interacting processes. Consider, for example, how droughts and water reserves affect crop production and how agriculture and industrial needs affect water quality and availability. Preventive measures, such as delaying planting dates and adopting new agricultural practices in response to changing weather patterns, can reduce the damage caused by natural processes. Understanding how these natural and human processes affect one another allows forecasting the effects of undesirable situations and study interventions to take preventive measures. For many of these processes, there are expert models that incorporate state-of-the-art theories and knowledge to quantify a system's response to a diversity of conditions. A major challenge for efficient modeling is the diversity of modeling approaches across disciplines and the wide variety of data sources available only in formats that require complex conversions. Using expert models for particular problems requires integration of models with third-party data as well as integration of models across disciplines. Modelers face significant heterogeneity that requires resolving semantic, spatiotemporal, and execution mismatches, which are largely done by hand today and may take more than 2 years of effort.We are developing a modeling framework that uses artificial intelligence (AI) techniques to reduce modeling effort while ensuring utility for decision making. Our work to date makes several innovative contributions: (1) an intelligent user interface that guides analysts to frame their modeling problem and assists them by suggesting relevant choices and automating steps along the way; (2) semantic metadata for models, including their modeling variables and constraints, that ensures model relevance and proper use for a given decision-making problem; and (3) semantic representations of datasets in terms of modeling variables that enable automated data selection and data transformations. This framework is implemented in the MINT (Model INTegration) framework, and currently includes data and models to analyze the interactions between natural and human systems involving climate, water availability, agricultural production, and markets. Our work to date demonstrates the utility of AI techniques to accelerate modeling to support decision-making and uncovers several challenging directions for future work.},
 journal = {ACM Trans. Interact. Intell. Syst.},
@@ -80,7 +85,8 @@ VOLUME = {13},
 YEAR = {2021},
 NUMBER = {18},
 ARTICLE-NUMBER = {3672},
-URL = {http://usc-isi-i2.github.io/papers/uhl21-remotesensing.pdf},
+URLPAPER = {http://usc-isi-i2.github.io/papers/uhl21-remotesensing.pdf},
+URLLINK = {https://www.mdpi.com/2072-4292/13/18/3672}, 
 ISSN = {2072-4292},
 ABSTRACT = {Spatially explicit, fine-grained datasets describing historical urban extents are rarely available prior to the era of operational remote sensing. However, such data are necessary to better understand long-term urbanization and land development processes and for the assessment of coupled nature–human systems (e.g., the dynamics of the wildland–urban interface). Herein, we propose a framework that jointly uses remote-sensing-derived human settlement data (i.e., the Global Human Settlement Layer, GHSL) and scanned, georeferenced historical maps to automatically generate historical urban extents for the early 20th century. By applying unsupervised color space segmentation to the historical maps, spatially constrained to the urban extents derived from the GHSL, our approach generates historical settlement extents for seamless integration with the multi-temporal GHSL. We apply our method to study areas in countries across four continents, and evaluate our approach against historical building density estimates from the Historical Settlement Data Compilation for the US (HISDAC-US), and against urban area estimates from the History Database of the Global Environment (HYDE). Our results achieve Area-under-the-Curve values &gt;0.9 when comparing to HISDAC-US and are largely in agreement with model-based urban areas from the HYDE database, demonstrating that the integration of remote-sensing-derived observations and historical cartographic data sources opens up new, promising avenues for assessing urbanization and long-term land cover change in countries where historical maps are available.},
 DOI = {10.3390/rs13183672}
@@ -94,7 +100,8 @@ VOLUME = {11},
 YEAR = {2021},
 NUMBER = {11},
 ARTICLE-NUMBER = {4808},
-URL = {http://usc-isi-i2.github.io/papers/shi21-applsci.pdf},
+URLPAPER = {http://usc-isi-i2.github.io/papers/shi21-applsci.pdf},
+URLLINK = {https://www.mdpi.com/2076-3417/11/11/4808},
 ISSN = {2076-3417},
 DOI = {10.3390/app11114808}
 }
@@ -105,7 +112,8 @@ DOI = {10.3390/app11114808}
   booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
   pages={3290--3298},
   year={2020},
-  url_Paper = {http://usc-isi-i2.github.io/papers/li20-kdd.pdf}
+  urlPaper = {http://usc-isi-i2.github.io/papers/li20-kdd.pdf},
+  urllink = {https://dl.acm.org/doi/10.1145/3394486.3403381}
 }
 
 @inproceedings{shbita2020building,
