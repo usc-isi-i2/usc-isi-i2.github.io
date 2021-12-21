@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="ISI's Center on Knowledge Graphs research group combines artificial intelligence, the semantic web, and database integration techniques to solve complex information integration problems">
-	<title>KGTK: Tools for Creating and Exploiting Large Knowledge Graphs, ISWC 2021 Tutorial</title>
+	<title>KGTK: Tools for Creating and Exploiting Large Knowledge Graphs, The Web Conference 2022 Tutorial</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/index.css">
@@ -43,8 +43,8 @@
         <div class="container">
             <h1>KGTK: Tools for Creating and Exploiting Large Knowledge Graphs</h1>
             <div class="affiliation">
-                <div style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia">ISWC'21 Tutorial</div>
-                <div style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia">October 24, 2021</div>
+                <div style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia">WWW'22 Tutorial</div>
+                <div style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia">April 25 or 26, 2022</div>
                  <div><a rel="noopener" href="https://kgtk.readthedocs.io/en/latest/"><img src="../img/projects/kgtk_logo_300x300.png" alt="kgtk-logo"></a></div>
             </div>
         </div><!-- container -->
@@ -88,15 +88,12 @@
             </ul>
         </div>
     </section>
-    <section id="recording" class="container">
-        <div class="content">
-            <h2><a href="https://videolectures.net/iswc2021_kgtk_tools_creating/">Full tutorial recording</a></h2>
-        </div>
-    </section>
+
     <section id="description">
         <div class="content">
             <p>The Knowledge Graph Toolkit (KGTK) (Ilievski et al., 2020) is a comprehensive framework for the creation and exploitation of large KGs, designed for simplicity, scalability, and interoperability. KGTK represents KGs in tab-separated (TSV) files with four columns: edge-identifier, head, edge-label, and tail. All KGTK commands consume and produce KGs represented in this simple format, so they can be composed into pipelines to perform complex transformations on KGs. The simplicity of its data model also allows KGTK operations to be easily integrated with existing tools, like Pandas or graph-tool. KGTK provides a suite of commands to import Wikidata, RDF (e.g., DBpedia), and popular graph representations into the KGTK format. A rich collection of transformation commands make it easy to clean, union, filter, and sort KGs, while the KGTK graph combination commands support efficient intersection, subtraction, and joining of large KGs. Its advanced functionality includes a query language variant of Cypher (called “Kypher”), which has been optimized for querying KGs stored on disk with minimal indexing overhead; graph analytics commands support scalable computation of centrality metrics such as PageRank, degrees, connected components, and shortest paths; lexicalization of graph nodes, and computation of multiple variants of text and graph embeddings over the whole graph. In addition, a suite of export commands supports the transformation of KGTK KGs into commonly used formats, including the Wikidata JSON format, RDF triples, JSON documents for ElasticSearch indexing, and graph-tool. Finally, KGTK allows browsing locally stored KGs using a variant of SQID; and includes a development environment using Jupyter notebooks that provides seamless integration with Pandas. KGTK can process Wikidata-sized KGs, with billions of edges, on a laptop computer. We have used KGTK in multiple settings, focusing primarily on the construction of subgraphs of Wikidata, analysis of over 300 Wikidata dumps since the inception of the Wikidata project, linking tables to Wikidata, construction of a consolidated commonsense KG combining multiple existing sources, creation of an extension of Wikidata for food security, and creation of an extension of Wikidata for the pharmaceutical industry.</p>
-            <p>Slack channel: <b>#kgtk-tutorial</b> (ISWC workspace)</p>
+            <p>Slack channel: <b>TBD</b></p>
+            <p>Note: this tutorial will be an updated iteration of our <a href="https://usc-isi-i2.github.io/kgtk-tutorial-iswc-2021/">previous tutorial given at ISWC'21 in October 2021</a>.</p>
         </div>
     </section>
     <section id="resources">
@@ -119,7 +116,7 @@
             <p>The KGTK tutorial will introduce the full suite of commands available in KGTK, including parsers for popular existing KG formats, commands that curate or transform existing graphs, its query language Kypher (an adaptation of Cypher), commands for graph analytics, and computation of embeddings. We will introduce the commands in hands-on sessions, allowing participants to execute along in Colab notebooks. In addition, we will introduce a range of use cases that rely on KGTK in order to compute similarity of nodes, enrich Wikidata with additional knowledge from CSV files or LOD, perform knowledge graph profiling, analyze graph networks, and analyze the quality of Wikidata. The use cases will be associated with their underlying code in KGTK, and a subset of the use cases will be run live in hands-on sessions.</p>
 
             <br/>
-            <p>All times are given in Pacific Standard Time (PDT). The tutorial starts at 9am PDT. Speakers: FI=Filip Ilievski, DG=Daniel Garijo, HC=Hans Chalupsky, PS=Pedro Szekely.</p>
+            <p>Exact times will be announced closer to the tutorial date. Speakers: FI=Filip Ilievski, DG=Daniel Garijo, HC=Hans Chalupsky, PS=Pedro Szekely.</p>
 
             <br/>
             <table style="width: 100%">
@@ -147,7 +144,7 @@
             <tbody>
             <tr>
             <td>
-            <p><strong><em>09:00-09:15</em></strong></p>
+            <p><strong><em>00:00-00:15</em></strong></p>
             </td>
             <td>
             <p><strong>Welcome and Introduction</strong></p>
@@ -156,12 +153,11 @@
             <p><span style="font-weight: 400;">PS</span></p>
             </td>
             <td>
-		    <a href="https://github.com/usc-isi-i2/kgtk-notebooks/blob/main/slides/01-KGTK_Tutorial_ISWC_2021_introduction.pdf">slides</a>    
-	    </td>
+	        </td>
             </tr>
             <tr>
             <td>
-            <p><strong><em>09:15-10:00</em></strong></p>
+            <p><strong><em>00:15-00:50</em></strong></p>
             </td>
             <td>
             <p><strong>Introduction to KGTK and Kypher</strong></p>
@@ -170,12 +166,24 @@
             <p><span style="font-weight: 400;">HC</span></p>
             </td>
             <td>
-		    <a href="https://github.com/usc-isi-i2/kgtk-notebooks/blob/main/slides/KGTK_Tutorial_ISWC_2021_kgtk_and_kypher.pdf">slides</a>
-   	    </td>
+   	        </td>
             </tr>
             <tr>
             <td>
-            <p><strong><em>10:00-10:15</em></strong></p>
+            <p><strong><em>00:50-01:25</em></strong></p>
+            </td>
+            <td>
+            <p><strong>Breakout session I: Profiling knowledge graphs AND Working with Embeddings</strong></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;">PS, FI</span></p>
+            </td>
+            <td>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p><strong><em>01:25-01:35</em></strong></p>
             </td>
             <td>
             <p><strong>Break</strong></p>
@@ -189,23 +197,10 @@
             </tr>
             <tr>
             <td>
-            <p><strong><em>10:15-10:45</em></strong></p>
+            <p><strong><em>01:35-02:10</em></strong></p>
             </td>
             <td>
-            <p><strong>Profiling knowledge graphs</strong></p>
-            </td>
-            <td>
-            <p><span style="font-weight: 400;">PS</span></p>
-            </td>
-            <td>
-            </td>
-            </tr>
-            <tr>
-            <td>
-            <p><strong><em>10:45-11:15</em></strong></p>
-            </td>
-            <td>
-            <p><strong>Working with embeddings and estimating similarity</strong></p>
+            <p><strong>Breakout session II: Extending KG with tabular data (IMDB) AND Extending KG with LOD</strong></p>
             </td>
             <td>
             <p><span style="font-weight: 400;">PS, FI</span></p>
@@ -216,27 +211,13 @@
             </tr>
             <tr>
             <td>
-            <p><strong><em>11:15-11:30</em></strong></p>
+            <p><strong><em>02:10-02:45</em></strong></p>
             </td>
             <td>
-            <p><strong>Break</strong></p>
+            <p><strong>Breakout session III: Network analysis of KGs AND Analyzing Wikidata with KGTK</strong></p>
             </td>
             <td>
-            <p><span style="font-weight: 400;">/</span></p>
-            </td>
-            <td>
-            <p><span style="font-weight: 400;">/</span></p>
-            </td>
-            </tr>
-            <tr>
-            <td>
-            <p><strong><em>11:30-12:00</em></strong></p>
-            </td>
-            <td>
-            <p><strong>Extending KG with tabular data (IMDB)</strong></p>
-            </td>
-            <td>
-            <p><span style="font-weight: 400;">PS</span></p>
+            <p><span style="font-weight: 400;">PS, DG</span></p>
             </td>
             <td>
             <p><span style="font-weight: 400;"></span></p>
@@ -244,80 +225,10 @@
             </tr>
             <tr>
             <td>
-            <p><strong><em>12:00-12:30</em></strong></p>
+            <p><strong><em>02:45-03:00</em></strong></p>
             </td>
             <td>
-            <p><strong>Extending KG with LOD</strong></p>
-            </td>
-            <td>
-            <p><span style="font-weight: 400;">FI</span></p>
-            </td>
-            <td>
-            <p><span style="font-weight: 400;"></span></p>
-            </td>
-            </tr>
-            <tr>
-            <td>
-            <p><strong><em>12:30-13:00</em></strong></p>
-            </td>
-            <td>
-            <p><strong>Network analysis of KGs</strong></p>
-            </td>
-            <td>
-            <p><span style="font-weight: 400;">PS</span></p>
-            </td>
-            <td>
-            <p><span style="font-weight: 400;"></span></p>
-            </td>
-            </tr>
-            <tr>
-            <td>
-            <p><strong><em>13:00-13:15</em></strong></p>
-            </td>
-            <td>
-            <p><strong>Break</strong></p>
-            </td>
-            <td>
-            <p><span style="font-weight: 400;">/</span></p>
-            </td>
-            <td>
-            <p><span style="font-weight: 400;">/</span></p>
-            </td>
-            </tr>
-            <tr>
-            <td>
-            <p><strong><em>13:15-13:45</em></strong></p>
-            </td>
-            <td>
-            <p><strong>Analyzing Wikidata with KGTK</strong></p>
-            </td>
-            <td>
-            <p><span style="font-weight: 400;">DG</span></p>
-            </td>
-            <td>
-		    <a href="https://github.com/usc-isi-i2/kgtk-notebooks/blob/main/slides/KGTK_Tutorial_ISWC_2021_use_case_2.pdf">slides</a>
-            </td>
-            </tr>
-            <tr>
-            <td>
-            <p><strong><em>13:45-14:15</em></strong></p>
-            </td>
-            <td>
-            <p><strong>Building a Commonsense Knowledge Graph</strong></p>
-            </td>
-            <td>
-            <p><span style="font-weight: 400;">FI</span></p>
-            </td>
-            <td>
-            <a href="https://github.com/usc-isi-i2/kgtk-notebooks/blob/main/slides/building-commonsense-knowledge-graph.pdf">slides</a>
-            </td>
-            </tr>
-            <tr>
-            <td>
-            <p><strong><em>14:15-15:00</em></strong></p>
-            </td>
-            <td>
-            <p><strong>Discussion, next steps & closing</strong></p>
+            <p><strong>Discussion and Closing remarks</strong></p>
             </td>
             <td>
             <p><span style="font-weight: 400;"></span></p>
@@ -336,7 +247,7 @@
         <div class="content">
 
             <h2>Speaker Bios</h2>
-            <p><a href="https://usc-isi-i2.github.io/ilievski/">Filip Ilievski</a> (ilievski@isi.edu) is a Computer Scientist in the Center on Knowledge Graphs within the Information Sciences Institute at the University of Southern California. He obtained a Ph.D. in Natural Language Processing and Knowledge Representation at the Vrije Universiteit (VU) in Amsterdam. His primary research focus lies on the role of background, especially commonsense, knowledge for filling gaps in human communication. Filip’s research has been published at top-tier venues like AAAI, EMNLP, and ISWC. Filip gave tutorials on commonsense knowledge at AAAI’21 and ISWC’20.</p>
+            <p><a href="https://usc-isi-i2.github.io/ilievski/">Filip Ilievski</a> (ilievski@isi.edu) is a Research Scientist in the Center on Knowledge Graphs within the Information Sciences Institute at the University of Southern California. He obtained a Ph.D. in Natural Language Processing and Knowledge Representation at the Vrije Universiteit (VU) in Amsterdam. His primary research focus lies on the role of background, especially commonsense, knowledge for filling gaps in human communication. Filip’s research has been published at top-tier venues like AAAI, EMNLP, and ISWC. Filip gave tutorials on commonsense knowledge at AAAI’21 and ISWC’20.</p>
 
             <p><a href="https://dgarijo.com/">Daniel Garijo</a> (dgarijo@isi.edu) is a Researcher at the Ontology Engineering Group at the Universidad Politécnica de Madrid (UPM), where he obtained his PhD. Before joining UPM, Daniel was a researcher at the Information Sciences Institute at the University of Southern California. His research is focused on using Semantic Web and Linked Data to facilitate the reuse and understanding of scientific workflows and software. Daniel has experience in presenting tutorials at international conferences such as Dublin Core and AAAI and universities such as Stanford, UCLA and USC.</p>
 
