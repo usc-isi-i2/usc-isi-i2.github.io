@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="ISI's Center on Knowledge Graphs research group combines artificial intelligence, the semantic web, and database integration techniques to solve complex information integration problems">
+        <title>TGCSR</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scroll" href="#home">TG-CSR</a>
+			</div><!-- navbar-header -->
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+                    <!--<li><a class="scroll" href="#image">Image</a></li> -->
+					<li><a class="scroll" href="#about">Introduction</a></li>
+                    <li><a class="scroll" href="#dataset">Dataset</a></li>
+                    <li><a class="scroll" href="#submit">Submit</a></li>
+                    <li><a class="scroll" href="#leaderboard">Leaderboard</a></li>
+					<li><a class="scroll" href="#people">People</a></li>
+					<li><a class="scroll" href="#org">Organizations</a></li>
+				</ul>        
+			</div><!-- collapse navbar-collapse -->
+		</div><!-- container -->
+	</nav>
+
+	<header id="home">
+		<div class="container">
+			<h1>TG-CSR</h1>
+			<h2>Theoretically-Grounded Common Sense Reasoning</h2>
+			<div class="affiliation">
+				
+				<div><a rel="noopener" href="http://www.isi.edu" style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia" >Information Sciences Institute</a></div>
+				 <div><a rel="noopener" href="http://www.usc.edu"><img src="../img/logo/usc-shield-name-white.png" alt="usc-shield-name-white"></a></div>
+			</div>
+		</div><!-- container -->
+		<div class="scroll-btn-container hidden-xs">
+			<a class="scroll-btn scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+		</div>
+	</header>
+	
+    
+	<section id="about" class="container">
+		<h2>INTRODUCTION</h2>
+		<div class="content" align="justify">
+		<p>Common sense reasoning (CSR) has been a moonshot problem in AI for over 50 years. Recently, with the advent of transformer-based neural networks pretrained on large quantities of text, with potentially billions, or even trillions of parameters, much progress has been made on building machines with common sense capabilities. These transformer-based 'language representation models' (LRMs) come in both generative (such as GPT-3) and discriminative (e.g., BERT) varieties. Modern LRMs released in the last 5 years have progressively achieved and pushed state-of-the-art performance on publicly available CSR benchmarks modeled as multiple-choice question answering tasks, with examples of such benchmarks including Physical IQA, abductive Natural Language Inference, Social IQA, HellaSwag, and many others.</p>
+		<p>[x] TG-CSR uses a theory of common sense developed in a series of papers (and collected in a book) by the researchers [x]. </p>
+		<p>In particular, TG-CSR is designed to test the performance of CSR systems (whether LRM-based or not) in few-shot settings. Below, we provide an example training dataset with ground-truth labels using both the formal JSON format, as well as an excel format to facilitate easy browsing. We also provide an unlabeled test set that should be used for submissions. The format expected for submissions is detailed under Submissions, with an example submission file (containing random labels) provided as well. Additionally, we provide a link to a validation script for ensuring that the submission file is properly formatted. Upon submission, we will evaluate your entry using withheld ground-truth labels and place it in the correct spot on the leaderboard within 24 hours (of submission). </p>
+        <p>TG-CSR is a collaboration between researchers from the University of Southern California, Rensselaer Polytechnic Institute, and the University of California at Irvine.</p>
+
+		</div>
+	</section>
+
+<section id="dataset" class="container">
+    <h2>DATASET</h2>
+    <div class="content" align="justify">
+        <!--<ul>
+            <li>We're excited to announce that GNOME will be demonstrated at NeurIPS 2020. Check it out <a href='../gnomeNeurips/index.html'>here</a></a></li>
+            <li>Our work was recently featured in USC Viterbi News: <a href="https://viterbischool.usc.edu/news/2020/07/want-to-teach-an-ai-novelty-first-teach-it-monopoly-then-throw-out-the-rules/">Want to Teach An AI Novelty? First, Teach It Monopoly. Then Throw Out the Rules.</a></li>
+            <li><a rel="noopener" href="https://github.com/mayankkejriwal/GNOME-p3">GNOME GitHub repository</a></li>
+            <li>DARPA Science of Artificial Intelligence and Learning for Open-world Novelty (SAIL-ON) <a rel="noopener" href="https://www.darpa.mil/program/science-of-artificial-intelligence-and-learning-for-open-world-novelty">Program Page</a></li>
+            <li><a rel="noopener" href="https://intelligencecommunitynews.com/tag/darpa-sail-on/">DARPA introduces SAIL-ON program</a></li>
+            <li><a rel="noopener" href="https://www.darpa.mil/news-events/2019-02-14">Teaching AI Systems to Adapt to Dynamic Environments</a></li>
+            
+        </ul>-->
+        
+    </div>
+</section>
+
+<section id="submit" class="container">
+    <h2>SUBMIT</h2>
+    <div class="content" align="justify">
+        
+        
+    </div>
+</section>
+
+<section id="leaderboard" class="container">
+    <h2>LEADERBOARD</h2>
+    <div class="content" align="justify">
+        
+        
+    </div>
+</section>
+
+	<section id="people" class="container">
+		<h2>PEOPLE</h2>
+		<ul class="content list-unstyled">
+		<h3>Researchers</h3>
+            <li>
+                <a style="background-image:url('../img/people/Mayank-Kejriwal.jpg')" href="../kejriwal"></a>
+                <div class="description">
+                    <div class="name">Mayank Kejriwal</div>
+                    <div class="title">Research Assistant Professor</div>
+                </div>
+            </li>
+       <!--     <li>
+                <a style="background-image:url('../img/people/Jay-Pujara.png')" rel="noopener" href="https://www.jaypujara.org/"></a>
+                <div class="description">
+                    <div class="name">Jay Pujara</div>
+                    <div class="title">Research Assistant Professor</div>
+                </div>
+            </li>
+			<li>
+				<a style="background-image:url('../img/people/Shilpa-Thomas.jpg')" rel="noopener" href="https://www.linkedin.com/in/shilpa-thomas/"></a>
+				<div class="description">
+					<div class="name">Shilpa Thomas</div>
+					<div class="title">Graduate Student</div>
+				</div>
+			</li>
+            <li>
+                <a style="background-image:url('../img/people/hongyu-li.jpeg')" rel="noopener" href="https://www.linkedin.com/in/hyyyyli/"></a>
+                <div class="description">
+                    <div class="name">Hongyu Li</div>
+                    <div class="title">Graduate Student</div>
+                </div>
+            </li> -->
+			
+			<h3>External Collaborators</h3>
+			<li>
+				<a style="background-image:url('../img/external/Bharat-Bhargava.jpg')" rel="noopener" href="https://www.cs.purdue.edu/people/faculty/bb"></a>
+				<div class="description">
+					<div class="name">Bharat Bhargava</div>
+					<div class="title">Professor, Purdue University</div>
+				</div>
+			</li>
+			<li>
+				<a style="background-image:url('../img/external/Vaneet-Aggarwal.png')" rel="noopener" href="https://web.ics.purdue.edu/~vaneet/"></a>
+				<div class="description">
+					<div class="name">Vaneet Aggarwal</div>
+					<div class="title">Associate Professor, Purdue University</div>
+				</div>
+			</li>
+				
+		</ul>
+	</section>
+
+	<section id="org" class="container">
+		<h2>ORGANIZATIONS</h2>
+		<div>
+			<a rel="noopener" href="https://engineering.purdue.edu/IE"><img src="../img/org/Purdue.png" alt="Purdue"></a>
+			
+		</div>
+	</section>
+	
+	<section class="container">
+		<h2>ACKNOWLEDGMENT</h2>
+		<p class="content">MOWGLI is a project in the DARPA MCS program, supported by United States Office Of Naval Research under Contract No. N660011924033.</p>
+	</section> 
+	c
+	<footer>
+		<div class="container">&copy; 2016 The University of Southern California</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
