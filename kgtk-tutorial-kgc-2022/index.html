@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="ISI's Center on Knowledge Graphs research group combines artificial intelligence, the semantic web, and database integration techniques to solve complex information integration problems">
+	<title>KGTK: Tools for Creating and Exploiting Large Knowledge Graphs, The Web Conference 2022 Tutorial</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scroll" href="#home">KGTK Tutorial</a>
+			</div><!-- navbar-header -->
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+                    <li><a class="scroll" href="#people">Presenters</a></li>
+		    <li><a class="scross" href="#resources">Resources</a></li>
+                    <li><a class="scroll" href="#program">Program</a></li>
+                    <li><a class="scroll" href="#bios">Bios</a></li>
+				</ul>        
+			</div><!-- collapse navbar-collapse -->
+		</div><!-- container -->
+	</nav>
+
+    <header id="home">
+        <div class="container">
+            <h1>KGTK: Tools for Creating and Exploiting Large Knowledge Graphs</h1>
+            <div class="affiliation">
+                <div style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia">KGC'22 Tutorial</div>
+                <div style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia">May 2 or 3, 2022</div>
+                 <div><a rel="noopener" href="https://kgtk.readthedocs.io/en/latest/"><img src="../img/projects/kgtk_logo_300x300.png" alt="kgtk-logo"></a></div>
+            </div>
+        </div><!-- container -->
+        <div class="scroll-btn-container hidden-xs">
+            <a class="scroll-btn scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </header>
+
+    <section id="people" class="container">
+        <div class="content">
+            <h2>Presenters</h2>
+            <ul class="content list-unstyled">
+            <li>
+                    <a style="background-image:url('../img/people/Filip-Ilievski.png')" href="../ilievski"></a>
+                    <div class="description">
+                        <div class="name">Filip Ilievski</div>
+                        <div class="title">USC/ISI</div>
+                    </div>
+                </li>
+                <li>
+                    <a style="background-image:url('../img/people/Daniel-Garijo.png')" href="https://dgarijo.com/"></a>
+                    <div class="description">
+                        <div class="name">Daniel Garijo</div>
+                        <div class="title">UP Madrid</div>
+                    </div>
+                </li>
+                <li>
+                    <a style="background-image:url('../img/people/Hans-Chalupsky.jpg')" href="https://www.isi.edu/people/hans/about"></a>
+                    <div class="description">
+                        <div class="name">Hans Chalupsky</div>
+                        <div class="title">USC/ISI</div>
+                    </div>
+                </li>
+                <li>
+                    <a style="background-image:url('../img/people/Pedro-Szekely.jpg')" href="../szekely"></a>
+                    <div class="description">
+                        <div class="name">Pedro Szekely</div>
+                        <div class="title">USC/ISI</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="description">
+        <div class="content">
+            <p>The Knowledge Graph Toolkit (KGTK) (Ilievski et al., 2020) is a comprehensive framework for the creation and exploitation of large KGs, designed for simplicity, scalability, and interoperability. KGTK represents KGs in tab-separated (TSV) files with four columns: edge-identifier, head, edge-label, and tail. All KGTK commands consume and produce KGs represented in this simple format, so they can be composed into pipelines to perform complex transformations on KGs. The simplicity of its data model also allows KGTK operations to be easily integrated with existing tools, like Pandas or graph-tool. KGTK provides a suite of commands to import Wikidata, RDF (e.g., DBpedia), and popular graph representations into the KGTK format. A rich collection of transformation commands make it easy to clean, union, filter, and sort KGs, while the KGTK graph combination commands support efficient intersection, subtraction, and joining of large KGs. Its advanced functionality includes a query language variant of Cypher (called “Kypher”), which has been optimized for querying KGs stored on disk with minimal indexing overhead; graph analytics commands support scalable computation of centrality metrics such as PageRank, degrees, connected components, and shortest paths; lexicalization of graph nodes, and computation of multiple variants of text and graph embeddings over the whole graph. In addition, a suite of export commands supports the transformation of KGTK KGs into commonly used formats, including the Wikidata JSON format, RDF triples, JSON documents for ElasticSearch indexing, and graph-tool. Finally, KGTK allows browsing locally stored KGs using a variant of SQID; and includes a development environment using Jupyter notebooks that provides seamless integration with Pandas. KGTK can process Wikidata-sized KGs, with billions of edges, on a laptop computer. We have used KGTK in multiple settings, focusing primarily on the construction of subgraphs of Wikidata, analysis of over 300 Wikidata dumps since the inception of the Wikidata project, linking tables to Wikidata, construction of a consolidated commonsense KG combining multiple existing sources, creation of an extension of Wikidata for food security, and creation of an extension of Wikidata for the pharmaceutical industry.</p>
+            <p>Slack channel: <b>TBD</b></p>
+            <p>Note: this tutorial will be an updated iteration of our <a href="https://usc-isi-i2.github.io/kgtk-tutorial-iswc-2021/">previous tutorial given at ISWC'21 in October 2021</a>.</p>
+        </div>
+    </section>
+    <section id="resources">
+        <div class="content">
+	    <h2>Resources</h2>
+	    <p>Hands-on materials: <b><a href="https://github.com/usc-isi-i2/kgtk-notebooks/">https://github.com/usc-isi-i2/kgtk-notebooks/</a></b></p>
+	    <p>Colab Notebooks: <b><a href="https://github.com/usc-isi-i2/kgtk-notebooks#running-the-notebooks-in-google-colab">https://github.com/usc-isi-i2/kgtk-notebooks#running-the-notebooks-in-google-colab</a></b></p>
+	    <p>Slides: <b><a href="https://github.com/usc-isi-i2/kgtk-notebooks/tree/main/slides">https://github.com/usc-isi-i2/kgtk-notebooks/tree/main/slides</a></b></p>
+	    <p>KGTK documentation: <b><a href="https://kgtk.readthedocs.io/">https://kgtk.readthedocs.io/</a></b></p>
+	    <p>Similarity GUI: <b><a href="https://kgtk.isi.edu/similarity/">https://kgtk.isi.edu/similarity/</a></b></p>
+	    <p>KGTK Search: <b><a href="https://kgtk.isi.edu/search/">https://kgtk.isi.edu/search/</a></b></p>
+	    <p>KGTK Browser: <b><a href="https://kgtk.isi.edu/iswc/browser/Q2685">https://kgtk.isi.edu/iswc/browser/Q2685</a></b></p>
+	    <p>Resource paper (ESWC'20): <b><a href="https://arxiv.org/pdf/2006.00088.pdf">https://arxiv.org/pdf/2006.00088.pdf</a></b></p>
+	    <p>KGTK on GitHub: <b><a href="https://github.com/usc-isi-i2/kgtk/">https://github.com/usc-isi-i2/kgtk/</a></b></p>
+	</div>
+    </section>
+    <section id="program" class="container">
+        <h2>Tutorial Program</h2>
+        <div class="content">
+            <p>The KGTK tutorial will introduce the full suite of commands available in KGTK, including parsers for popular existing KG formats, commands that curate or transform existing graphs, its query language Kypher (an adaptation of Cypher), commands for graph analytics, and computation of embeddings. We will introduce the commands in hands-on sessions, allowing participants to execute along in Colab notebooks. In addition, we will introduce a range of use cases that rely on KGTK in order to compute similarity of nodes, enrich Wikidata with additional knowledge from CSV files or LOD, perform knowledge graph profiling, analyze graph networks, and analyze the quality of Wikidata. The use cases will be associated with their underlying code in KGTK, and a subset of the use cases will be run live in hands-on sessions.</p>
+
+            <br/>
+            <p>Exact times will be announced closer to the tutorial date. Speakers: FI=Filip Ilievski, DG=Daniel Garijo, HC=Hans Chalupsky, PS=Pedro Szekely.</p>
+
+            <br/>
+            <table style="width: 100%">
+                <colgroup>
+                   <col span="1" style="width: 15%;">
+                   <col span="1" style="width: 55%;">
+                   <col span="1" style="width: 15%;">
+                </colgroup>
+            <thead>
+                <tr>
+                <td>
+                <p><strong>Time (PDT)</strong></p>
+                </td>
+                <td>
+                <p><strong>Content</strong></p>
+                </td>
+                <td>
+                <p><strong>Speaker</strong></p>
+                </td>
+                <td>
+                <p><strong>Material</strong></p>
+                </td>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>
+            <p><strong><em>00:00-00:15</em></strong></p>
+            </td>
+            <td>
+            <p><strong>Welcome and Introduction</strong></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;">PS</span></p>
+            </td>
+            <td>
+	        </td>
+            </tr>
+            <tr>
+            <td>
+            <p><strong><em>00:15-00:50</em></strong></p>
+            </td>
+            <td>
+            <p><strong>Introduction to KGTK and Kypher</strong></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;">HC</span></p>
+            </td>
+            <td>
+   	        </td>
+            </tr>
+            <tr>
+            <td>
+            <p><strong><em>00:50-01:25</em></strong></p>
+            </td>
+            <td>
+            <p><strong>Breakout session I: Profiling knowledge graphs AND Working with Embeddings</strong></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;">PS, FI</span></p>
+            </td>
+            <td>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p><strong><em>01:25-01:35</em></strong></p>
+            </td>
+            <td>
+            <p><strong>Break</strong></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;">/</span></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;">/</span></p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p><strong><em>01:35-02:10</em></strong></p>
+            </td>
+            <td>
+            <p><strong>Breakout session II: Extending KG with tabular data (IMDB) AND Extending KG with LOD</strong></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;">PS, FI</span></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;"></span></p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p><strong><em>02:10-02:45</em></strong></p>
+            </td>
+            <td>
+            <p><strong>Breakout session III: Network analysis of KGs AND Analyzing Wikidata with KGTK</strong></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;">PS, DG</span></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;"></span></p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p><strong><em>02:45-03:00</em></strong></p>
+            </td>
+            <td>
+            <p><strong>Discussion and Closing remarks</strong></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;"></span></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;"></span></p>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <section id="bios" class="container">
+        <div class="content">
+
+            <h2>Speaker Bios</h2>
+            <p><a href="https://usc-isi-i2.github.io/ilievski/">Filip Ilievski</a> (ilievski@isi.edu) is a Research Scientist in the Center on Knowledge Graphs within the Information Sciences Institute at the University of Southern California. He obtained a Ph.D. in Natural Language Processing and Knowledge Representation at the Vrije Universiteit (VU) in Amsterdam. His primary research focus lies on the role of background, especially commonsense, knowledge for filling gaps in human communication. Filip’s research has been published at top-tier venues like AAAI, EMNLP, and ISWC. Filip gave tutorials on commonsense knowledge at AAAI’21 and ISWC’20.</p>
+
+            <p><a href="https://dgarijo.com/">Daniel Garijo</a> (dgarijo@isi.edu) is a Researcher at the Ontology Engineering Group at the Universidad Politécnica de Madrid (UPM), where he obtained his PhD. Before joining UPM, Daniel was a researcher at the Information Sciences Institute at the University of Southern California. His research is focused on using Semantic Web and Linked Data to facilitate the reuse and understanding of scientific workflows and software. Daniel has experience in presenting tutorials at international conferences such as Dublin Core and AAAI and universities such as Stanford, UCLA and USC.</p>
+
+            <p><a href="https://www.isi.edu/people/hans/about">Hans Chalupsky</a> (hans@isi.edu) is a Research Lead at USC’s Information Sciences Institute where he heads the Loom Knowledge Representation and Reasoning Group.  His research focuses on the design, development and application of practical knowledge representation and reasoning systems.  He is a principal architect and developer of the PowerLoom KR&R system, which combines over ten years of DARPA-funded development and has been distributed to many sites worldwide. Dr. Chalupsky is also the principal architect of the KOJAK Link Discovery System whose Group Finder has been ranked first in several formal DARPA evaluations, and whose UNICORN system for anomaly detection in large knowledge graphs was awarded second place in the Open Task of the 2003 KDD Cup.  His research interests include KR&R systems, KGs, semantic interoperability and neuro-symbolic reasoning systems.</p>
+
+            <p><a href="http://usc-isi-i2.github.io/szekely/">Pedro Szekely</a> (pszekely@isi.edu) is Principal Scientist and Director of the AI division at the University of Southern California's Information Sciences Institute, and Research Associate Professor of Computer Science. Dr. Szekely's current research focuses on table understanding and toolkits for creating and exploiting KGs in AI applications. Dr. Szekely teaches a graduate course on Building Knowledge Graphs, and has given tutorials on knowledge graph construction at KDD, ISWC, AAAI and WWW. Dr. Szekely has published over 100 papers in prestigious conferences, served as program chair for the International Knowledge Capture conference, and as conference chair for the Intelligent User Interfaces Conference.</p>
+        </div>
+    </section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
