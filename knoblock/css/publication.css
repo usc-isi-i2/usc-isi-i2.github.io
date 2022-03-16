@@ -25,16 +25,17 @@ img.bibbase_icon {
 }
 
 .bibbase_icon_text {
-  color: #5D0001;
+  /* color: #5D0001; */
+  color: #337ab7;
   font-size: 9pt;
   line-height: 12pt;
   margin-bottom: 10px;
   text-decoration: none;
 }
 
-.bibbase_icon_text:after {
+/* .bibbase_icon_text:after {
   content: " | ";
-}
+} */
 
 span.bibbase_icon_text {
   display: inline;
