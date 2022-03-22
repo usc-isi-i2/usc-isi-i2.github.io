@@ -31,11 +31,11 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a class="scroll" href="#home">Home</a></li>
                     <!--<li><a class="scroll" href="#image">Image</a></li> -->
-					<li><a class="scroll" href="#about">Introduction</a></li>
-                    <li><a class="scroll" href="#dataset">Dataset</a></li>
-                    <li><a class="scroll" href="#submit">Submit</a></li>
-                    <li><a class="scroll" href="#leaderboard">Leaderboard</a></li>
-					<li><a class="scroll" href="#people">People</a></li>
+					<li><a class="scroll" href="#about">Overview</a></li>
+                    <li><a class="scroll" href="#dataset">Dataset Access / Submission</a></li>
+                    <!--<li><a class="scroll" href="#submit">Submit</a></li>-->
+                    <li><a class="scroll" href="#leaderboard">Cite</a></li>
+                    <!--<li><a class="scroll" href="#people">People</a></li>-->
 					<li><a class="scroll" href="#org">Organizations</a></li>
 				</ul>        
 			</div><!-- collapse navbar-collapse -->
@@ -59,19 +59,23 @@
 	
     
 	<section id="about" class="container">
-		<h2>INTRODUCTION</h2>
+		<h2>OVERVIEW</h2>
 		<div class="content" align="justify">
-		<p>Common sense reasoning (CSR) has been a moonshot problem in AI for over 50 years. Recently, with the advent of transformer-based neural networks pretrained on large quantities of text, with potentially billions, or even trillions of parameters, much progress has been made on building machines with common sense capabilities. These transformer-based 'language representation models' (LRMs) come in both generative (such as GPT-3) and discriminative (e.g., BERT) varieties. Modern LRMs released in the last 5 years have progressively achieved and pushed state-of-the-art performance on publicly available CSR benchmarks modeled as multiple-choice question answering tasks, with examples of such benchmarks including Physical IQA, abductive Natural Language Inference, Social IQA, HellaSwag, and many others.</p>
-		<p>[x] TG-CSR uses a theory of common sense developed in a series of papers (and collected in a book) by the researchers [x]. </p>
-		<p>In particular, TG-CSR is designed to test the performance of CSR systems (whether LRM-based or not) in few-shot settings. Below, we provide an example training dataset with ground-truth labels using both the formal JSON format, as well as an excel format to facilitate easy browsing. We also provide an unlabeled test set that should be used for submissions. The format expected for submissions is detailed under Submissions, with an example submission file (containing random labels) provided as well. Additionally, we provide a link to a validation script for ensuring that the submission file is properly formatted. Upon submission, we will evaluate your entry using withheld ground-truth labels and place it in the correct spot on the leaderboard within 24 hours (of submission). </p>
-        <p>TG-CSR is a collaboration between researchers from the University of Southern California, Rensselaer Polytechnic Institute, and the University of California at Irvine.</p>
+		<p>Theoretically-Grounded Commonsense Reasoning (TG-CSR) is a benchmark intended to systematically evaluate machine commonsense in a few-shot question answering (QA) setting. We refer to the benchmark as theoretically grounded because each question and its candidate answer always falls under a “representational area” in the Gordon-Hobbs theory of commonsense, including “time”, “space”, “emotions” and so on. The goal of the benchmark is to assess whether a single machine commonsense model, such as a language representation model, is able to answer questions across all these different categories without too much training data.
+</p>
+		<p>The task format of TG-CSR is multi-set QA. For each category, a set of candidate answers is provided (about 10 answers per category) and shared among all questions in the same category. However, to make it easier for large-scale models to answer questions, we “pair” each question with a single candidate answer. The task then becomes binary QA: a prediction of “yes” (encoded as 1) indicates that the answer is a good fit for the question and “no” (encoded as 0) indicates otherwise.
+ </p>
+		<p>Being a phased benchmark, the initial dataset consists of questions with a "vacationing abroad" context, for which training, development and test question sets are provided. More details on format and submission are provided in the starting kit. TG-CSR was designed to initially be a few-shot problem, but will later be a zero-shot problem for which no training or development sets will be provided. In upcoming phases, we will be releasing three additional sets of questions with the same format and Gordon-Hobbs representational areas, but designed using three other contexts.
+</p>
 
 		</div>
 	</section>
 
 <section id="dataset" class="container">
-    <h2>DATASET</h2>
+    <h2>DATASET ACCESS / SUBMISSION</h2>
     <div class="content" align="justify">
+        
+        TG-CSR has been <a href="https://codalab.lisn.upsaclay.fr/competitions/3080">launched on the CodaLab platform</a>, where submissions can be made directly and a starting kit is provided, along with access to labeled training and validation data (for the first release only; future phases will be purely zero shot and only include unlabeled test data), and unlabeled test data.
         <!--<ul>
             <li>We're excited to announce that GNOME will be demonstrated at NeurIPS 2020. Check it out <a href='../gnomeNeurips/index.html'>here</a></a></li>
             <li>Our work was recently featured in USC Viterbi News: <a href="https://viterbischool.usc.edu/news/2020/07/want-to-teach-an-ai-novelty-first-teach-it-monopoly-then-throw-out-the-rules/">Want to Teach An AI Novelty? First, Teach It Monopoly. Then Throw Out the Rules.</a></li>
@@ -85,34 +89,50 @@
     </div>
 </section>
 
-<section id="submit" class="container">
+<!-- <section id="submit" class="container">
     <h2>SUBMIT</h2>
     <div class="content" align="justify">
         
         
     </div>
-</section>
+</section> -->
 
 <section id="leaderboard" class="container">
-    <h2>LEADERBOARD</h2>
+    <h2>CITE</h2>
     <div class="content" align="justify">
         
         
     </div>
 </section>
 
-	<section id="people" class="container">
+<!-- <section id="people" class="container">
 		<h2>PEOPLE</h2>
 		<ul class="content list-unstyled">
-		<h3>Researchers</h3>
+		
             <li>
                 <a style="background-image:url('../img/people/Mayank-Kejriwal.jpg')" href="../kejriwal"></a>
                 <div class="description">
                     <div class="name">Mayank Kejriwal</div>
-                    <div class="title">Research Assistant Professor</div>
+                    <div class="title">Research Assistant Professor, USC</div>
                 </div>
             </li>
-       <!--     <li>
+            
+            <li>
+                <a style="background-image:url('../img/people/Ke-Shen.jpg')" href="../kejriwal"></a>
+                <div class="description">
+                    <div class="name">Ke Shen</div>
+                    <div class="title">PhD Student, USC</div>
+                </div>
+            </li>
+            
+            <li>
+                <a style="background-image:url('../img/people/Yasaman-Rezaghi.jpg')" href="../kejriwal"></a>
+                <div class="description">
+                    <div class="name">Yasaman Rezaghi</div>
+                    <div class="title">PhD Student, UCI Irvine</div>
+                </div>
+            </li>
+           <li>
                 <a style="background-image:url('../img/people/Jay-Pujara.png')" rel="noopener" href="https://www.jaypujara.org/"></a>
                 <div class="description">
                     <div class="name">Jay Pujara</div>
@@ -134,7 +154,7 @@
                 </div>
             </li> -->
 			
-			<h3>External Collaborators</h3>
+		<!--	<h3>External Collaborators</h3>
 			<li>
 				<a style="background-image:url('../img/external/Bharat-Bhargava.jpg')" rel="noopener" href="https://www.cs.purdue.edu/people/faculty/bb"></a>
 				<div class="description">
@@ -148,7 +168,7 @@
 					<div class="name">Vaneet Aggarwal</div>
 					<div class="title">Associate Professor, Purdue University</div>
 				</div>
-			</li>
+			</li>-->
 				
 		</ul>
 	</section>
@@ -156,14 +176,18 @@
 	<section id="org" class="container">
 		<h2>ORGANIZATIONS</h2>
 		<div>
-			<a rel="noopener" href="https://engineering.purdue.edu/IE"><img src="../img/org/Purdue.png" alt="Purdue"></a>
+			<a rel="noopener" href="https://viterbischool.usc.edu/"><img src="../img/org/USC.png" alt="USC"></a>
+            
+            <a rel="noopener" href="https://eng.rpi.edu/"><img src="../img/org/Renesselaer-Polytechnic.png" alt="RPI"></a>
+            
+            <a rel="noopener" href="https://www.cs.uci.edu/"><img src="../img/org/UCI.png" alt="UCI"></a>
 			
 		</div>
 	</section>
 	
 	<section class="container">
 		<h2>ACKNOWLEDGMENT</h2>
-		<p class="content">MOWGLI is a project in the DARPA MCS program, supported by United States Office Of Naval Research under Contract No. N660011924033.</p>
+		<p class="content">This effort is part of the MOWGLI project. MOWGLI is a project in the DARPA MCS program, supported by United States Office Of Naval Research under Contract No. N660011924033.</p>
 	</section> 
 	c
 	<footer>
