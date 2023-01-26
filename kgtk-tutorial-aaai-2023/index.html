@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="ISI's Center on Knowledge Graphs research group combines artificial intelligence, the semantic web, and database integration techniques to solve complex information integration problems">
+	<title>KGTK: Tools for Creating and Exploiting Large Knowledge Graphs, The Web Conference 2022 Tutorial</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scroll" href="#home">KGTK Tutorial</a>
+			</div><!-- navbar-header -->
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a class="scroll" href="#home">Home</a></li>
+                    <li><a class="scroll" href="#people">Presenters</a></li>
+		    <li><a class="scross" href="#resources">Resources</a></li>
+                    <li><a class="scroll" href="#program">Program</a></li>
+                    <li><a class="scroll" href="#bios">Speakers</a></li>
+				</ul>
+			</div><!-- collapse navbar-collapse -->
+		</div><!-- container -->
+	</nav>
+
+    <header id="home">
+        <div class="container">
+            <h1>KGTK: User-friendly Toolkit for Manipulation of Large Knowledge Graphs</h1>
+            <div class="affiliation">
+                <div style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia">AAAI'23 Lab</div>
+                <div style="color: #FDC93F;font-size: 20px;font-style: italic;margin-top:0px!important;font-family: Georgia">February 7th, 2023, 10:45 - 12:30 EST</div>
+                 <div><a rel="noopener" href="https://kgtk.readthedocs.io/en/latest/"><img src="../img/projects/kgtk_logo_300x300.png" alt="kgtk-logo"></a></div>
+            </div>
+        </div><!-- container -->
+        <div class="scroll-btn-container hidden-xs">
+            <a class="scroll-btn scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </header>
+
+    <section id="people" class="container">
+        <div class="content">
+            <h2>Presenters</h2>
+            <ul class="content list-unstyled">
+            <li>
+                    <a style="background-image:url('../img/people/Filip-Ilievski.jpg')" href="http://www.ilievski.info/"></a>
+                    <div class="description">
+                        <div class="name">Filip Ilievski</div>
+                        <div class="title">USC/ISI</div>
+                    </div>
+                </li>
+                <li>
+                    <a style="background-image:url('../img/people/Jay-Pujara.png')" href="https://www.jaypujara.org/"></a>
+                    <div class="description">
+                        <div class="name">Jay Pujara</div>
+                        <div class="title">USC/ISI</div>
+                    </div>
+                </li>
+                <li>
+                    <a style="background-image:url('../img/people/Ki-Thia-Yao.jpg')" href="https://www.isi.edu/people/kyao/about"></a>
+                    <div class="description">
+                        <div class="name">Ke-Thia Yao</div>
+                        <div class="title">USC/ISI</div>
+                    </div>
+                </li>
+                <li>
+                    <a style="background-image:url('../img/people/Gleb-Satyukov.jpg')" href="https://www.isi.edu/directory/gleb/"></a>
+                    <div class="description">
+                        <div class="name">Gleb Satyukov</div>
+                        <div class="title">USC/ISI</div>
+                    </div>
+                </li>
+                <li>
+                    <a style="background-image:url('../img/people/Kian-Ahrabian.jpeg')" href="https://scholar.google.com/citations?user=pwUdiCYAAAAJ&hl=en"></a>
+                    <div class="description">
+                        <div class="name">Kian Ahrabian</div>
+                        <div class="title">USC/ISI</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="description">
+        <div class="content">
+            <p>The Knowledge Graph Toolkit (KGTK) (Ilievski et al., 2020) is a comprehensive framework for the creation and exploitation of large KGs, designed for simplicity, scalability, and interoperability. KGTK represents KGs in tab-separated (TSV) files with four columns: edge-identifier, head, edge-label, and tail. All KGTK commands consume and produce KGs represented in this simple format, so they can be composed into pipelines to perform complex transformations on KGs. The simplicity of its data model also allows KGTK operations to be easily integrated with existing tools, like Pandas or graph-tool. KGTK provides a suite of commands to import Wikidata, RDF (e.g., DBpedia), and popular graph representations into the KGTK format. A rich collection of transformation commands make it easy to clean, union, filter, and sort KGs, while the KGTK graph combination commands support efficient intersection, subtraction, and joining of large KGs. Its advanced functionality includes a query language variant of Cypher (called “Kypher”), which has been optimized for querying KGs stored on disk with minimal indexing overhead; graph analytics commands support scalable computation of centrality metrics such as PageRank, degrees, connected components, and shortest paths; lexicalization of graph nodes, and computation of multiple variants of text and graph embeddings over the whole graph. In addition, a suite of export commands supports the transformation of KGTK KGs into commonly used formats, including the Wikidata JSON format, RDF triples, JSON documents for ElasticSearch indexing, and graph-tool. Finally, KGTK allows browsing locally stored KGs using a variant of SQID; and includes a development environment using Jupyter notebooks that provides seamless integration with Pandas. KGTK can process Wikidata-sized KGs, with billions of edges, on a laptop computer. We have used KGTK in multiple settings, focusing primarily on the construction of subgraphs of Wikidata, analysis of over 300 Wikidata dumps since the inception of the Wikidata project, linking tables to Wikidata, construction of a consolidated commonsense KG combining multiple existing sources, creation of an extension of Wikidata for food security, and creation of an extension of Wikidata for the pharmaceutical industry.</p>
+        </div>
+    </section>
+    <section id="resources">
+        <div class="content">
+	    <h2>Resources</h2>
+	    <p>Hands-on materials: <b><a href="https://github.com/usc-isi-i2/kgtk-notebooks/">https://github.com/usc-isi-i2/kgtk-notebooks/</a></b></p>
+	    <p>Colab Notebooks: <b><a href="https://github.com/usc-isi-i2/kgtk-notebooks#running-the-notebooks-in-google-colab">https://github.com/usc-isi-i2/kgtk-notebooks#running-the-notebooks-in-google-colab</a></b></p>
+	    <p>Slides: <b><a href="https://github.com/usc-isi-i2/kgtk-notebooks/tree/main/slides">https://github.com/usc-isi-i2/kgtk-notebooks/tree/main/slides</a></b></p>
+	    <p>KGTK documentation: <b><a href="https://kgtk.readthedocs.io/">https://kgtk.readthedocs.io/</a></b></p>
+	    <p>Similarity GUI: <b><a href="https://kgtk.isi.edu/similarity/">https://kgtk.isi.edu/similarity/</a></b></p>
+	    <p>KGTK Search: <b><a href="https://kgtk.isi.edu/search/">https://kgtk.isi.edu/search/</a></b></p>
+	    <p>KGTK Browser: <b><a href="https://kgtk.isi.edu/iswc/browser/Q2685">https://kgtk.isi.edu/iswc/browser/Q2685</a></b></p>
+	    <p>Resource paper (ESWC'20): <b><a href="https://arxiv.org/pdf/2006.00088.pdf">https://arxiv.org/pdf/2006.00088.pdf</a></b></p>
+	    <p>KGTK on GitHub: <b><a href="https://github.com/usc-isi-i2/kgtk/">https://github.com/usc-isi-i2/kgtk/</a></b></p>
+	</div>
+    </section>
+    <section id="program" class="container">
+        <h2>Tutorial Program</h2>
+        <div class="content">
+            <p>The lab will showcase four diverse applications of KGTK, each presented in a 20-min slot by a central contributor in the corresponding project. Kian Ahrabian and Jay Pujara will lead the session on analyzing publication graphs and leveraging them to drive scientific innovation. The second session will focus on supply chain and financial transaction analytics, and will be presented by Ke-Thia Yao. Gleb Satyukov will present the third session on event analytics with moral dimensions. The last session on modeling Internet Memes and analyzing them will be led by Filip Ilievski. Each session will be based on a Python notebook. The sessions will showcase how KGTK supports a wide range of pipelines in a user-friendly and scalable way, allowing AI researchers and developers to understand how to work with realistic knowledge graphs and inspire them to come up with their own use cases of interest. This lab would be held as a quarter-day (1h 45min) session at the AAAI 2023 conference.</p>
+
+            <p>Use cases:</p>
+
+            <p><strong> 1. Analytics of scientific publications and driving scientific innovation</strong> - The recent advent of public large-scale research publications metadata repositories such as OpenAlex (Priem, Piwowar, and Orr 2022) enables us to study innovation at scales that have not been possible
+before. However, dealing with these large-scale repositories is extremely difficult and requires special toolkits.
+In this session, we will describe how KGTK can be used for data filtering, data transformation, knowledge graph
+extraction, and knowledge graph embedding training of knowledge graphs with scientific publications.</p>
+
+            <p><strong>2. Analytics of financial data and supply chains</strong> - we will describe how KGTK can be used analyze financial transaction data. We will illustrate how to construct KGTK pipelines with graph transformations, analytics and visualization steps for the financial sector. The KGTK pipelines enable us to highlight trading behaviors, to find potential colluders, and to find inconsistencies through differentiating knowledge graph structures.</p>
+
+            <p><strong>3. Complex event understanding through moral dimensions</strong> - we will demonstrate how our knowledge graph tools are applied to make sense of complex events. Fo-
+cused on a specific domain (or location) we track the changes in moral foundations (Johnson and Goldwasser
+2018) and emotions to understand public perception of these events. The use of KGTK in this project makes it
+easy to scale up, to generalize to other domains and locations, and to browse and visualize the data.</p>
+
+            <p><strong>4. Modeling and Analytics of Internet Memes</strong> - we will show how KGTK can help connect the dots between internet meme sources and external knowledge graphs, like Wikidata. We will use KGTK to perform scalable analytics of the resulting graph and execute novel entity-centric and hybrid queries.</p>
+
+            <br/>
+            <p>The tutorial will be held on <b>February 7th, 2023, 10:45AM - 12:30PM EST</b>. All times below are in EST Timezone. Speakers: FI=Filip Ilievski, JP=Jay Pujara, KY=Ke-Thia Yao, GS=Gleb Satyukov, KA = Kian Ahrabian.</p>
+            <br/>
+            <table style="width: 100%">
+                <colgroup>
+                   <col span="1" style="width: 15%;">
+                   <col span="1" style="width: 55%;">
+                   <col span="1" style="width: 10%;">
+                </colgroup>
+            <thead>
+                <tr>
+                <td>
+                <p><strong>Time (CEST)</strong></p>
+                </td>
+                <td>
+                <p><strong>Content</strong></p>
+                </td>
+                <td>
+                <p><strong>Speaker</strong></p>
+                </td>
+                <td>
+                <p><strong>Material</strong></p>
+                </td>
+                </tr>
+            </thead>
+						<tbody>
+            <tr>
+            <td>
+            <p><strong><em>10:45 - 11:00</em></strong></p>
+            </td>
+            <td>
+            <p><strong>Welcome and Introduction</strong></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;">FI</span></p>
+            </td>
+            <td>
+	        </td>
+            </tr>
+            <tr>
+            <td>
+            <p><strong><em>11:00 - 11:20</em></strong></p>
+            </td>
+            <td>
+            <p><strong>PubGraphs: What should I read next?</strong></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;">KA, JP</span></p>
+            </td>
+            <td>
+   	        </td>
+            </tr>
+            <tr>
+            <td>
+            <p><strong><em>11:20 - 11:40</em></strong></p>
+            </td>
+            <td>
+                <p><strong>Morality in events: From news to timelines and graph maps</strong></p>
+            </td>
+            <td>
+                            <p><span style="font-weight: 400;">GS</span></p>
+            </td>
+            <td>
+            </td>
+            </tr>
+             <tr>
+            <td>
+            <p><strong><em>11:40 - 12:00</em></strong></p>
+            </td>
+            <td>
+                <p><strong>Financial transactions: Detecting anomalies in trading</strong></p>
+            </td>
+            <td>
+                            <p><span style="font-weight: 400;">KY</span></p>
+            </td>
+            <td>
+            </td>
+            </tr>
+           <tr>
+            <td>
+            <p><strong><em>12:00 - 12:20</em></strong></p>
+            </td>
+            <td>
+                <p><strong>Internet Memes: Knowledge connects culture and creativity</strong></p>
+            </td>
+            <td>
+                            <p><span style="font-weight: 400;">FI</span></p>
+            </td>
+            <td>
+            </td>
+            </tr>
+
+
+            <tr>
+            <td>
+            <p><strong><em>12:20 - 12:30</em></strong></p>
+            </td>
+            <td>
+            <p><strong>Discussion and Closing remarks</strong></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;">JP</span></p>
+            </td>
+            <td>
+            <p><span style="font-weight: 400;"></span></p>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <section id="bios" class="container">
+        <div class="content">
+
+            <h2>Speaker</h2>
+            <p><a href="http://www.ilievski.info/">Filip Ilievski</a> (ilievski@isi.edu) - Research Lead at the Information Sciences Institute, University of Southern California (USC). Research Assistant Professor of Computer Science at USC Viterbi School of Engineering.</p>
+
+            <p><a href="https://www.jaypujara.org">Jay Pujara</a> (jpujara@isi.edu) - Director at the Center on Knowledge Graphs and Research Lead at the USC Information Sciences Institute. Research Assistant Professor of Computer Science at the USC Viterbi School of Engineering.</p>
+            <p><a href="https://www.isi.edu/directory/gleb/">Gleb Satyukov</a> (gleb@isi.edu) - Research Lead at the Information Sciences Institute, University of Southern California (USC).</p>
+            <p><a href="https://www.isi.edu/people/kyao/about">Ke-Thia Yao</a> (kyao@isi.edu) - Research Lead at the Information Sciences Institute, University of Southern California (USC).</p>
+            <p><a href="https://scholar.google.com/citations?user=pwUdiCYAAAAJ&hl=en">Kian Ahrabian</a> (ahrabian@isi.edu) - Ph.D. Student at the Information Sciences Institute, University of Southern California (USC).</p>
+        </div>
+    </section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
